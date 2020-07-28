@@ -1,10 +1,10 @@
 ---
 id: framework
 title: Smart Contract Framework
-sidebar_label: Contract
+sidebar_label: Framework
 ---
 
 Contract Framework
 DODOZoo
 Proxy
-ETHProxy挂件
+ETHProxy 挂件

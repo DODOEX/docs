@@ -2,13 +2,13 @@ const math = require("remark-math");
 const katex = require("rehype-katex");
 
 module.exports = {
-  title: "My Site",
-  tagline: "The tagline of my site",
-  url: "https://your-docusaurus-test-site.com",
+  title: "DODOEX Docs",
+  tagline: "Everything about DODO",
+  url: "https://docs.dodoex.io",
   baseUrl: "/",
-  favicon: "img/favicon.ico",
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  favicon: "img/favicon.png",
+  organizationName: "DODOEX", // Usually your GitHub org/user name.
+  projectName: "docs", // Usually your repo name.
   stylesheets: [
     {
       href: "https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css",
@@ -20,9 +20,9 @@ module.exports = {
   ],
   themeConfig: {
     navbar: {
-      title: "My Site",
+      title: "DODOEX Docs",
       logo: {
-        alt: "My Site Logo",
+        alt: "DODO",
         src: "img/logo.svg",
       },
       links: [

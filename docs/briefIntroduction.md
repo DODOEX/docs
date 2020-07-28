@@ -1,7 +1,7 @@
 ---
 id: briefIntro
-title: Very Short Introduction of DODO!
-sidebar_label: Start
+title: Introduction of DODO
+sidebar_label: Introduction of DODO
 ---
 
 ## 什么是DODO

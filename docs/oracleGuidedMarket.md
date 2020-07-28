@@ -1,5 +1,5 @@
 ---
 id: oracleGuidedMarket
 title: Oracle Guided Market
-sidebar_label: UseCase
+sidebar_label: Oracle Guided Market
 ---

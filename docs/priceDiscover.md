@@ -1,6 +1,5 @@
 ---
 id: priceDiscover
 title: Price Discover
-sidebar_label: UseCase
+sidebar_label: Price Discover
 ---
-

@@ -1,8 +1,7 @@
 ---
 id: flashSwap
 title: Flash Swap
-sidebar_label: Protocol
+sidebar_label: Flash Swap
 ---
 
 dodoCall
-One-click Arbitrage
