@@ -8,8 +8,8 @@ sidebar_label: How DODO Works
 
 DODO 的底层机制是一套被称为 PMM 的算法。PMM 算法接受 Oracle 提供的市场价格作为输入，专注在市场价格附近提供充足的流动性，而在远离市场价格时流动性快速衰减。
 
-![](./../static/img/dodo_curve.jpeg)
-![](./../static/img/dodo_curve_move.jpeg)
+![](https://dodoex.github.io/docs/img/dodo_curve.jpeg)
+![](https://dodoex.github.io/docs/img/dodo_curve_move.jpeg)
 
 上图对比了 DODO 和 Uniswap 的价格曲线，可以发现在市场价附近（也就是所谓的盘口）可以提供比 AMM 好得多的价格。而当市场价移动时，不同与 AMM 依赖套利者交易改变价格，PMM 主动移动价格曲线。使得价格曲线在新市场价附近仍然保持平滑
 
@@ -23,7 +23,7 @@ The PMM price curve consists of two parts, bid and ask. The ask side liquidity i
 
 It allows the base and quote pools to have different sizes, and therefore allows liquidity providers deposit any amount of quote or base token.
 
-:::tip
+:::note
 
 The design is very natural. Because when you take ask order, you take up liquidity providers’ base token and have nothing to do with the quote token.
 

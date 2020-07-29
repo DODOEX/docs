@@ -8,7 +8,7 @@ sidebar_label: Framework
 
 DODOEX 的背后是一整套智能合约。下图展示了这套合约的 framework
 
-![](./../static/img/dodo_framework.jpeg)
+![](https://dodoex.github.io/docs/img/dodo_framework.jpeg)
 
 ## Core
 

@@ -38,7 +38,7 @@ $$else \ R=1$$
 
 According to the segment, PMM has three scenarios: equilibrium, shortage of Base Token, and shortage of Quote Token.
 
-![](../static/img/dodo_mode_switch.jpeg)
+![](https://dodoex.github.io/docs/img/dodo_mode_switch.jpeg)
 
 When there is no transaction, the capital pool is in equilibrium, and both Base Token and Quote Token are at their regression targets.
 
