@@ -3,9 +3,9 @@ const katex = require("rehype-katex");
 
 module.exports = {
   title: "DODOEX Docs",
-  tagline: "Everything about DODO",
+  tagline: "Let's DODO it!",
   url: "https://DODOEX.github.io",
-  baseUrl: "/docs/",
+  baseUrl: "/",
   favicon: "img/favicon.png",
   organizationName: "DODOEX", // Usually your GitHub org/user name.
   projectName: "docs", // Usually your repo name.
@@ -44,27 +44,14 @@ module.exports = {
       style: "dark",
       links: [
         {
-          title: "Docs",
-          items: [
-            {
-              label: "Style Guide",
-              to: "docs/",
-            },
-            {
-              label: "Second Doc",
-              to: "docs/doc2/",
-            },
-          ],
-        },
-        {
           title: "Community",
           items: [
             {
-              label: "Stack Overflow",
+              label: "Medium",
               href: "https://stackoverflow.com/questions/tagged/docusaurus",
             },
             {
-              label: "Discord",
+              label: "Telegram",
               href: "https://discordapp.com/invite/docusaurus",
             },
             {
@@ -74,20 +61,20 @@ module.exports = {
           ],
         },
         {
-          title: "More",
+          title: "Developer",
           items: [
             {
-              label: "Blog",
-              to: "blog",
+              label: "GitHub",
+              href: "https://github.com/facebook/docusaurus",
             },
             {
-              label: "GitHub",
+              label: "Deployed Info",
               href: "https://github.com/facebook/docusaurus",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} DODOEX, Inc. Built with Docusaurus.`,
     },
   },
   presets: [
