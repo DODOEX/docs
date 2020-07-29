@@ -4,8 +4,8 @@ const katex = require("rehype-katex");
 module.exports = {
   title: "DODOEX Docs",
   tagline: "Everything about DODO",
-  url: "https://docs.dodoex.io",
-  baseUrl: "/",
+  url: "https://DODOEX.github.io",
+  baseUrl: "/docs/",
   favicon: "img/favicon.png",
   organizationName: "DODOEX", // Usually your GitHub org/user name.
   projectName: "docs", // Usually your repo name.
