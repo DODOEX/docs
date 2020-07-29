@@ -5,10 +5,10 @@ module.exports = {
   title: "DODOEX Docs",
   tagline: "Everything about DODO",
   url: "https://DODOEX.github.io",
-  baseUrl: "/docs/",
+  baseUrl: "/docs",
   favicon: "img/favicon.png",
   organizationName: "DODOEX", // Usually your GitHub org/user name.
-  projectName: "docs", // Usually your repo name.
+  projectName: "DODOEX.github.io", // Usually your repo name.
   stylesheets: [
     {
       href: "https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css",

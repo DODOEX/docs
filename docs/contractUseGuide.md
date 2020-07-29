@@ -4,9 +4,13 @@ title: Use Guide
 sidebar_label: Use Guide
 ---
 
-function specification
-buy/sell/deposit/withdraw
+## For traders
 
-queryBuy/Sell withdrawAll getPenalty
+buy/sell
 
-EthProxy
+## For liquidity providers
+
+/deposit/withdraw
+
+withdrawAll
+getPenalty
