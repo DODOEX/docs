@@ -4,24 +4,24 @@ title: Introduction of DODO
 sidebar_label: Introduction of DODO
 ---
 
-## 什么是 DODO
+## What is DODO
 
-DODO 是新一代的链上流动性解决方案，它使用主观做市商算法(PMM)提供纯链上、合约可交互的流动性。
+DODO is a new generation of on-chain liquidity solutions, which uses the proactive market maker algorithm (PMM) to provide pure on-chain and contract-fillable liquidity.
 
-## DODO 是怎么工作的
+## How does DODO work
 
-DODO 接受 Oracle 价格的指导，将资金聚集在市场价附近以提供充沛的流动性。随着用户交易额度增大，DODO 会动态地调整价格以激励套利者维护资金池资产配置保持不变。
+DODO accepts Oracle's price guidance and gathers funds near the market price to provide sufficient liquidity. As transaction amount increases, DODO will dynamically adjust the price to encourage arbitrageurs to keep the portfolio of the capital pool unchange.
 
-## 我能用 DODO 做什么
+## What can I do with DODO
 
-### 作为交易者
+### As a trader
 
-- 普通交易者可以享受到接近中心化交易所的流动性
-- 套利者可以赚取 DODO 与其它交易所之间的差价
-- 智能合约可以源生地(natively)使用 DODO 流动性以完成清算，拍卖等链上操作
+- Each and every traders enjoy sufficient liquidity similar to that of centralized exchanges
+- Arbitrageurs can make a profit from the price difference between DODO and other exchanges
+- Smart contracts can natively use DODO liquidity to complete on-chain transactions such as liquidation, auctions, etc.
 
-### 作为流动性提供商(lp)
+### As a liquidity provider (LP)
 
-- 向资金池中充值，数量和资产类别均不受限制
-- DODO 每笔交易都会收取手续费，并分享给 lp
-- 建立您自己代币的交易对，甚至只需要充值您自己的代币，就能获得流动性
+- There is no limitation on the deposit quantity and asset types
+- DODO will charge a commission fee for each transaction and eventually distributed it to LPs
+- Create trading pairs of your own tokens. And with even only your own tokens deposited, liquidity can be obtained.

@@ -6,18 +6,20 @@ sidebar_label: Framework
 
 ## Overview
 
-DODOEX 的背后是一整套智能合约。下图展示了这套合约的 framework
+What is behind DODO is a set of smart contracts. The following figure shows the framework of this contract
 
 ![](https://dodoex.github.io/docs/img/dodo_framework.jpeg)
 
 ## Core
 
-每一个交易对都对应一个独立的 DODO Proxy 合约。这一合约是透明代理，只负责存储状态，所有逻辑都指向 DODO implementation. 所有的 DODO Proxy 和 DODO implementation 包含了 DODO 的全部数据与逻辑，是 Core
+Each trading pair relates to an independent DODO Proxy contract, which is a transparent proxy only storing status. And all logic points to the DODO implementation. DODO Proxies and DODO implementations contain all the data and logic of DODO, which is the core part of the contract.
+
+For convenience, we call the transparent proxy `DODO Pair` and the logic implementation `DODO Template`. Users should interact with `DODO Pair` directly.
 
 ## Entrance
 
-DODO 的合约是开源的，我们不反对任何人 fork 合约。但需要注意的是，DODO 的运行高度依赖依赖 Oracle 和参数设置，而一个 fork 后使用不当的 DODO 会给用户带来极大损失。因此我们部署了一个入口合约，在这个合约里注册的 DODO 都是经过严格检查后，团队认为可以交付用户的 DODO 合约。对于用户或开发者来说，认准 DODO Zoo 这个唯一的入口是非常重要的。即使 DODO implementation 升级，DODO Zoo 也不会变。
+DODO is an open source contract, and we do not stand against forking the contract. However, it should be noted that the operation of DODO is highly dependent on oracle and parameter settings, and an improper use of DODO after fork will cause great losses to users. Therefore, we deployed an entry contract. All DODO registered in this contract has been strictly checked, as the team wants to ensure the highest standard of safety to our users. It is very important for users or developers to look for the only entrance to DODO Zoo. Even if the `DODO Template` is upgraded, DODO Zoo will not change.
 
 ## Helper
 
-有很多繁琐的工作可以使用合约打包，使其变得易用且方便理解。例如上图展示的 ETH Proxy，帮助用户转换 ETH 和 WETH 并和 DODO 交互。这样用户就不需要理解 WETH 的工作原理，可以直接在 DODOEX 买卖 ETH。这样的合约还有很多，比如套利，route，我们将其统称为 Helper。我们期待社区可以开发出各种各样的 helper 合约，并愿意提供最大可能的帮助。
+There are a lot of tedious tasks that can be packaged using contracts to make it easy to use and easy to understand. For example, the ETH Proxy shown in the figure above helps users convert ETH and WETH and interact with DODO. In this way, users do not need to understand what is WETH, and can directly buy or sell ETH on DODO. There are many such contracts, such as arbitrage and route, which we collectively call Helper. We expect the community to develop various helper contracts and we are willing to provide the greatest possible help

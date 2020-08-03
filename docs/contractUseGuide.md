@@ -6,7 +6,7 @@ sidebar_label: Use Guide
 
 ## For traders
 
-对 trader 来讲，整个合约只有两个函数需要关心：`buyBaseToken` 和 `sellBaseToken`
+For the trader, there are only two functions in the entire contract to consider: `buyBaseToken` and `sellBaseToken`
 
 ```javascript
 function buyBaseToken(
@@ -16,7 +16,7 @@ function buyBaseToken(
 ) external returns (uint256 payQuote);
 ```
 
-Buy exactly `amount` of base token. The transaction will revert if 需要支付的 quote token 多于`maxPayQuote`. 如果`data`不为空，则触发 flash swap。
+This function buys an exact amount of base token. The transaction will be reverted, if the quote token needed to pay is larger than maxPayQuote. If data is not null，flash swap will be triggered.
 
 The return value `payQuote` is the exactly amount you will pay.
 
@@ -28,11 +28,11 @@ function sellBaseToken(
 ) external returns (uint256 receiveQuote);
 ```
 
-Sell exactly `amount` of base token. The transaction will revert if 将会收到的 quote token 少于`minReceiveQuote`. 如果`data`不为空，则触发 flash swap。
+This function sells an exact amount of base token. The transaction will be reverted, if the to-be-received quote token is smaller than minReceiveQuote. If data is not null，flash swap will be triggered.
 
 The return value `receiveQuote` is the exactly amount you will receive.
 
-DODO also provides view version for these two functions. View functions could be executed without send transactions and help users estimate the trade price before spend gas.
+DODO also provides a view version for these two functions. View functions could be executed without sending transactions and it helps users estimate the trade price before spending gas.
 
 ```javascript
 function querySellBaseToken(
@@ -44,13 +44,13 @@ function queryBuyBaseToken(
 ) external view returns (uint256 payQuote);
 ```
 
-下一节我们将介绍更多关于[flash swap](./flashSwap)的内容
+In the next section we will introduce more details about [flash swap](./flashSwap).
 
 ## For liquidity providers
 
-对于 liquidity provider 来说，最重要的两个功能是 deposit 和 withdraw。我们提供了一组函数来帮助 liquidity providers 灵活管理资产。
+For liquidity providers, the most important functions are deposit and withdrawal. We provide a set of functions to help liquidity providers manage assets flexibly.
 
-PMM 算法最优优势的一点是可以单独管理 base 或 quote 资产，因此下列函数都有两个版本，两个版本功能一致，分别操作 base 和 quote 资产。
+One of the biggest advantages of the PMM algorithm is that it can manage base or quote assets separately. Hence the functions below all have two versions to manage base and quote assets respectively. But those two versions have the same function.
 
 ```javascript
 
@@ -64,10 +64,12 @@ PMM 算法最优优势的一点是可以单独管理 base 或 quote 资产，因
 
 ```
 
-Deposit exactly `amount` of asset into funding pool. Returns the capital amount issued for you.
+This function deposits an exact amount of assets into the capital pool and returns the capital amount issued for you.
 
 :::note
-capital 表示了 liquidity provider 占 funding pool 份额的多少。capital 是 ERC20，可以被自由交易。每个 dodo 都有两种 capital，分别代表了 base token funding pool 和 quote token funding pool 的份额。
+
+Capital represents the liquidity provider's share of the capital pool. Capital is an ERC20 based token and can be freely traded. Each DODO has two kinds of capital, which represent the share of base token and quote token capital pool respectively.
+
 :::
 
 ```javascript
@@ -78,7 +80,7 @@ capital 表示了 liquidity provider 占 funding pool 份额的多少。capital 
 
 ```
 
-根据 liquidity provider 的地址`lp`查询其 funding pool 余额
+Query the pool balance based on the IP address of the liquidity provider. The return value represents for BASE/QUOTE token, not the capital token.
 
 ```javascript
 
@@ -92,7 +94,7 @@ capital 表示了 liquidity provider 占 funding pool 份额的多少。capital 
 
 ```
 
-Try to withdraw `amount` of asset from funding pool. As there may be withdraw fee, the functions return the exact amount of asset received by message sender.
+This function tries to withdraw an amount of assets from the capital pool. As there may be a withdrawal fee, the function returns the exact amount of asset received by the message sender.
 
 ```javascript
 
@@ -102,7 +104,7 @@ Try to withdraw `amount` of asset from funding pool. As there may be withdraw fe
 
 ```
 
-由于资金池规模在动态变化（因为随时可能有交易发生），为了帮助 liquidity provider 完整地取出全部资产，上面两个函数会消耗 message sender 的全部 capital，并将对应的资产 withdraw 出来。最后返回 the exact amount of asset received by message sender.
+Since the size of the capital pool is dynamically changing (because transactions may occur at any time), in order to help the liquidity provider to completely withdraw all assets, the above two functions will consume all the capital of the message sender and withdraw the corresponding assets. Finally, the exact amount of asset received by the message sender is returned.
 
 ```javascript
 
@@ -112,4 +114,19 @@ Try to withdraw `amount` of asset from funding pool. As there may be withdraw fe
 
 ```
 
-在某些情况下，withdraw 资产会收取[fee](./coreConcept#withdraw-fee).上面两个函数提供了查询 withdraw fee 的只读方法。如果提交了 withdraw 数量为`amount` 的请求，那么将会被收取`penalty`数量的费用。最终收到的资产数量将会是`amount-penalty`.
+In some cases, withdrawing assets will be charged a [fee](./coreConcept#withdraw-fee). The above two functions provide a read-only method to query the withdrawal fee. If you submit a request with a `amount` of withdrawal, you will be charged for the amount of `penalty`. The final amount of assets received will be `amount-penalty`.
+
+## For developers
+
+Developers could fetch meta data from DODOZoo.
+
+```javascript
+
+  function getDODO(
+    address baseToken,
+    address quoteToken
+  ) external view returns (address)
+
+```
+
+Given baseToken and quoteToken, there is only one DODO Pair registered in DODOZoo at the same time.

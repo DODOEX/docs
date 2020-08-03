@@ -8,21 +8,24 @@ sidebar_label: Flash Swap
 
 简单来讲，就是允许你赊账！当你在 DODO buy/sell 的时候，你可以先获得要购买的 token，do anything you want with 这笔钱。之后再支付货款。
 
-## How flash swap works
+Simply put, you are allowed to pay on credit! When you buy or sell on DODO, you can first get the token you want to buy, do anything you want with the token and then pay for it later.
+
+## How does flash swap work
 
 ![](https://dodoex.github.io/docs/img/dodo_flash_swap.jpeg)
-上图展示了一笔 flash swap 所包含的四个步骤
 
-1.  调用 DODO smart contract 的`buyBaseToken`
-2.  DODO 会将 Base token 先转给 message sender
-3.  如果`buyBaseToken`的参数`data`不为空，DODO smart contract 会调用 message sender 的`dodoCall`方法
-4.  待`dodoCall`执行完后，DODO smart contract 会从 message sender 收取这笔交易所需的 quote token
+The picture above shows the four steps to make flash swap
+
+1.  Call the buyBaseToken of the DODO smart contract
+2.  DODO will transfer the Base token to the message sender first
+3.  If the parameter Data of buyBaseToken is not null, the DODO smart contract will call the dodoCall method of the message sender
+4.  After the dodoCall is executed, the DODO smart contract will retrieve the quote token required for this transaction from the message sender
 
 :::note
-`sellBaseToken`同理也可以执行 flash swap，这里不再赘述。
+The sellBaseToken can also perform flash swap in the same way.
 :::
 
-flash swap 要求 message sender 是符合下面 interface 的合约
+Flash swap requires the message sender to be a contract that follows below interface.
 
 ```javascript
 interface IDODOCallee {
@@ -37,9 +40,9 @@ interface IDODOCallee {
 
 ## What can flash swap do
 
-Flash swap 可以大大提高市场有效性。
+Flash swap can significantly improve market effectiveness.
 
-市场平价是由套利者维护的，flash swap 可以完全免除套利者的资金需求，大大降低套利门槛，进而促进了市场有效性。这里我们将给出 swap flash 的使用案例，一个完全 trustless 且 risk free 的套利合约。
+Market parity is maintained by arbitrageurs. Flash swap can completely eliminate the arbitrageur’s capital requirements, greatly reduce the arbitrage threshold, and promote market effectiveness. Here we will demonstrate a completely trustless and risk free arbitrage contract as a use case of swap flash.
 
 [source code](https://github.com/radar-bear/dodo-smart-contract/blob/master/contracts/helper/UniswapArbitrageur.sol)
 
@@ -58,6 +61,17 @@ Flash swap 可以大大提高市场有效性。
 7.  UniswapV2 transfers 200 USDC to Arbitrageur Contract
 8.  DODO call transferFrom and retrieve 150 USDC from Arbitrageur Contract
 9.  Arbitrageur Contract transfers the remaining 50 USDC to User
+
+An arbitrage consists of the following 9 steps:
+User calls executeBuyArbitrage on Arbitrageur Contract
+Arbitrageur Contract calls buyBaseToken on DODO and triggers flash swap
+DODO transfers 1 WETH to Arbitrageur Contract
+DODO calls dodoCall on Arbitrageur Contract
+Arbitrageur Contract transfers 1 WETH received from DODO to UniswapV2
+Arbitrageur Contract call swap on UniswapV2
+UniswapV2 transfers 200 USDC to Arbitrageur Contract
+DODO call transferFrom and retrieve 150 USDC from Arbitrageur Contract
+Arbitrageur Contract transfers the remaining 50 USDC to User
 
 总结起来就是
 

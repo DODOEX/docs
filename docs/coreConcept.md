@@ -6,12 +6,12 @@ sidebar_label: Core Concept
 
 ## Base&Quote
 
-Base 和 Quote 接下来会反复提及的两个概念。有两个很便捷的区分方法：
+Base and Quote are two concepts that will be mentioned frequently. Two easy ways to distinguish between them:
 
-- 在交易中，我们经常提及价格，指的是一个 BASE 需要用多少 QUOTE 来交换。
-- 在交易对中排在前面的是 BASE，后面的是 QUOT
+- In transactions, we often mention price, which refers to how much QUOTE is needed to in exchange for a BASE.
+- In the trading pair, BASE is always before the hyphen while QUOTE is after.
 
-例如 ETH-USDC 交易对，ETH 是 BASE，USDC 是 QUOTE
+For example, in the ETH-USDC trading pair, ETH is BASE and USDC is QUOTE
 
 ## PMM Working Status
 
@@ -50,32 +50,32 @@ The parameter $R$ plays a role in facilitating regression in this process. The m
 
 ## Liquidity provider fee
 
-A small amount of fee will be charged from every trader. This fee is called liquidity provider fee and will be distributed to every liquidity provider based on his proportion of funding pool.
+A small amount of fee will be charged from each and every trade. This fee is called liquidity provider fee and will be distributed to every liquidity provider based on his/her proportional stake in the capital pool.
 
-More specifically, liquidity provider fee is collected from what trader received and distributed to who offers this kind of asset to funding pool.
+More specifically, liquidity provider fee is collected from what trader received and distributed to who offers this kind of asset to the capital pool.
 
-For example, when traders buy base token, liquidity provider fee will be chcarged as base token. And distributed among liquidity providers who provides base token to funding pool.
+For example, when traders buy base tokens, liquidity provider fees will be charged in the form of base tokens, and distributed to liquidity providers who have provided base token to the capital pool.
 
-When traders sell base token, liquidity provider fee will be chcarged as quote token. And distributed among liquidity providers who provides quote token to funding pool.
+When traders sell base tokens, liquidity provider fees will be charged in the form of quote tokens and distributed to liquidity providers who have provided quote tokens.
 
 ## Maintainer fee
 
-Maintainer fee is also collected from what trader received. This amount of fee will be transferd to maintainer directly. The maintainer may be the developer team, foundation or staking DAO.
+Maintainer fee is also collected from what the trader received. And it will be transferred to the maintainer directly. The maintainer may be a developer team, a foundation or a staking DAO.
 
-At current, maintainer fee is 0.
+Currently, the maintenance fee is 0.
 
 ## Withdraw Fee
 
-As withdraw will change PMM price curve and harm the interests of other liquidity providers. DODO charges withdraw fee from liquidity providers who withdraw their assets and share it to all remaining liquidity providers.
+A withdrawal will change the PMM price curve and may harm the interests of other liquidity providers. DODO charges withdrawal fee from liquidity providers who withdraw their assets and share it to all remaining liquidity providers.
 
 :::important
 
-Normally, withdraw fee is 0 or a super small partial of what you withdraw(<0.01%). Withdraw fee will increase significantly only when the funding pool suffer from a serious shortage of base(quote) token and the liquidity provider want to withdraw the precious remaining base(quote) token.
+Normally, the withdrawal fee is 0 or a relatively small portion of what you withdraw(<0.01%). Withdrawal fee will increase significantly only when the capital pool suffers from a serious shortage of base(quote) token and liquidity providers intend to withdraw the remaining base(quote) token, which is much needed.
 
-It is not so much punishment to who withdraws assets as it is protection to who left.
+Withdraw fee is a protection to liquidity providers who left.
 
 :::
 
 ## Deposit Reward
 
-Reward happens when the funding pool faces a shortage of base(quote) token and you happen to replenish base(quote) token.
+Rewards will be given to those who make a deposit when the capital pool faces a shortage of base(quote) token

@@ -32,7 +32,11 @@ module.exports = {
           label: "Docs",
           position: "left",
         },
-        { to: "blog", label: "Blog", position: "left" },
+        {
+          href: "https://github.com/facebook/docusaurus",
+          label: "Swap",
+          position: "left",
+        },
         {
           href: "https://github.com/facebook/docusaurus",
           label: "GitHub",
@@ -43,6 +47,19 @@ module.exports = {
     footer: {
       style: "dark",
       links: [
+        {
+          title: "Developer",
+          items: [
+            {
+              label: "GitHub",
+              href: "https://github.com/facebook/docusaurus",
+            },
+            {
+              label: "Deployed Info",
+              href: "https://github.com/facebook/docusaurus",
+            },
+          ],
+        },
         {
           title: "Community",
           items: [
@@ -60,19 +77,6 @@ module.exports = {
             },
           ],
         },
-        {
-          title: "Developer",
-          items: [
-            {
-              label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
-            },
-            {
-              label: "Deployed Info",
-              href: "https://github.com/facebook/docusaurus",
-            },
-          ],
-        },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} DODOEX, Inc. Built with Docusaurus.`,
     },
@@ -83,19 +87,13 @@ module.exports = {
       {
         docs: {
           // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: "doc1",
+          homePageId: "briefIntro",
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           editUrl:
             "https://github.com/facebook/docusaurus/edit/master/website/",
           remarkPlugins: [math],
           rehypePlugins: [katex],
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/blog/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
