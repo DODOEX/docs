@@ -6,8 +6,6 @@ sidebar_label: Flash Swap
 
 ## What is flash swap
 
-简单来讲，就是允许你赊账！当你在 DODO buy/sell 的时候，你可以先获得要购买的 token，do anything you want with 这笔钱。之后再支付货款。
-
 Simply put, you are allowed to pay on credit! When you buy or sell on DODO, you can first get the token you want to buy, do anything you want with the token and then pay for it later.
 
 ## How does flash swap work
@@ -16,13 +14,13 @@ Simply put, you are allowed to pay on credit! When you buy or sell on DODO, you 
 
 The picture above shows the four steps to make flash swap
 
-1.  Call the buyBaseToken of the DODO smart contract
-2.  DODO will transfer the Base token to the message sender first
-3.  If the parameter Data of buyBaseToken is not null, the DODO smart contract will call the dodoCall method of the message sender
-4.  After the dodoCall is executed, the DODO smart contract will retrieve the quote token required for this transaction from the message sender
+1.  Call the `buyBaseToken` of the `DODO Pair` smart contract
+2.  `DODO Pair` will transfer the Base token to the message sender first
+3.  If the parameter `data` of buyBaseToken is not null, the `DODO Pair` smart contract will call the `dodoCall` method of the message sender
+4.  After the `dodoCall` is executed, the `DODO Pair` smart contract will retrieve the quote token required for this transaction from the message sender
 
 :::note
-The sellBaseToken can also perform flash swap in the same way.
+The `sellBaseToken` can also perform flash swap in the same way.
 :::
 
 Flash swap requires the message sender to be a contract that follows below interface.
@@ -44,51 +42,40 @@ Flash swap can significantly improve market effectiveness.
 
 Market parity is maintained by arbitrageurs. Flash swap can completely eliminate the arbitrageur’s capital requirements, greatly reduce the arbitrage threshold, and promote market effectiveness. Here we will demonstrate a completely trustless and risk free arbitrage contract as a use case of swap flash.
 
-[source code](https://github.com/radar-bear/dodo-smart-contract/blob/master/contracts/helper/UniswapArbitrageur.sol)
+[source code](https://github.com/DODOEX/dodo-smart-contract/blob/master/contracts/helper/UniswapArbitrageur.sol)
 
 [deployed address]()
 
 ![](https://dodoex.github.io/docs/img/dodo_one_click_arbitrage.jpeg)
 
-一笔套利由以下 9 个步骤组成：
-
-1.  User calls executeBuyArbitrage on Arbitrageur Contract
-2.  Arbitrageur Contract calls buyBaseToken on DODO and triggers flash swap
-3.  DODO transfers 1 WETH to Arbitrageur Contract
-4.  DODO calls dodoCall on Arbitrageur Contract
-5.  Arbitrageur Contract transfers 1 WETH received from DODO to UniswapV2
-6.  Arbitrageur Contract call swap on UniswapV2
-7.  UniswapV2 transfers 200 USDC to Arbitrageur Contract
-8.  DODO call transferFrom and retrieve 150 USDC from Arbitrageur Contract
-9.  Arbitrageur Contract transfers the remaining 50 USDC to User
-
 An arbitrage consists of the following 9 steps:
-User calls executeBuyArbitrage on Arbitrageur Contract
-Arbitrageur Contract calls buyBaseToken on DODO and triggers flash swap
-DODO transfers 1 WETH to Arbitrageur Contract
-DODO calls dodoCall on Arbitrageur Contract
-Arbitrageur Contract transfers 1 WETH received from DODO to UniswapV2
-Arbitrageur Contract call swap on UniswapV2
-UniswapV2 transfers 200 USDC to Arbitrageur Contract
-DODO call transferFrom and retrieve 150 USDC from Arbitrageur Contract
-Arbitrageur Contract transfers the remaining 50 USDC to User
 
-总结起来就是
+1.  User calls `executeBuyArbitrage` on `UniswapArbitrageur`
+2.  `UniswapArbitrageur` calls `buyBaseToken` on `DODO Pair` and triggers flash swap
+3.  `DODO Pair` transfers 1 WETH to `UniswapArbitrageur`
+4.  `DODO Pair` calls `dodoCall` on `UniswapArbitrageur`
+5.  `UniswapArbitrageur` transfers 1 WETH received from `DODO Pair` to `UniswapV2`
+6.  `UniswapArbitrageur` call `swap` on `UniswapV2`
+7.  `UniswapV2` transfers 200 USDC to `UniswapArbitrageur`
+8.  `DODO Pair` call `transferFrom` and retrieve 150 USDC from `UniswapArbitrageur`
+9.  `UniswapArbitrageur` transfers the remaining 50 USDC to User
 
-- step 2，3，4，8 构成了 flash swap
-- step 5，6，7 构成了 uniswap
-- 在用户看来只发生了两件事，发送 transaction 和盈利
+In summary
 
-这个合约的牛逼之处在于，用户不需要任何资本，也不需要知道 dodo 和 uniswap 的存在。只要 call function。如果执行成功就一定会挣钱，如果执行失败也只损失 gas。
+- Flash swap is made up of step 2, 3, 4, and 8
+- Uniswap is made up of step 5, 6, and 7
+- An user would only notice the process of sending transaction and making profits!
 
-当然为了避免无意义的 gas 消耗，我们建议用户预先使用[eth_call](https://infura.io/docs/ethereum/json-rpc/eth-call)执行`executeBuyArbitrage`或`executeSellArbitrage`估计套利收益。如果有套利机会，则这两个函数分别会返回执行成功后的 quote token 和 base token 收益。
+The shining point of this `UniswapArbitrageur` contract is that users do not need any capital, nor do they need to know DODO and Uniswap. Just simply call a function and, if the execution succeeds, make a profit. If the execution fails, only gas will be lost.
 
-## 关于 flash swap 的一些想法
+In order to avoid unnecessary gas consumption, we recommend that users use `eth_call` to execute `executeBuyArbitrage` or `executeSellArbitrage` in advance to estimate arbitrage returns. If there is an arbitrage opportunity, these two functions will return profit of quote token and base token after successful execution.
 
-一旦你深入理解了 flash swap，就会发现 defi 世界相较于中心化世界的优越性。智能合约的可组合性使得 defi 的资金利用率提高到了前所未有的高度，又因为 trustless，defi 世界的信贷成本低到不可思议。一旦这种金融制度可以和现实世界结合，对人类生产力的促进是难以想象的。
+## Some thoughts on flash swap
 
-我给很多人讲过智能合约的迷人之处，却少有人能体会。希望 flash swap 可以成为一个普通人也能理解的有趣案例。
+Once you have a deep understanding of flash swap, you will find the superiority of the Defi world over the centralized world. The combinability of smart contracts has increased the fund utilization of Defi to an unprecedented level. Due to the feature of trustlessness, the cost of credit in Defi is incredibly low. Once this financial system can be integrated into the real world, the improvement of productivity for human kind is unbelievable.
+
+I have discussed the fascinating features of smart contracts with many people, but few people can really feel it. I hope flash swap can become an interesting case that ordinary people can understand and accept.
 
 :::note
-Flash swap is inspired by [DyDx](https://dydx.exchange/) and [Uniswap](https://uniswap.org/docs/v2/core-concepts/flash-swaps). We really appriciate what they have done before!
+Flash swap is inspired by [DyDx](https://dydx.exchange/) and [Uniswap](https://uniswap.org/docs/v2/core-concepts/flash-swaps). We really appriciate what they have done before 👍
 :::

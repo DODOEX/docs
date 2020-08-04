@@ -20,7 +20,7 @@ module.exports = {
   ],
   themeConfig: {
     navbar: {
-      title: "DODOEX Docs",
+      title: "DODO Docs",
       logo: {
         alt: "DODO",
         src: "img/logo.svg",
@@ -32,52 +32,52 @@ module.exports = {
           label: "Docs",
           position: "left",
         },
+        // {
+        //   href: "https://github.com/facebook/docusaurus",
+        //   label: "Swap",
+        //   position: "left",
+        // },
         {
-          href: "https://github.com/facebook/docusaurus",
-          label: "Swap",
-          position: "left",
-        },
-        {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://github.com/DODOEX",
           label: "GitHub",
-          position: "right",
+          position: "left",
         },
       ],
     },
     footer: {
       style: "dark",
-      links: [
-        {
-          title: "Developer",
-          items: [
-            {
-              label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
-            },
-            {
-              label: "Deployed Info",
-              href: "https://github.com/facebook/docusaurus",
-            },
-          ],
-        },
-        {
-          title: "Community",
-          items: [
-            {
-              label: "Medium",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
-            },
-            {
-              label: "Telegram",
-              href: "https://discordapp.com/invite/docusaurus",
-            },
-            {
-              label: "Twitter",
-              href: "https://twitter.com/docusaurus",
-            },
-          ],
-        },
-      ],
+      // links: [
+      //   {
+      //     title: "Developer",
+      //     items: [
+      //       {
+      //         label: "GitHub",
+      //         href: "https://github.com/facebook/docusaurus",
+      //       },
+      //       {
+      //         label: "Deployed Info",
+      //         href: "https://github.com/facebook/docusaurus",
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     title: "Community",
+      //     items: [
+      //       {
+      //         label: "Medium",
+      //         href: "https://stackoverflow.com/questions/tagged/docusaurus",
+      //       },
+      //       {
+      //         label: "Telegram",
+      //         href: "https://discordapp.com/invite/docusaurus",
+      //       },
+      //       {
+      //         label: "Twitter",
+      //         href: "https://twitter.com/docusaurus",
+      //       },
+      //     ],
+      //   },
+      // ],
       copyright: `Copyright © ${new Date().getFullYear()} DODOEX, Inc. Built with Docusaurus.`,
     },
   },
@@ -90,8 +90,7 @@ module.exports = {
           homePageId: "briefIntro",
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/",
+          editUrl: "https://github.com/DODOEX/docs/edit/master/",
           remarkPlugins: [math],
           rehypePlugins: [katex],
         },

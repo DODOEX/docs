@@ -16,7 +16,7 @@ function buyBaseToken(
 ) external returns (uint256 payQuote);
 ```
 
-This function buys an exact amount of base token. The transaction will be reverted, if the quote token needed to pay is larger than maxPayQuote. If data is not null，flash swap will be triggered.
+This function buys an exact `amount` of base token. The transaction will be reverted, if the quote token needed to pay is larger than `maxPayQuote`. If `data` is not null，flash swap will be triggered.
 
 The return value `payQuote` is the exactly amount you will pay.
 
@@ -28,7 +28,7 @@ function sellBaseToken(
 ) external returns (uint256 receiveQuote);
 ```
 
-This function sells an exact amount of base token. The transaction will be reverted, if the to-be-received quote token is smaller than minReceiveQuote. If data is not null，flash swap will be triggered.
+This function sells an exact `amount` of base token. The transaction will be reverted, if the to-be-received quote token is smaller than `minReceiveQuote`. If `data` is not null，flash swap will be triggered.
 
 The return value `receiveQuote` is the exactly amount you will receive.
 
@@ -50,7 +50,7 @@ In the next section we will introduce more details about [flash swap](./flashSwa
 
 For liquidity providers, the most important functions are deposit and withdrawal. We provide a set of functions to help liquidity providers manage assets flexibly.
 
-One of the biggest advantages of the PMM algorithm is that it can manage base or quote assets separately. Hence the functions below all have two versions to manage base and quote assets respectively. But those two versions have the same function.
+One of the biggest advantages of the PMM algorithm is that it can manage base or quote assets separately. Hence the functions below all have two versions to manage base and quote assets respectively. And those two versions have the same input and output.
 
 ```javascript
 
@@ -64,11 +64,11 @@ One of the biggest advantages of the PMM algorithm is that it can manage base or
 
 ```
 
-This function deposits an exact amount of assets into the capital pool and returns the capital amount issued for you.
+This function deposits an exact `amount` of assets into the capital pool and returns the `capital` amount issued for you.
 
 :::note
 
-Capital represents the liquidity provider's share of the capital pool. Capital is an ERC20 based token and can be freely traded. Each DODO has two kinds of capital, which represent the share of base token and quote token capital pool respectively.
+Capital represents the liquidity provider's share of the capital pool. Capital is an ERC20 token and can be freely traded. Each DODO has two kinds of capital, which represent the share of base token and quote token capital pool respectively.
 
 :::
 
@@ -80,7 +80,7 @@ Capital represents the liquidity provider's share of the capital pool. Capital i
 
 ```
 
-Query the pool balance based on the IP address of the liquidity provider. The return value represents for BASE/QUOTE token, not the capital token.
+Query the pool balance based on the address of the liquidity provider. The return value `lpBalance` represents for actual BASE or QUOTE token, not the capital token.
 
 ```javascript
 
@@ -94,7 +94,7 @@ Query the pool balance based on the IP address of the liquidity provider. The re
 
 ```
 
-This function tries to withdraw an amount of assets from the capital pool. As there may be a withdrawal fee, the function returns the exact amount of asset received by the message sender.
+This function tries to withdraw an `amount` of assets from the capital pool. As there may be a withdrawal fee, the function returns the exact amount of asset received by the message sender.
 
 ```javascript
 
@@ -104,7 +104,7 @@ This function tries to withdraw an amount of assets from the capital pool. As th
 
 ```
 
-Since the size of the capital pool is dynamically changing (because transactions may occur at any time), in order to help the liquidity provider to completely withdraw all assets, the above two functions will consume all the capital of the message sender and withdraw the corresponding assets. Finally, the exact amount of asset received by the message sender is returned.
+Since the size of the capital pool is dynamically changing (transactions may occur at any time), in order to help the liquidity provider to completely withdraw all assets, the above two functions will consume all the capital of the message sender and withdraw the corresponding assets. Finally, the exact amount of asset received by the message sender is returned.
 
 ```javascript
 
@@ -114,7 +114,11 @@ Since the size of the capital pool is dynamically changing (because transactions
 
 ```
 
-In some cases, withdrawing assets will be charged a [fee](./coreConcept#withdraw-fee). The above two functions provide a read-only method to query the withdrawal fee. If you submit a request with a `amount` of withdrawal, you will be charged for the amount of `penalty`. The final amount of assets received will be `amount-penalty`.
+In some cases, withdrawing assets will be charged a [fee](./coreConcept#withdraw-fee). The above two functions provide a view function to query the withdrawal fee. If you submit a request with an `amount` of withdrawal, you will be charged for the amount of `penalty`.
+
+:::note
+The final amount of withdrawal assets received will be **amount-penalty**.
+:::
 
 ## For developers
 
@@ -129,4 +133,4 @@ Developers could fetch meta data from DODOZoo.
 
 ```
 
-Given baseToken and quoteToken, there is only one DODO Pair registered in DODOZoo at the same time.
+Given `baseToken` and `quoteToken`, there is only one `DODO Pair` registered in `DODO Zoo` at the same time.
