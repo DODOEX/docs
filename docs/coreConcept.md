@@ -83,3 +83,5 @@ Withdraw fee is a protection to liquidity providers who stand with us.
 ## Deposit Reward
 
 Rewards will be given to those who make a deposit of base(quote) token when the capital pool faces a shortage of base(quote) token
+
+In the [next section](./math) we will introduce more math details related with these core concepts.

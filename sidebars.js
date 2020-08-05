@@ -1,7 +1,7 @@
 module.exports = {
   someSidebar: {
     Start: ["briefIntro"],
-    Protocol: ["features", "coreConcept"],
+    Protocol: ["features", "coreConcept", "math"],
     Contract: ["framework", "contractUseGuide", "flashSwap", "deployedInfo"],
     "Use Case": ["initialDODOOffering"],
     "Advanced Topics": ["authority", "decentralization", "backtest"],
