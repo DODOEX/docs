@@ -2,7 +2,7 @@ const math = require("remark-math");
 const katex = require("rehype-katex");
 
 module.exports = {
-  title: "DODOEX Docs",
+  title: "DODO Docs",
   tagline: "Let's DODO it!",
   url: "https://DODOEX.github.io/docs",
   baseUrl: "/docs/",

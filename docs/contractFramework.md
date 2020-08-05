@@ -6,7 +6,7 @@ sidebar_label: Framework
 
 ## Overview
 
-What is behind DODO is a set of smart contracts. The following figure shows the framework of these contracts.
+What is behind DODO is a set of smart contracts. The following figure shows the framework of [these contracts](https://github.com/DODOEX/dodo-smart-contract).
 
 ![](https://dodoex.github.io/docs/img/dodo_framework.jpeg)
 
