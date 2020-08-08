@@ -36,6 +36,8 @@ $$if \ Q<Q_0, \ R=1/(1-k+(\frac{Q_0}{Q})^2k)$$
 
 $$else \ R=1$$
 
+Where $$i$$ is the market price provided by oracle and $$k$$ is a pramater belongs to (0,1).
+
 According to the segment, PMM has three scenarios: equilibrium, shortage of Base, and shortage of Quote.
 
 ![](https://dodoex.github.io/docs/img/dodo_mode_switch.jpeg)
@@ -85,3 +87,13 @@ Withdraw fee is a protection to liquidity providers who stand with us.
 Rewards will be given to those who make a deposit of base(quote) token when the capital pool faces a shortage of base(quote) token
 
 In the [next section](./math) we will introduce more math details related with these core concepts.
+
+## Flexible
+
+After such a long journey, let us introduce the "liquidity parameter" $$k$$.
+
+$$k$$ makes DODO flexible enough to handle different market situations. When $$k$$ is $$0$$, DODO acts like a stupid bird that simply sells or buys with market price. As $$k$$ increases, DODO’s price curve becomes more “curved” but, consequently, the liquidity is jeopardized because more assets are placed far away from market price. And when $$k$$ increases to $$1$$, the curve “grows” as fast as a standard AMM curve (uniswap).
+
+Normally, $$k$$ is recommended to be a relatively small value, such as $$0.1$$, which could provide 10x better liquidity than standard AMM algorithm.
+
+![](https://dodoex.github.io/docs/img/dodo_k.jpeg)

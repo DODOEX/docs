@@ -45,6 +45,8 @@ Because $Q_2>=0$, we discard a negative root, and so:
 
 $$Q_2=\frac{-b+\sqrt{b^2-4ac}}{2a}$$
 
+It can be strictly proved that:
+
 - When $\Delta B>0$, $Q_2>Q_1$; trader buy base token, and should pay $Q_2-Q_1$
 - When $\Delta B<0$, $Q_2<Q_1$; trader sell base token, and will receive $Q_1-Q_2$
 - When $\Delta B=0$, $Q_2=Q_1$.
