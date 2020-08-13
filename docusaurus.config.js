@@ -24,6 +24,7 @@ module.exports = {
       logo: {
         alt: "DODO",
         src: "img/logo.svg",
+        href: 'https://DODOEX.github.io/docs/',
       },
       links: [
         {
