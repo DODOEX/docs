@@ -1,7 +1,7 @@
 ---
 id: initialDODOOffering
 title: Initial DODO Offering
-sidebar_label: Initital DODO Offering
+sidebar_label: Initial DODO Offering
 ---
 
 Initial DODO Offering (IDO) is a brand new asset issuing approach.

@@ -19,7 +19,9 @@ As mentioned above, PMM provides liquidity in the price range of zero to infinit
 
 ## Single Risk Exposure
 
-The PMM price curve consists of two parts, bidding and asking. The asking liquidity is only determined by the amount of base token in the pool, while the bidding liquidity by the amount of quote tokens.
+The PMM price curve consists of two parts, bidding and asking. These two parts may have different depth(liquidity). The asking liquidity is only determined by the amount of base token in the pool, while the bidding liquidity by the amount of quote tokens.
+
+![](https://dodoex.github.io/docs/img/dodo_segment.jpeg)
 
 It allows the base and quote pools to have different sizes, and therefore allows liquidity providers deposit any amount of quote or base token. In brief, you can just deposit what you hold.
 

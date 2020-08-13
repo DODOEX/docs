@@ -4,10 +4,6 @@ title: Backtest Report
 sidebar_label: Backtest
 ---
 
-:::warning
-The backtest report is written at 2020/7/19
-:::
-
 ## Background
 
 PMM stands for Proactive Market Maker, which is essentially a quantitative trading strategy used by liquidity providers (LP). To help LP understand ROI of PMM, we’ve performed a backtest to demonstrate the performance of PMM in different market environments.
@@ -41,6 +37,10 @@ Assumptions:
 - Fee rate 0.3%
 
 Those assumptions are not set arbitrarily. Under this condition, PMM could provide the same liquidity as Uniswap, and hence it's reasonable to assume PMM has the same trading volume as Uniswap. However, because of aggregators, it's more realistic to assume PMM has half of the trading volume of Uniswap. According to [history data](https://uniswap.info/pair/0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc), PMM daily turnover rate is about 100% and ROI is 0.3%.
+
+:::note
+The backtest report is written at 2020/7/19. We use uniswap's historical data from 2020/6/1 to 2020/7/18.
+:::
 
 ### Loss evaluation
 
