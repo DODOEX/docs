@@ -1,5 +1,5 @@
 ---
-id: features
+id: advantages
 title: The DODO Advantage
 sidebar_label: The DODO Advantage
 ---
