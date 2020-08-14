@@ -1,20 +1,20 @@
 ---
 id: briefIntro
-title: Introduction of DODO
-sidebar_label: Introduction of DODO
+title: Introduction to DODO
+sidebar_label: Introduction to DODO
 ---
 
 ## What is DODO
 
-DODO is a new generation of on-chain liquidity solutions, which uses the proactive market maker algorithm (PMM) to provide pure on-chain and contract-fillable liquidity.
+DODO is a next-generation on-chain liquidity provider, which leverages the Proactive Market Maker algorithm (PMM) to provide pure on-chain and contract-fillable liquidity for everyone.
 
 ## How does DODO work
 
-DODO accepts liquidity providers (LP) assets. It gathers funds near the market price to provide sufficient liquidity. LP may face counterparty risk, so DODO will dynamically adjust the price to encourage arbitrageurs step in to limit the counterparty risk and keep the portfolio of the capital pool unchange.
+DODO accepts liquidity providers’ assets. It gathers funds near market prices to provide sufficient liquidity. In order to minimize counterparty risks for LPs, DODO dynamically adjusts market prices to encourage arbitrageurs to step in and stabilize LPs' portfolios.
 
 ## Why DODO
 
-- Less slippage
+- Low slippage
 - Single risk exposure
 - No impermanent loss
 
@@ -22,12 +22,13 @@ DODO accepts liquidity providers (LP) assets. It gathers funds near the market p
 
 ### As a trader
 
-- Each and every traders enjoy sufficient liquidity similar to that of centralized exchanges
-- Arbitrageurs can make a profit from the price difference between DODO and other exchanges
-- Smart contracts can natively use DODO liquidity to complete on-chain transactions such as liquidations, auctions, etc
+- Each and every trader enjoys sufficient liquidity similar to that of centralized exchanges
+- Arbitrageurs can profit from price discrepancies between DODO and other exchanges
+- Smart contracts can natively use DODO liquidity to complete on-chain transactions, such as liquidation and auctions
 
 ### As a LP
 
-- There is no limitation on the deposit quantity and asset types
-- DODO will charge a commission fee for each transaction and distributed it to LPs
-- Create trading pairs of your own tokens. And with even only your own tokens deposited, liquidity can be obtained
+- There are no minimal deposit requirements and restrictions on asset types 
+- DDODO charges a fee for each transaction and eventually distributes it to LPs as rewards
+- LPs can create trading pairs with their own tokens
+- LPs can obtain liquidity by depositing their tokens they already own, without taking on price risk
