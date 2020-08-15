@@ -24,7 +24,7 @@ module.exports = {
       logo: {
         alt: "DODO",
         src: "img/logo.svg",
-        href: 'https://DODOEX.github.io/docs/',
+        href: "https://DODOEX.github.io/docs/",
       },
       links: [
         {
@@ -33,11 +33,11 @@ module.exports = {
           label: "Docs",
           position: "left",
         },
-        // {
-        //   href: "https://github.com/facebook/docusaurus",
-        //   label: "Swap",
-        //   position: "left",
-        // },
+        {
+          href: "https://app.dodoex.io",
+          label: "Exchange",
+          position: "left",
+        },
         {
           href: "https://github.com/DODOEX",
           label: "GitHub",
