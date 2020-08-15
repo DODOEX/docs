@@ -6,7 +6,7 @@ sidebar_label: The DODO Advantage
 
 ## Overview
 
-DODO is powered by a ground-breaking algorithm called Proactive Market Maker (PMM). PMM leverages price oracles to retrieve accurate market prices of assets as input. It then aims to provide sufficient liquidity near the market price for every asset. The result is that liquidity decreases rapidly when far away from the market price. The following graphs compare the price curves of DODO (PMM) and Uniswap (AMM) and illustrate how PMM outperforms AMM.
+DODO is powered by a ground-breaking algorithm called **Proactive Market Maker (PMM)**. PMM leverages price oracles to retrieve accurate market prices of assets as input. It then aims to provide sufficient liquidity near the market price for every asset. The result is that liquidity decreases rapidly when far away from the market price. The following graphs compare the price curves of DODO (PMM) and Uniswap (AMM).
 
 With everything else fixed, it is clear that the PMM curve is significantly flatter than the AMM curve near the market price, indicating higher fund utilization and lower slippage. Prices provided by PMM are more favorable than AMM.
 
@@ -16,9 +16,11 @@ As the market price changes, AMM passively relies on arbitrage trading to change
 
 ![](https://dodoex.github.io/docs/img/dodo_curve_move.jpeg)
 
+PMM outperforms AMM solutions in several important aspects.
+
 ## High Fund Utilization
 
-As mentioned above, PMM provides liquidity in the price range of zero to infinity, just like AMM. But the price curve is very smooth in the area near the oracle price, while the curve is very sharp when far away from the oracle price. Put it in another way, most of the funds are gathered near the market price. Active trading near the market price allows these funds to be traded frequently, and therefore the funding utilization rate is quite high.
+As seen in the above graphs, PMM, like AMMs, provides liquidity in the price range of zero to positive infinity, but the PMM price curve is significantly flatter in the area near the oracle (market) price. That is, most of the funds are gathered near the market price, which allows for more active, frequent trading, increasing fund utilization.
 
 ## Single Risk Exposure
 
