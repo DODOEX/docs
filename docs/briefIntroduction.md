@@ -29,6 +29,6 @@ DODO accepts liquidity providers’ assets. It gathers funds near market prices 
 ### As a LP
 
 - There are no minimal deposit requirements and restrictions on asset types 
-- DDODO charges a fee for each transaction and eventually distributes it to LPs as rewards
+- DODO charges a fee for each transaction and eventually distributes it to LPs as rewards
 - LPs can create trading pairs with their own tokens
 - LPs can obtain liquidity by depositing their tokens they already own, without taking on price risk
