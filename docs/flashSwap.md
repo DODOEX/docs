@@ -4,26 +4,26 @@ title: Flash Swap
 sidebar_label: Flash Swap
 ---
 
-## What is flash swap
+## What is Flash Swap
 
-Simply put, you are allowed to pay on credit! When you buy or sell on DODO, you can first get the token you want to buy, do anything you want with the token and then pay for it later.
+Simply put, you are allowed to pay on credit on DODO! When you buy tokens DODO, you can first get the tokens you want to buy, do anything you want with the tokens, and pay for them later.
 
-## How does flash swap work
+## How Does Flash Swap Work
 
 ![](https://dodoex.github.io/docs/img/dodo_flash_swap.jpeg)
 
-The picture above shows the four steps to make flash swap
+The figure above illustrates the four steps in a flash swap happening under the hood
 
-1.  Call the `buyBaseToken` of the `DODO Pair` smart contract
-2.  `DODO Pair` will transfer the Base token to the message sender first
-3.  If the parameter `data` of buyBaseToken is not null, the `DODO Pair` smart contract will call the `dodoCall` method of the message sender
-4.  After the `dodoCall` is executed, the `DODO Pair` smart contract will retrieve the quote token required for this transaction from the message sender
+1.  Call the `buyBaseToken` function from the `DODO Pair` smart contract
+2.  `DODO Pair` transfers the base tokens to the message sender
+3.  If the parameter `data` of the `buyBaseToken` function call is not null, the `DODO Pair` smart contract will call the `dodoCall` method of the message sender
+4.  After the `dodoCall` is executed, the `DODO Pair` smart contract will retrieve the quote tokens required for this transaction from the message sender
 
 :::note
-The `sellBaseToken` can also perform flash swap in the same way.
+The `sellBaseToken` function can also perform flash swap in the same way.
 :::
 
-Flash swap requires the message sender to be a contract that follows below interface.
+Flash swap requires the message sender to be a contract that implements the `IDODOCallee` interface.
 
 ```javascript
 interface IDODOCallee {
@@ -36,46 +36,42 @@ interface IDODOCallee {
 }
 ```
 
-## What can flash swap do
+## What Can Flash Swap Do
 
-Flash swap can significantly improve market effectiveness.
+Flash swap can significantly improve market efficiency. Market parity is maintained by arbitrageurs, and flash swap completely removes capital requirements for them, essentially eliminating the barrier of entry to arbitrage trading. 
 
-Market parity is maintained by arbitrageurs. Flash swap can completely eliminate the arbitrageur’s capital requirements, greatly reduce the arbitrage threshold, and promote market effectiveness. Here we will demonstrate a completely trustless and risk free arbitrage contract as a use case of swap flash.
+We will demonstrate a completely trustless and risk-free arbitrage trading contract as a use case of flash swap. Please refer to the `UniswapArbitrageur.sol` [source code](https://github.com/DODOEX/dodo-smart-contract/blob/master/contracts/helper/UniswapArbitrageur.sol) for a concrete example. It has already been deployed and you can check out its Etherscan link [here](https://etherscan.io/address/0xbf90b54cc00ceeaa93db1f6a54a01e3fe9ed4422)
 
-[source code](https://github.com/DODOEX/dodo-smart-contract/blob/master/contracts/helper/UniswapArbitrageur.sol)
-
-[deployed address](https://etherscan.io/address/0xbf90b54cc00ceeaa93db1f6a54a01e3fe9ed4422)
+The following figure illustrates how an arbitrageur might take advantage of the price discrepancies between DODO and Uniswap.
 
 ![](https://dodoex.github.io/docs/img/dodo_one_click_arbitrage.jpeg)
 
-An arbitrage consists of the following 9 steps:
+A complete arbitrage trading maneuver consists of the following 9 steps:
 
-1.  User calls `executeBuyArbitrage` on `UniswapArbitrageur`
+1.  The user calls `executeBuyArbitrage` on `UniswapArbitrageur`
 2.  `UniswapArbitrageur` calls `buyBaseToken` on `DODO Pair` and triggers flash swap
 3.  `DODO Pair` transfers 1 WETH to `UniswapArbitrageur`
 4.  `DODO Pair` calls `dodoCall` on `UniswapArbitrageur`
 5.  `UniswapArbitrageur` transfers 1 WETH received from `DODO Pair` to `UniswapV2`
-6.  `UniswapArbitrageur` call `swap` on `UniswapV2`
+6.  `UniswapArbitrageur` calls `swap` on `UniswapV2`
 7.  `UniswapV2` transfers 200 USDC to `UniswapArbitrageur`
-8.  `DODO Pair` call `transferFrom` and retrieve 150 USDC from `UniswapArbitrageur`
-9.  `UniswapArbitrageur` transfers the remaining 50 USDC to User
+8.  `DODO Pair` calls `transferFrom` and retrieves 150 USDC from `UniswapArbitrageur`
+9.  `UniswapArbitrageur` transfers the remaining 50 USDC to the user
 
-In summary
+In summary,
 
-- Flash swap is made up of step 2, 3, 4, and 8
-- Uniswap is made up of step 5, 6, and 7
-- An user would only notice the process of sending transaction and making profits!
+- Steps 2, 3, 4, and 8 take care of the DODO front
+- Steps 5, 6, and 7 take care of the Uniswap front
+- The user is only exposed to the process of sending transactions and making profits, with everything else abstracted away!
 
-The shining point of this `UniswapArbitrageur` contract is that users do not need any capital, nor do they need to know DODO and Uniswap. Just simply call a function and, if the execution succeeds, make a profit. If the execution fails, only gas will be lost.
+The best part about the `UniswapArbitrageur` contract is that users do not need any capital, nor do they need to know how DODO and Uniswap work. They would simply call a function and, if the execution succeeds, make a profit. If the execution fails, the users would only lose some gas.
 
-In order to avoid unnecessary gas consumption, we recommend that users use `eth_call` to execute `executeBuyArbitrage` or `executeSellArbitrage` in advance to estimate arbitrage returns. If there is an arbitrage opportunity, these two functions will return profit of quote token and base token after successful execution.
+In order to avoid unnecessary gas consumption, we recommend that users use `eth_call` to execute `executeBuyArbitrage` or `executeSellArbitrage` in advance to estimate arbitrage returns. If there is an arbitrage opportunity, these two functions will return profit of quote tokens and base tokens after successful execution.
 
-## Some thoughts on flash swap
+## Some Thoughts on Flash Swap
 
-Once you have a deep understanding of flash swap, you will find the superiority of the Defi world over the centralized world. The combinability of smart contracts has increased the fund utilization of Defi to an unprecedented level. Due to the feature of trustlessness, the cost of credit in Defi is incredibly low. Once this financial system can be integrated into the real world, the improvement of productivity for human kind is unbelievable.
-
-I have discussed the fascinating features of smart contracts with many people, but few people can really feel it. I hope flash swap can become an interesting case that ordinary people can understand and accept.
+Once you have a deep understanding of flash swap, you will realize the superiority of the DeFi world over the centralized world. The composability of smart contracts has elevated the fund utilization of DeFi to an unprecedented level. Thanks to trustlessness, the cost of credit in DeFi is incredibly low. Once this financial system is integrated into the real world, its potential for improving our society and productivity will be truly boundless. The DODO team hopes that flash swap serves as a primer for DeFi builders and beginners alike to gain an appreciation for the power of DeFi.
 
 :::note
-Flash swap is inspired by [DyDx](https://dydx.exchange/) and [Uniswap](https://uniswap.org/docs/v2/core-concepts/flash-swaps). We really appriciate what they have done before 👍
+Flash swap was inspired by [dYdX](https://dydx.exchange/) and [Uniswap](https://uniswap.org/docs/v2/core-concepts/flash-swaps). The DODO team genuinely appriciates and admires what these DeFi pioneers have done before us 👍
 :::
