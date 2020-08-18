@@ -1,7 +1,7 @@
 ---
 id: deployedInfo
-title: Deployed Infomation
-sidebar_label: Deployed
+title: Deployment Infomation
+sidebar_label: Deployment Information
 ---
 
 ## Mainnet
@@ -33,7 +33,7 @@ sidebar_label: Deployed
 | Test Uniswap          | 0x125efdccfbb9e81d53095f2f2e8edae2c4c49369 |
 | Uniswap arbitrageur   | 0x5b3f89afe4321b8914213dd44df35062d9dffaf6 |
 
-To play with dodo on kovan, you can:
+To play with DODO on [Kovan](https://kovan-testnet.github.io/website/), you can:
 
-- Send requests to contact@dodoex.io for test tokens
-- Get free koven eth on [faucet](https://github.com/kovan-testnet/faucet)
+- Request test tokens by emailing contact@dodoex.io
+- Get free Kovan ETH from the Kovan [faucet](https://github.com/kovan-testnet/faucet)
