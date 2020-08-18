@@ -1,99 +1,103 @@
 ---
 id: coreConcept
-title: Core Concept
-sidebar_label: Core Concept
+title: Core Concepts
+sidebar_label: Core Concepts
 ---
 
-## Base&Quote
+## Base & Quote Tokens
 
-`Base` and `Quote` are two concepts that will be mentioned frequently. Two easy ways to distinguish between them:
+`Base` and `quote` are two concepts that will be mentioned frequently. Two easy ways to distinguish between them are:
 
-- In transactions, we often mention price, which refers to how much `QUOTE` is needed to in exchange for a `BASE`.
-- In the trading pair, `BASE` is always before the hyphen while `QUOTE` is after.
+- In a trading pair, the `base` is always the token before the hyphen, and `quote` after
+- In transactions, price refers to how many `quote` tokens are needed in exchange for one `base` token
 
-For example, in the ETH-USDC trading pair, ETH is `BASE` and USDC is `QUOTE`
+For example, in the ETH-USDC trading pair, ETH is the `base` token and USDC is the `quote` token
 
-## PMM Working Status
+## PMM Parameters
 
 The funding pool of PMM is described by four parameters:
 
-- $B_0$ Base Token regression target
-- $Q_0$ Quote Token regression target
-- $B$ Base Token balance
-- $Q$ Quote Token balance
+- $B_0$: base token regression target - total number of base tokens deposited by liquidity providers
+- $Q_0$: quote token regression target - total number of quote tokens deposited by liquidity providers
+- $B$: base token balance - number of base tokens currently in the pool
+- $Q$: quote token balance - number of quote tokens currently in the pool
 
-Base token regression target is the total base token deposited by liquidity providers. And quote token regression target is the total quote token deposited by liquidity providers.
+## PMM Pricing Formula
 
-The price curve is given by the following formula:
+The PMM price curve is plotted by the following pricing formula:
 
 $$P_{margin}=iR$$
 
-R is defined as a piecewise function:
+Where $R$ is defined to be the piecewise function below:
 
 $$if \ B<B_0, \ R=1-k+(\frac{B_0}{B})^2k$$
 
 $$if \ Q<Q_0, \ R=1/(1-k+(\frac{Q_0}{Q})^2k)$$
 
-$$else \ R=1$$
+$$else \ R=1$$,
 
-Where $$i$$ is the market price provided by oracle and $$k$$ is a pramater belongs to (0,1).
+$$i$$ is the market price provided by an oracle, and $$k$$ is a parameter in the range (0, 1).
 
-According to the segment, PMM has three scenarios: equilibrium, shortage of Base, and shortage of Quote.
+## The Three Possible States in PMM
+
+At any given time, PMM is in one of three possible states: equilibrium, base token shortage, and quote token shortage.
 
 ![](https://dodoex.github.io/docs/img/dodo_mode_switch.jpeg)
 
-When there is no transaction, the capital pool is in equilibrium, and both Base Token and Quote Token are at their regression targets.
+Initially, i.e. prior to any transaction, the capital pool is in equilibrium, and both base tokens and quote token are at their regression targets. That is, $B=B_0$ and $Q=Q_0$.
 
-When a user sells Base Token, the Base Token balance of the capital pool is higher than the regression target, and the Quote Token balance is less than the regression target. At this time, the PMM algorithm will try to sell the excess Base Token to return the Quote Token balance to equilibrium.
+When a trader sells base tokens, the base token balance of the capital pool is higher than the base token regression target; conversely, the quote token balance is now lower than the quote token regression target. In this state, PMM will try to sell the excess base tokens, lowering the base token balance and increasing the quote token balance, in order to move this state back to the state of equilibrium.
 
-When a user buys Base Token, the Quote Token balance in the capital pool is higher than the regression target, and the Base Token balance is less than the regression target. At this time, the PMM algorithm will try to sell the excess Quote Token to return the Base Token balance to equilibrium.
+When a trader buys base tokens, the quote token balance of the capital pool is higher than the quote token regression target; conversely, the base token balance is now lower than the base token regression target. In this state, PMM will try to sell the excess quote tokens, lowering the quote token balance and increasing the base token balance, in order to move this state back to the state of equilibrium.
 
-The parameter $R$ plays a role in facilitating regression in this process. The more the capital pool deviates from the equilibrium state, the more $R$ deviates from `1`. When the price given by the PMM algorithm deviates from the market price, arbitrageurs tend to bring the capital pool return to equilibrium status.
+The parameter $R$ in the pricing formula above assumes a critical role in facilitating this regression process. The more the capital pool deviates from the equilibrium state, the more $R$ deviates from `1`. When the price given by the PMM algorithm deviates from the market price, arbitrageurs step in to help bring the capital pool back to the equilibrium state.
 
-## Liquidity provider fee
+## Liquidity Provider Fee
 
-A small amount of fee will be charged from each and every trade. This fee is called liquidity provider fee and will be distributed to every liquidity provider based on his/her proportional stake in the capital pool.
+A small amount of transaction fee will be charged on every trade. This fee is called the liquidity provider fee and will be distributed to every liquidity provider based on their proportional stake in the capital pool.
 
-More specifically, liquidity provider fee is collected from what trader received and distributed to who offers this kind of asset to the capital pool.
+More specifically, liquidity provider fees are collected from what buyers received and distributed to liquidity providers who supplied this kind of asset to the capital pool. In other words, liquidity providers are rewarded in the same asset denomination. 
 
-For example, when traders buy base tokens, liquidity provider fees will be charged in the form of base tokens, and distributed to liquidity providers who have provided base token to the capital pool.
+For example, when traders buy ETH tokens with USDC tokens, liquidity provider fees will be charged in the form of ETH tokens, and distributed to liquidity providers who deposited ETH tokens into the capital pool.
 
-When traders sell base tokens, liquidity provider fees will be charged in the form of quote tokens and distributed to liquidity providers who have provided quote tokens.
+When traders sell ETH tokens for USDC tokens, liquidity provider fees will be charged in the form of USDC tokens, and distributed to liquidity providers who deposited USDC tokens into the capital pool.
 
 :::note
-Base and Quote token have different ROI in PMM's funding pool.
+Base and quote tokens have different returns on investments (ROI) in PMM's funding pool.
 :::
 
 ## Maintainer fee
 
-Maintainer fee is also collected from what the trader received. And it will be transferred to the maintainer directly. The maintainer may be a developer team, a foundation or a staking DAO.
+A maintainer fee is also collected from what buyers received, and will be directly transferred to the maintainer. The maintainer may be a development team, a foundation, or a staking decentralized autonomous organization (DAO).
 
-Currently, the maintenance fee is 0.
+Currently, the maintenance fee on DODO is 0.
 
 ## Withdrawal Fee
 
-A withdrawal will change the PMM price curve and may harm the interests of other liquidity providers. DODO charges withdrawal fee from liquidity providers who withdraw their assets and share it to all remaining liquidity providers.
+A withdrawal will change the PMM price curve and may harm the interests of other liquidity providers. DODO charges a withdrawal fee from liquidity providers who withdraw their assets and distribute it to all remaining liquidity providers.
 
 :::important
 
-Normally, the withdrawal fee is 0 or a relatively small portion(<0.01%) of what you withdraw. Withdrawal fee will increase significantly only when the funding pool suffers from a serious shortage of base(quote) token and liquidity providers intend to withdraw the this type of token.
+Normally, the withdrawal fee is 0 or an extremely small percentage (<0.01%) of what you withdraw. The withdrawal fee will increase significantly only if the funding pool suffers from a serious shortage of either base or quote tokens and liquidity providers intend to withdraw the type of token in shortage.
 
-Withdraw fee is a protection to liquidity providers who stand with us.
+The withdrawal fee serves as a protection mechanism for liquidity providers who maintain their supplies of liquidity and contribute to the sustainability and overall health of the DODO platform.
 
 :::
 
-## Deposit Reward
+## Deposit Rewards
 
-Rewards will be given to those who make a deposit of base(quote) token when the capital pool faces a shortage of base(quote) token
+Rewards will be distributed to those who make a deposit of base(quote) tokens when the capital pool faces a shortage of base(quote) tokens.
 
-In the [next section](./math) we will introduce more math details related with these core concepts.
+In the [next section](./math), we will explain the math behind these core concepts. 
 
-## Flexible
+## Flexibility and $k$, the "Liquidity Parameter"
 
-After such a long journey, let us introduce the "liquidity parameter" $$k$$.
-
-$$k$$ makes DODO flexible enough to handle different market situations. When $$k$$ is $$0$$, DODO acts like a stupid bird that simply sells or buys with market price. As $$k$$ increases, DODO’s price curve becomes more “curved” but, consequently, the liquidity is jeopardized because more assets are placed far away from market price. And when $$k$$ increases to $$1$$, the curve “grows” as fast as a standard AMM curve (uniswap).
-
-Normally, $$k$$ is recommended to be a relatively small value, such as $$0.1$$, which could provide 10x better liquidity than standard AMM algorithm.
+Last but not least, we will introduce the DODO's "liquidity parameter", $$k$$. The parameter $$k$$ gives DODO the flexibility to handle different market situations. 
 
 ![](https://dodoex.github.io/docs/img/dodo_k.jpeg)
+
+When $$k$$ is $$0$$, DODO naively sells or buys at market price, as shown by the flat, blue line. As $$k$$ increases, DODO’s price curve becomes more “curved”, but, consequently, liquidity becomes increasingly jeopardized, because more funds are placed far away from market price and are thus underutilized or not utilized at all. When $$k$$ increases to $$1$$, the flat section near the market price is completely eliminated and the curve essentially becomes a standard AMM curve, which Uniswap uses.
+
+Normally, $$k$$ is recommended to be a relatively small value, such as $$0.1$$, which could provide liquidity 10 times better than the standard AMM algorithm.
+
+
