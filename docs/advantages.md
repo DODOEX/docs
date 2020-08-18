@@ -24,35 +24,35 @@ As seen in the above graphs, PMM, like AMMs, provides liquidity in the price ran
 
 ## Single Risk Exposure
 
-The PMM price curve consists of two parts, bidding and asking. These two parts may have different depth(liquidity). The asking liquidity is only determined by the amount of base token in the pool, while the bidding liquidity by the amount of quote tokens.
+In the price curves above, each price curve consists of two parts: the bidding side to the left and the asking side to the right. These two parts may have different depth, or liquidity, resulting in what is known as the [bid-ask spread](https://en.wikipedia.org/wiki/Bid%E2%80%93ask_spread).
 
 ![](https://dodoex.github.io/docs/img/dodo_segment.jpeg)
 
-It allows the base and quote pools to have different sizes, and therefore allows liquidity providers deposit any amount of quote or base token. In brief, you can just deposit what you hold.
+In PMM, the asking liquidity is solely determined by the amount of base token in the pool, and the bidding liquidity is solely determined by the amount of quote tokens in the pool. It allows the base and quote pools to have different sizes, and thus allows liquidity providers to deposit any amount of either quote or base tokens, rather than both (like Uniswap). DODO Liquidity providers deposit what they already have, nothing more.
 
 :::note
 
-The design is very easy to understand, because when you take an asking order, you take up liquidity providers’ base token and it has nothing to do with the quote token.
+The design is intuitive, because when you take an asking order, you take liquidity providers’ base tokens and the quote tokens are irrelevant.
 
 :::
 
-## No impermanent loss
+## No Impermanent Loss
 
-The question is the same as how to guarantee liquidity providers withdraw what they have deposited. The key here is arbitrageurs. When users buy base token, PMM slightly increases the price to attract arbitrageurs to sell base token. And this arbitrageur behavior helps to maintain the balance in the pool is always equal to the amount that liquidity providers have staked.
+But what about impermanent loss, i.e. how does PMM ensure that liquidity providers get what they deposited when they withdraw their tokens? The answer is by encouraging arbitrage trading. When individual traders buy base tokens, PMM slightly increases the price to make it more profitable for arbitrageurs to sell base tokens. In PMM, arbitrage trading makes sure that the number of tokens in the pool is always roughly equal to the number of tokens deposited by liquidity providers. This scheme effectively mitigates impermanent loss for liquidity providers, making liquidity provision on DODO a low-risk affair.
 
-## Why do we think DODO is the next generation liquidity solution
+## Next Generation of Liquidity Provision
 
-Liquidity is the most important resource in the Defi world and the basis for the operation of all projects. There are only two proven liquidity solutions in the Defi field today:
+Liquidity is the most important resource in the DeFi world, because it is the foundational element in all DeFi projects. There are two major proven approaches to decentralized liquidity provision today:
 
-- Algorithmic market maker (e.g. uniswap)
-- Orderbook-based order matching (e.g. dydx)
+- Algorithmic market makers (e.g. Uniswap)
+- Orderbook-based order matching (e.g. dYdX)
 
-But each of them has drawbacks:
+However, they are both flawed.
 
-- Algorithmic market makers cannot provide sufficient liquidity on mainstream tokens compared with centralized exchanges. Only the most basic liquidity support can be provided on the long tail coin.
-- Orderbook-based order matching relays on market makers mirroring centralized exchanges liquidity. Experienced market makers are expensive, and only a few teams can afford. Moreover, this kind of liquidity is difficult to be filled by smart contracts and thus, the usage scenarios are very narrow.
+- Compared to centralized exchanges, algorithmic market makers cannot provide sufficient liquidity for mainstream assets. In addition, for niche, long-tail assets, AMM can only provide very basic liquidity support
+- Orderbook-based order matching relies on human market makers to mirroring centralized exchanges liquidity. Effective market makers are expensive, and very few DEX teams can afford them. In addition, this kind of liquidity is difficult to be filled by smart contracts due to the human elements involved, significantly limiting the number of use cases for DeFi practitioners
 
-DODO benefits from the proactive market maker algorithm, which is also a kind of algorithmic market maker but avoids these two defects while gathering the advantages of both. That is, sufficient and contract-fillable liquidity on chain for any defi projects. We have strong confidence that DOOD will become an important infrastructure in the defi world.
+PMM is also an algorithmic market maker algorithm, but it fundamentally differs from other approaches by mitigating and eliminating their disadvantages and amplifying their advantages. PMM provides sufficient and contract-fillable liquidity on-chain for all assets, empowering DeFi users to take advantage of composability.
 
 <!-- # DODO的优势是什么
 
