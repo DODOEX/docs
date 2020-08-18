@@ -1,12 +1,12 @@
 ---
 id: contractUseGuide
-title: Use Guide
-sidebar_label: Use Guide
+title: User Guide
+sidebar_label: User Guide
 ---
 
 ## For traders
 
-For the trader, there are only two functions in the entire contract to consider: `buyBaseToken` and `sellBaseToken`
+There are only two functions that are relevant to traders in the entire contract: `buyBaseToken` and `sellBaseToken`
 
 ```javascript
 function buyBaseToken(
@@ -16,9 +16,9 @@ function buyBaseToken(
 ) external returns (uint256 payQuote);
 ```
 
-This function buys an exact `amount` of base token. The transaction will be reverted, if the quote token needed to pay is larger than `maxPayQuote`. If `data` is not null，flash swap will be triggered.
+This function buys an exact `amount` of base tokens. If the number of quote tokens needed to pay for these base tokens is larger than `maxPayQuote`, the transaction will be reverted. If `data` is not null，flash swap will be triggered.
 
-The return value `payQuote` is the exactly amount you will pay.
+The return value `payQuote` is the exact amount of quote tokens you will pay.
 
 ```javascript
 function sellBaseToken(
@@ -28,11 +28,11 @@ function sellBaseToken(
 ) external returns (uint256 receiveQuote);
 ```
 
-This function sells an exact `amount` of base token. The transaction will be reverted, if the to-be-received quote token is smaller than `minReceiveQuote`. If `data` is not null，flash swap will be triggered.
+This function sells an exact `amount` of base tokens. If the the number of quote tokens to be received is smaller than `minReceiveQuote`, the transaction will be reverted. If `data` is not null，flash swap will be triggered.
 
-The return value `receiveQuote` is the exactly amount you will receive.
+The return value `receiveQuote` is the exact amount of quote tokens you will receive.
 
-DODO also provides a view version for these two functions. View functions could be executed without sending transactions and it helps users estimate the trade price before spending gas.
+DODO also provides a view version of these two functions. View functions can be executed without sending transactions and they help users estimate prices bore spending gas.
 
 ```javascript
 function querySellBaseToken(
@@ -44,13 +44,13 @@ function queryBuyBaseToken(
 ) external view returns (uint256 payQuote);
 ```
 
-In the next section we will introduce more details about [flash swap](./flashSwap).
+In the next section, we will go into more details about [flash swap](./flashSwap).
 
-## For liquidity providers
+## For Liquidity Providers (LPs)
 
-For liquidity providers, the most important functions are deposit and withdrawal. We provide a set of functions to help liquidity providers manage assets flexibly.
+For liquidity providers (LPs), the most important functions are deposit and withdrawal. We provide a set of functions to help LPs manage their assets in a flexible and efficient manner.
 
-One of the biggest advantages of the PMM algorithm is that it can manage base or quote assets separately. Hence the functions below all have two versions to manage base and quote assets respectively. And those two versions have the same input and output.
+One of the biggest advantages of the PMM algorithm is that it can manage base or quote token assets separately. That is why the functions below all have two versions, one with the suffix "Base" and another with the suffix "Quote", to manage base and quote assets respectively. These two versions have the same input and output values.
 
 ```javascript
 
@@ -68,7 +68,7 @@ This function deposits an exact `amount` of assets into the capital pool and ret
 
 :::note
 
-Capital represents the liquidity provider's share of the capital pool. Capital is an ERC20 token and can be freely traded. Each DODO has two kinds of capital, which represent the share of base token and quote token capital pool respectively.
+Capital represents the LP's share of the capital pool. Capital is an ERC20 token and can be freely traded. Each DODO has two kinds of capital, which represent the share of base token and quote token capital pool respectively.
 
 :::
 
@@ -80,7 +80,7 @@ Capital represents the liquidity provider's share of the capital pool. Capital i
 
 ```
 
-Query the pool balance based on the address of the liquidity provider. The return value `lpBalance` represents for actual BASE or QUOTE token, not the capital token.
+Query the pool balance based on the address of the LP. The return value `lpBalance` represents actual base or quote tokens, not capital tokens.
 
 ```javascript
 
@@ -94,7 +94,7 @@ Query the pool balance based on the address of the liquidity provider. The retur
 
 ```
 
-This function tries to withdraw an `amount` of assets from the capital pool. As there may be a withdrawal fee, the function returns the exact amount of asset received by the message sender.
+This function attempts to withdraw an `amount` of assets from the capital pool. Since there may be a withdrawal fee, the function returns the exact amount of tokens received by the message sender.
 
 ```javascript
 
@@ -104,7 +104,7 @@ This function tries to withdraw an `amount` of assets from the capital pool. As 
 
 ```
 
-Since the size of the capital pool is dynamically changing (transactions may occur at any time), in order to help the liquidity provider to completely withdraw all assets, the above two functions will consume all the capital of the message sender and withdraw the corresponding assets. Finally, the exact amount of asset received by the message sender is returned.
+Since the size of the capital pool is constantly changing (transactions may occur at any time), in order to help LPs to completely withdraw all assets, the above two functions will consume all the capital of the message sender and withdraw the corresponding assets. Finally, the exact amount of asset received by the message sender is returned.
 
 ```javascript
 
@@ -114,15 +114,15 @@ Since the size of the capital pool is dynamically changing (transactions may occ
 
 ```
 
-In some cases, withdrawing assets will be charged a [fee](./coreConcept#withdraw-fee). The above two functions provide a view function to query the withdrawal fee. If you submit a request with an `amount` of withdrawal, you will be charged for the amount of `penalty`.
+In some cases, asset withdrawals will be charged a [fee](./coreConcept#withdraw-fee). The above two functions provide a view function to query the withdrawal fee. If you submit a request with an `amount` of withdrawal, you will be charged for the amount of `penalty`.
 
 :::note
 The final amount of withdrawal assets received will be **amount-penalty**.
 :::
 
-## For developers
+## For Developers
 
-Developers could fetch meta data from DODOZoo.
+Developers can fetch metadata from DODO Zoo, the entrance part of the DODO framework.
 
 ```javascript
 
