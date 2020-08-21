@@ -11,7 +11,13 @@ module.exports = {
       "audit",
     ],
     "Use Case": ["initialDODOOffering"],
-    "Advanced Topics": ["authority", "decentralization", "backtest"],
+    "Advanced Topics": [
+      "authority",
+      "decentralization",
+      "riskParameters",
+      "backtest",
+      "commonQuestions",
+    ],
     // Docusaurus: ["doc1", "doc2", "doc3", "mdx"],
   },
 };

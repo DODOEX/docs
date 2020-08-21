@@ -1,6 +1,6 @@
 ---
 id: deployedInfo
-title: Deployment Infomation
+title: Deployment Information
 sidebar_label: Deployment Information
 ---
 
