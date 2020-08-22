@@ -1,9 +1,9 @@
 ---
 id: commonQuestions
-title: Common Questions
-sidebar_label: Common Question
+title: Frequently Asked Questions (FAQs)
+sidebar_label: Frequently Asked Questions (FAQs)
 ---
 
-## Is there any mechanism to help funding pool balanced?
+## How does DODO keep the funding pools balanced?
 
-Taking the ETH-USDC trading pair as an example, DODO will charge users ETH as transaction fee when they buy ETH. And USDC as transaction fee when selling ETH. Statistically speaking, buying and selling behavior is roughly balanced, so the absolute returns of the two assets pool are roughly the same. In this way, when the size of one asset pool is smaller, the rate of return will be higher. The high yield will encourage liquidity providers to deposit into the smaller funding pool until the value of the two assets pool returns to balanced.
+Taking the ETH-USDC trading pair as an example, DODO charges users ETH in transaction fees when they buy ETH, and USDC in transaction fees when they sell ETH. Statistically speaking, given a sufficiently large sample, the buying volume is roughly equal to the selling volume, so the absolute returns of the two asset pools are roughly the same. Therefore, when the size of one asset pool is smaller, its return on investment (ROI) will be higher. This (temporary) higher yield will encourage liquidity providers (LPs) to deposit more assets into the smaller funding pool, until the values of the two funding pools become balanced again.
