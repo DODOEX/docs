@@ -9,7 +9,8 @@ sidebar_label: Deployment Information
 | Contract Name        | Address                                    |
 | -------------------- | ------------------------------------------ |
 | DODO Pair: WETH-USDC | 0x75c23271661d9d143dcb617222bc4bec783eff34 |
-| Oracle: WETH-USDC    | 0xb503cd2492b871ef3d6d972777814934011bf29c |
+| DODO Pair: LINK-USDC | 0x562c0b218cc9ba06d9eb42f3aef54c54cc5a4650 |
+| DODO Pair: LEND-USDC | 0xc226118fcd120634400ce228d61e1538fb21755f |
 | DODO Zoo             | 0x3a97247df274a17c59a3bd12735ea3fcdfb49950 |
 | DODO EthProxy        | 0x37adc35f7b12582240818df04aac04ca409d5913 |
 | Uniswap arbitrageur  | 0xbf90b54cc00ceeaa93db1f6a54a01e3fe9ed4422 |
