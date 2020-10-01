@@ -4,40 +4,50 @@ title: Deployment Information
 sidebar_label: Deployment Information
 ---
 
-## Mainnet
+## DODO Token
 
 | Contract Name        | Address                                    |
 | -------------------- | ------------------------------------------ |
-| DODO Pair: WETH-USDC | 0x75c23271661d9d143dcb617222bc4bec783eff34 |
-| DODO Pair: LINK-USDC | 0x562c0b218cc9ba06d9eb42f3aef54c54cc5a4650 |
-| DODO Pair: LEND-USDC | 0xc226118fcd120634400ce228d61e1538fb21755f |
-| DODO Pair: SNX-USDC  | 0xca7b0632bd0e646b0f823927d3d2e61b00fe4d80 |
-| DODO Pair: COMP-USDC | 0x0d04146b2fe5d267629a7eb341fb4388dcdbd22f |
-| DODO Pair: WBTC-USDC | 0x2109f78b46a789125598f5ad2b7f243751c2934d |
-| DODO Pair: YFI-USDC  | 0x1b7902a66f133d899130bf44d7d879da89913b2e |
-| DODO Zoo             | 0x3a97247df274a17c59a3bd12735ea3fcdfb49950 |
-| DODO EthProxy        | 0x37adc35f7b12582240818df04aac04ca409d5913 |
-| Uniswap arbitrageur  | 0xbf90b54cc00ceeaa93db1f6a54a01e3fe9ed4422 |
-| Multisig Wallet      | 0x6dae6ae227438378c117821c51fd61661faa8893 |
+| DODO Token           | 0x43dfc4159d86f3a37a5a4b3d4580b888ad7d4ddd |
+| DODO Pair: DODO-USDT | 0x8876819535b48b551c9e97ebc07332c7482b4b2d |
+| DODO Mining          | 0xaed7384f03844af886b830862ff0a7afce0a632c |
+| Pre-allocation       | 0x0e504d3e053885a82bd1cb5c29cbaae5b3673be4 |
+
+## Mainnet
+
+| Contract Name              | Address                                    |
+| -------------------------- | ------------------------------------------ |
+| DODO Pair: WETH-USDC       | 0x75c23271661d9d143dcb617222bc4bec783eff34 |
+| DODO Pair: LINK-USDC       | 0x562c0b218cc9ba06d9eb42f3aef54c54cc5a4650 |
+| DODO Pair: LEND-USDC       | 0xc226118fcd120634400ce228d61e1538fb21755f |
+| DODO Pair: SNX-USDC        | 0xca7b0632bd0e646b0f823927d3d2e61b00fe4d80 |
+| DODO Pair: COMP-USDC       | 0x0d04146b2fe5d267629a7eb341fb4388dcdbd22f |
+| DODO Pair: WBTC-USDC       | 0x2109f78b46a789125598f5ad2b7f243751c2934d |
+| DODO Pair: YFI-USDC        | 0x1b7902a66f133d899130bf44d7d879da89913b2e |
+| DODO Zoo                   | 0x3a97247df274a17c59a3bd12735ea3fcdfb49950 |
+| DODO EthProxy              | 0x37adc35f7b12582240818df04aac04ca409d5913 |
+| DODO EthProxy (compatible) | 0x3d7cbd8ae59505283d438eb6ff54b8b42d0c98a6 |
+| Uniswap arbitrageur        | 0xbf90b54cc00ceeaa93db1f6a54a01e3fe9ed4422 |
+| Multisig Wallet            | 0x6dae6ae227438378c117821c51fd61661faa8893 |
 
 ## DLP TokenAddress
 
 | DLP              | Address                                    |
 | ---------------- | ------------------------------------------ |
-| WETH-USDC : WETH | 0xc11eccdee225d644f873776a68a02ecd8c015697 |
-| WETH-USDC : USDC | 0x6a5eb3555cbbd29016ba6f6ffbccee28d57b2932 |
-| LINK-USDC : LINK | 0xf03f3d2fbee37f92ec91ae927a8019cacef4b738 |
-| LINK-USDC : USDC | 0x0f769bc3ecbda8e0d78280c88e31609e899a1f78 |
-| LEND-USDC : LEND | 0xbf999544b31706c5fef693b64a6c2cd8ddb5bbec |
-| LEND-USDC : USDC | 0xd768b486645717a55ed97126bbe2eb8b02f0e9b3 |
-| SNX-USDC: SNX    | 0x5bd1b7d3930d7a5e8fd5aeec6b931c822c8be14e |
-| SNX-USDC: USDC   | 0x1b06a22b20362b4115388ab8ca3ed0972230d78a |
-| COMP-USDC: COMP  | 0x53cf4694b427fcef9bb1f4438b68df51a10228d0 |
-| COMP-USDC: USDC  | 0x51baf2656778ad6d67b19a419f91d38c3d0b87b6 |
-| WBTC-USDC: WBTC  | 0x2ec2a42901c761b295a9e6b95200cd0bdaa474eb |
-| WBTC-USDC: USDC  | 0x0cdb21e20597d753c90458f5ef2083f6695eb794 |
-| YFI-USDC: YFI    | 0xe2852c572fc42c9e2ec03197defa42c647e89291 |
-| YFI-USDC: USDC   | 0xd9d0bd18ddfa753d0c88a060ffb60657bb0d7a07 |
+| WETH-USDC : WETH | 0xc11eCCDee225d644f873776A68A02eCD8c015697 |
+| WETH-USDC : USDC | 0x6a5Eb3555cBbD29016Ba6F6fFbCcEE28D57b2932 |
+| LINK-USDC : LINK | 0xF03F3d2FbeE37F92eC91aE927a8019CACef4b738 |
+| LINK-USDC : USDC | 0x0F769BC3EcbdA8e0d78280c88e31609E899A1F78 |
+| LEND-USDC : LEND | 0xbF999544B31706C5fEf693b64a6c2cD8ddB5BBeC |
+| LEND-USDC : USDC | 0xD768B486645717a55Ed97126bBE2eB8b02f0e9b3 |
+| SNX-USDC: SNX    | 0x5bd1b7d3930d7a5e8fd5aeec6b931C822C8Be14E |
+| SNX-USDC: USDC   | 0x1b06A22b20362b4115388Ab8ca3ED0972230d78A |
+| COMP-USDC: COMP  | 0x53Cf4694B427FcEf9BB1F4438B68dF51A10228D0 |
+| COMP-USDC: USDC  | 0x51baf2656778ad6D67b19A419F91D38C3d0b87B6 |
+| WBTC-USDC: WBTC  | 0x2eC2A42901c761b295a9e6b95200cd0BdAa474Eb |
+| WBTC-USDC: USDC  | 0x0cDb21e20597d753C90458f5eF2083f6695eb794 |
+| YFI-USDC: YFI    | 0xE2852C572FC42C9e2ec03197deFa42c647e89291 |
+| YFI-USDC: USDC   | 0xD9D0bd18DDfA753d0c88a060fFb60657bB0D7A07 |
 
 ## Kovan
 
