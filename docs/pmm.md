@@ -33,7 +33,7 @@ $$else \\ R=1$$
 - 当用户卖出 BaseToken 时，资金池 BaseToken 余额高于回归目标，而 QuoteToken 余额小于回归目标。此时 PMM 算法会尝试卖出多余的 BaseToken，以使 QuoteToken 余额回归均衡状态。
 - 当用户买入 BaseToken 时，资金池 QuoteToken 余额高于回归目标，而 BaseToken 余额小于回归目标。此时 PMM 算法会尝试卖出多余的 QuoteToken，以使 BaseToken 余额回归均衡状态。
 
-![](/Users/leimingda/Documents/dodo/docs/img/img.006.jpeg)
+<!-- ![](/Users/leimingda/Documents/dodo/docs/img/img.006.jpeg) -->
 
 参数$R$在此过程中起到了促进回归的作用，资金池偏离均衡状态越多，$R$越偏离 1，PMM 算法给出的价格便越偏离市场价，吸引套利者帮助资金池回归均衡状态。
 
@@ -47,7 +47,7 @@ $$else \\ R=1$$
 
 #### BaseToken 匮乏场景
 
-![](/Users/leimingda/Documents/dodo/docs/img/img.002.jpeg)
+<!-- ![](/Users/leimingda/Documents/dodo/docs/img/img.002.jpeg) -->
 
 $$\Delta Q =\int^{B_2}_{B_1}P_{margin}dB= \int^{B_2}_{B_1}(1-k)i+i(\frac{B_0}{B})^2kdB $$
 $$= i(B_2-B_1)*(1-k+k\frac{B_0^2}{B_1B_2})$$
