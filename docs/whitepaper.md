@@ -3,15 +3,7 @@ title: whitepaper
 description: whitepaper
 hide_table_of_contents: true
 ---
-<div align='center' ><font size='70'>DODO</font></div>
-
-<center><b>———A Next-Generation On-Chain Liquidity Provider Powered by Pro-active Market Maker Algorithm</b></center>
-
-<center>V1.0</center>
-
-<center><b>DODO Team</b></center>
-
-<center><i>contact@dodoex.io</i></center>
+# A Next-Generation On-Chain Liquidity Provider Powered by Pro-active Market Maker Algorithm
 
 **Abstract:** This article introduce DODO, a next-generation on-chain liquidity provider, which leverages the Proactive Market Maker algorithm (PMM) to provide pure on-chain and contract-fillable liquidity for everyone. Comparing to other on-chain liquidity solutions, DODO has multiple advantages: high fund utilization, low slippage, single risk exposure, reduced impermanent loss. We also discuss the core concepts and mathematical details about Proactive Market Maker algorithm (PMM), and include the contract framework.
 
@@ -217,7 +209,7 @@ It can be proven that:
 
 - When $\Delta B > 0$ , $Q_2>Q_1$ ; trader buy base token, and should pay $Q_2>Q_1$
 
-- When $\Delta B ＜ 0$ , $Q_2＜Q_1$; trader sell base token, and will receive $Q_2>Q_1$
+- When $\Delta B < 0$ , $Q_2<Q_1$; trader sell base token, and will receive $Q_2>Q_1$
 
 - When $\Delta B =0$， $Q_2=Q_1$
 
@@ -239,7 +231,7 @@ The negative root does not make sense and is discarded, so $B_0$ is:
 
 $B_0=B_1+B_1\frac{\sqrt{1+\frac{4k\Delta Q}{B_1 i}}-1}{2k}$
 
-In this case, $\Delta Q = Q-Q_0$ . It can be proven that, when $\Delta Q \ge 0$ , $B_0＜B_1$.
+In this case, $\Delta Q = Q-Q_0$ . It can be proven that, when $\Delta Q \ge 0$ , $B_0<B_1$.
 
 This fact is extremely important, because it ensures that the base token balance and the quote token balance will never be greater than the regression target simultaneously, or less than the regression target simultaneously. This means that PMM will only switch between the three states discussed in the Core Concepts section.
 

@@ -18,6 +18,7 @@ module.exports = {
       "backtest",
       "commonQuestions",
     ],
+    Whitepaper: ["whitepaper"],
     // Docusaurus: ["doc1", "doc2", "doc3", "mdx"],
   },
 };
