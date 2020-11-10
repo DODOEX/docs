@@ -1,9 +1,17 @@
 ---
-title: whitepaper
+title: Whitepaper
 description: whitepaper
 hide_table_of_contents: true
 ---
-# A Next-Generation On-Chain Liquidity Provider Powered by Pro-active Market Maker Algorithm
+<div align='center' ><font size='70'>DODO</font></div>
+
+<center><b>———A Next-Generation On-Chain Liquidity Provider Powered by Pro-active Market Maker Algorithm</b></center>
+
+<center>V1.0</center>
+
+<center><b>DODO Team</b></center>
+
+<center><i>*contact@dodoex.io*</i></center>
 
 **Abstract:** This article introduce DODO, a next-generation on-chain liquidity provider, which leverages the Proactive Market Maker algorithm (PMM) to provide pure on-chain and contract-fillable liquidity for everyone. Comparing to other on-chain liquidity solutions, DODO has multiple advantages: high fund utilization, low slippage, single risk exposure, reduced impermanent loss. We also discuss the core concepts and mathematical details about Proactive Market Maker algorithm (PMM), and include the contract framework.
 
@@ -167,7 +175,7 @@ Normally, _k_ is recommended to be a relatively small value, such as _0.1_, whic
 
 #### **2.3.1 Core PMM**
 
-The core of PMM is essentially calculating one integral and solving two quadratic equations. The smart contract implementation can be found here<sup>[2]</sup>.
+The core of PMM is essentially calculating one integral and solving two quadratic equations. The smart contract implementation can be found [here](https://github.com/DODOEX/dodo-smart-contract/blob/master/contracts/lib/DODOMath.sol)<sup>[2]</sup>.
 
 ##### **2.3.1.1 The Price Curve Integral**
 
