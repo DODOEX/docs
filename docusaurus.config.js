@@ -26,11 +26,17 @@ module.exports = {
         src: "img/logo.svg",
         href: "https://DODOEX.github.io/docs/",
       },
-      links: [
+      items: [
         {
           to: "docs/",
           activeBasePath: "docs",
           label: "Docs",
+          position: "left",
+        },
+        {
+          to: "whitepaper",
+          activeBasePath: "whitepaper",
+          label: "WhitePaper",
           position: "left",
         },
         {
@@ -41,6 +47,11 @@ module.exports = {
         {
           href: "https://github.com/DODOEX",
           label: "GitHub",
+          position: "left",
+        },
+        {
+          href: "https://DODOEX.github.io/cn/",
+          label: "中文版",
           position: "left",
         },
       ],
@@ -88,7 +99,7 @@ module.exports = {
       {
         docs: {
           // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: "briefIntro",
+          // homePageId: "briefIntro",
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           editUrl: "https://github.com/DODOEX/docs/edit/master/",
