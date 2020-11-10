@@ -24,6 +24,7 @@ sidebar_label: Deployment Information
 | DODO Pair: WETH-USDC           | [0x75c23271661d9d143dcb617222bc4bec783eff34](https://etherscan.io/address/0x75c23271661d9d143dcb617222bc4bec783eff34) |
 | DODO Pair: LINK-USDC           | [0x562c0b218cc9ba06d9eb42f3aef54c54cc5a4650](https://etherscan.io/address/0x562c0b218cc9ba06d9eb42f3aef54c54cc5a4650) |
 | DODO Pair: LEND-USDC           | [0xc226118fcd120634400ce228d61e1538fb21755f](https://etherscan.io/address/0xc226118fcd120634400ce228d61e1538fb21755f) |
+| DODO Pair: AAVE-USDC           | [0x94512fd4fb4feb63a6c0f4bedecc4a00ee260528](https://etherscan.io/address/0x94512fd4fb4feb63a6c0f4bedecc4a00ee260528) |
 | DODO Pair: SNX-USDC            | [0xca7b0632bd0e646b0f823927d3d2e61b00fe4d80](https://etherscan.io/address/0xca7b0632bd0e646b0f823927d3d2e61b00fe4d80) |
 | DODO Pair: COMP-USDC           | [0x0d04146b2fe5d267629a7eb341fb4388dcdbd22f](https://etherscan.io/address/0x0d04146b2fe5d267629a7eb341fb4388dcdbd22f) |
 | DODO Pair: WBTC-USDC           | [0x2109f78b46a789125598f5ad2b7f243751c2934d](https://etherscan.io/address/0x2109f78b46a789125598f5ad2b7f243751c2934d) |
@@ -58,6 +59,8 @@ sidebar_label: Deployment Information
 | YFI-USDC: USDC   | [0xD9D0bd18DDfA753d0c88a060fFb60657bB0D7A07](https://etherscan.io/address/0xD9D0bd18DDfA753d0c88a060fFb60657bB0D7A07) |
 | USDT-USDC: USDT  | [0xE2852C572FC42C9e2ec03197deFa42c647e89291](https://etherscan.io/address/0xE2852C572FC42C9e2ec03197deFa42c647e89291) |
 | USDT-USDC: USDC  | [0xD9D0bd18DDfA753d0c88a060fFb60657bB0D7A07](https://etherscan.io/address/0xD9D0bd18DDfA753d0c88a060fFb60657bB0D7A07) |
+| AAVE-USDC: AAVE  | [0x30ad5b6d4e531591591113b49eae2fafbc2236d5](https://etherscan.io/address/0x30ad5b6d4e531591591113b49eae2fafbc2236d5) |
+| AAVE-USDC: USDC  | [0x5840a9e733960f591856a5d13f6366658535bbe5](https://etherscan.io/address/0x5840a9e733960f591856a5d13f6366658535bbe5) |
 
 ## Related Token Address
 
@@ -69,6 +72,7 @@ sidebar_label: Deployment Information
 | WBTC           | [0x2260fac5e5542a773aa44fbcfedf7c193bc2c599](https://etherscan.io/address/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599) |
 | LINK           | [0x514910771af9ca656af840dff83e8264ecf986ca](https://etherscan.io/address/0x514910771af9ca656af840dff83e8264ecf986ca) |
 | LEND(old AAVE) | [0x80fb784b7ed66730e8b1dbd9820afd29931aab03](https://etherscan.io/address/0x80fb784b7ed66730e8b1dbd9820afd29931aab03) |
+| AAVE | [0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9](https://etherscan.io/address/0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9) |
 | SNX            | [0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f](https://etherscan.io/address/0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f) |
 | COMP           | [0xc00e94cb662c3520282e6f5717214004a7f26888](https://etherscan.io/address/0xc00e94cb662c3520282e6f5717214004a7f26888) |
 | YFI            | [0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e](https://etherscan.io/address/0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e) |
