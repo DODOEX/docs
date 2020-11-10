@@ -43,6 +43,11 @@ module.exports = {
           label: "GitHub",
           position: "left",
         },
+        {
+          href: "https://DODOEX.github.io/cn/",
+          label: "中文版",
+          position: "left",
+        },
       ],
     },
     footer: {
