@@ -32,6 +32,7 @@ sidebar_label: Deployment Information
 | DODO Pair: FIN-USDT            | [0x9d9793e1e18cdee6cf63818315d55244f73ec006](https://etherscan.io/address/0x9d9793e1e18cdee6cf63818315d55244f73ec006) |
 | DODO Pair: USDT-USDC           | [0xC9f93163c99695c6526b799EbcA2207Fdf7D61aD](https://etherscan.io/address/0xC9f93163c99695c6526b799EbcA2207Fdf7D61aD) |
 | DODO Pair: WOO-USDT           | [0x181d93ea28023bf40c8bb94796c55138719803b4](https://etherscan.io/address/0x181d93ea28023bf40c8bb94796c55138719803b4) |
+| DODO Pair: wCRES-USDT           | [0x85f9569b69083c3e6aeffd301bb2c65606b5d575](https://etherscan.io/address/0x85f9569b69083c3e6aeffd301bb2c65606b5d575) |
 | DODO Zoo                       | [0x3a97247df274a17c59a3bd12735ea3fcdfb49950](https://etherscan.io/address/0x3a97247df274a17c59a3bd12735ea3fcdfb49950) |
 | DODO EthProxy                  | [0x37adc35f7b12582240818df04aac04ca409d5913](https://etherscan.io/address/0x37adc35f7b12582240818df04aac04ca409d5913) |
 | DODO EthProxy (compatible)     | [0x3d7cbd8ae59505283d438eb6ff54b8b42d0c98a6](https://etherscan.io/address/0x3d7cbd8ae59505283d438eb6ff54b8b42d0c98a6) |
@@ -78,6 +79,7 @@ sidebar_label: Deployment Information
 | YFI            | [0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e](https://etherscan.io/address/0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e) |
 | FIN            | [0x054f76beed60ab6dbeb23502178c52d6c5debe40](https://etherscan.io/address/0x054f76beed60ab6dbeb23502178c52d6c5debe40) |
 | WOO            | [0x4691937a7508860f876c9c0a2a617e7d9e945d4b](https://etherscan.io/address/0x4691937a7508860f876c9c0a2a617e7d9e945d4b) |
+| wCRES            | [0x85f9569b69083c3e6aeffd301bb2c65606b5d575](https://etherscan.io/address/0x85f9569b69083c3e6aeffd301bb2c65606b5d575) |
 
 ## Kovan
 
