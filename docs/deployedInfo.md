@@ -17,6 +17,14 @@ sidebar_label: Deployment Information
 | Locked Token Vault 2      | [0xde25cebdd50ff2af17bbc8b3cbf2e31c48b769b4](https://etherscan.io/address/0xde25cebdd50ff2af17bbc8b3cbf2e31c48b769b4) |
 | Undistributed Token Vault | [0x3e19d726ed435AfD3A42967551426b3A47c0F5b7](https://etherscan.io/address/0x3e19d726ed435AfD3A42967551426b3A47c0F5b7) |
 
+## DODO V1.5
+
+| Contract Name             | Address                                                                                                               |
+| ------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| DODO Smart Approve                | [0xCB859eA579b28e02B87A1FDE08d087ab9dbE5149](https://etherscan.io/address/0xCB859eA579b28e02B87A1FDE08d087ab9dbE5149) |
+| DODO Smart Proxy V1     | [0xd0678Ec59d1337e29D1E1B1b6338f3E85D311F5e](https://etherscan.io/address/0xd0678Ec59d1337e29D1E1B1b6338f3E85D311F5e) |
+
+
 ## Mainnet
 
 | Contract Name                  | Address                                                                                                               |
