@@ -22,8 +22,18 @@ sidebar_label: Deployment Information
 | Contract Name             | Address                                                                                                               |
 | ------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | DODO Smart Approve                | [0xCB859eA579b28e02B87A1FDE08d087ab9dbE5149](https://etherscan.io/address/0xCB859eA579b28e02B87A1FDE08d087ab9dbE5149) |
-| DODO Smart Proxy V1     | [0xd0678Ec59d1337e29D1E1B1b6338f3E85D311F5e](https://etherscan.io/address/0xd0678Ec59d1337e29D1E1B1b6338f3E85D311F5e) |
+| DODO Smart Proxy V1 01    | [0xd0678Ec59d1337e29D1E1B1b6338f3E85D311F5e](https://etherscan.io/address/0xd0678Ec59d1337e29D1E1B1b6338f3E85D311F5e) |
+| DODO Smart Proxy V1 02    | [0x6ed3fd491F5B10384787B3fb162A72227FaFBf63](https://etherscan.io/address/0x6ed3fd491F5B10384787B3fb162A72227FaFBf63) |
+| DODO Smart Proxy V1 03    | [0x9A9942458754bDf65dCbCd0B6B4B842a7D4031AB](https://etherscan.io/address/0x9A9942458754bDf65dCbCd0B6B4B842a7D4031AB) |
 
+## DODO V2 (alpha test)
+| Contract Name             | Address                                                                                                               |
+| ------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| DODO Smart Proxy V2 01    | [0x9aE501385Bc7996A2A4a1FBb00c8d3820611BCB5](https://etherscan.io/address/0x9aE501385Bc7996A2A4a1FBb00c8d3820611BCB5) |
+| DODO Trading Incentive    | [0x989DcAA95801C527C5B73AA65d3962dF9aCe1b0C](https://etherscan.io/address/0x989DcAA95801C527C5B73AA65d3962dF9aCe1b0C) |
+| DODO CrowdPooling Factory    | [0xE8C9A78725D0451FA19878D5f8A3dC0D55FECF25](https://etherscan.io/address/0xE8C9A78725D0451FA19878D5f8A3dC0D55FECF25) |
+| DODO Private Pool Factory    | [0xB5Dc5E183c2aCf02aB879A8569aB4EDAf147d537](https://etherscan.io/address/0xB5Dc5E183c2aCf02aB879A8569aB4EDAf147d537) |
+| DODO Vending Machine Factory    | [0x72d220cE168C4f361dD4deE5D826a01AD8598f6C](https://etherscan.io/address/0x72d220cE168C4f361dD4deE5D826a01AD8598f6C) |
 
 ## Mainnet
 
