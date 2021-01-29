@@ -1,0 +1,114 @@
+{
+  "version-1.0.0/someSidebar": [
+    {
+      "collapsed": false,
+      "type": "category",
+      "label": "Start",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-1.0.0/briefIntro"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Protocol",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-1.0.0/advantages"
+        },
+        {
+          "type": "doc",
+          "id": "version-1.0.0/coreConcept"
+        },
+        {
+          "type": "doc",
+          "id": "version-1.0.0/math"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Contract",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-1.0.0/framework"
+        },
+        {
+          "type": "doc",
+          "id": "version-1.0.0/contractUseGuide"
+        },
+        {
+          "type": "doc",
+          "id": "version-1.0.0/flashSwap"
+        },
+        {
+          "type": "doc",
+          "id": "version-1.0.0/deployedInfo"
+        },
+        {
+          "type": "doc",
+          "id": "version-1.0.0/bugBounty"
+        },
+        {
+          "type": "doc",
+          "id": "version-1.0.0/audit"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Use Case",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-1.0.0/initialDODOOffering"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Advanced Topics",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-1.0.0/authority"
+        },
+        {
+          "type": "doc",
+          "id": "version-1.0.0/decentralization"
+        },
+        {
+          "type": "doc",
+          "id": "version-1.0.0/riskParameters"
+        },
+        {
+          "type": "doc",
+          "id": "version-1.0.0/backtest"
+        },
+        {
+          "type": "doc",
+          "id": "version-1.0.0/commonQuestions"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Whitepaper",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-1.0.0/whitepaper"
+        }
+      ]
+    }
+  ]
+}

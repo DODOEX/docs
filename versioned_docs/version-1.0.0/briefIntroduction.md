@@ -1,6 +1,6 @@
 ---
 id: briefIntro
-title: Introduction to DODO [v2]
+title: Introduction to DODO
 sidebar_label: Introduction to DODO
 slug: /
 ---

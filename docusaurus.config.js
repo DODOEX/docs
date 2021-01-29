@@ -1,4 +1,5 @@
 const math = require("remark-math");
+const path = require("path");
 const katex = require("rehype-katex");
 
 module.exports = {
@@ -27,6 +28,10 @@ module.exports = {
         href: "https://DODOEX.github.io/docs/",
       },
       items: [
+        {
+          type: "docsVersionDropdown",
+          position: "left",
+        },
         {
           to: "docs/",
           activeBasePath: "docs",
@@ -106,4 +111,5 @@ module.exports = {
       },
     ],
   ],
+  plugins: [path.resolve(__dirname, "my-plugin")],
 };
