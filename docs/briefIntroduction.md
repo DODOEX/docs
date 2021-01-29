@@ -17,7 +17,7 @@ DODO accepts liquidity providers’ assets. It gathers funds near market prices 
 
 - Low slippage
 - Single risk exposure
-- No impermanent loss
+- Minimal impermanent loss (IL)
 
 ## What can I do with DODO
 
