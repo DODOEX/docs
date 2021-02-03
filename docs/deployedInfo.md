@@ -17,23 +17,27 @@ sidebar_label: Deployment Information
 | Locked Token Vault 2      | [0xde25cebdd50ff2af17bbc8b3cbf2e31c48b769b4](https://etherscan.io/address/0xde25cebdd50ff2af17bbc8b3cbf2e31c48b769b4) |
 | Undistributed Token Vault | [0x3e19d726ed435AfD3A42967551426b3A47c0F5b7](https://etherscan.io/address/0x3e19d726ed435AfD3A42967551426b3A47c0F5b7) |
 
+## DODO V2  (alpha test)
+
+| Contract Name                  | Address                                                                                                               |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------------------- |
+| DODO Approve                   | [0xCB859eA579b28e02B87A1FDE08d087ab9dbE5149](https://etherscan.io/address/0xCB859eA579b28e02B87A1FDE08d087ab9dbE5149) |
+| DODO Approve Proxy             | [0x335aC99bb3E51BDbF22025f092Ebc1Cf2c5cC619](https://etherscan.io/address/0x335aC99bb3E51BDbF22025f092Ebc1Cf2c5cC619) |
+| DODO V2Proxy02                 | [0xa356867fDCEa8e71AEaF87805808803806231FdC](https://etherscan.io/address/0xa356867fDCEa8e71AEaF87805808803806231FdC) |
+| DODO CrowdPooling Factory      | [0xE8C9A78725D0451FA19878D5f8A3dC0D55FECF25](https://etherscan.io/address/0xE8C9A78725D0451FA19878D5f8A3dC0D55FECF25) |
+| DODO Private Pool Factory      | [0x6B4Fa0bc61Eddc928e0Df9c7f01e407BfcD3e5EF](https://etherscan.io/address/0x6B4Fa0bc61Eddc928e0Df9c7f01e407BfcD3e5EF) |
+| DODO Vending Machine Factory   | [0x72d220cE168C4f361dD4deE5D826a01AD8598f6C](https://etherscan.io/address/0x72d220cE168C4f361dD4deE5D826a01AD8598f6C) |
+| DODO ERC20 Factory             | [0x44D5dF24d5Ef52A791D6436Fa45A8D426f6de34e](https://etherscan.io/address/0x44D5dF24d5Ef52A791D6436Fa45A8D426f6de34e) |
+| DODO Trade Incentive           | [0x989DcAA95801C527C5B73AA65d3962dF9aCe1b0C](https://etherscan.io/address/0x989DcAA95801C527C5B73AA65d3962dF9aCe1b0C) |
+
 ## DODO V1.5
 
-| Contract Name             | Address                                                                                                               |
-| ------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| DODO Smart Approve                | [0xCB859eA579b28e02B87A1FDE08d087ab9dbE5149](https://etherscan.io/address/0xCB859eA579b28e02B87A1FDE08d087ab9dbE5149) |
-| DODO Smart Proxy V1 01    | [0xd0678Ec59d1337e29D1E1B1b6338f3E85D311F5e](https://etherscan.io/address/0xd0678Ec59d1337e29D1E1B1b6338f3E85D311F5e) |
-| DODO Smart Proxy V1 02    | [0x6ed3fd491F5B10384787B3fb162A72227FaFBf63](https://etherscan.io/address/0x6ed3fd491F5B10384787B3fb162A72227FaFBf63) |
-| DODO Smart Proxy V1 03    | [0x9A9942458754bDf65dCbCd0B6B4B842a7D4031AB](https://etherscan.io/address/0x9A9942458754bDf65dCbCd0B6B4B842a7D4031AB) |
+| Contract Name                  | Address                                                                                                               |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------------------- |
+| DODO Approve                   | [0xCB859eA579b28e02B87A1FDE08d087ab9dbE5149](https://etherscan.io/address/0xCB859eA579b28e02B87A1FDE08d087ab9dbE5149) |
+| DODO Approve Proxy             | [0x335aC99bb3E51BDbF22025f092Ebc1Cf2c5cC619](https://etherscan.io/address/0x335aC99bb3E51BDbF22025f092Ebc1Cf2c5cC619) |
+| DODO V1Proxy04                 | [0xa2CB66EBB947D217f61510882096F6e95c1DE97D](https://etherscan.io/address/0xa2CB66EBB947D217f61510882096F6e95c1DE97D) |
 
-## DODO V2 (alpha test)
-| Contract Name             | Address                                                                                                               |
-| ------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| DODO Smart Proxy V2 01    | [0x9aE501385Bc7996A2A4a1FBb00c8d3820611BCB5](https://etherscan.io/address/0x9aE501385Bc7996A2A4a1FBb00c8d3820611BCB5) |
-| DODO Trading Incentive    | [0x989DcAA95801C527C5B73AA65d3962dF9aCe1b0C](https://etherscan.io/address/0x989DcAA95801C527C5B73AA65d3962dF9aCe1b0C) |
-| DODO CrowdPooling Factory    | [0xE8C9A78725D0451FA19878D5f8A3dC0D55FECF25](https://etherscan.io/address/0xE8C9A78725D0451FA19878D5f8A3dC0D55FECF25) |
-| DODO Private Pool Factory    | [0xB5Dc5E183c2aCf02aB879A8569aB4EDAf147d537](https://etherscan.io/address/0xB5Dc5E183c2aCf02aB879A8569aB4EDAf147d537) |
-| DODO Vending Machine Factory    | [0x72d220cE168C4f361dD4deE5D826a01AD8598f6C](https://etherscan.io/address/0x72d220cE168C4f361dD4deE5D826a01AD8598f6C) |
 
 ## Mainnet
 
