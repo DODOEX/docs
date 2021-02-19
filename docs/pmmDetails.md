@@ -1,7 +1,7 @@
 ---
-id: coreConcept
-title: Core Concepts
-sidebar_label: Core Concepts
+id: pmmDetails
+title: PMM Core Concepts
+sidebar_label: PMM Core Concepts
 ---
 
 ## Base & Quote Tokens

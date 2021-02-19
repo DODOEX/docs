@@ -1,24 +1,19 @@
 module.exports = {
   someSidebar: {
-    Start: ["briefIntro"],
-    Protocol: ["advantages", "coreConcept", "math"],
+    "DODO V2 Intro": ["briefIntro"],
+    Protocol: ["pmm", "pmmDetails", "math"],
+    "Use Case": ["publicPool", "privatePool", "crowdPooling"],
     Contract: [
       "framework",
       "contractUseGuide",
       "flashSwap",
       "deployedInfo",
+      "deployedInfoBsc",
       "bugBounty",
       "audit",
     ],
-    "Use Case": ["initialDODOOffering"],
-    "Advanced Topics": [
-      "authority",
-      "decentralization",
-      "riskParameters",
-      "backtest",
-      "commonQuestions",
-    ],
-    Whitepaper: ["whitepaper"],
+    Tokenomics: ["dodonomics"],
+    More: ["commonQuestions"],
     // Docusaurus: ["doc1", "doc2", "doc3", "mdx"],
   },
 };

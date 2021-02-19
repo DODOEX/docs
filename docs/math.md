@@ -51,6 +51,8 @@ It can be proven that:
 - When $\Delta B<0$, $Q_2<Q_1$; trader sell base token, and will receive $Q_1-Q_2$
 - When $\Delta B=0$, $Q_2=Q_1$.
 
+At the same time, DODO V2 focus on verifying the special case of k=0, and k=1 to support the constant price of selling and the bonding curve of the standard AMM.
+
 ## Solving the quadratic equation for regression targets
 
 When the system is not in the equilibrium state, changes to the oracle price will bring profit or loss. For example, assume that shortage of base tokens is the current state, and the oracle price goes up. It is clear that the excess quote tokens cannot buy enough base tokens to return the base token balance to the base token regression target. Thus, LPs who deposited base tokens will suffer a loss. Conversely, if the oracle price drops, the excess quote tokens can buy more base tokens, causing the base token balance to exceed the base token regression target, and LPs who deposited base tokens will make a profit.

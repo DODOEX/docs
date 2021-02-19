@@ -8,19 +8,17 @@ The DODO team has implemented a bug bounty program and invites bug bounty hunter
 
 ## Scope
 
-The scope of the bug bounty program is all contracts in the [DODO smart contracts repository](https://github.com/DODOEX/dodo-smart-contract).
+The scope of the bug bounty program is all contracts in the [DODO V2 contracts repository](https://github.com/DODOEX/contractV2).
 
-The probability of finding a bug and winning a reward for the three parts of DODO is: `Helper` > `Entrance` > `Core`.
-
-![](https://dodoex.github.io/docs/img/dodo_framework.jpeg)
+![](https://dodoex.github.io/docs/img/dodo_framework_v2.png)
 
 ## Rewards
 
 Severity of bugs will be triaged and assessed under the [CVSS Risk Rating](https://www.first.org/cvss/calculator/3.0) scale. The rewards corresponding to the severities are as follows:
 
-- Critical (9.0-10.0): Up to \$50,000
+- Critical (9.0-10.0): Up to \$100,000
 - High (7.0-8.9): Up to \$10,000
-- Medium (4.0-6.9): Up to \$2,000
+- Medium (4.0-6.9): Up to \$5,000
 - Low (0.1-3.9): Up to \$1,000
 
 In addition to bug severity, rewards will be paid out based on the impact of the discovered vulnerabilities, as well as the level of difficulty in discovering these vulnerabilities.

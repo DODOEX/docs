@@ -6,16 +6,18 @@ sidebar_label: Deployment Information
 
 ## DODO Token
 
-| Contract Name             | Address                                                                                                               |
-| ------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| DODO Token                | [0x43dfc4159d86f3a37a5a4b3d4580b888ad7d4ddd](https://etherscan.io/address/0x43dfc4159d86f3a37a5a4b3d4580b888ad7d4ddd) |
-| DODO Pair: DODO-USDT      | [0x8876819535b48b551c9e97ebc07332c7482b4b2d](https://etherscan.io/address/0x8876819535b48b551c9e97ebc07332c7482b4b2d) |
-| DODO Mining               | [0xaed7384f03844af886b830862ff0a7afce0a632c](https://etherscan.io/address/0xaed7384f03844af886b830862ff0a7afce0a632c) |
-| Pre-allocation            | [0x0e504d3e053885a82bd1cb5c29cbaae5b3673be4](https://etherscan.io/address/0x0e504d3e053885a82bd1cb5c29cbaae5b3673be4) |
-| Incentive Program Reserve | [0x4447183c50e82A8b0141718c405381a3b1bad634](https://etherscan.io/address/0x4447183c50e82A8b0141718c405381a3b1bad634) |
-| Locked Token Vault 1      | [0x9224fc9d1389734cebb7cb29545bddc546fb9802](https://etherscan.io/address/0x9224fc9d1389734cebb7cb29545bddc546fb9802) |
-| Locked Token Vault 2      | [0xde25cebdd50ff2af17bbc8b3cbf2e31c48b769b4](https://etherscan.io/address/0xde25cebdd50ff2af17bbc8b3cbf2e31c48b769b4) |
-| Undistributed Token Vault | [0x3e19d726ed435AfD3A42967551426b3A47c0F5b7](https://etherscan.io/address/0x3e19d726ed435AfD3A42967551426b3A47c0F5b7) |
+| Contract Name                   | Address                                                                                                               |
+| ------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| DODO Token                      | [0x43dfc4159d86f3a37a5a4b3d4580b888ad7d4ddd](https://etherscan.io/address/0x43dfc4159d86f3a37a5a4b3d4580b888ad7d4ddd) |
+| DODO Pair: DODO-USDT            | [0x8876819535b48b551c9e97ebc07332c7482b4b2d](https://etherscan.io/address/0x8876819535b48b551c9e97ebc07332c7482b4b2d) |
+| DODO Mining                     | [0xaed7384f03844af886b830862ff0a7afce0a632c](https://etherscan.io/address/0xaed7384f03844af886b830862ff0a7afce0a632c) |
+| Pre-allocation                  | [0x0e504d3e053885a82bd1cb5c29cbaae5b3673be4](https://etherscan.io/address/0x0e504d3e053885a82bd1cb5c29cbaae5b3673be4) |
+| Incentive Program Reserve       | [0x4447183c50e82A8b0141718c405381a3b1bad634](https://etherscan.io/address/0x4447183c50e82A8b0141718c405381a3b1bad634) |
+| Locked Token Vault 1            | [0x9224fc9d1389734cebb7cb29545bddc546fb9802](https://etherscan.io/address/0x9224fc9d1389734cebb7cb29545bddc546fb9802) |
+| Locked Token Vault 2            | [0xde25cebdd50ff2af17bbc8b3cbf2e31c48b769b4](https://etherscan.io/address/0xde25cebdd50ff2af17bbc8b3cbf2e31c48b769b4) |
+| Undistributed Token Vault       | [0x3e19d726ed435AfD3A42967551426b3A47c0F5b7](https://etherscan.io/address/0x3e19d726ed435AfD3A42967551426b3A47c0F5b7) |
+| Locked Token (Migrate to BSC)   | [0x02fCB21dc1cf221939C1d4277fB54016b5d32bC7](https://etherscan.io/address/0x02fCB21dc1cf221939C1d4277fB54016b5d32bC7) |
+
 
 ## DODO V2  (alpha test)
 
@@ -30,16 +32,8 @@ sidebar_label: Deployment Information
 | DODO ERC20 Factory             | [0x44D5dF24d5Ef52A791D6436Fa45A8D426f6de34e](https://etherscan.io/address/0x44D5dF24d5Ef52A791D6436Fa45A8D426f6de34e) |
 | DODO Trade Incentive           | [0x989DcAA95801C527C5B73AA65d3962dF9aCe1b0C](https://etherscan.io/address/0x989DcAA95801C527C5B73AA65d3962dF9aCe1b0C) |
 
-## DODO V1.5
 
-| Contract Name                  | Address                                                                                                               |
-| ------------------------------ | --------------------------------------------------------------------------------------------------------------------- |
-| DODO Approve                   | [0xCB859eA579b28e02B87A1FDE08d087ab9dbE5149](https://etherscan.io/address/0xCB859eA579b28e02B87A1FDE08d087ab9dbE5149) |
-| DODO Approve Proxy             | [0x335aC99bb3E51BDbF22025f092Ebc1Cf2c5cC619](https://etherscan.io/address/0x335aC99bb3E51BDbF22025f092Ebc1Cf2c5cC619) |
-| DODO V1Proxy04                 | [0xa2CB66EBB947D217f61510882096F6e95c1DE97D](https://etherscan.io/address/0xa2CB66EBB947D217f61510882096F6e95c1DE97D) |
-
-
-## Mainnet
+## Mainnet V1.0
 
 | Contract Name                  | Address                                                                                                               |
 | ------------------------------ | --------------------------------------------------------------------------------------------------------------------- |
@@ -56,11 +50,10 @@ sidebar_label: Deployment Information
 | DODO Pair: WOO-USDT           | [0x181d93ea28023bf40c8bb94796c55138719803b4](https://etherscan.io/address/0x181d93ea28023bf40c8bb94796c55138719803b4) |
 | DODO Pair: wCRES-USDT           | [0x85f9569b69083c3e6aeffd301bb2c65606b5d575](https://etherscan.io/address/0x85f9569b69083c3e6aeffd301bb2c65606b5d575) |
 | DODO Zoo                       | [0x3a97247df274a17c59a3bd12735ea3fcdfb49950](https://etherscan.io/address/0x3a97247df274a17c59a3bd12735ea3fcdfb49950) |
-| DODO EthProxy                  | [0x37adc35f7b12582240818df04aac04ca409d5913](https://etherscan.io/address/0x37adc35f7b12582240818df04aac04ca409d5913) |
-| DODO EthProxy (compatible)     | [0x3d7cbd8ae59505283d438eb6ff54b8b42d0c98a6](https://etherscan.io/address/0x3d7cbd8ae59505283d438eb6ff54b8b42d0c98a6) |
 | Uniswap arbitrageur            | [0xbf90b54cc00ceeaa93db1f6a54a01e3fe9ed4422](https://etherscan.io/address/0xbf90b54cc00ceeaa93db1f6a54a01e3fe9ed4422) |
 | Multisig Wallet with Time Lock | [0x6dae6ae227438378c117821c51fd61661faa8893](https://etherscan.io/address/0x6dae6ae227438378c117821c51fd61661faa8893) |
 | Gnosis Multisig Wallet         | [0x95C4F5b83aA70810D4f142d58e5F7242Bd891CB0](https://etherscan.io/address/0x95C4F5b83aA70810D4f142d58e5F7242Bd891CB0) |
+
 
 ## DLP Token Address
 
@@ -85,6 +78,7 @@ sidebar_label: Deployment Information
 | AAVE-USDC: AAVE  | [0x30ad5b6d4e531591591113b49eae2fafbc2236d5](https://etherscan.io/address/0x30ad5b6d4e531591591113b49eae2fafbc2236d5) |
 | AAVE-USDC: USDC  | [0x5840a9e733960f591856a5d13f6366658535bbe5](https://etherscan.io/address/0x5840a9e733960f591856a5d13f6366658535bbe5) |
 
+
 ## Related Token Address
 
 | Symbol         | Address                                                                                                               |
@@ -103,7 +97,22 @@ sidebar_label: Deployment Information
 | WOO            | [0x4691937a7508860f876c9c0a2a617e7d9e945d4b](https://etherscan.io/address/0x4691937a7508860f876c9c0a2a617e7d9e945d4b) |
 | wCRES            | [0x85f9569b69083c3e6aeffd301bb2c65606b5d575](https://etherscan.io/address/0x85f9569b69083c3e6aeffd301bb2c65606b5d575) |
 
-## Kovan
+
+## Kovan V2
+
+| Contract Name                  | Address                                                                                                                     |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------------------------- |
+| DODO Approve                   | [0xa375b128e139ae54EF7F189BC8fEb4624f1c2Afa](https://kovan.etherscan.io/address/0xa375b128e139ae54EF7F189BC8fEb4624f1c2Afa) |
+| DODO Approve Proxy             | [0xE2bf3e72E126f0AD4Aec07AdfA6cc345EEF43bDe](https://kovan.etherscan.io/address/0xE2bf3e72E126f0AD4Aec07AdfA6cc345EEF43bDe) |
+| DODO V2Proxy02                 | [0x85CAA68ae47f047aa01C48BCaA711CA70a950fFb](https://kovan.etherscan.io/address/0x85CAA68ae47f047aa01C48BCaA711CA70a950fFb) |
+| DODO CrowdPooling Factory      | [0x9e6E8985D52E91eDf1671f28Ca73bc4F3E219b72](https://kovan.etherscan.io/address/0x9e6E8985D52E91eDf1671f28Ca73bc4F3E219b72) |
+| DODO Private Pool Factory      | [0xC65F8087288aa0a118aa6F3228Ef9ecc8187F4b6](https://kovan.etherscan.io/address/0xC65F8087288aa0a118aa6F3228Ef9ecc8187F4b6) |
+| DODO Vending Machine Factory   | [0x322F8014C125Da09314d3a68d4d9F427823F17FD](https://kovan.etherscan.io/address/0x322F8014C125Da09314d3a68d4d9F427823F17FD) |
+| DODO ERC20 Factory             | [0xCb1A2f64EfB02803276BFB5a8D511C4D950282a0](https://kovan.etherscan.io/address/0xCb1A2f64EfB02803276BFB5a8D511C4D950282a0) |
+| DODO Trade Incentive           | [0x5cFCc14f7C8be8B138D9fDF7438391b0BFe0589F](https://kovan.etherscan.io/address/0x5cFCc14f7C8be8B138D9fDF7438391b0BFe0589F) |
+
+
+## Kovan 
 
 | Contract Name         | Address                                    |
 | --------------------- | ------------------------------------------ |
