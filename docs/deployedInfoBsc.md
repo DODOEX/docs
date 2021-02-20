@@ -30,7 +30,7 @@ sidebar_label: Deployment Information(BSC)
 | Contract Name                  | Address                                                                                                              |
 | ------------------------------ | -------------------------------------------------------------------------------------------------------------------- |
 | DODO Pair: KOGE-WBNB           | [0x5BDCf4962FDED6B7156E710400F4C4c031f600dC](https://bscscan.com/address/0x5BDCf4962FDED6B7156E710400F4C4c031f600dC) |
-| DODO Pair: BUSD-USDT           | [0x77106d0f8c5B8ADF95a7feaae5bea130b1D2D748](https://bscscan.com/address/0x77106d0f8c5B8ADF95a7feaae5bea130b1D2D748) |
+| DODO Pair: BUSD-USDT           | [0xBe60d4c4250438344bEC816Ec2deC99925dEb4c7](https://bscscan.com/address/0xBe60d4c4250438344bEC816Ec2deC99925dEb4c7) |
 | DODO Zoo                       | [0xCA459456a45e300AA7EF447DBB60F87CCcb42828](https://bscscan.com/address/0xCA459456a45e300AA7EF447DBB60F87CCcb42828) |
 | Multisig Wallet with Time Lock | [0x4073f2b9bB95774531b9e23d206a308c614A943a](https://bscscan.com/address/0x4073f2b9bB95774531b9e23d206a308c614A943a) |
 | Gnosis Multisig Wallet         | [0xcaa42F09AF66A8BAE3A7445a7f63DAD97c11638b](https://bscscan.com/address/0xcaa42F09AF66A8BAE3A7445a7f63DAD97c11638b) |
@@ -41,8 +41,8 @@ sidebar_label: Deployment Information(BSC)
 | ---------------- | --------------------------------------------------------------------------------------------------------------------- |
 | KOGE-WBNB : KOGE | [0xF8404d7ac028a6C728a81c623f464aD45027A415](https://bscscan.com/address/0xF8404d7ac028a6C728a81c623f464aD45027A415) |
 | KOGE-WBNB : WBNB | [0x750475824cf199FEf0af5FCb761Ac0BEba75e5B1](https://bscscan.com/address/0x750475824cf199FEf0af5FCb761Ac0BEba75e5B1) |
-| BUSD-USDT : BUSD | [0xE267572fE023afDBb7a0d46AF9e66287ACc1B8E3](https://bscscan.com/address/0xE267572fE023afDBb7a0d46AF9e66287ACc1B8E3) |
-| BUSD-USDT : USDT | [0x5311DC4b45532829e2C9000C9Ec845ADF0d8BA23](https://bscscan.com/address/0x5311DC4b45532829e2C9000C9Ec845ADF0d8BA23) |
+| BUSD-USDT : BUSD | [0xbeb34a9d23e0fe41d7b08ae3a4cbad9a63ce0aea](https://bscscan.com/address/0xbeb34a9d23e0fe41d7b08ae3a4cbad9a63ce0aea) |
+| BUSD-USDT : USDT | [0x56ce908eebafea026ab047cee99a3aff039b4a33](https://bscscan.com/address/0x56ce908eebafea026ab047cee99a3aff039b4a33) |
 
 
 ## Related Token Address
