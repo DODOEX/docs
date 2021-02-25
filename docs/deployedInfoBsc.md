@@ -12,7 +12,7 @@ sidebar_label: Deployment Information(BSC)
 | DODO Mining               | [0x01f9BfAC04E6184e90bD7eaFD51999CE430Cc750](https://bscscan.com/address/0x01f9BfAC04E6184e90bD7eaFD51999CE430Cc750) |
 
 
-## DODO V2  (alpha test)
+## DODO V2  (beta)
 
 | Contract Name                  | Address                                                                                                               |
 | ------------------------------ | --------------------------------------------------------------------------------------------------------------------- |

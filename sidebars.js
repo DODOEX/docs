@@ -9,6 +9,7 @@ module.exports = {
       "flashSwap",
       "deployedInfo",
       "deployedInfoBsc",
+      "subgraph",
       "bugBounty",
       "audit",
     ],
