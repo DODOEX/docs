@@ -2,7 +2,7 @@ module.exports = {
   someSidebar: {
     "DODO V2 Intro": ["briefIntro"],
     Protocol: ["pmm", "pmmDetails", "math"],
-    "Use Case": ["publicPool", "privatePool", "crowdPooling"],
+    "Use Case": ["publicPool", "privatePool", "crowdPooling", "upCrowdPooling"],
     Contract: [
       "framework",
       "contractUseGuide",
