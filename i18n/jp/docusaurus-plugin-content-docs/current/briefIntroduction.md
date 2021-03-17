@@ -5,7 +5,7 @@ slug: /
 sidebar_label: DODO V2 Intro
 ---
 
-## What is DODO
+## What is DODO 日本版
 
 DODO is a decentralized exchange platform powered by the Proactive Market Maker (PMM) algorithm. It features highly capital-efficient liquidity pools that support single-token provision, reduce impermanent loss, and minimize slippage for traders. The trading platform also offers SmartTrade, a decentralized liquidity aggregation service that routes to and compares various liquidity sources to quote the optimal prices between any two tokens. In addition, DODO removed all roadblocks hindering liquidity pool creation for the issuance of new assets - asset ratios, liquidity depths, fee rates, and other parameters can all be freely customized and configured in real-time. Based on this breakthrough, DODO has developed Crowdpooling, a permissionless, equal opportunity liquidity offering mechanic, as well as customizable technical solutions geared towards professional on-chain market makers.
 
