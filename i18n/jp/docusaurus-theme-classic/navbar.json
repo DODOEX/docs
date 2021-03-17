@@ -1,0 +1,18 @@
+{
+  "title": {
+    "message": "DODO Docs",
+    "description": "The title in the navbar"
+  },
+  "item.label.Docs": {
+    "message": "Docs",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.Exchange": {
+    "message": "Exchange",
+    "description": "Navbar item with label Exchange"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}

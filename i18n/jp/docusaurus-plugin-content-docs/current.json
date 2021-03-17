@@ -1,0 +1,30 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.someSidebar.category.DODO V2 Intro": {
+    "message": "DODO V2 Intro",
+    "description": "The label for category DODO V2 Intro in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Protocol": {
+    "message": "Protocol",
+    "description": "The label for category Protocol in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Use Case": {
+    "message": "Use Case",
+    "description": "The label for category Use Case in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Contract": {
+    "message": "Contract",
+    "description": "The label for category Contract in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Tokenomics": {
+    "message": "Tokenomics",
+    "description": "The label for category Tokenomics in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.More": {
+    "message": "More",
+    "description": "The label for category More in sidebar someSidebar"
+  }
+}

@@ -49,13 +49,14 @@ module.exports = {
           position: "left",
         },
         {
-          href: "https://DODOEX.github.io/cn/",
-          label: "中文版",
-          position: "left",
-        },
-        {
           type: "localeDropdown",
           position: "right",
+          dropdownItemsAfter: [
+            {
+              to: "https://github.com/DODOEX/docs/issues/24",
+              label: "Help Us Translate",
+            },
+          ],
         },
       ],
     },
@@ -118,13 +119,16 @@ module.exports = {
   plugins: [path.resolve(__dirname, "my-plugin")],
   i18n: {
     defaultLocale: "en",
-    locales: ["en", "zh"],
+    locales: ["en", "zh", "jp"],
     localeConfigs: {
       en: {
         label: "English",
       },
       zh: {
         label: "中文",
+      },
+      jp: {
+        label: "🚧 日本語 🚧",
       },
     },
   },
