@@ -1,0 +1,30 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.someSidebar.category.DODO V2 Intro": {
+    "message": "项目简介",
+    "description": "The label for category DODO V2 Intro in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Protocol": {
+    "message": "协议相关",
+    "description": "The label for category Protocol in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Use Case": {
+    "message": "应用场景",
+    "description": "The label for category Use Case in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Contract": {
+    "message": "合约相关",
+    "description": "The label for category Contract in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Tokenomics": {
+    "message": "代币经济",
+    "description": "The label for category Tokenomics in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.More": {
+    "message": "更多",
+    "description": "The label for category More in sidebar someSidebar"
+  }
+}

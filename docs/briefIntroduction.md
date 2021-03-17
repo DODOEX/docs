@@ -1,6 +1,6 @@
 ---
 id: briefIntro
-title: DODO V2
+title: DODO V2 docs
 slug: /
 sidebar_label: DODO V2 Intro
 ---

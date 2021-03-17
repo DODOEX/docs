@@ -53,6 +53,10 @@ module.exports = {
           label: "中文版",
           position: "left",
         },
+        {
+          type: "localeDropdown",
+          position: "right",
+        },
       ],
     },
     footer: {
@@ -112,4 +116,16 @@ module.exports = {
     ],
   ],
   plugins: [path.resolve(__dirname, "my-plugin")],
+  i18n: {
+    defaultLocale: "en",
+    locales: ["en", "zh"],
+    localeConfigs: {
+      en: {
+        label: "English",
+      },
+      zh: {
+        label: "中文",
+      },
+    },
+  },
 };
