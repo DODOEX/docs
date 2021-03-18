@@ -1,7 +1,7 @@
 ---
 id: pmmDetails
-title: PMM Core Concepts
-sidebar_label: PMM Core Concepts
+title: PMMコアコンセプト
+sidebar_label: PMMコアコンセプト
 ---
 
 ## Base TokenとQuote Token
