@@ -4,33 +4,38 @@ title: Bug Bounty 💰
 sidebar_label: Bug Bounty 💰
 ---
 
-The DODO team has implemented a bug bounty program and invites bug bounty hunters to participate.
+DODOは脆弱性報奨金制度を始めました。皆さんがバグと脆弱性を報告することを歓迎します。
+ 
+## 範囲
 
-## Scope
-
-The scope of the bug bounty program is all contracts in the [DODO V2 contracts repository](https://github.com/DODOEX/contractV2).
+奨励の範囲は[DODO V2](https://github.com/DODOEX/contractV2) スマート・コントラクトに含むすべてのコードについてのバグ報告です。
 
 ![](https://dodoex.github.io/docs/img/dodo_framework_v2.png)
 
-## Rewards
+## 奨励
 
-Severity of bugs will be triaged and assessed under the [CVSS Risk Rating](https://www.first.org/cvss/calculator/3.0) scale. The rewards corresponding to the severities are as follows:
+我々は[CVSS](https://www.first.org/cvss/calculator/3.0) に基づいてバグの重大性を評価し，各レベルに対応し、異なる奨励額を出します。
+ 
+- 最高（9.0-10）は最高10万ドルです。
+ 
+- 高（7.0-8.9）は最高1万ドルです。
+ 
+- 中（4.0-6.9）は最高2,000ドルです。
+ 
+- 低（0.1-3.9）最高1,000ドルです
+ 
+我々はバグの重大性によって奨励を区別する以外に、バグの影響の大きさと発見の難しさによって奨励を与えます。
 
-- Critical (9.0-10.0): Up to \$100,000
-- High (7.0-8.9): Up to \$10,000
-- Medium (4.0-6.9): Up to \$5,000
-- Low (0.1-3.9): Up to \$1,000
+## バグ報告
 
-In addition to bug severity, rewards will be paid out based on the impact of the discovered vulnerabilities, as well as the level of difficulty in discovering these vulnerabilities.
+いかなる誤りやバグは必ず　contact@dodoex.io　を通じてDODOチームに報告しなければなりません。賞金稼ぎはDODOと連絡する前に、他の人や団体に漏らしてはいけません。また、バグを発見したら、できるだけ早くDODOチームに知らせ、以下の点を含んでできるだけ詳細にメールで説明してください。
+ 
+- バグを再現する条件
 
-## Disclosure
+- バグを再現するステップ
 
-Any vulnerability or bug discovered must be reported _only_ to the DODO team at contact@dodoex.io. Bounty hunters must not disclose the vulnerability or bug publicly or to another person or entity prior to contacting the DODO team. In addition, disclosure to the DODO team must be made promptly following the discovery of the vulnerability. Please include as much information about the vulnerability as possible in your email, including:
+- バグに潜む危険
+ 
+詳細なバグ報告は奨励を得る可能性と金額を高めます。
 
-- The conditions on which reproducing the bug is contingent
-- The steps needed to reproduce the bug or, preferably, a proof of concept
-- The potential implications of the vulnerability being abused
-
-A detailed vulnerability report increases the likelihood of receiving a reward and may increase the monetary amount of the reward.
-
-Anyone who reports a unique, previously unreported vulnerability that results in a change to the code or a configuration change and who keeps such vulnerability confidential until it has been resolved by our engineers will be recognized publicly for their contribution, if agreed.
+有効なバグ報告を提供し、かつ、バグ解決までにずっと秘密を保持してくれたユーザーに対しては、同意を得てから公に感謝します。
