@@ -20,13 +20,10 @@ DODOはマーケットメーカーの資産を使って市価近くで十分な�
 
 ## DODOの強み
 
-Crowdpooling is an equal opportunity way to distribute tokens and kick-off liquidity markets. Inspired by the call auction mechanism commonplace in securities markets, Crowdpooling ensures that there is no front-running or bot interference. With the added security and assurance provided by a liquidity protection period, users are able to participate in liquidity offering campaigns and be involved in the projects they support with peace of mind.
-
-## DODOの強み
-
 *低いスリッページ（slippage）
 *単一リスクエクスポージャー（risk exposure）
 *最小変動損失（impermanent loss）
+
 
 
 ## どのようにDODOを活用するのか？
@@ -36,6 +33,7 @@ Crowdpooling is an equal opportunity way to distribute tokens and kick-off liqui
 *普通のトレーダーは中心化取引所と同じように十分な流動性を享受できます。
 *裁定取引者はDODOと他の取引所の間でアービトラージ（arbitrage）により利益を得ることができます。
 *スマート・コントラクトはDODOの流動性をそのまま利用して、オンチェーンで清算、オークションなどが操作できます。
+
 
 - **マーケットメーカーとして:**
 
