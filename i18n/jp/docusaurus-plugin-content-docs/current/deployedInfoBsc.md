@@ -1,12 +1,12 @@
 ---
 id: deployedInfoBsc
-title: Deployment Information on BSC 
-sidebar_label: Deployment Information(BSC)
+title: 開発者情報(BSC)
+sidebar_label: 開発者情報(BSC)
 ---
 
-## DODO Token
+## DODOトークンに関するもの
 
-| Contract Name             | Address                                                                                                              |
+| コントラクト                | Address                                                                                                              |
 | ------------------------- | ---------------------------------------------------------------------------------------------------------------------|
 | DODO Bsc Token            | [0x67ee3Cb086F8a16f34beE3ca72FAD36F7Db929e2](https://bscscan.com/address/0x67ee3Cb086F8a16f34beE3ca72FAD36F7Db929e2) |
 | DODO Mining               | [0x01f9BfAC04E6184e90bD7eaFD51999CE430Cc750](https://bscscan.com/address/0x01f9BfAC04E6184e90bD7eaFD51999CE430Cc750) |
@@ -14,7 +14,7 @@ sidebar_label: Deployment Information(BSC)
 
 ## DODO V2  (beta)
 
-| Contract Name                  | Address                                                                                                               |
+| コントラクト                     | Address                                                                                                               |
 | ------------------------------ | --------------------------------------------------------------------------------------------------------------------- |
 | DODO Approve                   | [0xa128Ba44B2738A558A1fdC06d6303d52D3Cef8c1](https://bscscan.com/address/0xa128Ba44B2738A558A1fdC06d6303d52D3Cef8c1) |
 | DODO Approve Proxy             | [0xB76de21f04F677f07D9881174a1D8E624276314C](https://bscscan.com/address/0xB76de21f04F677f07D9881174a1D8E624276314C) |
@@ -27,7 +27,7 @@ sidebar_label: Deployment Information(BSC)
 
 ## DODO V1.0
 
-| Contract Name                  | Address                                                                                                              |
+| コントラクト                     | Address                                                                                                              |
 | ------------------------------ | -------------------------------------------------------------------------------------------------------------------- |
 | DODO Pair: KOGE-WBNB           | [0x5BDCf4962FDED6B7156E710400F4C4c031f600dC](https://bscscan.com/address/0x5BDCf4962FDED6B7156E710400F4C4c031f600dC) |
 | DODO Pair: BUSD-USDT           | [0xBe60d4c4250438344bEC816Ec2deC99925dEb4c7](https://bscscan.com/address/0xBe60d4c4250438344bEC816Ec2deC99925dEb4c7) |
@@ -35,7 +35,7 @@ sidebar_label: Deployment Information(BSC)
 | Multisig Wallet with Time Lock | [0x4073f2b9bB95774531b9e23d206a308c614A943a](https://bscscan.com/address/0x4073f2b9bB95774531b9e23d206a308c614A943a) |
 | Gnosis Multisig Wallet         | [0xcaa42F09AF66A8BAE3A7445a7f63DAD97c11638b](https://bscscan.com/address/0xcaa42F09AF66A8BAE3A7445a7f63DAD97c11638b) |
 
-## DLP Token Address
+## DLPトークン・アドレス
 
 | DLP              | Address                                                                                                               |
 | ---------------- | --------------------------------------------------------------------------------------------------------------------- |
@@ -45,7 +45,7 @@ sidebar_label: Deployment Information(BSC)
 | BUSD-USDT : USDT | [0x56ce908eebafea026ab047cee99a3aff039b4a33](https://bscscan.com/address/0x56ce908eebafea026ab047cee99a3aff039b4a33) |
 
 
-## Related Token Address
+## 関連するトークン・アドレス
 
 | Symbol         | Address                                                                                                              |
 | -------------- | -------------------------------------------------------------------------------------------------------------------- |
