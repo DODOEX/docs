@@ -1,37 +1,29 @@
 ---
 id: framework
-title: Smart Contract Framework
-sidebar_label: Framework
+title: DODOのスマート・コントラクト
+sidebar_label: スマート・コントラクト
 ---
 
-## Overview
+## 概要
 
-DODO V2 is built with a set of smart contracts. which can realize a series of core features including DODO Vending Machine, DODO Private Pool, Crowdpooling, Liquidity Management, SmartTrade and DODOnomics,etc.
+DODOのスマート・コントラクトは一つのセットで構成されています。下図にコントラクトのフレームワークとコントラクトの相互作用を示しています。
 
 ![](https://dodoex.github.io/docs/img/dodo_framework_v2.png)
 
-## DODOApprove
+## 核心部分
 
-DODO V2 abstracts a global token authorization contract (`DODOApprove`) from the contract structure. For different types of tokens, users only need to authorize once, and then they can smoothly perform operations such as trade and liquidity management.
+DODOのすべてのデータとロジックを含めた核心部分は、一組の代理コントラクトと一つの実現コントラクトで構成されています。任意の交易ペアは独立した`DODOProxy`の代理コントラクト（例えば、WETH-USDC、DAI-USDTなど）と結びつけられており、そのコントラクトは状態と元データのみを保存します。すべての基本ロジックは`DODO　Implementation`の実現コントラクトにあります。
+ 
+便利のために、我々は`DODO　Pair`とロジック実現の`DODO　Template`を用います。ユーザーは直接`DODO　Pair`（或いはHelper）を通じて対話することができる。
 
-`DODOApprove` as the platform's entrance, helps users to securely manage token authorization. At the same time, we have added a time lock mechanism to `DODOApprove`. When we upgrade `DODOProxy` or add other contracts, the time lock mechanism will ensure that the operation cools down for 3 days, leaving enough time to publicize contract adjustments to the community. To enhance the trust of `DODOApprove`.
+## インターフェース
 
-## DODOV2Proxy
+DODOは一つのオープンソースのスマート・コントラクトです。我々はDODOを元にした分岐を作ることを歓迎します。しかし注意すべきは、`DODO Pair`の運行はオラクルとパラメータの微調整に非常に依存していますので、誤った配置はユーザーに多大な損失を与えます。だから、我々は開発者が落とし穴に落ちないように、一つのインターフェースを設けました。
+ 
+DODOチームは常に安全が最重要だと考えています。我々はDODOのコントラクトに対して厳しいテストと審査を行っています。開発者はDODOに基づいて開発を行いたい場合、`DODO Zoo`からアクセスする必要があります。`DODO Template`がアップグレードしても、`DODO Zoo`はそのままです。
 
-`DODOV2Proxy` is the contract that users interact most of the time. It integrates the smartTrade, creating DODO vending machine, DODO private pool, crowdPooling, and liquidity management functions. At the same time, features such as gas subsidies and trading mining have been implemented internally, and helping users do the mutual conversion of WETH and ETH. All of these are hidden functions. The purpose is to improve the user's experience and as much as possible to reduce transaction costs.
+## ヘルパー
 
-## Factory Contract
-
-Factory contracts include `DPPFactory` (DODO private pool factory), `DVMFactory` (DODO vending machine factory), and `CrowdPoolingFactory`. Their functions include one-step creation of different types of pools. At the same time, the pool address will be registered in the factory contract, acting as the platform's registry and the only source of the pools created by the DODO platform.
-
-## Others
-
-The contracts currently registered in `DODOApprove` includes another two contracts.
-
-### DODOMigrationBSC
-
-Binance Smart Chain (BSC), as our currently layer2 solution, requires the migration of `DODO` tokens to support business running on BSC. We adopt a common token mapping method, which locks DODO token on the Ethereum network, and mints the same amount DODO token on BSC. maintaining the total amount of DODO tokens unchanged and can be circulated freely on the two networks. The function of `DODOMigrationToBSC` is locking user's Ethereum DODO token.
-
-### vDODO
-
-`vDODO` is a token that serves as a user's proof of membership in DODO’s loyalty program. Users can deposit `DODO` to mint `vDODO`. having the right to enjoy the benefits of the platform and obtain block distribution rewards of `DODO`. It is also the right to vote for the follow-up governance of the platform.
+我々は複雑なタスクを一括してコントラクトの中に入れる形で、DODOに対する理解及び利用の制約を下げました。例えば、上の図のように、`DODO ETH Proxy`は、ユーザーがETHとWETHで転換でき、同時に`DODO Pair`と対話できます。このような方式を通じて、ユーザーはWETHの複雑な背後を理解する必要がなく、DODOの上でETHを売買することに関心を持つだけでいいです。
+ 
+我々はこのような裁定取引やルート・コントラクトを一括してヘルパー（Helper）と呼びます。我々はコミュニティがより多くのヘルパー・コントラクトの開発に参加することを非常に歓迎し、喜んで技術サポートを提供いたします。
