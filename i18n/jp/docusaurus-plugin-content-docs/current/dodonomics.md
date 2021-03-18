@@ -1,77 +1,42 @@
 ---
 id: dodonomics
-title: DODOnomics V2
-sidebar_label: DODOnomics V2
+title: トークンの経済モデル
+sidebar_label: トークンの経済モデル
 ---
 
-Starting from DODO v2, there will be three categories of DODO platform users: traders, liquidity pool creators, and liquidity providers (LPs). DODO’s v1 token economy design will thus be upgraded accordingly to engage these user groups and make the platform work for all.
+#### DODOトークンの経済モデルはどのようなものですか？どんな使用シーンがありますか？
 
-## Summary
-
-- Besides governance, DODO tokens will have two new utilities for holders: **Crowdpooling and IDO** allocations and **trading fee discounts** on DODO.
-
-- A new, non-transferable vDODO token will be introduced to serve as **proof of membership** in DODO’s loyalty program.
-
-- vDODO tokens can be minted at a fixed rate of **1 vDODO = 100 DODO.**
-
-- vDODO tokens will give holders **dividends from trading fees** and **membership rewards**, in addition to the same benefits of holding DODO tokens.
-
-- In order to encourage long-term membership, redeeming vDODO tokens to DODO tokens will incur a **variable exit fee.**
-
-- **Trading mining** and **combiner harvest** will be rolled out to incentivize more interactions with the DODO platform.
-
-## DODO and vDODO: Token Utilities and Benefits
-
-**DODO**: The DODO token has been given several important utilities in addition to its governance function. DODO token holders enjoy the following benefits:
-
-- **Governance rights:** holders can create and vote on proposals; 1 DODO = 1 vote
-- **Crowdpooling and IDO allocations**
-- **Trading fee discounts**
-
-**vDODO**: vDODO is a token that serves as a user’s proof of membership in DODO’s loyalty program. Benefits for vDODO token holders include but are not limited to the following:
-
-- **Governance rights:** holders can create and vote on proposals. 1 vDODO = 100 votes
-- **Crowdpooling and IDO allocations**
-- **Trading fee discounts**
-- **Dividends paid out from trading fees (exclusive to vDODO token holders):** A proportion of the trading fees accrued on the platform will be distributed to vDODO holders
-- **vDODO membership rewards (exclusive to vDODO token holders)**: DODO reward tokens will be distributed to vDODO holders every block (see next section)
-
-## Minting and Redeeming vDODO
-
-### Minting vDODO and Membership Rewards
-
-You can stake 100 DODO tokens to mint one (1) vDODO token. vDODO tokens are **NOT transferable**. vDODO token holders receive DODO reward tokens. Specifically:
-
-1. 6 DODO reward tokens are released and distributed to vDODO holders every block.
-2. vDODO holders receive DODO reward tokens proportional to their shares of vDODO, i.e. the number of DODO tokens they get is 6 * their vDODO balance / number of vDODO in circulation
-3. vDODO holders can invite others to mint vDODO tokens using their referral links. The inviter receives extra membership rewards equal to 10% of the number of vDODO tokens minted by the invitee.
-4. To encourage early birds to try out the vDODO membership rewards system, there will be 12 DODO reward tokens per block during the first 7 days.
-
-### Redeeming vDODO and Exit Fee
-
-In order to redeem vDODO back to DODO tokens, you will need to pay an “exit fee” in vDODO tokens, which will be immediately distributed to all remaining vDODO holders who haven’t exited.
-
-Here, we will introduce a statistical measure called the **DODO Loyalty Index (DLI)**, defined to be (number of vDODO in circulation * 100) / DODO in circulation. Assuming everything else stays the same, when vDODO gets minted, the number of vDODO in circulation increases, the number DODO tokens in circulation decreases, and the DLI increases.
-
-The exit fee structure is that the higher the DLI, the lower the exit fee rate:
-
-- When the DLI is above 0.5, the exit fee is at its minimum of 5%.
-- As DLI decreases, the exit fee rate increases.
-- When the DLI is less than 0.1, the exit fee is at its maximum of 15%.
-
-More specifically, the exit fee rate formula is:
-
-- If DLI > 0.5, exit fee rate = 0.05
-- If DLI < 0.1, exit fee rate = 0.15
-- If 0.1 < DLI < 0.5, exit fee rate = 0.175 - 0.25 * DLI
-- Note that DLI cannot exceed 0.5, since no DODO would be available to be staked to mint vDODO tokens
-
-![](https://dodoex.github.io/docs/img/vdodo_1.png)
-
-## Tokens as the Soul of Projects: Value and Growth
-
-A crypto project without a sound and sustainable tokenomics is, in our opinion, “soulless”, because tokens serve two crucial primary functions: value encapsulation and growth incentivization. The DODO team has been designing and will always design future token economy models with these keywords top of mind.
-
-We will be running highly cost-effective incentive programs and initiatives to help facilitate and ensure the continuous growth of the DODO platform and DODO community. In the meantime, the DODO token will be the ideal vehicle for capturing and representing the value of the DODO’s economy and ecosystem, and the collective value of the platform will be shared equitably and generously with our loyal supporters.
-
-As outlined in our DODO token announcement, 60% of the DODO total token supply is reserved for the community. This is a vast number of tokens and it is impossible to plan out all the incentive programs beforehand. As our platform continues to grow in stature and user numbers and more product features mature, the subject of value encapsulation will become increasingly complex and multifaceted. This is why the DODOnomics v2 design is open to constructive suggestions and feedback from everyone, as we seek to grow alongside the community.
+現在、DODOトークンは管理貨幣のモデルで、主に分散型取引所の各運営活動に対する管理に用いられています。ユーザーはDODOトークンを担保にしてプラットフォームの管理に参加することができます。
+ 
+後に手数料の収入が十分増えたら、さらに別の経済モデルのプラットフォーム通貨を追加します。例えば、一部の手数料でDODOトークンを買い戻して廃棄したり、積極的に管理に参加しているトークン持ちのユーザーを奨励したりします。NFT資産との結合を含む他のトークンの使い方も探索しています。近いうちに私達のこの方面のいくつかの新しい情報を見られるでしょう。
+ 
+BancorからUniswapまでさらにCurveに行くと、AMM自動化のマーケットメーカー、オラクルの発展があったから、今年のDeFi市況の大爆発を助長したと言えます。しかし、それは完璧なマーケットメーカー（MM）ですか？どのような長所と短所がありますか？
+ 
+ AMMアルゴリズムの核心的な公式はX×Y=Kです。AMMから、DeFi builderの発想が爆発しました。
+AMMは数学的アルゴリズムで取引を実行できるようにしました。AMMは一つのDEXとして、Uniswap、Balancer、Curveなどが流動性をそれぞれのdefiプロトコルに共有させ、爆発的に成長しました。これはAMMの長所です。
+ 
+AMMアルゴリズムは人の心を啓発しますが？？？、AMMは本質的に一種のマーケットメーカー策略です。しかし、それはとても怠け者のマーケットメーカー策略で、いかなる外部の情報を知らない情況の下で、資金を0から無限大の価格区間に平均的に分散します。しかし、市場の中間価格の近くの資金だけが頻繁に取引されています。ほとんどの資金は帳簿上で利用されていません。だから、マーケットメーカーの効果からいうと、AMMの資金の利用率は低く、スリッページが大きく、完全に人工マーケットメーカーに及ばない、これは足りないところです。
+ 
+したがって、AMMはDEXの終点ではないと思います。DEXをさらに一歩前に進めるには、人間を模倣したマーケットメーカーを行うべきだと考えています。外部の価格基準を導入することで、予想価格の近くに資金を集中させ、資金の利用率を高めます。同時に、DEXでの価格発見と有効な流動性の提供方法を考えています。中心化取引所の方式がとても参考価値があります。中心化取引所の流動性の大部分は専門的なマーケットメーカーが提供しています。DODOの先進的なアルゴリズムの設計は、マーケットメーカーがオンチェーンでマーケットメイキングが可能になります。
+ 
+ 
+#### AMMにおいて変動損失の問題があります。PMMマーケットメーカーは変動損失を生みますか？どのように避けられますか？
+ 
+マーケットメイキングによる損失といえば、よく知られている言葉の一つが変動損失です。AMMの変動損失がどのように発生したかを知るには、AMMアルゴリズムの原理と裁定取引を理解しなければなりません。
+ 
+AMMは1種の”怠け者”のマーケットメイキングアルゴリズムですので、それは資金を0と無限大の価格区間を平均的に分散します。外の市場価格が変わったら、裁定取引者が現れ、裁定取引により、AMMの価格を外部市場と一致させます。
+ 
+AMMアルゴリズムでは、2種類の資産の量の積は一定です。AMMの価格は資産池にある二つの資産の割合で決められます。価格が変化すると、資産の比率が変化します。つまり、資産の配置の変化を意味します。
+ 
+例えば、ETH-USDCを例にとって、AMM価格は100で、あなたの資産構成は1 ETHと100 USDCで、積は100です。
+ 
+ETHの外部市場価格が150 USDCに上昇した時、裁定取引者がAMMにETHを買いに来ます；AMM価格が市価に等しい時、あなたの資産が変化しました。X×Y=100；Y/X=150になりました。
+ 
+式を解いて計算してみると、資産は0.82 ETH+122.47 USDCになり、価値は245.47（0.82 *150+122.47）です。
+ 
+もしあなたの資産の配置が変わらないならば、価値は250（1 x 150+100）です。245.47と250の数字の差は変動損失で、これは本質的に資産の配置比例の変化による価値の損失です。
+ 
+変動損失を解消するには、根本的に問題を解決する必要があります。つまり、LPの資産構造に介入しなく、任意の資産比率で流動性を提供できるようにします。
+ 
+AMMは資金池の二つの資産の割合によって価格を提示していますが、両側の資金池の価値規模が違うことを許容すれば、別の価格源を探さなければなりません。DODOが提案したソリューションは、オラクルを導入することによって、マーケットメーカーに対する資産構造の制限を解除します。それで資産池の資産の量は価格と関係がありません。マーケットメーカーに単一の資産をチャージしてマーケットメイキングできるようにし、AMMのような変動損失を避けました。
+ 
