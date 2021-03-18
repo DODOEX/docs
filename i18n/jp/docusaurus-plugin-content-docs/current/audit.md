@@ -1,17 +1,21 @@
 ---
 id: audit
-title: Audit
-sidebar_label: Audit
+title: コントラクトのセキュリティ監査
+sidebar_label: コントラクトのセキュリティ監査
 ---
 
-DODO V2 smart contracts were audited by [PeckShield Inc.](https://peckshield.cn/en) 
+DODOのスマート・コントラクトは既に[PeckShield Inc.](https://peckshield.cn/en) のセキュリティ監査を通過しました。
 
-PeckShield Inc. is a blockchain security company with the goal of elevating the security, privacy, and usability of current blockchain ecosystems by offering top-notch, industry-leading services and products.
+PeckShieldはブロックチェーンの生態に早く専念したトップレベルの情報セキュリティ会社として、二十年来のコード、オペレーティングシステム、ビッグデータなどのセキュリティ業務領域の経験蓄積に基づいて、一連のペネトレーション・テスト、コード審査、緊急応答、オンチェーンのデータモニタリング、アンチマネーロンダリング（AML）などに関する総合的な解決方案を提出しました。その業務はブロックチェーンのセキュリティの各環節をカバーします。PeckShield社は複数の重要なセキュリティギャップの発見したことにより、業界内で注目されています。ethersscan.ioにスマート・コントラクトのセキュリティ監査の推薦リストに組み入れられ、「イーサリアム賞金稼ぎ」（ETHEREUM Bounty Program）の世界ランキングトップ3にもランクされました。
+ 
+リンクをクリックして、PeckShieldの2020年12月17日の監査報告を閲覧できます。[here](https://github.com/DODOEX/contractV2/blob/main/audit/PeckShield-Audit-DODOV2-v1.0.pdf).
+ 
+DODOのスマート・コントラクトは同様にTrail of Bitsのセキュリティ監査も通過しました。2012年から、Trail of Bits社は多くの業界トップ企業にセキュリティ・サービスを提供しています。彼らは高等な安全研究とハッカーに対する心理分析を結合し、リスクを低減し、コードを強化します。
 
-PeckShield's Dec 17, 2020 audit report on DODO can be accessed [here](https://github.com/DODOEX/contractV2/blob/main/audit/PeckShield-Audit-DODOV2-v1.0.pdf).
+リンクをクリックして、Trail of Bitsが2020年9月18日に発行した監査報告書をを閲覧できます。
 
-DODO vDODO contracts were audited by [CertiK](https://certik.io/)
+vDODOスマート・コントラクトは、[CertiK](https://certik.io/)の監査に合格しました。
 
-CertiK leads blockchain security by pioneering the use of cutting-edge Formal Verification technology on smart contracts and blockchains. Unlike traditional security audits, Formal Verification mathematically proves program correctness and hacker-resistance.
+CertiKは、高度な形式検証技術を用いて、スマート・コントラクトやブロックチェーン・エコシステムが脆弱性に対して安全であり、ハッキングに強いことを数学的に証明するブロックチェーン・サイバーセキュリティの世界的なリーディングカンパニーです。
 
-CertiK's Feb 18, 2021 audit report on vDODO can be accessed [here](https://github.com/DODOEX/contractV2/blob/main/audit/vDODO-final-report.pdf).
+リンクをクリックして、2021年2月18日に発行されたCertiKの監査報告書。[here](https://github.com/DODOEX/contractV2/blob/main/audit/vDODO-final-report.pdf).
