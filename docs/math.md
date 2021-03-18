@@ -20,7 +20,7 @@ $$= \int^{B_2}_{B_1}(1-k)i+i(B_0/B)^2kdB$$
 
 $$= i(B_2-B_1)*(1-k+k\frac{B_0^2}{B_1B_2})$$
 
-This tells the trader how much they should pay if they buy $B_1-B_2$ amount of base tokens.
+This tells the trader how much they should pay if they buy $B_2-B_1$ amount of base tokens.
 
 Rearranging the equation above, the average transaction price is thus:
 $$P=\frac{\Delta Q}{B_2-B_1}=i*(1-k+k\frac{B_0^2}{B_1B_2})$$
