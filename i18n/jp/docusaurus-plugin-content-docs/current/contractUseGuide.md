@@ -1,30 +1,34 @@
 ---
 id: contractUseGuide
-title: User Guide
-sidebar_label: User Guide
+title: ユーザーマニュアル
+sidebar_label: ユーザーマニュアル
 ---
 
-## For traders
+## トレーダーに対して
 
-DODO V2 designs `DODOV2Proxy`, which encapsulating the bottom pools, realizing multi hops transaction routing. If a trader needs to direct use the underlying pool for trading, we have also unified definitions for different types of pools, exposing two functions for use: `sellBase` and `sellQuote`.
-
+コントラクトの中でトレーダーと関連する関数は二つだけです。`buyBaseToken`と`sellBaseToken`。
+ 
 ```javascript
  function sellBase(
    address to
  ) external returns (uint256 receiveQuoteAmount);
 ```
 
-Use `sellBase` to sell base token and get quote token. This function requires the trader to construct a transaction that contains two actions. The first action is to transfer the base token to the pool contract, and the second action is to use a receiving address as a parameter to trigger sellBase. Before the end, traders are advised to check the value of `receiveQuoteAmount` to ensure the safe execution of the transaction.
+上の関数は`Base token`を購入するamountを決定します。もしこれだけの量の`quote token`を買う必要の`base token`の量は`maxPayQuote`より大きければ、取引はリセットされます。もしdataが空でなければ、電撃取引が触発されます。
+ 
+`payQuote`の戻り値は、トレーダーが支払うべき`quote token`の量です。
 
 ```javascript
  function sellQuote(
    address to
  ) external returns (uint256 receiveBaseAmount);
 ```
-
-Use `sellQuote` to sell quote token and get base token. This function also requires the trader to construct a transaction that contains two actions. The first action is to transfer the quote token to the pool contract, and the second action is to use a receiving address as a parameter to trigger sellQuote. Before the end, traders are advised to check the value of `receiveBaseAmount` to ensure the safe execution of the transaction.
-
-DODO V2 also provides a view version of these two functions. View functions can be executed without sending transactions and they help users estimate prices bore spending gas. ps: the incoming parameters is the address of the trader
+ 
+上の関数は`base token`を売り出すamountを計算します。もし受けとるべきの`quote token`の量が`minReceiveQuote`より小さい場合、取引はリセットされます。dataが空でなければ、電撃取引が触発されます。
+ 
+receive Quoteの戻り値は、トレーダーが支払うべき`quote token`の量です。
+ 
+DODOもこの2つの関数のプレビューバージョンを提供しています。プレビュー関数は取引を送信しないで実行でき、ユーザーに価格を予測し、gas費用の節約に役立ちます。
 
 ```javascript
  function querySellBase(
@@ -38,89 +42,37 @@ DODO V2 also provides a view version of these two functions. View functions can 
  ) external view  returns (uint256 receiveBaseAmount,uint256 mtFee);
 ```
 
-In the next section, we will go into more details about [flash swap](./flashSwap).
-
-## For Liquidity Providers (LPs)
-
-DODO V2 designs two types of pools, including DODO vending machine and DODO private pools. `DODOV2Proxy` encapsulates the liquidity management functions. And also people can directly interact with the underly pools.
-
-### DODO vending machine
-
-Anyone can participate in DODO vending machine, and due to the flexible design, the same trading pair can have more than one pools with different parameter settings. When user chooses the pool to participate, base and quote token will be injected according to the current ration. and user get `shares` assets minted by the pool.
-
-`
-ps: `shares` represents the lp's share of the asset pool. It is an erc20 token and can be traded freely. Each DODO vending machine corresponds to a kind of `shares`.
-`
+以下の部分で電撃取引について紹介します。
 
 
-```javascript
- function buyShares(
-   address to
- ) external returns (uint256 shares, uint256 baseInput, uint256 quoteInput)
-```
+## マーケット・メーカーに対して
 
-Use `buyShares` to inject liquidity into the pool. User needs to construct a transaction consisting of two actions. The first action is to deposit tokens in the pool according to the current base and quote ratio. The second action is to use a receiving address as the parameter to trigger `buyShares`. Before the end, it is recommended checking the amount of the two actual deposited values of `baseInput` and `quoteInput` to ensure the safe execution of the transaction.
+マーケット・メーカーにとって、チャージと引き出しは最も重要な2つの関数です。一連の関数を提供して、彼らの資産を柔軟かつ効率的な管理の助けにします。
+ 
+PMMアルゴリズムの強みの一つは、それぞれ`base token`または`quote token`を分けて管理できることです。したがって、次の関数は2つのバージョンがあります。1つのサフィックスはBaseで、もう1つのサフィックスはQuoteで、それぞれ`Base token`と`quote token`を管理するために使います。二つのバージョンは同じ入力値と出力値があります。
+ 
+上の関数は資産池に確定量amountの資産をチャージし、あなたにcaptitalの量の資産額を返してきます。
+ 
+注意：Captitalはマーケット・メーカーが資産池に占める資産のシェアを表します。Captitalは一つのERC 20フォーマットのトークンで、自由に取引できます。各DODO Pairには2種類のトークンがあります。それぞれ`Base token`と`Quote token`を表します。
+ 
+ 
+マーケット・メーカーのアドレスに基づいて、資産池の資産残高を照会できます。戻り値IpBalanceは、実際のbase或いは`quote token`の量で、Capital tokenではありません。
+ 
+ 
+上の関数は資本池からamountの資産を引き出そうとします。引き出し手数料が発生する可能性があるので、この関数が具体的な数量を返してきます。
+ 
+資金池の規模は絶えず変化している（いつでも取引がある）ので、マーケット・メーカーがすべての資産を引き出しできるようにするために、上の二つの関数はすべての資産を引き出すことができます。最終的に、申請者は確定的な資産額を受け取れます。
+ 
+場合によっては、資産の引き出しには手数料がかかります。上記の2つの関数は、引き出し手数料をプレビューすることができます。もし引き出し量amountの引き出しを申請すれば、一定量のpenaltyが取られます。
+ 
+注意：受け取った資産の最終額は**amount-penalty**となります。
 
-```javascript
- function sellShares(
-    uint256 shareAmount,
-    address to,
-    uint256 baseMinAmount,
-    uint256 quoteMinAmount,
-    bytes calldata data,
-    uint256 deadline
- ) external returns (uint256 baseAmount, uint256 quoteAmount)
-```
 
-Use `sellShares` to remove liquidity from the pool. User can directly call the corresponding function of the pool to execute the transaction. The reqeust parameters include the amount of shares removed, the receiving address, baseMinAmount used for slippage protection (the minimum received base amount), quoteMinAmount (the minimum received quote amount), data is generally set to empty, if it's not, the external contract call will be executed at the end to achieve additional functions such as the conversion from WETH to ETH, and deadline is the effective time after the transaction is sent, it will automatically fail when overtime aiming to protect the safe execution of the transaction.
+## 開発者に対して
 
-### DODO Private Pool
-
-DODO Private Pool is controlled by a single LP (market-making agency or project party, etc.), They has the authority to modify the pool's parameters dynamically and control the access of assets freely, which provides sufficient flexibility for the on-chain market-making strategy. The private pool has an owner, and the owner can set operator to realize the permission control.
-
-The operator of the private pool can trigger the reset function in `DODOV2Proxy` to realize market making directly.
-
-```javascript
-  
-  function resetDODOPrivatePool(
-    address dppAddress,
-    uint256[] memory paramList,  //0 - newLpFeeRate, 1 - newI, 2 - newK
-    uint256[] memory amountList, //0 - baseInAmount, 1 - quoteInAmount, 2 - baseOutAmount, 3- quoteOutAmount
-    uint8 flag, // 0 - ERC20, 1 - baseInETH, 2 - quoteInETH, 3 - baseOutETH, 4 - quoteOutETH
-    uint256 minBaseReserve,
-    uint256 minQuoteReserve,
-    uint256 deadLine
-  ) external;
-```
-
-Described as follows:
-
-- dppAddress：the address of the private pool
-- paramList：Array includes newLpFeeRate, newI (base amount/quote amount,decimals = 18 - base token decimal + quote token decimal), newK (0 equals to sell tokens in a constant price and 1 equals to bonding curve like uniswap)
-- flag: mark of wrapping ETH or unwrapping WETH. (0 presents no conversion, 1 presents injecting base token wrapping to WETH, 2 presents injecting quote token wrapping to WETH, 3 presents removing base token unwrapping to ETH, 4 presents removing quote token unwrapping to ETH)
-- minBaseReserve && minQuoteReserve: When the owener modifies the pool's parameters, sometimes may cause the pool's price changing. At this time, robot may preempt the arbitrage. Therefore, after these two parameters are set well, the transaction will fail if the amount of existing base and quote is smaller than the passed value, which is a protective mechanism. We recommend pool's owner to set with each  transaction.
-
-The platform also provides a method for the owner to trigger the reset function at the bottom level, which is achieved by triggering the private pool's admin contract (the admin contract corresponds to the address of the owner parameter of the private pool)
-
-```javascript
-    
-  function reset(
-    address operator,
-    uint256 newLpFeeRate,
-    uint256 newI,
-    uint256 newK,
-    uint256 baseOutAmount,
-    uint256 quoteOutAmount,
-    uint256 minBaseReserve,
-    uint256 minQuoteReserve
-  ) external; 
-```
-
-If the owner trigger directly, operator can be empty. Other parameters descriptions are the same as above.
-
-## For Developers
-
-Developers can fetch metadata from `DPPFactory` && `DVMFactory`.
+開発者はDODOのインターフェイスDODO Zooからデータを取得できます。
+ 
+baseTokenとquoteTokenを与えられれば、DODO Zooで同時に一つのDODO Pairしか登記できません。
 
 ```javascript
 
@@ -139,9 +91,7 @@ Developers can fetch metadata from `DPPFactory` && `DVMFactory`.
   ) external view returns (address[] memory pools)
 
 ```
-For `getDODOPool`, user need to distinguish base and quote as parameters in order, while for `getDODOPoolBidirection`, no need to distinguish base or quote token. And function will return two pool lists, which correspond to the token0 as base, the other is token1 as base. For `getDODOPoolByUser` will return the pool list under the user.
 
-At the same time, we provide real-time monitoring of DODO platform's creation and removal events, which makes it easier to maintain the latest pool lists under the platform in real time
 
 ```javascript
 
@@ -163,5 +113,3 @@ At the same time, we provide real-time monitoring of DODO platform's creation an
 
   event RemoveDPP(address dpp);
 ```
-ps:  `NewDVM` and `RemoveDVM` are events from `DVMFactory`, and `NewDPP` and `RemoveDPP` are events from `DPPFactory`.
-
