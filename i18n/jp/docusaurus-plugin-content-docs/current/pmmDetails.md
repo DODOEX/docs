@@ -4,100 +4,104 @@ title: PMM Core Concepts
 sidebar_label: PMM Core Concepts
 ---
 
-## Base & Quote Tokens
+## Base TokenとQuote Token
 
-`Base` and `quote` are two concepts that will be mentioned frequently. Two easy ways to distinguish between them are:
+`Base`と`quote`は繰り返して言及されるコンセプトで、両者を区別する二つの方法があります。
+ 
+- 取引を行うペアの中で、`base`はハイフンの前の仮想通貨で、`quote`はハイフンの後ろの仮想通貨です。
+ 
+- 取引する時、価格は通常いくつかの`quote` tokenで一つの`base` tokenを買うことで表します。
+ 
+例えば、ETH-USDCの取引ペアでは、ETHは`base` tokenで、USDC は`quote` tokenです。
+ 
+ 
+## PMMパラメータ
 
-- In a trading pair, the `base` is always the token before the hyphen, and `quote` after
-- In transactions, price refers to how many `quote` tokens are needed in exchange for one `base` token
+PMMアルゴリズムには4つのパラメータがあります。
+ 
+- $B_0$（base token回帰目標値）：マーケット・メーカーがチャージした総量
+ 
+- $Q_0$（quote token回帰目標値）：マーケット・メーカーがチャージした総量
+ 
+- $B$（base token資産）：現在の資産池のbase tokenの量
+ 
+- $Q$（quot token資産）：現在の資産池のquote tokenの量
 
-For example, in the ETH-USDC trading pair, ETH is the `base` token and USDC is the `quote` token
 
-## PMM Parameters
+## PMM定価式
 
-The funding pool of PMM is described by four parameters:
-
-- $B_0$: base token regression target - total number of base tokens deposited by liquidity providers
-- $Q_0$: quote token regression target - total number of quote tokens deposited by liquidity providers
-- $B$: base token balance - number of base tokens currently in the pool
-- $Q$: quote token balance - number of quote tokens currently in the pool
-
-## PMM Pricing Formula
-
-The PMM price curve is plotted by the following pricing formula:
-
+PMMの価格曲線に対応する式は以下の通りです。
+ 
 $$P_{margin}=iR$$
+ 
+$R$は以下の式で決定されます。
+ 
+$$もし \ B＜B_0 \ の場合、R＝1-k+(\frac{B_0}{B})^2k$$
+$$もし \ Q＜Q_0 \ の場合、R＝1/(1-k+(\frac{Q_0}{Q})^2k)$$
+ 
+$$その他の場合 \ R=1$$
+ 
+$i$ はオラクル（oracle）によって提供される市場価格で、$k$は一つのパラメータで、$$0<k≤1$$。
 
-Where $R$ is defined to be the piecewise function below:
 
-$$if \ B<B_0, \ R=1-k+(\frac{B_0}{B})^2k$$
+## PMMアルゴリズムの三つの状態
 
-$$if \ Q<Q_0, \ R=1/(1-k+(\frac{Q_0}{Q})^2k)$$
+任意の時間においてPMMアルゴリズムは三つの状態にすぎません：base tokenとquote tokenは同じです；base tokenが不足しています；quote tokenが不足しています。
+ 
+ ![](https://dodoex.github.io/docs/img/dodo_mode_switch.jpeg)
+ 
+最初に何の取引もない時、資産池はバランスが取れています。base tokenとquote token は回帰目標に位置しています。つまり$B=B_0$、$Q=Q_0$です。
+ 
+トレーダーがbase tokenを売るとき、base token資産池の残高が回帰目標より高いです。逆に、quote tokenの資産池の残高が回帰目標より低いです。この場合、PMMは多かった分のbase tokenを売りにして資産池がバランスの取れた状態に戻そうとすることを試みます。
+ 
+同じように、トレーダーがbase tokenを購入するとき、quote token資産池の残高は回帰目標より高くなります；base token残高は回帰目標より低いです。PMMは多かった分のquote tokenを売りにして、バランスの取れた資産池に戻そうとすることを試みます。
+ 
+パラメータ$R$は回帰過程で非常に重要な役割を果たします。資産池がバランスからずればずれるほど、Rは`1`から離れます。PMMが提示した価格と市場価格との差が出た場合、裁定取引により資産池をバランス状態に戻すことができます。
 
-$$else \ R=1$$,
 
-$$i$$ is the market price provided by an oracle, and $$k$$ is a parameter in the range (0, 1).
+## 取引料金
 
-## The Three Possible States in PMM
+取引ごとに少量の手数料が取られます。この手数料はマーケット・メーカーの資産に比例してマーケット・メーカーに分けられます。
+ 
+言い換えれば、トレーダーは手数料を支払い、マーケット・メーカーはその手数料を分け得ることができます。例えば、ETH-USDCのペアで、トレーダーがETHを購入するとき、手数料としてETHを少し支払う必要があります。この部分のETHはマーケット・メーカーに分配されます。トレーダーがETHを売る時、手数料としてUSDCを少し支払う必要があり、この部分のUSDCはマーケット・メーカーに分けられます。
 
-At any given time, PMM is in one of three possible states: equilibrium, base token shortage, and quote token shortage.
-
-![](https://dodoex.github.io/docs/img/dodo_mode_switch.jpeg)
-
-Initially, i.e. prior to any transaction, the capital pool is in equilibrium, and both base tokens and quote token are at their regression targets. That is, $B=B_0$ and $Q=Q_0$.
-
-When a trader sells base tokens, the base token balance of the capital pool is higher than the base token regression target; conversely, the quote token balance is now lower than the quote token regression target. In this state, PMM will try to sell the excess base tokens, lowering the base token balance and increasing the quote token balance, in order to move this state back to the state of equilibrium.
-
-When a trader buys base tokens, the quote token balance of the capital pool is higher than the quote token regression target; conversely, the base token balance is now lower than the base token regression target. In this state, PMM will try to sell the excess quote tokens, lowering the quote token balance and increasing the base token balance, in order to move this state back to the state of equilibrium.
-
-The parameter $R$ in the pricing formula above assumes a critical role in facilitating this regression process. The more the capital pool deviates from the equilibrium state, the more $R$ deviates from `1`. When the price given by the PMM algorithm deviates from the market price, arbitrageurs step in to help bring the capital pool back to the equilibrium state.
-
-## Liquidity Provider Fee
-
-A small amount of transaction fee will be charged on every trade. This fee is called the liquidity provider fee and will be distributed to every liquidity provider based on their proportional stake in the capital pool.
-
-More specifically, liquidity provider fees are collected from what buyers received and distributed to liquidity providers who supplied this kind of asset to the capital pool. In other words, liquidity providers are rewarded in the same asset denomination. 
-
-For example, when traders buy ETH tokens with USDC tokens, liquidity provider fees will be charged in the form of ETH tokens, and distributed to liquidity providers who deposited ETH tokens into the capital pool.
-
-When traders sell ETH tokens for USDC tokens, liquidity provider fees will be charged in the form of USDC tokens, and distributed to liquidity providers who deposited USDC tokens into the capital pool.
-
-:::note
-Base and quote tokens have different returns on investments (ROI) in PMM's funding pool.
+:::注意：
+資産池において、base tokenとquote tokenの収益率が異なります。
 :::
 
-## Maintainer fee
 
-A maintainer fee is also collected from what buyers received, and will be directly transferred to the maintainer. The maintainer may be a development team, a foundation, or a staking decentralized autonomous organization (DAO).
+## 運営手数料
 
-Currently, the maintenance fee on DODO is 0.
+運営手数料もトレーダーが納めます。その運営手数料は運営者（例えば、DAO、開発チーム）に配ります。
 
-## Withdrawal Fee
+現在、DODOでは運営手数料を取っていません。
 
-A withdrawal will change the PMM price curve and may harm the interests of other liquidity providers. DODO charges a withdrawal fee from liquidity providers who withdraw their assets and distribute it to all remaining liquidity providers.
 
-:::important
+## 現金引き出し手数料
 
-Normally, the withdrawal fee is 0 or an extremely small percentage (<0.01%) of what you withdraw. The withdrawal fee will increase significantly only if the funding pool suffers from a serious shortage of either base or quote tokens and liquidity providers intend to withdraw the type of token in shortage.
+資産池から資金を引き出すと、他のマーケット・メーカーの収益に影響を与えます。DODOは資金の引き出しに手数料を取り、それを残りのマーケット・メーカーに分配します。
 
-The withdrawal fee serves as a protection mechanism for liquidity providers who maintain their supplies of liquidity and contribute to the sustainability and overall health of the DODO platform.
+:::注意：
+引き出し手数料は通常0或いは0.01%以下です。ただ、ある種類の資産が深刻に不足している場合にのみ、マーケット・メーカーが当該資産を引き出そうとする場合、資産引き出し手数料は大幅に高くなります。
+
+現金引き出し手数料の設計は、DODOの健全な発展を長期に支援するマーケット・メーカーを保護するためです。
 
 :::
 
-## Deposit Rewards
 
-Rewards will be distributed to those who make a deposit of base(quote) tokens when the capital pool faces a shortage of base(quote) tokens.
+## 資産チャージ奨励
 
-In the [next section](./math), we will explain the math behind these core concepts. 
+資産が不足している場合、資産池に資産をチャージしたマーケット・メーカーは奨励金が得られます。
+ 
+以下の部分で、これらのコンセプトの背後にある数学原理を詳しく解説します。
 
-## Flexibility and $k$, the "Liquidity Parameter"
 
-Last but not least, we will introduce the DODO's "liquidity parameter", $$k$$. The parameter $$k$$ gives DODO the flexibility to handle different market situations. 
+## スリページ係数
 
+以下にスリページ係数$$k$$を紹介します。このパラメータによってDODOは異なる市場状況に柔軟に対応できるようにしました。
+ 
 ![](https://dodoex.github.io/docs/img/dodo_k.jpeg)
-
-When $$k$$ is $$0$$, DODO naively sells or buys at market price, as shown by the flat, blue line. As $$k$$ increases, DODO’s price curve becomes more “curved”, but, consequently, liquidity becomes increasingly jeopardized, because more funds are placed far away from market price and are thus underutilized or not utilized at all. When $$k$$ increases to $$1$$, the flat section near the market price is completely eliminated and the curve essentially becomes a standard AMM curve, which Uniswap uses.
-
-Normally, $$k$$ is recommended to be a relatively small value, such as $$0.1$$, which could provide liquidity 10 times better than the standard AMM algorithm.
-
-
+ 
+$$k=0$$の時に、DODOは市場価格で正常に取引できます（図中の青い線）。$$k$$が大きくなると、DODOの価格曲線がより急上昇になります。これはより多くの市場資金が市場価格から離れた位置に置かれて、資金の利用率が低いからです。$$k$$が$$1$$までに上がると、市場価格近くの滑らかなカーブが完全になくなり、この時の価格曲線はUniswapのAMM曲線と同じようになります。
+ 
+一般的に、我々は$$k$$を比較的小さい値に設定することを勧めます。例えば$$0.1$$、この場合、AMMの10倍の流動性を提供できます。
