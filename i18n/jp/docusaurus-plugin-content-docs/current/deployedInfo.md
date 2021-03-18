@@ -1,12 +1,12 @@
 ---
 id: deployedInfo
-title: Deployment Information
-sidebar_label: Deployment Information
+title: 開発者情報
+sidebar_label: 開発者情報
 ---
 
-## DODO Token
+## DODOトークンに関するもの
 
-| Contract Name                   | Address                                                                                                               |
+| コントラクト                      | Address                                                                                                               |
 | ------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | DODO Token                      | [0x43dfc4159d86f3a37a5a4b3d4580b888ad7d4ddd](https://etherscan.io/address/0x43dfc4159d86f3a37a5a4b3d4580b888ad7d4ddd) |
 | vDODO Token                     | [0xc4436fBAE6eBa5d95bf7d53Ae515F8A707Bd402A](https://etherscan.io/address/0xc4436fBAE6eBa5d95bf7d53Ae515F8A707Bd402A) |
@@ -20,9 +20,9 @@ sidebar_label: Deployment Information
 | Locked Token (Migrate to BSC)   | [0x02fCB21dc1cf221939C1d4277fB54016b5d32bC7](https://etherscan.io/address/0x02fCB21dc1cf221939C1d4277fB54016b5d32bC7) |
 
 
-## DODO V2  (beta)
+## メーン・ネット V2.0
 
-| Contract Name                  | Address                                                                                                               |
+| コントラクト                     | Address                                                                                                               |
 | ------------------------------ | --------------------------------------------------------------------------------------------------------------------- |
 | DODO Approve                   | [0xCB859eA579b28e02B87A1FDE08d087ab9dbE5149](https://etherscan.io/address/0xCB859eA579b28e02B87A1FDE08d087ab9dbE5149) |
 | DODO Approve Proxy             | [0x335aC99bb3E51BDbF22025f092Ebc1Cf2c5cC619](https://etherscan.io/address/0x335aC99bb3E51BDbF22025f092Ebc1Cf2c5cC619) |
@@ -34,9 +34,9 @@ sidebar_label: Deployment Information
 | DODO Trade Incentive           | [0x989DcAA95801C527C5B73AA65d3962dF9aCe1b0C](https://etherscan.io/address/0x989DcAA95801C527C5B73AA65d3962dF9aCe1b0C) |
 
 
-## Mainnet V1.0
+## メーン・ネット V1.0
 
-| Contract Name                  | Address                                                                                                               |
+| コントラクト                     | Address                                                                                                               |
 | ------------------------------ | --------------------------------------------------------------------------------------------------------------------- |
 | DODO Pair: WETH-USDC           | [0x75c23271661d9d143dcb617222bc4bec783eff34](https://etherscan.io/address/0x75c23271661d9d143dcb617222bc4bec783eff34) |
 | DODO Pair: LINK-USDC           | [0x562c0b218cc9ba06d9eb42f3aef54c54cc5a4650](https://etherscan.io/address/0x562c0b218cc9ba06d9eb42f3aef54c54cc5a4650) |
@@ -56,7 +56,7 @@ sidebar_label: Deployment Information
 | Gnosis Multisig Wallet         | [0x95C4F5b83aA70810D4f142d58e5F7242Bd891CB0](https://etherscan.io/address/0x95C4F5b83aA70810D4f142d58e5F7242Bd891CB0) |
 
 
-## DLP Token Address
+## DLPトークン・アドレス
 
 | DLP              | Address                                                                                                               |
 | ---------------- | --------------------------------------------------------------------------------------------------------------------- |
@@ -80,7 +80,7 @@ sidebar_label: Deployment Information
 | AAVE-USDC: USDC  | [0x5840a9e733960f591856a5d13f6366658535bbe5](https://etherscan.io/address/0x5840a9e733960f591856a5d13f6366658535bbe5) |
 
 
-## Related Token Address
+## 関連するトークン・アドレス
 
 | Symbol         | Address                                                                                                               |
 | -------------- | --------------------------------------------------------------------------------------------------------------------- |
@@ -99,9 +99,9 @@ sidebar_label: Deployment Information
 | wCRES            | [0x85f9569b69083c3e6aeffd301bb2c65606b5d575](https://etherscan.io/address/0x85f9569b69083c3e6aeffd301bb2c65606b5d575) |
 
 
-## Kovan V2
+## Kovanテスト・ネット
 
-| Contract Name                  | Address                                                                                                                     |
+| コントラクト                     | Address                                                                                                                     |
 | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------- |
 | DODO Approve                   | [0xa375b128e139ae54EF7F189BC8fEb4624f1c2Afa](https://kovan.etherscan.io/address/0xa375b128e139ae54EF7F189BC8fEb4624f1c2Afa) |
 | DODO Approve Proxy             | [0xE2bf3e72E126f0AD4Aec07AdfA6cc345EEF43bDe](https://kovan.etherscan.io/address/0xE2bf3e72E126f0AD4Aec07AdfA6cc345EEF43bDe) |
@@ -115,7 +115,7 @@ sidebar_label: Deployment Information
 
 ## Kovan 
 
-| Contract Name         | Address                                    |
+| コントラクト            | Address                                    |
 | --------------------- | ------------------------------------------ |
 | DODO Pair: BASE-QUOTE | 0x3c5ab3757de3dffbdb179800c26be7705592a816 |
 | Test Base Token       | 0x215bd4d983c571a840b89028cc005b6ff0734ebe |
@@ -131,7 +131,7 @@ sidebar_label: Deployment Information
 | Test Uniswap          | 0x125efdccfbb9e81d53095f2f2e8edae2c4c49369 |
 | Uniswap arbitrageur   | 0x5b3f89afe4321b8914213dd44df35062d9dffaf6 |
 
-To play with DODO on [Kovan](https://kovan-testnet.github.io/website/), you can:
-
-- Request test tokens by emailing contact@dodoex.io
-- Get free Kovan ETH from the Kovan [faucet](https://github.com/kovan-testnet/faucet)
+もし[Kovan](https://kovan-testnet.github.io/website/)のテスト・ネットからDODOを利用したい場合、以下の方法があります。
+ 
+- contact＠dodoex.ioからDODOテスト・トークンを申請します。
+- Kovan　[faucet](https://github.com/kovan-testnet/faucet)にETHのテストを申請します。
