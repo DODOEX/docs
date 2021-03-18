@@ -1,16 +1,16 @@
 ---
 id: math
-title: The Math Behind PMM
-sidebar_label: The Math Behind PMM
+title: PMMアルゴリズムの数学原理
+sidebar_label: PMMアルゴリズムの数学原理
 ---
 
-# Core PMM
+# PMMアルゴリズムの数学原理
 
-The core of PMM is essentially **_calculating one integral and solving two quadratic equations_**. The smart contract implementation can be found [here](https://github.com/DODOEX/dodo-smart-contract/blob/master/contracts/lib/DODOMath.sol).
+PMMは本質的には、スマート・コントラクトを利用して1つの積分と2つの二次方程式を解く[アルゴリズム](https://github.com/DODOEX/dodo-smart-contract/blob/master/contracts/lib/DODOMath.sol)です。
 
-## The Price Curve Integral
+## 価格曲線積分
 
-For traders, the most important thing is the average transaction price. The average transaction price is the integral of the marginal price $P_{margin}$. Let's take the base token shortage scenario as an example.
+トレーダーにとっては、一番重要なのは平均取引価格です。平均取引価格は境界価格の積分Pmarginです。ここでbase tokenが不足している状況を例として挙げます。
 
 ![](https://dodoex.github.io/docs/img/dodo_integrate.jpeg)
 
@@ -20,98 +20,101 @@ $$= \int^{B_2}_{B_1}(1-k)i+i(B_0/B)^2kdB$$
 
 $$= i(B_2-B_1)*(1-k+k\frac{B_0^2}{B_1B_2})$$
 
-This tells the trader how much they should pay if they buy $B_1-B_2$ amount of base tokens.
+この式はトレーダーに$B_1-B_2$の量のbase tokenを買いたい場合、いくら支払うべきかを計算します。
 
-Rearranging the equation above, the average transaction price is thus:
+上の式を変形すると、平均取引価格は以下の式の計算になります。
 $$P=\frac{\Delta Q}{B_2-B_1}=i*(1-k+k\frac{B_0^2}{B_1B_2})$$
 
-We found that the average transaction price is only dependent on the state of the system before and after the transaction, so the price calculation methods for both buying and selling are the same: integrating $P_{margin}$.
+平均取引価格は取引前後のシステムの状態によって決まるので、売買の価格計算式は同じで、つまり、境界価格間の価格積分$P_{margin}$です。
 
-## Solving the quadratic equation for trading
+## 取引二次方程式の解き
 
-Without the loss of generality, the integral becomes the following when there is a shorage of quote tokens:
+quote tokenが不足する場合、積分の式は以下のようになります。
 
 $$\Delta B = \frac{1}{i}(Q_2-Q_1)*(1-k+k\frac{Q_0^2}{Q_1Q_2})$$
 
-Let's derive how to calculate the price when there is a shortage of quote tokens and only the number of base tokens you want to buy or sell (i.e. $\Delta B$) is given.
-
-Now that $\Delta B, Q_0, Q_1$ are given, we need to calculate $Q_2$, which is found by solving a quadratic equation. Transforming the equation into standard form:
+トレーダーが取引したい数量は(i.e. $\Delta B$)がすでに分かるとすると、quote token不足時の価格を計算して見ます。
+ 
+$\Delta B, Q_0, Q_1$はすでに分かっており、二次方程式を導くことにより$Q_2$が得られ、二次方程式を変形すると、以下の数式が得られます。
 
 $$(1-k)Q_2^2+(\frac{kQ_0^2}{Q_1}-Q_1+kQ_1-i\Delta B)Q_2-kQ_0^2=0$$
 
 $$let \ a=1-k, \ b=\frac{kQ_0^2}{Q_1}-Q_1+kQ_1-i\Delta B, \ c=-kQ_0^2$$
 
-Because $Q_2>=0$, we discard the negative root, and so
+$Q_2>=0$のため、マイナスの結果を捨てると、以下の式が得られます：
 
 $$Q_2=\frac{-b+\sqrt{b^2-4ac}}{2a}$$
 
-It can be proven that:
+以上の式から以下の結論が得られえます。 
+ 
+- $\Delta B>0$の時、$Q_2>Q_1$、トレーダーがbase tokenを買いたい場合、$Q_2-Q_1$を支払う必要があります。
+ 
+- $\Delta B<0$の時、$Q_2<Q_1$、トレーダーがbase tokenを売りたい場合、$Q_1-Q_2$を受け取ります。
+ 
+- $\Delta B=0$の場合、$Q_2=Q_1$。
 
-- When $\Delta B>0$, $Q_2>Q_1$; trader buy base token, and should pay $Q_2-Q_1$
-- When $\Delta B<0$, $Q_2<Q_1$; trader sell base token, and will receive $Q_1-Q_2$
-- When $\Delta B=0$, $Q_2=Q_1$.
+## 回帰目標の二次方程式の解き
 
-At the same time, DODO V2 focus on verifying the special case of k=0, and k=1 to support the constant price of selling and the bonding curve of the standard AMM.
+システムがアンバランスな状態である時、オラクル（oracle）の価格変化は利益か或いは損失かをもたらします。例えば、今base tokenが不足していると仮定し、オラクル（oracle）の価格が上昇します。この時、明らかに余分なquote tokenは十分なbase tokenを買い戻すことができず、資産池をバランス状態にも戻せず、base tokenをチャージしたにマーケット・メーカーは損失します。逆に、オラクル（oracle）の価格が下落すれば、余ったquote tokenは十分多くのbase tokenを買うことができ、資産池をバランスのとれた状態に戻すことができ、かつ余分もあり、だから、base tokenをチャージしたマーケット・メーカーは利益が得られます。
 
-## Solving the quadratic equation for regression targets
-
-When the system is not in the equilibrium state, changes to the oracle price will bring profit or loss. For example, assume that shortage of base tokens is the current state, and the oracle price goes up. It is clear that the excess quote tokens cannot buy enough base tokens to return the base token balance to the base token regression target. Thus, LPs who deposited base tokens will suffer a loss. Conversely, if the oracle price drops, the excess quote tokens can buy more base tokens, causing the base token balance to exceed the base token regression target, and LPs who deposited base tokens will make a profit.
-
-In summary, the regression target is influenced by the oracle price. To calculate the regression target at a certain oracle price, we make the following derivation:
+つまり、回帰目標はオラクル（oracle）の価格の影響を受けます。下記の式を通じて、オラクル（oracle）がある価格を与えた時に、その回帰目標を算出できます。
 
 Given $$\Delta Q = i(B_2-B_1)*(1-k+k\frac{B_0^2}{B_1B_2})$$
 
-Since we are doing regression, $B_2=B_0$. Rearraging the equation with respect to $B_0$ gives
+回帰計算なので、$B_2=B_0$で、式を以下のように変形します。
 
 $$\frac{k}{B_1}B_0^2+(1-2k)B_0-[(1-k)B_1+\frac{\Delta Q}{i}] = 0$$
 
-The negative root does not make sense and is discarded, so $B_0$ is:
+ルートのマイナスの解を取り除くと、$B_0$が以下のように得られる。
 
 $$B_0=B_1+B_1\frac{\sqrt{1+\frac{4k\Delta Q}{B_1 i}}-1}{2k}$$
 
-In this case, $\Delta Q=Q-Q_0$. It can be proven that, when $\Delta Q \ge 0$, $B_0\ge B_1$. 
-
-This fact is extremely important, because it ensures that the base token balance and the quote token balance will never be greater than the regression target simultaneously, or less than the regression target simultaneously. This means that PMM will only switch between the three states discussed in the Core Concepts section.
-
-Similarly, the formula for quote token regression target $Q_0$ is
+この場合、$\Delta Q=Q-Q_0$；
+$\Delta Q \ge 0$の場合、$B_0\ge B_1$が証明できます。
+ 
+この結論は非常に重要です。これはbase tokenとquote tokenが回帰目標より同時に大きいあるいは同時に小さい場合がないことを保証しているからです。これはPMMの核心概念で言及された三つの状態しかないことを意味します。
+同様に、quote tokenの回帰目標の式が以下のように得られます。
 
 $$Q_0=Q_1+Q_1*\frac{\sqrt{1+\frac{4k\Delta B i}{Q_1}}-1}{2k}$$
 
-# Peripheral 
 
-This section will deal with the math pertaining to the peripheral functioning of PMM.
+# その他
 
-## Trades
+このセクションではPMMアルゴリズムに関するほかの数学演算を紹介します。
 
-As mentioned above, the regression target depends on the oracle price, and the price curve in turn depend on the regression target. So in every trade, we should calculate the regression target well in advance to make the price curve fixed.
+## 取引
 
-In addition, since the price curve given by PMM is segmented, if a transaction involves different states (for example, when a trader sells an astronomical amount of base tokens during a base token shortage and forces the state into a quote token shortage), the price needs to be calculated in segments as well.
+上記のように、回帰目標はオラクル（oracle）価格に依存し、価格曲線は回帰目標に依存します。だから、取引ごとに価格曲線を固定するために、回帰目標を事前に計算しなければなりません。
+ 
+ 
+また、PMMはいくつかのセグメントから形成する価格曲線を与えるので、もし一つの取引が異なるセグメントに及ぶ場合（例えば、base tokenが不足しており、トレーダーが大量のbase tokenを売る場合、システムの状態がbase token不足状態からquote token不足状態になります）、価格は各セグメントで[計算](https://github.com/DODOEX/dodo-smart-contract/blob/master/contracts/impl/Trader.sol)する必要があります。
 
-Please be advised that this calculation requires a high degree of accuracy. The smart contract provides six trading functions for the three possible states. You can find the most important logic of cross-state trading [here](https://github.com/DODOEX/dodo-smart-contract/blob/master/contracts/impl/Trader.sol).
+## チャージ
 
-## Deposit
+資産が不足している場合、チャージまたは引き出しは価格曲線に影響を与えます。だから、我々はチャージと引き出しを慎重に対処し、資産池の持続性と公平性を保証しなければなりません。
+ 
+ここでbase tokenが不足しており、マーケットメーカーが仮想通貨を引き出しする場合、何が起こるかを分析します。
+ 
+$B_0$の数式の導きでわかるように、$B_0$は以下の数式で計算されます。
 
-Depositing and withdrawing base token when there is a shortage of base tokens, or quote tokens when there is a shortage of quote token, will change the price curve. This requires us to process the deposit and withdrawal with caution and care in order to keep the capital pool sustainable and fair.
-
-We will analyze what happens when an LP makes a deposit when there is a shortage of base tokens.
-
-According to the calculation formula of $B_0$ derived above
 $$B_0=B_1+B_1*\frac{\sqrt{1+\frac{4k\Delta Q}{B_1 i}}-1}{2k}$$
 
-After an LP deposit $b$ base tokens, $B_1$ increases by $b$, and $B_0$ increases more than than $b$'s magnitude. It means that this deposit helps all LPs who provided base token make a profit. The reason why is that the deposit makes the price curve smoother, and the same amount of $\Delta Q$ can now buy more base tokens.
+マーケットメーカーが$b$個のbase tokenを預け入れると、$B_1$がbだけ上昇し、$B_0$の上昇幅がもっと大きいです。これは、このチャージによってbase tokenをチャージしたすべてのマーケットメーカーが利益を得ることを意味しています。このチャージによって価格曲線が滑らかになり、同じ量の$\Delta Q$でより多くのbase tokenを買うことができるからです。
 
-In this case, as soon as the LP makes a deposit, the LP makes a profit. This is referred to as the deposit reward. The essential source of this reward is the slippage paid by the trader who made the system deviate from equilibrium state.
+この場合、マーケットメーカーがいったん資産を預け入れると、マーケットメーカーは利益を得ることができます。これはチャージ奨励と呼ばれます。奨励は主にシステムをバランス状態から逸脱させたトレーダーによって支払われます。
 
-:::note
-It is important to note that deposit rewards are not risk-free arbitrage trading opportunities. 
+:::
+注意：
+チャージ奨励目当てのチャージは全くリスクがないわけでなありません。
 :::
 
-## Withdrawal
+## 引き出し
 
-Similarly, after an LP withdraws $b$ base tokens, $B_1$ decreases by $b$, and $B_0$ decreases by more than $b$'s magnitude. This withdrawal causes all LPs who owes Base Tokens to suffer losses. This is because this withdrawal makes the price curve more steep, and the excess quote tokens have less purchasing power in terms of base tokens.
+同様に、マーケットメーカーから$b$個だけのBase tokenを引き出した後、$B_1$ は$b$ だけ減少し、$B_0$の減少幅がもっと大きい。この引き出しによってすべてのマーケット・メーカーが損失を被ることになります。これはこの引き出しによって価格曲線がより急勾配になり、余分のquote tokenで同じ量のbase tokenを買えなくなるからです。
+ 
+PMMアルゴリズムでは、この場合、引き出しには一定の手数料が必要となります。手数料はこの引き出しによって引き起こしたマーケット・メイカーの損失の合計と同じです。この手数料は引き出しをしていないマーケット・メイカーに分配されます。
+ 
+上記のチャージ奨励を考慮して、もしマーケット・メイカーがチャージしたすぐ後に引き出しをしたら、引き出し手数料はチャージ奨励より大きく設定されています。これによってリスクなしのヘッジを根絶します。
+ 
+注意すべきは、システムがバランス状態から大きく逸脱し、チャージまたは引き出しの量が非常に大きい場合のみ、PMMはチャージ奨励を支給し、または引き出し手数料を徴収します。普通、トレーダーはこの二つの部分に注目しなくても良いです。もちろん、我々はシステムのバランスが逸脱した時に、チャージすることによって報酬を得、システムのバランスを取れてから、手数料を取られないように引き出しすることを歓迎します。
 
-The PMM algorithm stipulates that a withdrawal fee is required to withdraw tokens in this case. The magnitude of the fee is equal to the aggregate loss of all LPs caused by the withdrawal. This fee will be directly distributed to all LPs that have not yet withdrawn.
-
-Factoring in the deposit reward from the previous section, if an LP makes a withdrawal immediately after depositing, the withdrawal fee will be greater than the deposit reward, thus eliminating any possibility of risk-free arbitrage trading.
-
-It is worth noting that both deposit reward and withdrawal fee are only significant when the system deviates very far from the equilibrium state and the deposit/withdrawal amount is large. Traders thus often overlook the existence of this gain/loss. Of course, traders are also welcome to extract value from the system by exploiting this if they so wish. In order to do that, they can first deposit to earn deposit rewards when the system deviates from the equilibrium, and then withdraw once the system returns to the equilibrium to avoid the withdrawal fee.
