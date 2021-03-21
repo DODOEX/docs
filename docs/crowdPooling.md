@@ -1,10 +1,10 @@
 ---
 id: crowdPooling
-title: DODO CrowdPooling
-sidebar_label: DODO CrowdPooling
+title: DODO Crowdpooling
+sidebar_label: DODO Crowdpooling
 ---
 
-## What is CrowdPooling
+## What is Crowdpooling
 
 There are currently three major liquidity offering methods on decentralized exchanges (DEXs) today:
 
