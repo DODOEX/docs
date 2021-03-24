@@ -26,5 +26,9 @@
   "sidebar.someSidebar.category.More": {
     "message": "More",
     "description": "The label for category More in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.DODO NFT Intro": {
+    "message": "DODO NFT",
+    "description": "The label for category More in sidebar someSidebar"
   }
 }

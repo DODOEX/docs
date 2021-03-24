@@ -15,6 +15,7 @@ module.exports = {
     ],
     Tokenomics: ["dodonomics"],
     More: ["commonQuestions"],
+    "DODO NFT Intro": ["nftCoreFeatures"],
     // Docusaurus: ["doc1", "doc2", "doc3", "mdx"],
   },
 };
