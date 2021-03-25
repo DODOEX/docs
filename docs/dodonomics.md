@@ -64,7 +64,7 @@ More specifically, the exit fee rate formula is:
 - If DLI > 0.5, exit fee rate = 0.05
 - If DLI < 0.1, exit fee rate = 0.15
 - If 0.1 < DLI < 0.5, exit fee rate = 0.175 - 0.25 * DLI
-- Note that DLI cannot exceed 0.5, since no DODO would be available to be staked to mint vDODO tokens
+- Note that DLI cannot exceed 1, since no DODO would be available to be staked to mint vDODO tokens
 
 ![](https://dodoex.github.io/docs/img/vdodo_1.png)
 
