@@ -1,27 +1,27 @@
 ---
 id: nftCoreFeatures
-title: DODO NFT Core Features
-sidebar_label: Core Features
+title: DODO NFT 的核心特性
+sidebar_label: 核心特性
 ---
 
-## DODO NFT Vault fragmentation
+## DODO NFT Vault 的碎片化
 
-Pledging NFT (or multiple NFTs) into the DODO NFT Vault will automatically generate an ERC20 token contract. owners of the DODO NFT Vault can set the percentage of tokens going into the secondary market, and set aside token distributions to the primary market/creative teams/community incentives. owners of the DODO NFT Vault can set the percentage of tokens going into the secondary market, and set aside token distributions to the primary market/creative teams/community incentives. owners of the DODO NFT Vault owners can pledge more NFTs into the DODO NFT Vault at a later date.
+在 DODO NFT Vault 中的质押 NFT（或者多重 NFT）会自动生成一个 ERC20 的合约。该 DODO NFT Vault 的所有者能设置进入二级市场的 token 的占比，并将 token 分配给一级市场 / 创意团队 / 社区激励。DODO NFT Vault的所有者可以在随后向 DODO NFT Vault 质押更多的 NFT 。
 
-For example, I send an NFT for Ayaboli. I pledge this NFT to the DODO NFT Vault and automatically get an ERC20 token. I can set the token name to FRAG and the total supply to 10,000, which cannot be incremented. I set 15% of the tokens to be released to the designated Ayakari Copyright Company's wallet address in a 1 year linear unlock, and 85% to go directly into the DODO liquidity pool for circulation at $1 = 1 GRAG. the price of GRAG goes up and down as transactions occur.
+比如，我为 Ayaboli 铸造了一个 NFT 。随后我将这个 NFT 质押到 DODO NFT Vault ，同时获得了一个 ERC20 的 token 。我可以设置这个 token 叫 FRAG ，同时设置一个不能增发的总发行量—— 10,000 。我设置其中 15% 的 token 在一年的线性解冻后释放到 Ayakari Copyright Company 的钱包地址中，而剩下的 85% 将会直接进入 DODO 的流动性池中尽兴流通，定价为 1 FRAG = 1 美元，其中 FRAG 的而价格随着交易的发生而上下波动。
 
-Of course I could also issue one NFT for each character in the EVA anime and pledge all this set of NFTs into the DODO NFT Vault.
+当然，我也可以为《EVA》动画中的每个角色发行一个 NFT，并将所有这些 NFT 都放到 DODO NFT Vault 中。
 
-## Low Cost Creation of Liquidity Pools
+## 低成本创造流动性池
 
-The DODO NFT Vault automatically creates a DODO Trading Pool and pledges in all FRAG tokens that enter the market. The initial price is defined by the owner of the DODO NFT Vault to start selling FRAG. as traders buy, the FRAG price will automatically increase. The market value of FRAG is the valuation of NFT.
+DODO NFT Vault 会自动创建一个 DODO 交易池，并质押所有进入市场的 FRAG token。最初的价格是由 DODO NFT Vault 的所有者指定，以开始出售 FRAG 。当交易者买进时，FRAG 价格会自动上涨。FRAG 的市场价值就是 NFT 的价值。
 
-## Buyout of DODO NFT Vault (optional)
+## 买断 DODO NFT Vault（可选）
 
-Since the pieces of DODO NFT Vault are already circulating in the market, regular users can enjoy the benefits of the NFT price increase by purchasing only the FRAG. **If a collector wants to buy out** the DODO NFT Vault**, he needs to pay the current NFT valuation** immediately. This money will go into the DODO NFT Vault contract, while all NFTs contained in the DODO NFT Vault will be transferred to the collector.
+由于 DODO NFT Vault 的碎片已经在市场上流通，普通用户只要购买 FRAG 就可以享受到 NFT 价格上涨的好处。**如果收藏者想要买断**这个 DODO NFT Vault，**他需要立即支付相当于当前的 NFT 估值的钱**。这笔钱将进入DODO NFT Vault 合同，而所有包含在DODO NFT Vault 中的 NFT 将被转移给收集人。
 
-At the same time, the parameters of the DODO Trading Pool are adjusted so that the FRAG is bought and sold at the FRAG price at the time of the collector's transaction. From this point on, the FRAG price will not change and the FRAG holder can exit at any time.
+与此同时，对 DODO 交易池的参数进行调整，这样就可以在收集人交易时以收集人的价格购买和出售 FRAG 。在此之后，FRAG 的价格将不会改变，持有 FRAG 的人可以随时退出。
 
-It is important to note that buying up the DODO NFT Vault is not a mandatory process and the creator of the DODO NFT Vault can set a protection period to waive the buyout option, or even choose not to buyout the DODO NFT Vault.
+值得注意的是，买断 DODO NFT Vault 并不是一个强制性的过程，DODO NFT Vault 的创建者可以设置一个保护期来放弃买断选项，甚至可以选择不允许买断该 DODO NFT Vault 。
 
-Click [dodonft.io](http://dodonft.io) to see how DODO NFT works.
+点击 [dodonft.io](http://dodonft.io/) 以查看 DODO NFT 的运作原理。
