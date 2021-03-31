@@ -72,8 +72,8 @@ sidebar_label: 开发者信息
 | WBTC-USDC: USDC  | [0x0cDb21e20597d753C90458f5eF2083f6695eb794](https://etherscan.io/address/0x0cDb21e20597d753C90458f5eF2083f6695eb794) |
 | YFI-USDC: YFI    | [0xE2852C572FC42C9e2ec03197deFa42c647e89291](https://etherscan.io/address/0xE2852C572FC42C9e2ec03197deFa42c647e89291) |
 | YFI-USDC: USDC   | [0xD9D0bd18DDfA753d0c88a060fFb60657bB0D7A07](https://etherscan.io/address/0xD9D0bd18DDfA753d0c88a060fFb60657bB0D7A07) |
-| USDT-USDC: USDT  | [0xE2852C572FC42C9e2ec03197deFa42c647e89291](https://etherscan.io/address/0xE2852C572FC42C9e2ec03197deFa42c647e89291) |
-| USDT-USDC: USDC  | [0xD9D0bd18DDfA753d0c88a060fFb60657bB0D7A07](https://etherscan.io/address/0xD9D0bd18DDfA753d0c88a060fFb60657bB0D7A07) |
+| USDT-USDC: USDT  | [0x50b11247bf14ee5116c855cde9963fa376fcec86](https://etherscan.io/address/0x50b11247bf14ee5116c855cde9963fa376fcec86) |
+| USDT-USDC: USDC  | [0x05a54b466f01510e92c02d3a180bae83a64baab8](https://etherscan.io/address/0x05a54b466f01510e92c02d3a180bae83a64baab8) |
 | AAVE-USDC: AAVE  | [0x30ad5b6d4e531591591113b49eae2fafbc2236d5](https://etherscan.io/address/0x30ad5b6d4e531591591113b49eae2fafbc2236d5) |
 | AAVE-USDC: USDC  | [0x5840a9e733960f591856a5d13f6366658535bbe5](https://etherscan.io/address/0x5840a9e733960f591856a5d13f6366658535bbe5) |
 
