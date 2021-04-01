@@ -6,7 +6,7 @@ sidebar_label: Core Features
 
 ## DODO NFT Vault fragmentation
 
-Pledging NFT (or multiple NFTs) into the DODO NFT Vault will automatically generate an ERC20 token contract. owners of the DODO NFT Vault can set the percentage of tokens going into the secondary market, and set aside token distributions to the primary market/creative teams/community incentives. owners of the DODO NFT Vault can set the percentage of tokens going into the secondary market, and set aside token distributions to the primary market/creative teams/community incentives. owners of the DODO NFT Vault owners can pledge more NFTs into the DODO NFT Vault at a later date.
+Pledging NFT (or multiple NFTs) into the DODO NFT Vault will automatically generate an ERC20 token contract. Owners of the DODO NFT Vault can set the percentage of tokens going into the secondary market, and set aside token distributions to the primary market/creative teams/community incentives. 
 
 For example, I send an NFT for Ayaboli. I pledge this NFT to the DODO NFT Vault and automatically get an ERC20 token. I can set the token name to FRAG and the total supply to 10,000, which cannot be incremented. I set 15% of the tokens to be released to the designated Ayakari Copyright Company's wallet address in a 1 year linear unlock, and 85% to go directly into the DODO liquidity pool for circulation at $1 = 1 FRAG. the price of FRAG goes up and down as transactions occur.
 
