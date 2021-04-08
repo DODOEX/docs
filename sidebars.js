@@ -13,6 +13,7 @@ module.exports = {
       "bugBounty",
       "audit",
     ],
+    Api: ["tradeApi"],
     Tokenomics: ["dodonomics"],
     More: ["commonQuestions"],
     "DODO NFT Intro": ["nftCoreFeatures"],
