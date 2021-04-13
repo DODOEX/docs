@@ -10,8 +10,8 @@ sidebar_label: Media Kit
 
 ## Logos
 
-![](https://dodoex.github.io/docs/DODO-media-kit/banner/Logo1-Y.png)
+![](https://dodoex.github.io/docs/DODO-media-kit/LOGO/Logo1-Y.png)
 
-![](https://dodoex.github.io/docs/DODO-media-kit/banner/vDODO-LOGO--03.svg)
+![](https://dodoex.github.io/docs/DODO-media-kit/vDODO%20LOGO/vDODO-LOGO--03.svg)
 
 [Click to download Media Kit](https://dodoex.github.io/docs/DODO-media-kit.zip)
