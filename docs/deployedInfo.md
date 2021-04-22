@@ -28,6 +28,7 @@ sidebar_label: Deployment Information
 | DODO Approve Proxy             | [0x335aC99bb3E51BDbF22025f092Ebc1Cf2c5cC619](https://etherscan.io/address/0x335aC99bb3E51BDbF22025f092Ebc1Cf2c5cC619) |
 | DODO V2Proxy02                 | [0xa356867fDCEa8e71AEaF87805808803806231FdC](https://etherscan.io/address/0xa356867fDCEa8e71AEaF87805808803806231FdC) |
 | DODO DSPProxy                  | [0x4599ed18F34cFE06820E3684bF0aACB8D75c644d](https://etherscan.io/address/0x4599ed18F34cFE06820E3684bF0aACB8D75c644d) |
+| DODO UpCpProxy                 | [0x26D898A37782B04d6c460E11aEeCD8f3d99e91B8](https://etherscan.io/address/0x26D898A37782B04d6c460E11aEeCD8f3d99e91B8) |
 | DODO CrowdPooling Factory      | [0xE8C9A78725D0451FA19878D5f8A3dC0D55FECF25](https://etherscan.io/address/0xE8C9A78725D0451FA19878D5f8A3dC0D55FECF25) |
 | DODO UpCrowdPooling Factory    | [0x78D338F9d54E9e41872E68cB1c01d9499d87eE52](https://etherscan.io/address/0x78D338F9d54E9e41872E68cB1c01d9499d87eE52) |
 | DODO Private Pool Factory      | [0x6B4Fa0bc61Eddc928e0Df9c7f01e407BfcD3e5EF](https://etherscan.io/address/0x6B4Fa0bc61Eddc928e0Df9c7f01e407BfcD3e5EF) |
