@@ -38,6 +38,15 @@ sidebar_label: Deployment Information
 | DODO Trade Incentive           | [0x989DcAA95801C527C5B73AA65d3962dF9aCe1b0C](https://etherscan.io/address/0x989DcAA95801C527C5B73AA65d3962dF9aCe1b0C) |
 
 
+## DODO Mining V2
+
+| Contract Name                  | Address                                                                                                               |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------------------- |
+| KONO - WETH DLP                | [0x2ff2CeE6E9359F9eA1cF2f51d18bF9F2045447E4](https://etherscan.io/address/0x2ff2CeE6E9359F9eA1cF2f51d18bF9F2045447E4) |
+| ETHA - USDT DLP                | [0x53eE28b9F0A6416857C1e7503032E27e80F52DA0](https://etherscan.io/address/0x53eE28b9F0A6416857C1e7503032E27e80F52DA0) |
+| vETH - WETH DLP                | [0x44024B60575cf5D032F80A55Da37924f123B4151](https://etherscan.io/address/0x44024B60575cf5D032F80A55Da37924f123B4151) |
+
+
 ## DODO V1
 
 | Contract Name                  | Address                                                                                                               |

@@ -28,6 +28,14 @@ sidebar_label: Deployment Information(BSC)
 | DODO Stable Pool Factory       | [0x0fb9815938Ad069Bf90E14FE6C596c514BEDe767](https://bscscan.com/address/0x0fb9815938Ad069Bf90E14FE6C596c514BEDe767) |
 | DODO ERC20 Factory             | [0x5e84190a270333aCe5B9202a3F4ceBf11b81bB01](https://bscscan.com/address/0x5e84190a270333aCe5B9202a3F4ceBf11b81bB01) |
 
+## DODO Mining V2
+
+| Contract Name                  | Address                                                                                                              |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------|
+| wMASS - DODO DLP               | [0xc1ba6bD60c6790B751ec2D90288B6cbF87D4F032](https://bscscan.com/address/0xc1ba6bD60c6790B751ec2D90288B6cbF87D4F032) |
+| Helmet - WBNB DLP              | [0x38E02C8AB552DEE3a79E32eB4665ceae538fD145](https://bscscan.com/address/0x38E02C8AB552DEE3a79E32eB4665ceae538fD145) |
+| MTV - DODO DLP                 | [0xf6585FE94f2147682723FCdFFb973757BCdB608F](https://bscscan.com/address/0xf6585FE94f2147682723FCdFFb973757BCdB608F) |
+
 
 ## DODO V1
 
