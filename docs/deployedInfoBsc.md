@@ -30,7 +30,7 @@ sidebar_label: Deployment Information(BSC)
 
 ## DODO Mining V2
 
-| Contract Name                  | Address                                                                                                              |
+| Staked Token                   | Mining Contract                                                                                                      |
 | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------|
 | wMASS - DODO DLP               | [0xc1ba6bD60c6790B751ec2D90288B6cbF87D4F032](https://bscscan.com/address/0xc1ba6bD60c6790B751ec2D90288B6cbF87D4F032) |
 | Helmet - WBNB DLP              | [0x38E02C8AB552DEE3a79E32eB4665ceae538fD145](https://bscscan.com/address/0x38E02C8AB552DEE3a79E32eB4665ceae538fD145) |

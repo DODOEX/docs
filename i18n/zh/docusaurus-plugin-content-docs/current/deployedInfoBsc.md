@@ -31,7 +31,7 @@ sidebar_label: 合约信息（BSC）
 
 ## DODO Mining V2
 
-| 合约                            | 地址                                                                                                                 |
+| 质押代币                        | 挖矿合约地址                                                                                                           |
 | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------|
 | wMASS - DODO DLP               | [0xc1ba6bD60c6790B751ec2D90288B6cbF87D4F032](https://bscscan.com/address/0xc1ba6bD60c6790B751ec2D90288B6cbF87D4F032) |
 | Helmet - WBNB DLP              | [0x38E02C8AB552DEE3a79E32eB4665ceae538fD145](https://bscscan.com/address/0x38E02C8AB552DEE3a79E32eB4665ceae538fD145) |

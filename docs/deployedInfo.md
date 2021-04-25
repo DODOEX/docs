@@ -40,7 +40,7 @@ sidebar_label: Deployment Information
 
 ## DODO Mining V2
 
-| Contract Name                  | Address                                                                                                               |
+| Staked Token                   | Mining Contract                                                                                                       |
 | ------------------------------ | --------------------------------------------------------------------------------------------------------------------- |
 | KONO - WETH DLP                | [0x2ff2CeE6E9359F9eA1cF2f51d18bF9F2045447E4](https://etherscan.io/address/0x2ff2CeE6E9359F9eA1cF2f51d18bF9F2045447E4) |
 | ETHA - USDT DLP                | [0x53eE28b9F0A6416857C1e7503032E27e80F52DA0](https://etherscan.io/address/0x53eE28b9F0A6416857C1e7503032E27e80F52DA0) |
