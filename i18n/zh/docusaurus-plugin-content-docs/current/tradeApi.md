@@ -6,7 +6,7 @@ sidebar_label: DODO Trade API
 
 ## 介绍
 
-DODO Trade API 当前可提供 Ethereum、BSC、HECO 三个网络下任意币互换的实时报价以及可直接使用的与合约交互的ABI数据。使用者仅需按照接口规范，集成我们的API，即可轻松实现DEX的最重要的功能。DODO Trade API 背后集成了DODOV1、DODOV2、专业做市商、1inch API、0x API、以及DODO自建的聚合算法 等多源实时的报价信息，并返回当前多源中最优报价，以确保 DODO Trade API 始终具有较强的竞争力。
+DODO Trade API 当前可提供 Ethereum、BSC、HECO 三个网络下任意币互换的实时报价以及可直接使用的与合约交互ABI数据。开发者仅需按照接口规范，集成我们的API，即可快速实现DEX最重要的交易功能。DODO Trade API 背后集成了DODOV1、DODOV2、专业做市商、1inch API、0x API、以及DODO自建的聚合算法 等多源实时的报价信息，并返回当前多源中最优报价，以确保 DODO Trade API 始终具有较强的竞争力。
 
 以下列举当前API使用的询价源：
 
