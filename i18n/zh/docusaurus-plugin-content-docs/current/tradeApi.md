@@ -39,7 +39,7 @@ GET
 | userAddr                    | string       | (必须)  发起交易的用户地址 |
 | chainId                     | integer      | (必须)  1 代表以太主网, 56 代表 BSC, 128 代表 Heco |
 | deadLine                    | integer      | (可选)  交易过期的区块时间 *单位为：秒* |
-| source                      | string       | (可选)  若不设置，则从全部源中源询价， 若设置 source = "dodo"，代表仅获取DODOV1、DODOV2 报价 |
+| source                      | string       | (可选)  若不设置，则从全部源中询价， 若设置 source = "dodo"，代表仅获取DODOV1、DODOV2 报价 |
 | rpc                         | string       | (可选)  若有自建的节点，则可以配置相应的rpc，以提升实时的节点询价速度与稳定性   |
 
 
@@ -73,9 +73,9 @@ GET
 | resAmount                      | 询价后得到的代币数量（带有小数点，不包括代币的精度）|
 | resPricePerToToken             | 出售代币/购买代币 数量的比例 |
 | resPricePerFromToken           | 购买代币/出售代币 数量的比例 |
-| priceImpact                    | 价格偏差，需要乘 100 以转为%单位， **注：此指标为参考项，若偏高，大概率是因为当前最优报价 经过了比较浅的池子，池子的滑点将造成全局价格偏差较大**|
-| targetApproveAddr              | 用户需要在交易前，将出售的代币授权给当前合约，如果出售代币为ETH（BNB or HT），则该字段为空，不需要任何授权即可直接交易 |
-| to                             | 执行交易的目标合约地址 （DODOProxy）|
+| priceImpact                    | 价格偏差，需要乘 100 以转为%单位， **注：此指标为参考项，若偏高，大概率是因为当前最优报价 经过了比较浅的池子，浅池子的滑点将造成全局价格偏差较大**|
+| targetApproveAddr              | 用户需要在交易前，将出售的代币授权给当前合约（DODOApprove），如果出售代币为ETH（BNB or HT），则该字段为空，不需要任何授权即可直接交易 |
+| to                             | 执行交易的目标合约地址 （DODOV2Proxy）|
 | data                           | 构造后的请求合约ABI信息，可直接使用  |
 
 
