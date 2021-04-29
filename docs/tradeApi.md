@@ -4,6 +4,20 @@ title: DODO Trade API
 sidebar_label: DODO Trade API
 ---
 
+## Introduction
+
+The DODO Trade API currently provides real-time price quotes for swaps between arbitrary tokens on Ethereum Mainnet, Binance Smart Chain (BSC), and Huobi ECO Chain (HECO Chain), as well as Application Binary Interface (ABI) data that can be used to interact with smart contracts on these networks. 
+
+Smart contract developers can easily incorporate the DODO Trade API into their platforms to implement their own trading features, thanks to the API’s plug-and-play integration process. The DODO Trade API finds and compares prices for any pair of token assets from a variety of liquidity sources, including DODO v1, DODO v2, 1inch API, 0xAPI, professional market makers, and via DODO’s custom aggregation algorithm.
+
+The full list of liquidity sources that the DODO Trade API currently uses from are as follows:
+
+- Ethereum Mainnet: DODO v1, DODO v2, [1inch API](https://docs.1inch.io/api/), [0x API](https://0x.org/), [OneBit](https://onebitquant.com/), and DODO‘s custom aggregation algorithm 
+
+- BSC: DODO v1, DODO v2, [1inch API](https://docs.1inch.io/api/), [0x API](https://0x.org/), [Wootrade](https://woo.network/), and DODO‘s custom aggregation algorithm
+
+- HECO: DODO v1, DODO v2, and DODO‘s custom aggregation algorithm 
+
 ## URL
 
 https://dodo-route.dodoex.io/dodoapi/getdodoroute
@@ -14,24 +28,24 @@ https://dodo-route.dodoex.io/dodoapi/getdodoroute
 
 GET
 
-### request params
+### Request params
 
-| Param                          | Description                                                           |
-| ------------------------------ | ----------------------------------------------------------------------|
-| fromTokenAddress               | (required)  *ETH(BNB) = 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE*   |
-| fromTokenDecimals              | (required)                                                            |
-| toTokenAddress                 | (required)  *ETH(BNB) = 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE*   |
-| toTokenDecimals                | (required)                                                            |
-| fromAmount                     | (required)  calculate with decimals，for example 1ETH =  10**18       |
-| slippage                       | (required)  0 - 100   *Unit is %*                                     |
-| userAddr                       | (required)                                                            |
-| chainId                        | (required)  1 or 56,  1 represents ethereum, 56 represents BSC        |
-| deadLine                       | (optional)  Expired block timestamp *Unit is second*                  |
-| source                         | (optional)  'dodo' represents get price only from dodo platform       |
-| rpc                            | (optional)  For example: https://mainnet.infura.io/v3/**, or your own rpc endpoint  |
+| Param                       | type         | Description                                                      |
+| ----------------------------| ------------ | -----------------------------------------------------------------|
+| fromTokenAddress            | string       | (required)  contract address of a token to sell *ETH(BNB or HT) 为 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE*  |
+| fromTokenDecimals           | integer      | (required)  Decimals of a token to sell |
+| toTokenAddress              | string       | (required)  contract address of a token to buy *ETH(BNB or HT) 为 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE*   |
+| toTokenDecimals             | integer      | (required)  Decimals of a token to buy  |
+| fromAmount                  | string       | (required)  amount of a token to sell  NOTE：calculated with decimals，For example 1ETH =  10**18 |
+| slippage                    | integer      | (required)  0 - 100   *unit:%* |
+| userAddr                    | string       | (required)  user address |
+| chainId                     | integer      | (required)  1 represents ethereum, 56 represents BSC, 128 represents HECO |
+| deadLine                    | integer      | (optional)  the timestamp of the block where the trade deadline is set to, unit: second |
+| source                      | string       | (optional)  If left blank, the API automatically quotes prices from all liquidity sources. If source is set to “dodo”, then the API quotes prices from DODO v1 and DODO v2 only. |
+| rpc                         | string       | (optional)  If you have your own rpc node, you can set this parameter to point to it.  |
 
 
-## Response
+## Response params
 
 ### JSON Example
 
@@ -58,10 +72,10 @@ GET
 
 | Param                          | Description                                                           |
 | ------------------------------ | ----------------------------------------------------------------------|
-| resAmount                      | receive Amount                                                        |
-| resPricePerToToken             | ratio of fromTokenAmount/toTokenAmount                                |
-| resPricePerFromToken           | ratio of toTokenAmount/fromTokenAmount                                |
-| priceImpact                    | need mul 100%                                                         |
-| targetApproveAddr              | User need give fromToken's authority to this contract before swaping. if fromToken equals to ETH. the param will be empty. |
-| to                             | DODOProxy's address                                                   |
-| data                           | Use directly                                                          |
+| resAmount                      | Receive Amount (Not include Token's Decimals) |
+| resPricePerToToken             | ratio of sell Token Amount/ buy Token Amount |
+| resPricePerFromToken           | ratio of buy Token Amount / sell Token Amount |
+| priceImpact                    | Price deviation; convert to percentage by multiplying by 100. High price deviation is caused by low liquidity in the pools where the prices are quoted from. |
+| targetApproveAddr              | User need give sell Token's authority to this contract (DODOApprove) before swaping. if sell Token equals to ETH (BNB or HT). the param will be empty.  |
+| to                             | DODOProxy's address |
+| data                           | ABI Data，Use directly  |

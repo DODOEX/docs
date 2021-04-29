@@ -28,7 +28,7 @@ sidebar_label: Deployment Information
 | DODO Approve Proxy             | [0x335aC99bb3E51BDbF22025f092Ebc1Cf2c5cC619](https://etherscan.io/address/0x335aC99bb3E51BDbF22025f092Ebc1Cf2c5cC619) |
 | DODO V2Proxy02                 | [0xa356867fDCEa8e71AEaF87805808803806231FdC](https://etherscan.io/address/0xa356867fDCEa8e71AEaF87805808803806231FdC) |
 | DODO DSPProxy                  | [0x4599ed18F34cFE06820E3684bF0aACB8D75c644d](https://etherscan.io/address/0x4599ed18F34cFE06820E3684bF0aACB8D75c644d) |
-| DODO UpCpProxy                 | [0x26D898A37782B04d6c460E11aEeCD8f3d99e91B8](https://etherscan.io/address/0x26D898A37782B04d6c460E11aEeCD8f3d99e91B8) |
+| DODO CpProxy                   | [0x048B8926bb0eE9c52e05D61fDffbCCffbeE06Fc2](https://etherscan.io/address/0x048B8926bb0eE9c52e05D61fDffbCCffbeE06Fc2) |
 | DODO CrowdPooling Factory      | [0xE8C9A78725D0451FA19878D5f8A3dC0D55FECF25](https://etherscan.io/address/0xE8C9A78725D0451FA19878D5f8A3dC0D55FECF25) |
 | DODO UpCrowdPooling Factory    | [0x78D338F9d54E9e41872E68cB1c01d9499d87eE52](https://etherscan.io/address/0x78D338F9d54E9e41872E68cB1c01d9499d87eE52) |
 | DODO Private Pool Factory      | [0x6B4Fa0bc61Eddc928e0Df9c7f01e407BfcD3e5EF](https://etherscan.io/address/0x6B4Fa0bc61Eddc928e0Df9c7f01e407BfcD3e5EF) |
@@ -42,6 +42,7 @@ sidebar_label: Deployment Information
 
 | Staked Token                   | Mining Contract                                                                                                       |
 | ------------------------------ | --------------------------------------------------------------------------------------------------------------------- |
+| VDODO Mining                   | [0xd84C904Ab6B00cE6A18A43Ba50926EC351f899CB](https://etherscan.io/address/0xd84C904Ab6B00cE6A18A43Ba50926EC351f899CB) |
 | KONO - WETH DLP                | [0x2ff2CeE6E9359F9eA1cF2f51d18bF9F2045447E4](https://etherscan.io/address/0x2ff2CeE6E9359F9eA1cF2f51d18bF9F2045447E4) |
 | ETHA - USDT DLP                | [0x53eE28b9F0A6416857C1e7503032E27e80F52DA0](https://etherscan.io/address/0x53eE28b9F0A6416857C1e7503032E27e80F52DA0) |
 | vETH - WETH DLP                | [0x44024B60575cf5D032F80A55Da37924f123B4151](https://etherscan.io/address/0x44024B60575cf5D032F80A55Da37924f123B4151) |
@@ -77,6 +78,7 @@ sidebar_label: Deployment Information
 | DODO Approve Proxy             | [0xE2bf3e72E126f0AD4Aec07AdfA6cc345EEF43bDe](https://kovan.etherscan.io/address/0xE2bf3e72E126f0AD4Aec07AdfA6cc345EEF43bDe) |
 | DODO V2Proxy02                 | [0x85CAA68ae47f047aa01C48BCaA711CA70a950fFb](https://kovan.etherscan.io/address/0x85CAA68ae47f047aa01C48BCaA711CA70a950fFb) |
 | DODO DSPProxy                  | [0xC5fF477667E29df8887D258CaE593e04A1961A69](https://kovan.etherscan.io/address/0xC5fF477667E29df8887D258CaE593e04A1961A69) |
+| DODO CpProxy                   | [0x0e3DAAa1eCfBF2fA4cb990dC34D760c38279C5a8](https://kovan.etherscan.io/address/0x0e3DAAa1eCfBF2fA4cb990dC34D760c38279C5a8) |
 | DODO CrowdPooling Factory      | [0x9e6E8985D52E91eDf1671f28Ca73bc4F3E219b72](https://kovan.etherscan.io/address/0x9e6E8985D52E91eDf1671f28Ca73bc4F3E219b72) |
 | DODO UpCrowdPooling Factory    | [0x25AE560522165eacCFbF2287493AF12B8ad718e7](https://kovan.etherscan.io/address/0x25AE560522165eacCFbF2287493AF12B8ad718e7) |
 | DODO Private Pool Factory      | [0xC65F8087288aa0a118aa6F3228Ef9ecc8187F4b6](https://kovan.etherscan.io/address/0xC65F8087288aa0a118aa6F3228Ef9ecc8187F4b6) |
