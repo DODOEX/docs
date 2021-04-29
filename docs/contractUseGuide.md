@@ -120,7 +120,7 @@ If the owner trigger directly, operator can be empty. Other parameters descripti
 
 ## For Developers
 
-Developers can fetch metadata from `DPPFactory` && `DVMFactory`.
+Developers can fetch metadata from `DODO Private Pool Factory` && `DODO Vending Machine Factory` && `DODO Stable Pool Factory`.
 
 ```javascript
 
@@ -162,6 +162,16 @@ At the same time, we provide real-time monitoring of DODO platform's creation an
   );
 
   event RemoveDPP(address dpp);
+
+  event NewDSP(
+      address baseToken,
+      address quoteToken,
+      address creator,
+      address dsp
+  );
+
+  event RemoveDSP(address dsp);
+
 ```
-ps:  `NewDVM` and `RemoveDVM` are events from `DVMFactory`, and `NewDPP` and `RemoveDPP` are events from `DPPFactory`.
+ps:  `NewDVM` and `RemoveDVM` are events from `DODO Vending Machine Factory`, `NewDPP` and `RemoveDPP` are events from `DODO Private Pool Factory`, and `NewDSP` and `RemoveDSP` are events from `DODO Stable Pool Factory`,
 

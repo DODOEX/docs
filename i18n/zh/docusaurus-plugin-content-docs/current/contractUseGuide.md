@@ -124,7 +124,7 @@ DODO V2 设计了两种类型的池子，包括公开池以及私有池，同样
 
 ## 对于开发人员
 
-开发人员可以从工厂合约（`DPPFactory` && `DVMFactory` 需被分别调用）中获取平台已经创建的所有池子地址，以实现检索展示等功能
+开发人员可以从工厂合约（`DPPFactory` && `DVMFactory` && `DSPFactory` 需被分别调用）中获取平台已经创建的所有池子地址，以实现检索展示等功能
 
 ```javascript
 
@@ -168,6 +168,15 @@ getDODOPool 与 getDODOPoolBidirection 的区别是前者需要区分出base、q
   );
 
   event RemoveDPP(address dpp);
+
+  event NewDSP(
+      address baseToken,
+      address quoteToken,
+      address creator,
+      address dsp
+  );
+
+  event RemoveDSP(address dsp);
 ```
 
-其中`NewDVM`与`RemoveDVM`是`DVMFactory`中的事件，而 `NewDPP` 与 `RemoveDPP` 是 `DPPFactory`中的事件
+其中`NewDVM`与`RemoveDVM`是`DVMFactory`中的事件，`NewDPP` 与 `RemoveDPP` 是 `DPPFactory`中的事件，`NewDSP` 与 `RemoveDSP` 是 `DSPFactory`中的事件
