@@ -1,43 +1,43 @@
 ---
 id: upCrowdPooling
-title: 升价与固定价格众筹
-sidebar_label: 升价与固定价格众筹
+title: Bonding Curve Crowdpooling and Fixed-Price Crowdpooling
+sidebar_label: Bonding Curve Crowdpooling and Fixed-Price Crowdpooling
 ---
 
-## 升价众筹与固定价格众筹
+DODO v2 currently supports Bonding Curve Crowdpooling and Fixed-Price Crowdpooling.
 
-DODOV2 众筹当前支持升价与固定价格这两种模式，其中两者有相同点，也有不同点。
+### Similarities
 
-相同点：
+- At the end of the Crowdpooling campaign, the token price is the same for all participants. 
 
-- 参与众筹的人，结束时购买代币的成本相同
+- After the Crowdpooling period ends, a liquidity pool will be established immediately for token swaps. The price of the token when the Crowdpooling period ends will be its initial price. 
 
-- 结束众筹后，均会第一时间建立流动性池，开启交易，且交易初始价格为众筹的成本价
+- Hard caps can be set for both types of Crowdpooling.
 
-- 两种模式均可设置硬顶
+- The amount staked by participants that exceeds the hard cap set by the Crowdpool creator will be refunded back to participants after the Crowdpooling period ends.
 
-- 超募的资金，在众筹结束后，可被提取
+### Differences
 
-不同点：
+- Token Price:
 
-- 众筹成本价的变化：
+    - For Bonding Curve Crowdpooling, the token price will increase along the upward-trending bonding curve as the amount staked by participants increases. The bonding curve is defined by DODO’s Proactive Market Maker (PMM)[./pmm] algorithm and is customizable by the Crowdpool creator prior to the start of the campaign.
 
-    - 对于升价众筹，众筹成本价将会沿着价格曲线，呈上升趋势变化。该价格曲线采用DODO的 [pmm算法](./pmm), 在创建众筹池的时候，设置K，以及I，该曲线会随着买入quote数量变多，而推高众筹的成本价
+    - For Fixed-Price Crowdpooling, the token price is fixed and does not fluctuate as the staked amount increases or decreases. As a matter of fact, Fixed-Price Crowdpooling is a special kind of Bonding Curve Crowdpooling, in which the slippage coefficient parameter (k) of the bonding curve is set to 0, turning the curve into a horizontal line and thus fixing the token price. 
 
-    - 对于固定价格众筹，众筹成本价是初始设定后，不再变化，技术实现上，固定价格众筹是一种特殊的升价众筹，即价格曲线中K设置为0，这样曲线则会变为横线，达到固定价格众筹的效果
+- How the Hard Caps are Set:
 
-- 硬顶的设置方式：
+    - For Bonding Curve Crowdpooling, the hard cap can be set when configuring the curve parameters. The token price will stop increasing along the curve once the hard cap is reached. The amount staked by participants that exceeds the hard cap will be refunded back to the participants once the Crowdpooling period ends. It is optional for a Crowdpool creator to launch their campaign without a hard cap. 
 
-    - 对于升价众筹，硬顶设置是传入固定的值，当众筹资金超过该值，则价格曲线不再上升，即众筹成本价不再变化，超过硬顶的部分可在众筹结束由参与者提取。同时也支持无硬顶的模式
-
-    - 对于固定价格众筹，硬顶设置是按照比例的方式，因为众筹成本价固定，项目方提供的Base数量固定，因此可众筹的资金上限是固定的，我们系统默认是50%的比例，即一半Base用来众筹，一半的Base用来结束后提供流动性
-
-- 冷静期的概念：
-
-    - 升价众筹的模式，会随着参与者存入的quote数量变多，而抬高所有参与者的众筹成本，这样对于先进场的参与者，存在很大变数，会导致最终众筹成本价超过自身的心理预期上限，因此我们设计了冷静期，在众筹结束后，会有一段的冷静期，这段期间内，参与众筹的人可以选择退出
+    - On the DODO platform, the hard cap of a Fixed-Price Crowdpooling is, by default, set to 50% of the number of base tokens supplied by the Crowdpool creator. Since the token price and the total amount of tokens to be issued by the Crowdpool creator are both fixed, the maximum proceeds a Fixed Price Crowdpooling can receive is predetermined. By setting the cap to 50% of the maximum proceeds, it means that half of the tokens supplied by the Crowdpool creator will be used for Crowdpooling, while the remaining half will be used to provide liquidity once the Crowdpooling period ends. 
 
 
-## 超募情况处理
+### Cooling-Off Period
 
-当设置硬顶后，就会存在超募的情况，两种模式的处理方式相同，即在众筹结束后，计算出超募的资金，然后按照用户参与众筹的资金占比，按比例提取
+For Bonding Curve Crowdpooling, the token price often increases significantly over the Crowdpooling period, therefore the participants who enter the pool early are often faced with token prices much higher than they originally anticipated. In order to protect participants, a cooling-off period has been instituted, which takes place immediately after the Crowdpooling period. During this period, participants who have staked can choose to withdraw from the campaign if they wish.
+
+
+### In Case of Oversubscription
+
+If the total staked amount by participants is over the Crowdpooling hard cap, then all participants will receive tokens proportional to their shares of the pool, at the initial price.
+
 
