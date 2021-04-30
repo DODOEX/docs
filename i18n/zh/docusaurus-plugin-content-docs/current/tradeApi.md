@@ -38,9 +38,10 @@ GET
 | slippage                    | integer      | (必须)  0 - 100   *单位为：%* |
 | userAddr                    | string       | (必须)  发起交易的用户地址 |
 | chainId                     | integer      | (必须)  1 代表以太主网, 56 代表 BSC, 128 代表 Heco |
+| rpc                         | string       | (必须)  自有节点的rpc地址，以保障实时的节点询价速度与稳定性   |
 | deadLine                    | integer      | (可选)  交易过期的区块时间 *单位为：秒* |
 | source                      | string       | (可选)  若不设置，则从全部源中询价， 若设置 source = "dodo"，代表仅获取DODOV1、DODOV2 报价 |
-| rpc                         | string       | (可选)  若有自建的节点，则可以配置相应的rpc，以提升实时的节点询价速度与稳定性   |
+
 
 
 ## 返回

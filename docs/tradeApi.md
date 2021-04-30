@@ -40,9 +40,10 @@ GET
 | slippage                    | integer      | (required)  0 - 100   *unit:%* |
 | userAddr                    | string       | (required)  user address |
 | chainId                     | integer      | (required)  1 represents ethereum, 56 represents BSC, 128 represents HECO |
+| rpc                         | string       | (required)  your own rpc node, you can set this parameter to point to it.  |
 | deadLine                    | integer      | (optional)  the timestamp of the block where the trade deadline is set to, unit: second |
 | source                      | string       | (optional)  If left blank, the API automatically quotes prices from all liquidity sources. If source is set to “dodo”, then the API quotes prices from DODO v1 and DODO v2 only. |
-| rpc                         | string       | (optional)  If you have your own rpc node, you can set this parameter to point to it.  |
+
 
 
 ## Response params
