@@ -44,6 +44,7 @@ sidebar_label: 合约信息 （以太主网）
 | KONO - WETH DLP                | [0x2ff2CeE6E9359F9eA1cF2f51d18bF9F2045447E4](https://etherscan.io/address/0x2ff2CeE6E9359F9eA1cF2f51d18bF9F2045447E4) |
 | ETHA - USDT DLP                | [0x53eE28b9F0A6416857C1e7503032E27e80F52DA0](https://etherscan.io/address/0x53eE28b9F0A6416857C1e7503032E27e80F52DA0) |
 | vETH - WETH DLP                | [0x44024B60575cf5D032F80A55Da37924f123B4151](https://etherscan.io/address/0x44024B60575cf5D032F80A55Da37924f123B4151) |
+| BASv2 - DODO DLP               | [0x48672333f97958e2f8352b3A5538293dE8eA86f7](https://etherscan.io/address/0x48672333f97958e2f8352b3A5538293dE8eA86f7) |
 
 
 ## DODO V1
