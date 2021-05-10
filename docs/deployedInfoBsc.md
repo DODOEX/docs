@@ -37,6 +37,7 @@ sidebar_label: Deployment Information(BSC)
 | MTV - DODO DLP                 | [0xf6585FE94f2147682723FCdFFb973757BCdB608F](https://bscscan.com/address/0xf6585FE94f2147682723FCdFFb973757BCdB608F) |
 | CRFI - DODO DLP                | [0x7b6BbC2943989A4E4CE24B43A6E730c754a0f695](https://bscscan.com/address/0x7b6BbC2943989A4E4CE24B43A6E730c754a0f695) |
 | DODO - BNB DLP                 | [0x322B43e406D1B4Df9Bc36d058317Dd1cd3b0385F](https://bscscan.com/address/0x322B43e406D1B4Df9Bc36d058317Dd1cd3b0385F) |
+| Black - BNB DLP                | [0x69658C27DabEaC461750c919440CbD0Fc9cdAc13](https://bscscan.com/address/0x69658C27DabEaC461750c919440CbD0Fc9cdAc13) |
 
 
 ## DODO V1
