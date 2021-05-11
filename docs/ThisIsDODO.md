@@ -1,6 +1,6 @@
 ---
 id: ThisIsDODO
-title: DODO: The liquid, flexible DEX that’s enabling truly distributed finance 
+title: 'DODO: The liquid, flexible DEX that’s enabling truly distributed finance' 
 sidebar_label: sidebar_label_ThisIsDODO
 ---
 
