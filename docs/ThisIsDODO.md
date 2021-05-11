@@ -4,8 +4,6 @@ title: 'DODO: The liquid, flexible DEX that’s enabling truly distributed finan
 sidebar_label: 'This Is DODO'
 ---
 
-## DODO: The liquid, flexible DEX that’s enabling truly distributed finance 
-
 Decentralized cryptocurrency exchanges offer a host of benefits, chief among them anonymity and peer-to-peer transactions. But many are complex to use and hampered by low trading volumes. As a result, customers in search of liquidity and simplicity are often forced to turn to centralized platforms, which lack true permissionlessness and suffer from cumbersome registration processes. 
 
 Until DODO, that is. 
