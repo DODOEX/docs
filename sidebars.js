@@ -13,6 +13,7 @@ module.exports = {
       "subgraph",
       "bugBounty",
       "audit",
+      "dppForMM"
     ],
     Api: ["tradeApi"],
     Tokenomics: ["dodonomics"],
