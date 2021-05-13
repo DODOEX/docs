@@ -1,7 +1,7 @@
 ---
 id: dppForMM
-title: 私有池 做市商对接说明文档
-sidebar_label: 私有池 做市商对接说明文档
+title: 私有池对接说明
+sidebar_label: 私有池对接说明
 ---
 
 ## 介绍
