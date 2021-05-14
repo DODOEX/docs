@@ -47,6 +47,8 @@ sidebar_label: Deployment Information
 | ETHA - USDT DLP                | [0x53eE28b9F0A6416857C1e7503032E27e80F52DA0](https://etherscan.io/address/0x53eE28b9F0A6416857C1e7503032E27e80F52DA0) |
 | vETH - WETH DLP                | [0x44024B60575cf5D032F80A55Da37924f123B4151](https://etherscan.io/address/0x44024B60575cf5D032F80A55Da37924f123B4151) |
 | BASv2 - DODO DLP               | [0x48672333f97958e2f8352b3A5538293dE8eA86f7](https://etherscan.io/address/0x48672333f97958e2f8352b3A5538293dE8eA86f7) |
+| DAI - USDT DLP                 | [0x1A4F8705E1C0428D020e1558A371b7E6134455A2](https://etherscan.io/address/0x1A4F8705E1C0428D020e1558A371b7E6134455A2) |
+| sUSD - USDT DLP                | [0xd08e5cF0551aaEc0dA2f4FC595193F9E6b0295e0](https://etherscan.io/address/0xd08e5cF0551aaEc0dA2f4FC595193F9E6b0295e0) |
 
 
 ## DODO V1

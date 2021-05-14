@@ -36,7 +36,6 @@ sidebar_label: 合约信息（BSC）
 | wMASS - DODO DLP               | [0xc1ba6bD60c6790B751ec2D90288B6cbF87D4F032](https://bscscan.com/address/0xc1ba6bD60c6790B751ec2D90288B6cbF87D4F032) |
 | Helmet - WBNB DLP              | [0x38E02C8AB552DEE3a79E32eB4665ceae538fD145](https://bscscan.com/address/0x38E02C8AB552DEE3a79E32eB4665ceae538fD145) |
 | MTV - DODO DLP                 | [0xf6585FE94f2147682723FCdFFb973757BCdB608F](https://bscscan.com/address/0xf6585FE94f2147682723FCdFFb973757BCdB608F) |
-| CRFI - DODO DLP                | [0x7b6BbC2943989A4E4CE24B43A6E730c754a0f695](https://bscscan.com/address/0x7b6BbC2943989A4E4CE24B43A6E730c754a0f695) |
 | DODO - BNB DLP                 | [0x322B43e406D1B4Df9Bc36d058317Dd1cd3b0385F](https://bscscan.com/address/0x322B43e406D1B4Df9Bc36d058317Dd1cd3b0385F) |
 | Black - BNB DLP                | [0x69658C27DabEaC461750c919440CbD0Fc9cdAc13](https://bscscan.com/address/0x69658C27DabEaC461750c919440CbD0Fc9cdAc13) |
 
