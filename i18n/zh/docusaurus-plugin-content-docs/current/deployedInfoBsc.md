@@ -33,6 +33,7 @@ sidebar_label: 合约信息（BSC）
 
 | 质押代币                        | 挖矿合约地址                                                                                                           |
 | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------|
+| VDODO Mining                   | [0x505A0f0F4956f7ca5839C5eFd8ebDaf3D3aE945f](https://bscscan.com/address/0x505A0f0F4956f7ca5839C5eFd8ebDaf3D3aE945f) |
 | wMASS - DODO DLP               | [0xc1ba6bD60c6790B751ec2D90288B6cbF87D4F032](https://bscscan.com/address/0xc1ba6bD60c6790B751ec2D90288B6cbF87D4F032) |
 | Helmet - WBNB DLP              | [0x38E02C8AB552DEE3a79E32eB4665ceae538fD145](https://bscscan.com/address/0x38E02C8AB552DEE3a79E32eB4665ceae538fD145) |
 | MTV - DODO DLP                 | [0xf6585FE94f2147682723FCdFFb973757BCdB608F](https://bscscan.com/address/0xf6585FE94f2147682723FCdFFb973757BCdB608F) |
