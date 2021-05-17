@@ -26,20 +26,23 @@ DODO 使用了 Subgraph，供系统方便的查询链上合约相关的事件与
 **池子信息**
  - 由 *Pair* 实时追踪池子状态
 
-**链接**
-- DODO 平台
-    - ETH主网 : https://api.thegraph.com/subgraphs/name/dodoex/dodoex-v2
-    - bsc : https://api.bscgraph.org/subgraphs/name/dodoex-v2
-    - kovan测试网 : https://api.thegraph.com/subgraphs/name/autarkxu/dodoex-v2
-- 代币
-    - ETH主网 : https://api.thegraph.com/subgraphs/name/dodoex/dodoex-token
-    - bsc : https://api.bscgraph.org/subgraphs/name/dodoex-token
-    - kovan测试网 : https://thegraph.com/explorer/subgraph/autarkxu/dodoex-token
+**接口请求Endpoints**
+- dodoex
+  - ethereum : https://api.thegraph.com/subgraphs/name/dodoex/dodoex-v2
+  - bsc : https://pq.hg.network/subgraphs/name/dodoex-v2-bsc/bsc
+  - heco : https://q.hg.network/subgraphs/name/dodoex/heco
+  - polygon : https://api.thegraph.com/subgraphs/name/dodoex/dodoex-v2-polygon
+  - kovan : https://api.thegraph.com/subgraphs/name/autarkxu/dodoex-v2
+- token
+  - ethereum : https://api.thegraph.com/subgraphs/name/dodoex/dodoex-token
+  - bsc : https://pq.hg.network/subgraphs/name/dodoex-token/bsc
+  - heco : https://q.hg.network/subgraphs/name/dodoextoken/heco
+  - polygon : https://api.thegraph.com/subgraphs/name/dodoex/dodoex-token-polygon
+  - kovan : https://thegraph.com/explorer/subgraph/autarkxu/dodoex-token
 - vdodo
-    - ETH主网 : https://api.thegraph.com/subgraphs/name/dodoex/dodoex-vdodo
-    - bsc : https://api.bscgraph.org/subgraphs/name/dodoex-vdodo
-    - kovan测试网 : https://api.thegraph.com/subgraphs/name/autarkxu/dodoex-vdodo
-  
+  - ethereum : https://api.thegraph.com/subgraphs/name/dodoex/dodoex-vdodo
+  - kovan : https://api.thegraph.com/subgraphs/name/autarkxu/dodoex-vdodo
+
 ### 2、 Graphql 使用举例 
  - 查询用户信息
 ```
