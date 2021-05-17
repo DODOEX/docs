@@ -9,6 +9,7 @@ sidebar_label: 合约信息（BSC）
 | 合约                       | 地址                                                                                                                 |
 | ------------------------- | -------------------------------------------------------------------------------------------------------------------- |
 | DODO Bsc Token            | [0x67ee3Cb086F8a16f34beE3ca72FAD36F7Db929e2](https://bscscan.com/address/0x67ee3Cb086F8a16f34beE3ca72FAD36F7Db929e2) |
+| vdodo Mapping Token (BSC) | [0x4D6A41C682874E5dd1BBD58184eE8FF145C89202](https://bscscan.com/address/0x4D6A41C682874E5dd1BBD58184eE8FF145C89202) |
 | DODO Mining V1            | [0x01f9BfAC04E6184e90bD7eaFD51999CE430Cc750](https://bscscan.com/address/0x01f9BfAC04E6184e90bD7eaFD51999CE430Cc750) |
 
 

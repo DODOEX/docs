@@ -4,6 +4,14 @@ title: 合约信息（HECO）
 sidebar_label: 合约信息（HECO）
 ---
 
+## DODO 代币相关
+
+| 合约                        | 地址                                                                                                                 |
+| -------------------------  | -------------------------------------------------------------------------------------------------------------------- |
+| DODO Heco Token            | [0x7d5DF05F987f9B9dD2a13deF1793f943Ad2A5e93](https://hecoinfo.com/address/0x7d5DF05F987f9B9dD2a13deF1793f943Ad2A5e93) |
+| vdodo Mapping Token (Heco) | [0xeA2550A4922f56D277b3190Cb1f81739eC3902FC](https://hecoinfo.com/address/0xeA2550A4922f56D277b3190Cb1f81739eC3902FC) |
+
+
 ## DODO V2
 
 | 合约                            | 地址                                                                                                               |
