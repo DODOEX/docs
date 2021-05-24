@@ -29,6 +29,12 @@ sidebar_label: 合约信息（HECO）
 | DODO Stable Pool Factory       | [0xaEc55245AB0cDcc03Bc5f104dAdCd0a33Ef50714](https://hecoinfo.com/address/0xaEc55245AB0cDcc03Bc5f104dAdCd0a33Ef50714) |
 | DODO ERC20 Factory             | [0x2cCDF6F742afBe813B68Ec6bb421C1BEa74fBd46](https://hecoinfo.com/address/0x2cCDF6F742afBe813B68Ec6bb421C1BEa74fBd46) |
 
+## DODO Mining V2
+
+| 质押代币                        | 挖矿合约地址                                                                                                           |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------|
+| VDODO Mining                   | [0x11f774ef7996f11A267C94aa1161Fe851a87e848](https://hecoinfo.com/address/0x11f774ef7996f11A267C94aa1161Fe851a87e848) |
+
 
 ## DODO V1
 

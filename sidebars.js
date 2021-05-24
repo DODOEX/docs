@@ -10,6 +10,7 @@ module.exports = {
       "deployedInfo",
       "deployedInfoBsc",
       "deployedInfoHeco",
+      "deployedInfoMatic",
       "subgraph",
       "bugBounty",
       "audit",
@@ -18,7 +19,6 @@ module.exports = {
     Api: ["tradeApi"],
     BusinessData: ["businessDataDocking"],
     Tokenomics: ["dodonomics"],
-    More: ["commonQuestions", "media"],
     "DODO NFT Intro": ["nftCoreFeatures"],
     "DODO Dojo": [
       "ThisIsDODO",
@@ -26,6 +26,8 @@ module.exports = {
       "DODO-On-Chain-Liquidity",
       "DODO-User-Friendly-Decentralization",
     ],
+    FAQ : ["commonQuestions"],
+    Media: ["media"]
     // Docusaurus: ["doc1", "doc2", "doc3", "mdx"],
   },
 };
