@@ -17,7 +17,9 @@ module.exports = {
       "dppForMM"
     ],
     Api: ["tradeApi"],
-    BusinessData: ["businessDataDocking"],
+    BusinessData: [
+        "businessDataDocking"
+    ],
     Tokenomics: ["dodonomics"],
     "DODO NFT Intro": ["nftCoreFeatures"],
     "DODO Dojo": [

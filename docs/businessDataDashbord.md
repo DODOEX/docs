@@ -1,8 +1,7 @@
 ---
-id: businessDataDocking
-title: Business data docking
-slug: /
-sidebar_label: Business data docking
+id: dashbrod
+title: Dashbord statistical rule description
+sidebar_label: Dashbord statistical rule description
 ---
 
 ## Dashbord statistical rule description

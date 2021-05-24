@@ -1,8 +1,8 @@
 ---
-id: businessDataDocking
-title: 业务数据对接
+id: dashbord
+title: Dashbord 数据统计口径说明
 slug: /
-sidebar_label: 业务数据对接
+sidebar_label: Dashbord 数据统计口径说明
 ---
 
 ## Dashbord 统计口径说明
