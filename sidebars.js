@@ -25,8 +25,8 @@ module.exports = {
       "DODO-On-Chain-Liquidity",
       "DODO-User-Friendly-Decentralization",
     ],
-    FAQ : "commonQuestions",
-    Media: "media"
+    FAQ : ["commonQuestions"],
+    Media: ["media"]
     // Docusaurus: ["doc1", "doc2", "doc3", "mdx"],
   },
 };
