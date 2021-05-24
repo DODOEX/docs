@@ -18,7 +18,7 @@ module.exports = {
     ],
     Api: ["tradeApi"],
     BusinessData: [
-        "dashbord"
+        "businessDataDashbord"
     ],
     Tokenomics: ["dodonomics"],
     "DODO NFT Intro": ["nftCoreFeatures"],
