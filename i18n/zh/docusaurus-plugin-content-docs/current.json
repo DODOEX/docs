@@ -19,6 +19,10 @@
     "message": "合约相关",
     "description": "The label for category Contract in sidebar someSidebar"
   },
+  "sidebar.someSidebar.category.Business Data": {
+    "message": "业务数据相关",
+    "description": "The label for category Business Data in sidebar someSidebar"
+  },
   "sidebar.someSidebar.category.Tokenomics": {
     "message": "代币经济",
     "description": "The label for category Tokenomics in sidebar someSidebar"
