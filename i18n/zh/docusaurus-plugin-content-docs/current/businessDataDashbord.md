@@ -1,7 +1,7 @@
 ---
 id: businessDataDashbord
 title: Dashbord 数据统计口径说明
-sidebar_label: Dashbord 数据统计口径说明
+sidebar_label: Dashbord统计口径说明
 ---
 
 ## Dashbord 统计口径说明
