@@ -1,5 +1,5 @@
 ---
-id: dashbrod
+id: businessDataDashbord
 title: Dashbord statistical rule description
 sidebar_label: Dashbord statistical rule description
 ---
