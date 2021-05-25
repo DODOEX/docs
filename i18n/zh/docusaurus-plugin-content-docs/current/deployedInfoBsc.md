@@ -41,6 +41,7 @@ sidebar_label: 合约信息（BSC）
 | DODO - BNB DLP                 | [0x322B43e406D1B4Df9Bc36d058317Dd1cd3b0385F](https://bscscan.com/address/0x322B43e406D1B4Df9Bc36d058317Dd1cd3b0385F) |
 | Black - BNB DLP                | [0x69658C27DabEaC461750c919440CbD0Fc9cdAc13](https://bscscan.com/address/0x69658C27DabEaC461750c919440CbD0Fc9cdAc13) |
 | Best - BUSD DLP                | [0x2C29cb46449335181Ec055a1184d4201A6aa4C47](https://bscscan.com/address/0x2C29cb46449335181Ec055a1184d4201A6aa4C47) |
+| Alpaca - DODO DLP              | [0x2B40bC6c9C12c18787436aa1E2B761f684F42999](https://bscscan.com/address/0x2B40bC6c9C12c18787436aa1E2B761f684F42999) |
 
 ## DODO V1
 
