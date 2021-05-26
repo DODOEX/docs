@@ -49,6 +49,7 @@ sidebar_label: Deployment Information
 | BASv2 - DODO DLP               | [0x48672333f97958e2f8352b3A5538293dE8eA86f7](https://etherscan.io/address/0x48672333f97958e2f8352b3A5538293dE8eA86f7) |
 | DAI - USDT DLP                 | [0x1A4F8705E1C0428D020e1558A371b7E6134455A2](https://etherscan.io/address/0x1A4F8705E1C0428D020e1558A371b7E6134455A2) |
 | sUSD - USDT DLP                | [0xd08e5cF0551aaEc0dA2f4FC595193F9E6b0295e0](https://etherscan.io/address/0xd08e5cF0551aaEc0dA2f4FC595193F9E6b0295e0) |
+| GTC - DODO DLP                 | [0xa6d36849864cB35Bc42024ffcf8e2806D8912331](https://etherscan.io/address/0xa6d36849864cB35Bc42024ffcf8e2806D8912331) |
 
 
 ## DODO V1
