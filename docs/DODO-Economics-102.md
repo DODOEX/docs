@@ -1,50 +1,54 @@
 ---
 id: DODO-Economics-102
-title: 'Economics 102: How DODO is enabling efficient, decentralized crypto markets'
-sidebar_label: "Economics 102"
+title: '经济学102：DODO如何实现高效、去中心化的加密货币市场'
+sidebar_label: "经济学102"
 ---
 
-Financial markets have always been powered by the need to match buyers with sellers.  Throughout the world’s long history of buying and selling, liquidity – the ease with which a transaction can be completed without a drastic change in its price – has always been essential to the success of this quest. 
+金融市场一直是由买家和卖家的匹配需求所驱动的。在世界漫长的买卖历史中，高流动性，在价格不发生剧烈变化的情况下完成交易，一直是金融市场的最高追求。
 
-If there are too few people on one side of a trade, a transaction becomes harder to complete, forcing sellers to offer discounts to attract buyers or buyers to raise bids to secure a desired asset. This drives spreads between prices sought and prices offered wider and increases both volatility and risk. 
+如果交易的一方人数太少，交易就更难完成，这将迫使卖家提供折扣以吸引买家，或者买家提高出价以获得所需资产。这促使买卖双方的目标价格价差扩大，增加了波动性和风险性。
 
-The increased tumult can scare off more cautious investors, which further tamps down volumes. And so on. 
+市场的大幅度波动会把谨慎的投资者拒之门外，导致交易量进一步降低，以此类推。
 
-Cryptocurrency exchanges are no exception to these forces.
+加密货币交易所也不例外地受这些因素所影响。
 
-## The decentralized liquidity challenge
+### 去中心化的流动性挑战
 
-The crypto markets are very young. From an initial handful of marketplaces set up for the buying and selling of Bitcoin, hundreds of exchanges now exist to deal with thousands of different cryptocurrencies and tokens. These exchanges have become “islands of liquidity” for the assets traded on them -- their siloed nature restricts activity since the same asset cannot easily be traded across platform. The result is a more turbulent market than those for more established assets. 
+加密货币市场非常年轻。从最初为数不多的比特币买卖市场，到现在有数百家交易所，同时处理成千上万种不同的加密货币和代币。
 
-The concentration of cryptocurrency ownership also feeds volatility. Some 95% of Bitcoin, for instance, is held by just 2% of accounts. If these accounts choose to buy or sell stakes when volumes are thin, transactions will have an outsized impact on prices. 
+这些交易所已经成为在其上交易的资产的 "流动性孤岛"，它们的孤岛性质限制了活动，因为同一资产不能轻易在不同平台上交易。其结果是比那些更成熟的资产的市场更加动荡。
 
-## Beware centralized convenience
+加密货币所有权的集中也助长了动荡。例如，大约95%的比特币被仅2%的账户所持有。如果这些账户选择在交易量小的时候进行买卖，交易将对价格产生巨大影响。
 
-For all their variations, there are really only two categories of crypto exchange: Centralized exchanges (CEXs), where transactions are handled by a third party that controls funds and decryption keys; and decentralized exchanges (DEXs), where trading and settlement take place on a blockchain and peers can deal directly with one another without intermediaries.
+### 中心化交易所的优点
+ 
+现在市面上的加密货币交易所分为两类：中心化交易所 (CEX)，交易由控制资金和密钥的第三方处理；以及去中心化交易所 (DEX)，交易和结算在区块链上进行，它们之间可以无中间人地直接交易。
 
-Decentralized exchanges offer a host of advantages: they are anonymous, more customizable and less costly, and they are less prone to hacking and manipulation. But centralized exchanges have traditionally had an edge on the liquidity front: since they are larger, and perceived by some as easier to use, they have to date attracted the bulk of crypto investors. Until now.
+去中心化交易所提供了一系列优势：匿名性高，可定制化，成本更低，而且不容易被黑客攻击和操纵。但中心化交易所在流动性方面历来有优势：它们规模较大，而且一些用户觉得更容易使用，迄今为止，它们吸引了大部分的加密货币投资者。
 
-Mid-2020’s summer of DeFi started to swing the pendulum in favor of distributed marketplaces. Volumes have spiked to levels comparable to centralized exchanges, as the sector has rolled out technical solutions to the liquidity problem. In fact, in a letter filed with the U.S. Securities and Exchange Commission in February alongside its share offering prospectus, Coinbase identified the rise in decentralized exchanges as a key risk to its business model.
+2020年年中的DeFi之夏 (DeFi Summer) 开启了去中心化市场平台热潮。随着更多流动性问题技术解决方案的推出，交易量已飙升至与中心化交易所相当的水平。事实上，在2月与股票发行说明书一起提交给美国证券交易委员会的一封信中，Coinbase将去中心化交易所的兴起视为其商业模式的一个关键风险。
 
-## DEXs: Innovating their way to greater liquidity
+### 去中心化交易所 - 以创新的方式实现更大的流动性
 
-Several liquidity innovations have helped drive the boom in DEX trading volume. Liquidity mining offers investors willing to set up liquidity pools a new type of asset – governance tokens, which give holders influence over a project – as an incentive. These proliferated throughout 2020. Many platforms are also taking steps to offer liquidity providers more sway over the maximum and minimum prices for their liquidity pools. 
+流动性上的创新帮助推动了DEX交易量的蓬勃发展。流动性挖矿为愿意建立流动性池的投资者提供了一种新的资产类型 - 治理代币，并激励持有人对项目产生影响。这种方式在2020年激增，许多平台也在采取类似的方式，让流动性提供者对价格造成更大的影响。
 
-Perhaps the most common tool used by decentralized exchanges to boost liquidity is the Automated Market Maker (AMMs). AMMs rely on liquidity pools provided by users who receive incentives for locking up their tokens to help ease transactions. 
+去中心化交易所用来提高流动性的最常见工具是自动做市商 (AMM) 算法。AMM依靠用户提供的流动性池，这些用户因锁定其代币而获得奖励，以帮助流动性池进行交易。
 
-AMMs have their downsides, however. These include slippage – the gap between the price sought and the price realised – and impermanent loss – the temporary disappearance of funds liquidity providers can experience because of volatility in a trading pair.
+然而，AMM也有其缺点。其中包括滑点 - 目标价格和实际价格之间的差距，和无常损失 - 由于交易对价格的波动，流动性提供者的资金可能会暂时或长期的亏损。
 
-Now, DODO has found a way to provide liquidity that’s comparable to centralized exchanges without the drawbacks listed above. Our highly customizable Proactive Market Maker (PMM) algorithm uses oracles to find the actual price of an asset. The system then provides sufficient liquidity at or near this market price and reduces availability further out. This makes the PMM more efficient than traditional AMMs and reduces both impermanent loss and slippage.
+现在，DODO已经找到了一种方法，可以提供与中心化交易所相媲美的流动性，并且没有上述AMM的缺点。主动做市商 (PMM) 算法具有很好的可定制性，使用预言机 (oracle) 来帮助寻找资产的实际价格。然后，该系统在这个市场价格或附近提供足够的流动性，并在更远的地方减少可用性。这使得PMM比传统的AMM更有效率，并减少了无常损失和滑点。
 
-And with no minimum deposit and the ability to use single tokens, liquidity providers can use tokens they already own, without taking on price risk.
+而且，由于可以使用任何数量的代币提供单边流动性，流动性提供者可以使用他们已经拥有的代币，而不承担价格风险。
 
-## Providing liquidity in primary markets
-Primary crypto markets have their own liquidity issues. In initial offerings of tokenized assets, liquidity is inherently limited in that bidders can only buy and not sell. 
+### 在一级市场提供流动性
 
-Decentralized exchanges have rolled out numerous ways to solve this puzzle, including yield farming, AMMs and bonding curves, where a token’s price rises along a pre-set arc. All of these, however, have their disadvantages – from potential frontrunning to high cost. 
+一级加密货币市场有其自身的流动性问题。在首次代币发行的过程中，流动性本身是有限的，因为竞标者只能买入而不能卖出。
 
-Now DODO has developed a liquidity solution for primary markets as well. Crowdpooling – the name is a blend of “crowdfunding” and “liquidity pool” – enables issuers to keep costs down while still providing investors highly liquid capital pools. 
+去中心化的交易所已经推出了许多方法来解决这个难题，包括流动性挖矿、AMM和升价众筹。然而，这些解决方案都各有缺点。
 
-Inspired by the call auction mechanism common in securities markets, Crowdpooling is safe from both frontrunning and bot interference and offers a guaranteed liquidity protection period so investors can support projects they believe in with peace of mind.
+现在，DODO也为一级市场开发了一种流动性解决方案。Crowdpooling – 其名综合了"众筹 " (Crowdfunding) 和 "流动性池" (pool)。发行人能够以低成本提供资产，并为投资者提供高流动性的资金池。
 
-DEX activity has picked up steadily in 2021. And with innovations like Crowdpooling, decentralized liquidity is now a reality. That means the crypto space finally has the tools it needs to enable truly decentralized economies. And DODO is leading the charge. 
+受证券市场常见的叫价拍卖机制的启发, Crowdpooling不受抢跑和机器人的干扰，并提供流动性保护期作为资金保障。投资者因此可以放心地支持他们相信的项目。
+
+2021年，DEX的活跃度也稳步提升。伴随着Crowdpooling这样的创新，去中心化平台中的流动性现在已经成为现实。这意味着加密货币领域终于拥有了实现真正的去中心化经济所需的工具。而DODO正在引领这一潮流。
+
