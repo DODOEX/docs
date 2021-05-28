@@ -1,46 +1,39 @@
 ---
 id: ThisIsDODO
-title: 'DODO: The liquid, flexible DEX that’s enabling truly distributed finance' 
-sidebar_label: 'This Is DODO'
+title: 'DODO：灵活的去中心化金融平台' 
+sidebar_label: 'DODO 简介'
 ---
 
-Decentralized cryptocurrency exchanges offer a host of benefits, chief among them anonymity and peer-to-peer transactions. But many are complex to use and hampered by low trading volumes. As a result, customers in search of liquidity and simplicity are often forced to turn to centralized platforms, which lack true permissionlessness and suffer from cumbersome registration processes. 
+去中心化加密货币交易所 (DEX) 为用户提供了诸多益处，例如匿名性和点对点交易。但是许多DEX使用门槛高，并且流动性较低。因此，寻求流动性和简单性的客户往往被迫转向中心化的平台。这些平台的注册过程非常繁琐，并且缺乏真正的无需许可性。
 
-Until DODO, that is. 
+DODO的问世打破了这一困局。
 
-DODO, a next-generation decentralized exchange operating on the Ethereum and Binance blockchains, is designed to deliver all the advantages of a distributed platform, plus a user-friendly interface and liquidity that’s comparable to centralized systems. 
+DODO是在以太坊(Ethereum)和币安智能链 (BSC)上的下一代去中心化交易所，旨在拥有去中心化平台的所有优势的基础上，融入简单易懂的使用界面和可与中心化系统媲美的流动性。
+DODO力争成为分布式金融领域交易所的标杆，力求为[每一位用户提供帮助](https://dodoex.github.io/docs/docs/whitepaper/)。
+资本效率高的流动性池最能帮助交易用户增加收益，因为它们能最大限度地减少实际价格和目标价格之间的无常损失和滑点。套利者可以监测DODO和其他交易所之间的价格差异进行套利。并且，用户可以充值任何数量的代币为流动性池提供单边流动性，流动性提供者可以用他们已经拥有的代币创建一个交易对，并不需要承担定价风险。
+DODO突破性的主动做市商算法 (PMM) 使用预言机 (oracle) 修正了资产的实际价格。该系统可以在市场价格附近集中提供流动性，并在与其市场价格较远的区域减少流动性，使其比传统的自动做市商算法 (AMM) [更有效率](https://www.bsc.news/post/dodo-project-review-a-cunning-edge-on-chain-liquidity-provider)。
+PMM算法是一套独特的工具，它结合了中心化交易所的优点，并克服了其缺点。可谓取其精华，去其糟粕。
 
-In its quest to become the decentralized exchange of choice for the distributed finance space, DODO has built a suite of features that offer something for [every type of user](https://dodoex.github.io/docs/docs/whitepaper/). 
+### 众筹建池：机会平等的流动性发行方式
 
-Traders benefit from capital-efficient liquidity pools, which help minimize impermanent loss and slippage between the actual and requested prices. Arbitrageurs can monitor price discrepancies between DODO and other exchanges. And with no minimum deposit and the ability to use single tokens, liquidity providers can create a market with tokens they already own, without taking on pricing risk.
+2021年1月，DODO推出了一种新的流动性筹集方式：众筹建池 (Crowdpooling)。
+在首次资产发行的过程中，流动性本身是有限的，因为竞标者只能购买代币，不能出售代币。众多的去中心化交易所至今尝试了很多方法来解决这个难题，但这些方法都各有缺陷。 
+- 升价众筹建池(集合竞价建池)，即代币的价格在众筹的过程中沿着预先定义的价格曲线上升。这个方法的缺陷在于追求利润的投机者有机会预先抢跑 (frontrunning)，并对那些真正支持众筹项目的投资者造成不利。
+- 自动做市商 (AMM) 平台，即要求流动性提供者自己提供交易对手方资金来产生流动性，但这是许多初创企业无法承担的成本。 
+- 流动性挖矿，流动性提供者通过质押资产的方法支持资产发行方，并获得代币奖励。这是一个临时且昂贵的解决方案，而且进行流动性挖矿的用户大多对项目本身没有什么兴趣，往往会在流动性挖矿结束后抛售所得代币，使得该资产二级市场的价格下降。
 
-DODO’s ground-breaking Proactive Market Maker (PMM) algorithm uses oracles to determine the actual price of an asset. The system is then designed to provide sufficient liquidity at or near this market price, and to reduce availability further out, making it [more efficient](https://www.bsc.news/post/dodo-project-review-a-cunning-edge-on-chain-liquidity-provider) than traditional Automated Market Makers.
+我们决心要解决这个难题。这就是为什么DODO开发了众筹建池 (Crowdpooling)：一种旨在为所有人服务的流动性发行的方式。Crowdpooling--其名综合了"众筹 " (Crowdfunding) 和 "流动性池"  (pool)。发行人能够以低成本提供资产，并为投资者提供高流动性的资金池。受证券市场常见的叫价拍卖机制的启发，Crowdpooling不受抢跑和机器人的干扰，并提供流动性保护期作为资金保障。投资者因此可以放心地支持他们相信的项目。
 
-The PMM algorithm underpins a set of unique tools that combine the best aspects of centralized exchanges -- without the well-known downsides. 
+众筹建池的过程很简单：在开始时，每个代币发行者都需要设定一个初始发行价、活动的时间期限和发行的代币额度。其中一部分代币数量用于众筹，另一部分用于众筹结束后在资金池中提供卖方流动性。
+众筹期结束后，根据发行者预先设定的众筹价格以及参与者充值的资金量分配参与者应获得的代币额度。如果活动中筹集的资金超过发行的代币额度，参与者将获得其充值在资金池中的份额成比例的代币，并且超募的资金，将被返还给参与者。活动结束后的一段时间内，卖方流动性会被锁定在资金池中作为流动性保护。
 
-### Crowdpooling: equal-opportunity liquidity
+### 一个创新解决方案的工具箱
 
-In January of this year, DODO launched a new approach to liquidity: Crowdpooling.
+DODO的工具箱为用户提供了许多可自定义的技术解决方案。用户可以通过各种钱包应用程序与平台互动。作为一个具有聚合器功能的去中心化交易所，DODO平台支持高效的链上专业做市。项目方以及做市商可以通过调整市场中间价、流动性深度和价差等参数来控制和执行其做市策略。
 
-In initial offerings of tokenized assets, liquidity is inherently limited in that bidders can only buy tokens and not sell them. Decentralized exchanges have tried a range of ways to solve this puzzle, all of which have their own drawbacks:  
+智能路由 (SmartTrade) 交易和聚合系统可以搜寻并比较各种流动性来源，为交易者找到任意两个代币中的最佳价格。用户还可以参与交易挖矿，赚取DODO奖励代币。DODO自动售货机 (DODO Vending Machine) 和DODO私有池 (DODO Private Pool) 这两个创新功能允许流动性提供者创建和管理自己的做市策略，并以适合他们需求的价格建立流动性市场。
+除了交易和挖矿功能，用户还可以参与联合挖矿(Combiner Harvesting)，这是一个旨在让平台用户接触到有意愿与DODO合作的优质项目的计划。在这个系统中，被批准的项目可以在DODO上创建流动性资金池，那些为流动性资金池提供流动性的用户将获得DODO代币作为奖励。会员凭证代币：vDODO，能为其使持有人带来全网交易手续费的分红以及会员奖励。
 
-- Bonding curves, where a token’s price rises along a pre-set arc, allow for frontrunning by profit-seeking speculators, to the detriment of genuine investors who care about the project they are seeking to support.
-- Automated Market Maker platforms generate liquidity by requiring issuers to put up the other side of a trade themselves – but this is a cost many start-ups cannot afford.  
-- Then there is yield farming, where liquidity providers stake cryptocurrency to maintain the bid side of trades in exchange for tokens. This can be a temporary and costly solution and yield farmers, with little interest in the projects themselves, can dump the base coins afterward and drive down prices on secondary markets.
+DODO的功能丰富且高效，旨在是为每个人服务的链上流动性提供基础设施。
 
-We were determined to solve this riddle. That’s why DODO developed Crowdpooling: a liquidity paradigm designed to work for everyone. With Crowdpooling – the name is a blend of “crowdfunding” and “liquidity pool” – issuers are able to offer assets at low cost and to provide highly liquid capital pools for investors. Inspired by the call auction mechanism common in securities markets, Crowdpooling is protected from both frontrunning and bot interference, and offers a guaranteed liquidity protection period so investors can support projects they believe in with peace of mind.
-
-The process is straightforward: at its start, each token issuer sets an initial offering price, a time limit on the campaign and a soft cap on the number of tokens in the issue. Part of this amount is earmarked for crowdfunding and part for providing ask-side liquidity in the pool. 
-
-When the campaign ends, participants claim tokens based on how much they have staked at the pre-set offering price. If funds raised in the campaign exceed the soft cap, participants are awarded extra tokens proportionate to their shares of the pool at the initial price. The ask-side liquidity remains in the pool for a pre-set period: the liquidity guarantee.
-
-### A toolbox of innovative solutions
-
-DODO’s toolbox offers many other customizable technical solutions. Users can interact with the platform via various integrated wallet applications. As an aggregator as well as a decentralized exchange, the platform supports efficient on-chain professional market making. And project owners as well as market makers can control and execute their market-making strategies by adjusting parameters such as market mid-price, liquidity depth, and spread. 
-
-The SmartTrade trading and aggregation system finds and compares various liquidity sources to find the best prices for traders between any two tokens. Users can also participate in trading mining to earn DODO reward tokens. A duo of innovative features, DODO Vending Machine and DODO Private Pool, allows liquidity providers to create and manage their own market making strategies and to build liquidity markets with the pricing that suits their needs.
-
-Along with trading and mining, users can also take part in Combiner Harvesting, a program aimed at giving platform users exposure to promising projects willing to collaborate with DODO. Under this system, approved projects can create liquidity pools on DODO and those who provide liquidity for these pools will earn DODO reward tokens. And DODO membership pays. Proof-of-membership tokens – vDODO – entitle holders a share of trading fees as well as other membership rewards and holder benefits.
-
-Feature-rich and efficient, DODO is designed as the on-chain liquidity provider that works for everyone. 
 
