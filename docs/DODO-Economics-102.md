@@ -1,54 +1,45 @@
 ---
-id: DODO-Economics-102
-title: '经济学102：DODO如何实现高效、去中心化的加密货币市场'
-sidebar_label: "经济学102"
+id: ThisIsDODO
+title: "DODO: The liquid, flexible DEX that’s enabling truly distributed finance"
+sidebar_label: "This Is DODO"
 ---
 
-金融市场一直是由买家和卖家的匹配需求所驱动的。在世界漫长的买卖历史中，高流动性，在价格不发生剧烈变化的情况下完成交易，一直是金融市场的最高追求。
+Decentralized cryptocurrency exchanges offer a host of benefits, chief among them anonymity and peer-to-peer transactions. But many are complex to use and hampered by low trading volumes. As a result, customers in search of liquidity and simplicity are often forced to turn to centralized platforms, which lack true permissionlessness and suffer from cumbersome registration processes.
 
-如果交易的一方人数太少，交易就更难完成，这将迫使卖家提供折扣以吸引买家，或者买家提高出价以获得所需资产。这促使买卖双方的目标价格价差扩大，增加了波动性和风险性。
+Until DODO, that is.
 
-市场的大幅度波动会把谨慎的投资者拒之门外，导致交易量进一步降低，以此类推。
+DODO, a next-generation decentralized exchange operating on the Ethereum and Binance blockchains, is designed to deliver all the advantages of a distributed platform, plus a user-friendly interface and liquidity that’s comparable to centralized systems.
 
-加密货币交易所也不例外地受这些因素所影响。
+In its quest to become the decentralized exchange of choice for the distributed finance space, DODO has built a suite of features that offer something for [every type of user](https://dodoex.github.io/docs/docs/whitepaper/).
 
-### 去中心化的流动性挑战
+Traders benefit from capital-efficient liquidity pools, which help minimize impermanent loss and slippage between the actual and requested prices. Arbitrageurs can monitor price discrepancies between DODO and other exchanges. And with no minimum deposit and the ability to use single tokens, liquidity providers can create a market with tokens they already own, without taking on pricing risk.
 
-加密货币市场非常年轻。从最初为数不多的比特币买卖市场，到现在有数百家交易所，同时处理成千上万种不同的加密货币和代币。
+DODO’s ground-breaking Proactive Market Maker (PMM) algorithm uses oracles to determine the actual price of an asset. The system is then designed to provide sufficient liquidity at or near this market price, and to reduce availability further out, making it [more efficient](https://www.bsc.news/post/dodo-project-review-a-cunning-edge-on-chain-liquidity-provider) than traditional Automated Market Makers.
 
-这些交易所已经成为在其上交易的资产的 "流动性孤岛"，它们的孤岛性质限制了活动，因为同一资产不能轻易在不同平台上交易。其结果是比那些更成熟的资产的市场更加动荡。
+The PMM algorithm underpins a set of unique tools that combine the best aspects of centralized exchanges -- without the well-known downsides.
 
-加密货币所有权的集中也助长了动荡。例如，大约95%的比特币被仅2%的账户所持有。如果这些账户选择在交易量小的时候进行买卖，交易将对价格产生巨大影响。
+### Crowdpooling: equal-opportunity liquidity
 
-### 中心化交易所的优点
- 
-现在市面上的加密货币交易所分为两类：中心化交易所 (CEX)，交易由控制资金和密钥的第三方处理；以及去中心化交易所 (DEX)，交易和结算在区块链上进行，它们之间可以无中间人地直接交易。
+In January of this year, DODO launched a new approach to liquidity: Crowdpooling.
 
-去中心化交易所提供了一系列优势：匿名性高，可定制化，成本更低，而且不容易被黑客攻击和操纵。但中心化交易所在流动性方面历来有优势：它们规模较大，而且一些用户觉得更容易使用，迄今为止，它们吸引了大部分的加密货币投资者。
+In initial offerings of tokenized assets, liquidity is inherently limited in that bidders can only buy tokens and not sell them. Decentralized exchanges have tried a range of ways to solve this puzzle, all of which have their own drawbacks:
 
-2020年年中的DeFi之夏 (DeFi Summer) 开启了去中心化市场平台热潮。随着更多流动性问题技术解决方案的推出，交易量已飙升至与中心化交易所相当的水平。事实上，在2月与股票发行说明书一起提交给美国证券交易委员会的一封信中，Coinbase将去中心化交易所的兴起视为其商业模式的一个关键风险。
+- Bonding curves, where a token’s price rises along a pre-set arc, allow for frontrunning by profit-seeking speculators, to the detriment of genuine investors who care about the project they are seeking to support.
+- Automated Market Maker platforms generate liquidity by requiring issuers to put up the other side of a trade themselves – but this is a cost many start-ups cannot afford.
+- Then there is yield farming, where liquidity providers stake cryptocurrency to maintain the bid side of trades in exchange for tokens. This can be a temporary and costly solution and yield farmers, with little interest in the projects themselves, can dump the base coins afterward and drive down prices on secondary markets.
 
-### 去中心化交易所 - 以创新的方式实现更大的流动性
+We were determined to solve this riddle. That’s why DODO developed Crowdpooling: a liquidity paradigm designed to work for everyone. With Crowdpooling – the name is a blend of “crowdfunding” and “liquidity pool” – issuers are able to offer assets at low cost and to provide highly liquid capital pools for investors. Inspired by the call auction mechanism common in securities markets, Crowdpooling is protected from both frontrunning and bot interference, and offers a guaranteed liquidity protection period so investors can support projects they believe in with peace of mind.
 
-流动性上的创新帮助推动了DEX交易量的蓬勃发展。流动性挖矿为愿意建立流动性池的投资者提供了一种新的资产类型 - 治理代币，并激励持有人对项目产生影响。这种方式在2020年激增，许多平台也在采取类似的方式，让流动性提供者对价格造成更大的影响。
+The process is straightforward: at its start, each token issuer sets an initial offering price, a time limit on the campaign and a soft cap on the number of tokens in the issue. Part of this amount is earmarked for crowdfunding and part for providing ask-side liquidity in the pool.
 
-去中心化交易所用来提高流动性的最常见工具是自动做市商 (AMM) 算法。AMM依靠用户提供的流动性池，这些用户因锁定其代币而获得奖励，以帮助流动性池进行交易。
+When the campaign ends, participants claim tokens based on how much they have staked at the pre-set offering price. If funds raised in the campaign exceed the soft cap, participants are awarded extra tokens proportionate to their shares of the pool at the initial price. The ask-side liquidity remains in the pool for a pre-set period: the liquidity guarantee.
 
-然而，AMM也有其缺点。其中包括滑点 - 目标价格和实际价格之间的差距，和无常损失 - 由于交易对价格的波动，流动性提供者的资金可能会暂时或长期的亏损。
+### A toolbox of innovative solutions
 
-现在，DODO已经找到了一种方法，可以提供与中心化交易所相媲美的流动性，并且没有上述AMM的缺点。主动做市商 (PMM) 算法具有很好的可定制性，使用预言机 (oracle) 来帮助寻找资产的实际价格。然后，该系统在这个市场价格或附近提供足够的流动性，并在更远的地方减少可用性。这使得PMM比传统的AMM更有效率，并减少了无常损失和滑点。
+DODO’s toolbox offers many other customizable technical solutions. Users can interact with the platform via various integrated wallet applications. As an aggregator as well as a decentralized exchange, the platform supports efficient on-chain professional market making. And project owners as well as market makers can control and execute their market-making strategies by adjusting parameters such as market mid-price, liquidity depth, and spread.
 
-而且，由于可以使用任何数量的代币提供单边流动性，流动性提供者可以使用他们已经拥有的代币，而不承担价格风险。
+The SmartTrade trading and aggregation system finds and compares various liquidity sources to find the best prices for traders between any two tokens. Users can also participate in trading mining to earn DODO reward tokens. A duo of innovative features, DODO Vending Machine and DODO Private Pool, allows liquidity providers to create and manage their own market making strategies and to build liquidity markets with the pricing that suits their needs.
 
-### 在一级市场提供流动性
+Along with trading and mining, users can also take part in Combiner Harvesting, a program aimed at giving platform users exposure to promising projects willing to collaborate with DODO. Under this system, approved projects can create liquidity pools on DODO and those who provide liquidity for these pools will earn DODO reward tokens. And DODO membership pays. Proof-of-membership tokens – vDODO – entitle holders a share of trading fees as well as other membership rewards and holder benefits.
 
-一级加密货币市场有其自身的流动性问题。在首次代币发行的过程中，流动性本身是有限的，因为竞标者只能买入而不能卖出。
-
-去中心化的交易所已经推出了许多方法来解决这个难题，包括流动性挖矿、AMM和升价众筹。然而，这些解决方案都各有缺点。
-
-现在，DODO也为一级市场开发了一种流动性解决方案。Crowdpooling – 其名综合了"众筹 " (Crowdfunding) 和 "流动性池" (pool)。发行人能够以低成本提供资产，并为投资者提供高流动性的资金池。
-
-受证券市场常见的叫价拍卖机制的启发, Crowdpooling不受抢跑和机器人的干扰，并提供流动性保护期作为资金保障。投资者因此可以放心地支持他们相信的项目。
-
-2021年，DEX的活跃度也稳步提升。伴随着Crowdpooling这样的创新，去中心化平台中的流动性现在已经成为现实。这意味着加密货币领域终于拥有了实现真正的去中心化经济所需的工具。而DODO正在引领这一潮流。
-
+Feature-rich and efficient, DODO is designed as the on-chain liquidity provider that works for everyone.
