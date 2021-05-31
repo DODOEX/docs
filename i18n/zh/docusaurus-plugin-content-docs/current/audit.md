@@ -28,7 +28,7 @@ DODO V2 中的contracts/CrowdPooling, contracts/DODOVendingMachine 智能合约�
 
 ----
 
-vDODO 合约通过了 [Credit](https://www.trailofbits.com/) 的审计。
+vDODO 合约通过了 [CertiK](https://certik.io/) 的审计。
 
 CertiK是世界领先的区块链网络安全公司，利用先进的形式化验证技术，用数学方法证明智能合约和区块链生态系统安全无漏洞并可抵御黑客入侵。
 
