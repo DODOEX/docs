@@ -41,6 +41,8 @@ sidebar_label: Deployment Information(BSC)
 | Black - BNB DLP                | [0x69658C27DabEaC461750c919440CbD0Fc9cdAc13](https://bscscan.com/address/0x69658C27DabEaC461750c919440CbD0Fc9cdAc13) |
 | Best - BUSD DLP                | [0x2C29cb46449335181Ec055a1184d4201A6aa4C47](https://bscscan.com/address/0x2C29cb46449335181Ec055a1184d4201A6aa4C47) |
 | Alpaca - DODO DLP              | [0x2B40bC6c9C12c18787436aa1E2B761f684F42999](https://bscscan.com/address/0x2B40bC6c9C12c18787436aa1E2B761f684F42999) |
+| DEK - DODO DLP                 | [0x9A74B169798bE874EF1C23b4092e5689969eF45E](https://bscscan.com/address/0x9A74B169798bE874EF1C23b4092e5689969eF45E) |
+| DEK - BUSD DLP                 | [0xF7aC92ab504390B577D6bb3352313D76D09f8E18](https://bscscan.com/address/0xF7aC92ab504390B577D6bb3352313D76D09f8E18) |
 
 
 ## DODO V1
