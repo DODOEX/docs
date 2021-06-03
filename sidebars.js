@@ -21,7 +21,7 @@ module.exports = {
             "businessDataDashbord"
         ],
         Tokenomics: ["dodonomics"],
-        "DODO NFT Intro": ["nftCoreFeatures"],
+        "DODO NFT Intro": ["nftCoreFeatures","nftTechSpec"],
         "DODO Dojo": [
             "ThisIsDODO",
             "DODO-Economics-102",
