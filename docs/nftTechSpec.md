@@ -1,17 +1,17 @@
 ---
 id: nftTechSpec
 title: DODO NFT Tech Spec
-sidebar_label: DODONFT Tech Spec
+sidebar_label: DODO NFT Tech Spec
 ---
 
 ## DODONFT 相关合约
 
-| 合约名称                | 目录                                | 地址 |
-| ---------------------- | ---------------------------------- ||
-| DODONFTProxy           | contracts/SmartRoute/proxies/      ||
-| NFTCollateralVault     | contracts/CollateralVault/         ||
-| Fragment               | contracts/GeneralizedFragment/     ||
-| DODONFTRegistry        | contracts/Factory/Registries/      ||
+| 合约名称                | 目录                                | 
+| ---------------------- | ---------------------------------- |
+| DODONFTProxy           | contracts/SmartRoute/proxies/      |
+| NFTCollateralVault     | contracts/CollateralVault/         |
+| Fragment               | contracts/GeneralizedFragment/     |
+| DODONFTRegistry        | contracts/Factory/Registries/      |
 
 ## DODONFT 合约概览图
 
@@ -25,7 +25,7 @@ sidebar_label: DODONFT Tech Spec
 首先用户通过调用`DODONFTProxy`合约中的`createNFTCollateralVault`函数，创建新的Vault合约，Vault合约用来存放NFT，兼容ERC721，ERC1155。并且可以为Vault设置全局的名称以及baseURI，baseURI可以指向资源文件，作为Vault的介绍信息
 
 ```
-    function createNFTCollateralVault(string memory name, string memory baseURI) external returns (address newVault);
+function createNFTCollateralVault(string memory name, string memory baseURI) external returns (address newVault);
 ```
 
 ### 导入NFT
@@ -56,12 +56,12 @@ function depoistERC1155(address nftContract, uint256[] memory tokenIds, uint256[
 经过碎片化的NFT，将会在二级市场流通，拥有碎片代币的人，代表了拥有背后NFT的一部分。若投资人希望完全拥有NFT，则可以触发买断的功能，调用`DODONFTProxy`的`buyout`函数
 
 ```
-    function buyout(
-        address fragment,
-        uint256 quoteMaxAmount,
-        uint8 flag, // 0 - ERC20, 1 - quoteInETH
-        uint256 deadLine
-    ) external;
+function buyout(
+    address fragment,
+    uint256 quoteMaxAmount,
+    uint8 flag, // 0 - ERC20, 1 - quoteInETH
+    uint256 deadLine
+) external;
 ```
 
 投资人需要按照当前碎片NFT的单价，乘上总量，提供对应总估值的代币，才可以进行买断。买断涉及到操作包括
