@@ -43,6 +43,8 @@ sidebar_label: Deployment Information(BSC)
 | Alpaca - DODO DLP              | [0x2B40bC6c9C12c18787436aa1E2B761f684F42999](https://bscscan.com/address/0x2B40bC6c9C12c18787436aa1E2B761f684F42999) |
 | DEK - DODO DLP                 | [0x9A74B169798bE874EF1C23b4092e5689969eF45E](https://bscscan.com/address/0x9A74B169798bE874EF1C23b4092e5689969eF45E) |
 | DEK - BUSD DLP                 | [0xF7aC92ab504390B577D6bb3352313D76D09f8E18](https://bscscan.com/address/0xF7aC92ab504390B577D6bb3352313D76D09f8E18) |
+| BORING - BNB DLP               | [0x71a04cebb92BE729B283Bf3D06Ca4f45C3BAA596](https://bscscan.com/address/0x71a04cebb92BE729B283Bf3D06Ca4f45C3BAA596) |
+| CLAIM - DAI DLP                | [0xfA80C50D9314b98fD68fA297B632f65E03300551](https://bscscan.com/address/0xfA80C50D9314b98fD68fA297B632f65E03300551) |
 
 
 ## DODO V1
