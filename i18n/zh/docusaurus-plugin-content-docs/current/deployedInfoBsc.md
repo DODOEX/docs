@@ -46,7 +46,7 @@ sidebar_label: 合约信息（BSC）
 | DEK - BUSD DLP                 | [0xF7aC92ab504390B577D6bb3352313D76D09f8E18](https://bscscan.com/address/0xF7aC92ab504390B577D6bb3352313D76D09f8E18) |
 | BORING - BNB DLP               | [0x71a04cebb92BE729B283Bf3D06Ca4f45C3BAA596](https://bscscan.com/address/0x71a04cebb92BE729B283Bf3D06Ca4f45C3BAA596) |
 | CLAIM - DAI DLP                | [0xfA80C50D9314b98fD68fA297B632f65E03300551](https://bscscan.com/address/0xfA80C50D9314b98fD68fA297B632f65E03300551) |
-| NVT - BUSD DLP                 | [0x51aE76884d73E2e8F08863aC0334e6f8e7b9F75d](https://bscscan.com/address/0x51aE76884d73E2e8F08863aC0334e6f8e7b9F75d) |
+| NVT - BUSD DLP                 | [0x0cF35405C60d8a6BEa71C88461D0dE7B4fD7d552](https://bscscan.com/address/0x0cF35405C60d8a6BEa71C88461D0dE7B4fD7d552) |
 
 
 ## DODO V1
