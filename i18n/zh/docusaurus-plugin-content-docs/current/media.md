@@ -4,6 +4,7 @@ title: DODO Media Kit
 sidebar_label: Media Kit
 ---
 [点击下载资源包](https://dodoex.github.io/docs/DODO-media-kit.zip)
+
 [在Google Drive预览](https://drive.google.com/drive/u/0/folders/1R9idnwzQL1r5Xn772NRvM7JLeHjaWV_D)
 
 ## Banners
