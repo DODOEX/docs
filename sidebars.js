@@ -6,6 +6,7 @@ module.exports = {
         Contract: [
             "framework",
             "contractUseGuide",
+            "mining",
             "flashSwap",
             "deployedInfo",
             "deployedInfoBsc",
