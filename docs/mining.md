@@ -74,7 +74,7 @@ function getAllPendingReward(address _user) external view returns (uint256);
     - 质押BUSD DLP (0xddee2e5f98bbe93e77f16bfa6b5669c688396f93)、流动性池 USDC-BUSD(0x6064DBD0fF10BFeD5a797807042e9f63F18Cfe10)、权重为0.05
     
 
-### DODOMineV2
+## DODOMineV2
 
 第二版挖矿合约，一个质押代币对应一个合约，并支持多挖。
 
@@ -111,7 +111,7 @@ function getPendingRewardByToken(address user, address rewardToken) external vie
 ```
 *需要注意：当前第二版的挖矿活动，奖励调整会较为灵活，并非不可修改*
 
-#### 当前第二版合约进行的挖矿项目
+### 当前第二版合约进行的挖矿项目
 
 #### ETH
 
