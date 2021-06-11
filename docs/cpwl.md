@@ -36,4 +36,14 @@ contract UserQuota is Ownable, IQuota {
 以上仅是提供的模板合约，项目方可以根据自身需求灵活开发，但最终需要严格实现 IQuota 的接口规范（getUserQuota），并将该合约地址开源后，在众筹开始前的半天，提供给DODO进行合约关联配置。
 
 
+*注：若有配置白名单需求，可发邮件至ray@dodoex.io或candice@dodoex.io*
 
+邮件内容可按照如下模板：
+
+- 项目名称
+
+- 项目介绍
+
+- 众筹信息（众筹所在网络，开启与持续时间等）
+
+- 白名单合约地址
