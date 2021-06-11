@@ -15,7 +15,8 @@ module.exports = {
             "subgraph",
             "bugBounty",
             "audit",
-            "dppForMM"
+            "dppForMM",
+            "cpwl"
         ],
         Api: ["tradeApi"],
         "Business Data": [
