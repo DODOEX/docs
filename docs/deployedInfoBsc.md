@@ -1,7 +1,7 @@
 ---
 id: deployedInfoBsc
-title: Deployment Information on BSC 
-sidebar_label: Deployment Information(BSC)
+title: Deployment Information on Binance Smart Chain (BSC) 
+sidebar_label: Deployment Information (BSC)
 ---
 
 ## DODO Token
