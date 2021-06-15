@@ -5,11 +5,11 @@ sidebar_label: Audit
 ---
 
 
-All DODO V2 smart contracts were audited by [SlowMist](https://www.slowmist.com/en)
+All DODO V2 smart contracts were audited by [SlowMist](https://www.slowmist.com/en).
 
-SlowMist Technology is a company focused on blockchain ecological security.SlowMist Technology is already a top international blockchain security company, served many global well-known projects mainly through "the security solution that integrated the threat discovery and threat defense while tailored to local conditions,"
+SlowMist Technology is a company focused on Blockchain Ecosystem Security. It has served many globally well-known projects, mainly through "security solution that integrated the threat discovery and threat defense while tailored to local conditions".
 
-SlowMist's April 13，2021 audit report on DODO can be accessed [here](https://github.com/DODOEX/contractV2/blob/main/audit/SlowMist_Smart%20Contract_Security_Audit_Report_DODOV2.pdf).
+SlowMist's April 13, 2021 audit report on DODO can be accessed [here](https://github.com/DODOEX/contractV2/blob/main/audit/SlowMist_Smart%20Contract_Security_Audit_Report_DODOV2.pdf).
 
 ---
 
@@ -29,7 +29,7 @@ Beosin's March 16, 2021 audit report on DODO can be accessed [here](https://gith
 
 ---
 
-DODO vDODO contracts were audited by [CertiK](https://certik.io/)
+DODO vDODO contracts were audited by [CertiK](https://certik.io/).
 
 CertiK leads blockchain security by pioneering the use of cutting-edge Formal Verification technology on smart contracts and blockchains. Unlike traditional security audits, Formal Verification mathematically proves program correctness and hacker-resistance.
 
