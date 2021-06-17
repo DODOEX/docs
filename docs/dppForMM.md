@@ -4,14 +4,20 @@ title: 私有池对接说明
 sidebar_label: 私有池对接说明
 ---
 
-## 介绍
+## Introduction
 
-DODO V2的私有池 可以由做市商提供自有资金独立做市，并且做市过程中可以灵活修改私有池配置，包括交易手续费率、当前外部指导价格 I、曲线滑点系数 K、同时支持调整池子的资金规模等。这一切修改均由相关账户触发智能合约进行动态的链上做市调整。
+DODO V2’s DODO Private Pool (DPP) is a highly customizable solution catered towards market makers who wish to operate their own liquidity pools. 
 
+With DPP, pool operators have complete freedom to customize their market-making experience on DODO, by configuring and modifying the following parameters:
+- Trading fee rate
+- External oracle feed price, i, and
+- Price curve slippage coefficient, k
 
-## 操作说明
+In addition, DPP also supports dynamic adjustment of the amount of capital in the pool. All these configurations and modifications can be made against smart contracts on-chain in a fully decentralized, permissionless manner.
 
-做市商可以通过调用`DODO V2Proxy02`（地址见合约信息页）中的`resetDODOPrivatePool`方法，以实现动态的做市调整，具体的方法定义如下：
+## Configuration Instructions
+
+In order to make changes to their pools, pool operators will need to invoke the `resetDODOPrivatePool` function in the `DODO V2Proxy02` contract (refer to the “Deployment Information” pages or the Appendix for contract addresses). See below for `resetDODOPrivatePool`’s function declaration. 
 
 ```
     function resetDODOPrivatePool(
@@ -27,42 +33,46 @@ DODO V2的私有池 可以由做市商提供自有资金独立做市，并且做
 
 ### 入参说明：
 
-- dppAddress: 私有池合约地址
+### Function Parameters
 
-- paramList: 按序传入 交易手续费率、外部指导价格、曲线滑点系数，其中:
-    - 交易手续费率：单位是 18，范围是[0, 1e18]，其中1e18代表100%
-    - 外部指导价格：单位是 18 - baseToken单位 + quoteToken单位, 外部指导价格是 base/quote 两种代币价格的比例
-    - 曲线滑点系统：单位是 18，范围是[0, 1e18], 代表价格曲线波动的程度，其中0相当于恒定价格卖币，1e18是类Uni的价格曲线
+- `dppAddress`: The DPP pool’s contract address
 
-- amountList：按序传入 baseInAmount、quoteInAmount、baseOutAmount、quoteOutAmount（均考虑各自单位），前两者代表向私有池注入的base与quote的代币数量，注入前，需要将代币授权给`DODOApprove`合约（地址见合约信息页），后两者代表从私有池中提取的base与quote代币数量。从而实现动态调整私有池的资金规模
+- `paramList`: An array of `uint256` containing three parameters, namely:
+    - `paramList[0]`: The first parameter is `newLpFeeRate`, which is the new trading fee rate that the pool will have after the function invocation. Decimals: 18, Range: [0, 1e18], where 0 represents 0% and 1e18 represents 100%.
+    - `paramList[1]`: The second parameter is `newI`, which is the new oracle feed price (i) that the pool will have after the function invocation. The oracle feed price is the baseToken price/quoteToken price ratio. Decimals: 18 - baseToken’s decimals + quoteToken’s decimals.
+    - `paramList[2]`: The third parameter is `newK`, which is the new slippage coefficient (k) that the pool’s price curve will have after the function invocation. The slippage coefficient dictates how “bent” the price curve is. Decimals: 18, Range: [0, 1e18], where 0 represents a horizontal line as a price curve, and 1e18 represents a Uniswap-like, constant-product AMM price curve.
 
-- flag：主要用于 ETH与WETH 的互转，其中
-    - 0 代表base与quote均是ERC20代币
-    - 1 代表转入的base是ETH，因此合约会自动将ETH转为WETH
-    - 2 代表转入的quote是ETH，因此合约会自动将ETH转为WETH
-    - 3 代表提取的base是WETH，因此合约会自动将WETH转为ETH
-    - 4 代表提取的quote是WETH，因此合约会自动将WETH转为ETH
+- `amountList`: An array of `uint256` containing the following parameters in order: `baseInAmount`, `quoteInAmount`, `baseOutAmount`, and `quoteOutAmount`. Decimals for each of these parameters conform to the token decimals they represent, i.e., `quoteInAmount` has the same number of decimals as `quoteToken`.
+`baseInAmount` and `quoteInAmount` represent the number of base tokens and quote tokens being added to the DPP pool, respectively. NOTE: Before adding these tokens, the function invoker must give token spend permissions to the `DODOApprove` contract (refer to the “Deployment Information” pages or the Appendix for contract addresses).
+`baseOutAmount`, and `quoteOutAmount` represent the number of base tokens and quote tokens being removed from the DPP pool, respectively.
 
-- minBaseReserve与minQuoteReserve 主要用于降低抢跑交易的套利，当做市账户发起交易，修改私有池参数时，有可能会造成池子的价格改变，因此在发出以及真正交易上链的时间间隔内，机器人可能会抢跑套利，这两个参数设定后，当上链执行时池子的现存资金规模有一方小于设定的值，则该笔交易会被合约revert掉，以降低套利风险
+- `flag`: A `uint8` used to flag whether wrapping/unwrapping is required for ETH
+    - `0`: base and quote tokens are both ERC-20
+    - `1`: base token being added to the pool is ETH, so the contract will wrap ETH into WETH
+    - `2`: quote token being added to the pool is ETH, so the contract will wrap ETH into WETH
+    - `3`: base token being removed from the pool is WETH, so the contract will unwrap WETH into ETH
+    - `4`: quote token being removed from the pool is WETH, so the contract will unwrap WETH into ETH
+- `minBaseReserve` and `minQuoteReserve`: `uint256` used to reduce arbitrage opportunities for frontrunners and minimize risk. When the function invoker wants to modify parameters and submits the transaction for processing, the token price for the pool may change. This change opens a window for frontrunning bots to come in and perform arbitrage trading. With `minBaseReserve` and `minQuoteReserve` set, if after an on-chain transaction will cause the number of base tokens in the pool to go below `minBaseReserve` or the number of quote tokens in the pool to go below `minQuoteReserve`, the contract will revert this transaction, thus reducing arbitrage risk.
 
-- deadline：交易时效，超时后合约revert
+- `deadline`: `uint256`. The transaction will revert if this timestamp is exceeded.
 
 
-## 附：
 
-DODOV2Proxy 各链地址：
+## Appendix
 
-- ETH： [0xa356867fDCEa8e71AEaF87805808803806231FdC](https://etherscan.io/address/0xa356867fDCEa8e71AEaF87805808803806231FdC)
-- BSC： [0x8F8Dd7DB1bDA5eD3da8C9daf3bfa471c12d58486](https://bscscan.com/address/0x8F8Dd7DB1bDA5eD3da8C9daf3bfa471c12d58486) 
-- HECO：[0xAc7cC7d2374492De2D1ce21e2FEcA26EB0d113e7](https://hecoinfo.com/address/0xAc7cC7d2374492De2D1ce21e2FEcA26EB0d113e7)
+DODOV2Proxy Deployment Information
 
-DODOApprove 各链地址：
+- ETH: [0xa356867fDCEa8e71AEaF87805808803806231FdC](https://etherscan.io/address/0xa356867fDCEa8e71AEaF87805808803806231FdC)
+- BSC: [0x8F8Dd7DB1bDA5eD3da8C9daf3bfa471c12d58486](https://bscscan.com/address/0x8F8Dd7DB1bDA5eD3da8C9daf3bfa471c12d58486) 
+- HECO: [0xAc7cC7d2374492De2D1ce21e2FEcA26EB0d113e7](https://hecoinfo.com/address/0xAc7cC7d2374492De2D1ce21e2FEcA26EB0d113e7)
 
-- ETH： [0xCB859eA579b28e02B87A1FDE08d087ab9dbE5149](https://etherscan.io/address/0xCB859eA579b28e02B87A1FDE08d087ab9dbE5149) 
-- BSC： [0xa128Ba44B2738A558A1fdC06d6303d52D3Cef8c1](https://bscscan.com/address/0xa128Ba44B2738A558A1fdC06d6303d52D3Cef8c1)
-- HECO：[0x68b6c06Ac8Aa359868393724d25D871921E97293](https://hecoinfo.com/address/0x68b6c06Ac8Aa359868393724d25D871921E97293) 
+DODOApprove Deployment Information
 
-DODOV2Proxy ABI：
+- ETH: [0xCB859eA579b28e02B87A1FDE08d087ab9dbE5149](https://etherscan.io/address/0xCB859eA579b28e02B87A1FDE08d087ab9dbE5149) 
+- BSC: [0xa128Ba44B2738A558A1fdC06d6303d52D3Cef8c1](https://bscscan.com/address/0xa128Ba44B2738A558A1fdC06d6303d52D3Cef8c1)
+- HECO: [0x68b6c06Ac8Aa359868393724d25D871921E97293](https://hecoinfo.com/address/0x68b6c06Ac8Aa359868393724d25D871921E97293) 
+
+DODOV2Proxy ABI 
 
 ```
 [
