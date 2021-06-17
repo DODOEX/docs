@@ -1,7 +1,7 @@
 ---
 id: dppForMM
-title: 私有池对接说明
-sidebar_label: 私有池对接说明
+title: DODO Private Pool (DPP)
+sidebar_label: DODO Private Pool (DPP)
 ---
 
 ## Introduction
@@ -30,8 +30,6 @@ In order to make changes to their pools, pool operators will need to invoke the 
         uint256 deadLine
     ) external;
 ```
-
-### 入参说明：
 
 ### Function Parameters
 
