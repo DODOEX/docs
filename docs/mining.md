@@ -120,11 +120,6 @@ function getPendingRewardByToken(address user, address rewardToken) external vie
 - 奖励代币 DODO （每区块0.0966）
 - 结束区块高度 12693456
 ---
-- 质押代币 vETH-WETH DLP (0x4cf7fa72ffba0588e34883ce0797cec3890ecec4)
-- 挖矿合约 0x44024B60575cf5D032F80A55Da37924f123B4151
-- 奖励代币 DODO （每区块0.0601）
-- 结束区块高度 12656500
----
 - 质押代币 DAI-USDT DLP (0x3058ef90929cb8180174d74c507176cca6835d73)
 - 挖矿合约 0x1A4F8705E1C0428D020e1558A371b7E6134455A2
 - 奖励代币 DODO （每区块1）
@@ -172,9 +167,9 @@ function getPendingRewardByToken(address user, address rewardToken) external vie
 - 奖励代币 DODO （每区块0.07063）
 - 结束区块高度 8715744
 ---
-- 质押代币 Alpaca-DODO DLP (0x86f87961471b34c554ec01907ab59bb859df9cf4)
-- 挖矿合约 0x2B40bC6c9C12c18787436aa1E2B761f684F42999
-- 奖励代币 DEK (每区块 0.0398)
-- 奖励代币 DODO （每区块0.0465）
-- 结束区块高度 8516080
+- 质押代币 NABOX-BUSD DLP (0xb5b1bb7b0c1bc9e6ab556afbbdcca5c87f10e735)
+- 挖矿合约 0xD43cce9B178cBE0fAFA8AA3b79dc737e331dAf83
+- 奖励代币 NABOX (每区块 986.812)
+- 奖励代币 DODO （每区块0.03024）
+- 结束区块高度 9295685
 
