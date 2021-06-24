@@ -115,11 +115,6 @@ function getPendingRewardByToken(address user, address rewardToken) external vie
 
 #### ETH
 
-- 质押代币 GTC-DODO DLP (0x6bd8a88375d7e310d6fdc7e1036e5ab7031e9642)
-- 挖矿合约 0xa6d36849864cB35Bc42024ffcf8e2806D8912331
-- 奖励代币 DODO （每区块0.0966）
-- 结束区块高度 12693456
----
 - 质押代币 DAI-USDT DLP (0x3058ef90929cb8180174d74c507176cca6835d73)
 - 挖矿合约 0x1A4F8705E1C0428D020e1558A371b7E6134455A2
 - 奖励代币 DODO （每区块1）
