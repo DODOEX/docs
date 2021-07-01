@@ -27,7 +27,7 @@ sidebar_label: 合约信息（BSC）
 | DODO Private Pool Factory      | [0xAfe0A75DFFb395eaaBd0a7E1BBbd0b11f8609eeF](https://bscscan.com/address/0xAfe0A75DFFb395eaaBd0a7E1BBbd0b11f8609eeF) |
 | DODO Vending Machine Factory   | [0x790B4A80Fb1094589A3c0eFC8740aA9b0C1733fB](https://bscscan.com/address/0x790B4A80Fb1094589A3c0eFC8740aA9b0C1733fB) |
 | DODO Stable Pool Factory       | [0x0fb9815938Ad069Bf90E14FE6C596c514BEDe767](https://bscscan.com/address/0x0fb9815938Ad069Bf90E14FE6C596c514BEDe767) |
-| DODO ERC20 Factory             | [0x5e84190a270333aCe5B9202a3F4ceBf11b81bB01](https://bscscan.com/address/0x5e84190a270333aCe5B9202a3F4ceBf11b81bB01) |
+| DODO ERC20V2 Factory           | [0x652C09785c15db4adAce871eD8874b8968A19A4D](https://bscscan.com/address/0x652C09785c15db4adAce871eD8874b8968A19A4D) |
 
 
 ## DODO Mining V2

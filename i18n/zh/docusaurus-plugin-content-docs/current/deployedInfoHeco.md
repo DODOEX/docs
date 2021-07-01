@@ -27,7 +27,7 @@ sidebar_label: 合约信息（HECO）
 | DODO Private Pool Factory      | [0xF5420a3b91c457d336589217d45CcB8F7250eAed](https://hecoinfo.com/address/0xF5420a3b91c457d336589217d45CcB8F7250eAed) |
 | DODO Vending Machine Factory   | [0xd8c77CF0F01222b07B8343A681C46eFA3faEa985](https://hecoinfo.com/address/0xd8c77CF0F01222b07B8343A681C46eFA3faEa985) |
 | DODO Stable Pool Factory       | [0xaEc55245AB0cDcc03Bc5f104dAdCd0a33Ef50714](https://hecoinfo.com/address/0xaEc55245AB0cDcc03Bc5f104dAdCd0a33Ef50714) |
-| DODO ERC20 Factory             | [0x2cCDF6F742afBe813B68Ec6bb421C1BEa74fBd46](https://hecoinfo.com/address/0x2cCDF6F742afBe813B68Ec6bb421C1BEa74fBd46) |
+| DODO ERC20V2 Factory           | [0x1297264617bd34270B77c2fFD3aA110D3fd2f7aF](https://hecoinfo.com/address/0x1297264617bd34270B77c2fFD3aA110D3fd2f7aF) |
 
 ## DODO Mining V2
 

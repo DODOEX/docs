@@ -34,7 +34,7 @@ sidebar_label: Deployment Information
 | DODO Private Pool Factory      | [0x6B4Fa0bc61Eddc928e0Df9c7f01e407BfcD3e5EF](https://etherscan.io/address/0x6B4Fa0bc61Eddc928e0Df9c7f01e407BfcD3e5EF) |
 | DODO Vending Machine Factory   | [0x72d220cE168C4f361dD4deE5D826a01AD8598f6C](https://etherscan.io/address/0x72d220cE168C4f361dD4deE5D826a01AD8598f6C) |
 | DODO Stable Pool Factory       | [0x6fdDB76c93299D985f4d3FC7ac468F9A168577A4](https://etherscan.io/address/0x6fdDB76c93299D985f4d3FC7ac468F9A168577A4) |
-| DODO ERC20 Factory             | [0x44D5dF24d5Ef52A791D6436Fa45A8D426f6de34e](https://etherscan.io/address/0x44D5dF24d5Ef52A791D6436Fa45A8D426f6de34e) |
+| DODO ERC20V2 Factory           | [0xAA810cd0363d3378F0a13e327EC2Aee7051aDa73](https://etherscan.io/address/0xAA810cd0363d3378F0a13e327EC2Aee7051aDa73) |
 | DODO Trade Incentive           | [0x989DcAA95801C527C5B73AA65d3962dF9aCe1b0C](https://etherscan.io/address/0x989DcAA95801C527C5B73AA65d3962dF9aCe1b0C) |
 
 

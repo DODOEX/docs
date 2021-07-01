@@ -24,7 +24,7 @@ sidebar_label: 合约信息（Polygon）
 | DODO Private Pool Factory      | [0x95E887aDF9EAa22cC1c6E3Cb7f07adC95b4b25a8](https://polygonscan.com/address/0x95E887aDF9EAa22cC1c6E3Cb7f07adC95b4b25a8) |
 | DODO Vending Machine Factory   | [0x79887f65f83bdf15Bcc8736b5e5BcDB48fb8fE13](https://polygonscan.com/address/0x79887f65f83bdf15Bcc8736b5e5BcDB48fb8fE13) |
 | DODO Stable Pool Factory       | [0x43C49f8DD240e1545F147211Ec9f917376Ac1e87](https://polygonscan.com/address/0x43C49f8DD240e1545F147211Ec9f917376Ac1e87) |
-| DODO ERC20 Factory             | [0xaeB5CF31b97dce6134e416129845e01106fFB177](https://polygonscan.com/address/0xaeB5CF31b97dce6134e416129845e01106fFB177) |
+| DODO ERC20V2 Factory           | [0x8e2f666F316b614c76676215F16F0A9746f96a90](https://polygonscan.com/address/0x8e2f666F316b614c76676215F16F0A9746f96a90) |
 
 
 ## DODO V1
