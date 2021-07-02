@@ -20,6 +20,7 @@ sidebar_label: Deployment Information (BSC)
 | DODO Approve                   | [0xa128Ba44B2738A558A1fdC06d6303d52D3Cef8c1](https://bscscan.com/address/0xa128Ba44B2738A558A1fdC06d6303d52D3Cef8c1) |
 | DODO Approve Proxy             | [0xB76de21f04F677f07D9881174a1D8E624276314C](https://bscscan.com/address/0xB76de21f04F677f07D9881174a1D8E624276314C) |
 | DODO V2Proxy02                 | [0x8F8Dd7DB1bDA5eD3da8C9daf3bfa471c12d58486](https://bscscan.com/address/0x8F8Dd7DB1bDA5eD3da8C9daf3bfa471c12d58486) |
+| DODO RouteProxy                | [0x6B3D817814eABc984d51896b1015C0b89E9737Ca](https://bscscan.com/address/0x6B3D817814eABc984d51896b1015C0b89E9737Ca) |
 | DODO DSPProxy                  | [0x2442A8B5cdf1E659F3F949A7E454Caa554D4E65a](https://bscscan.com/address/0x2442A8B5cdf1E659F3F949A7E454Caa554D4E65a) |
 | DODO CpProxy                   | [0xA867241cDC8d3b0C07C85cC06F25a0cD3b5474d8](https://bscscan.com/address/0xA867241cDC8d3b0C07C85cC06F25a0cD3b5474d8) |
 | DODO CrowdPooling Factory      | [0x778DF5B12170e8af8dF94356BfC864E57CE185DC](https://bscscan.com/address/0x778DF5B12170e8af8dF94356BfC864E57CE185DC) |

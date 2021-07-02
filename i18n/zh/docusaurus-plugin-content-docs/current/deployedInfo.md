@@ -26,6 +26,7 @@ sidebar_label: 合约信息 （以太主网）
 | DODO Approve                   | [0xCB859eA579b28e02B87A1FDE08d087ab9dbE5149](https://etherscan.io/address/0xCB859eA579b28e02B87A1FDE08d087ab9dbE5149) |
 | DODO Approve Proxy             | [0x335aC99bb3E51BDbF22025f092Ebc1Cf2c5cC619](https://etherscan.io/address/0x335aC99bb3E51BDbF22025f092Ebc1Cf2c5cC619) |
 | DODO V2Proxy02                 | [0xa356867fDCEa8e71AEaF87805808803806231FdC](https://etherscan.io/address/0xa356867fDCEa8e71AEaF87805808803806231FdC) |
+| DODO RouteProxy                | [0xa2398842F37465f89540430bDC00219fA9E4D28a](https://etherscan.io/address/0xa2398842F37465f89540430bDC00219fA9E4D28a) |
 | DODO DSPProxy                  | [0x4599ed18F34cFE06820E3684bF0aACB8D75c644d](https://etherscan.io/address/0x4599ed18F34cFE06820E3684bF0aACB8D75c644d) |
 | DODO CpProxy                   | [0x048B8926bb0eE9c52e05D61fDffbCCffbeE06Fc2](https://etherscan.io/address/0x048B8926bb0eE9c52e05D61fDffbCCffbeE06Fc2) |
 | DODO CrowdPooling Factory      | [0xE8C9A78725D0451FA19878D5f8A3dC0D55FECF25](https://etherscan.io/address/0xE8C9A78725D0451FA19878D5f8A3dC0D55FECF25) |
