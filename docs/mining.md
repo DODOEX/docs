@@ -132,15 +132,13 @@ function getPendingRewardByToken(address user, address rewardToken) external vie
 - 奖励代币 DODO （每区块0.3)
 - 结束区块高度 9857935
 ---
-- 质押代币 NVT-BUSD DLP (0x1eb7d209d36c4527cc5f0e94e4d3c2dcf96570be)
-- 挖矿合约 0x0cF35405C60d8a6BEa71C88461D0dE7B4fD7d552
-- 奖励代币 NVT (每区块 1.1625744)
-- 奖励代币 DODO （每区块0.065267）
-- 结束区块高度 8916744
----
 - 质押代币 NABOX-BUSD DLP (0xb5b1bb7b0c1bc9e6ab556afbbdcca5c87f10e735)
 - 挖矿合约 0xD43cce9B178cBE0fAFA8AA3b79dc737e331dAf83
 - 奖励代币 NABOX (每区块 986.812)
 - 奖励代币 DODO （每区块0.03024）
 - 结束区块高度 9295685
-
+---
+- 质押代币 HUSD-BUSD DLP (0xfcafcfb6a5db0aa758eed30457cd1bc5268a8ede)
+- 挖矿合约 0x849b7bc00280B8cC3221640Da2bC1c13F0dFBef3
+- 奖励代币 DODO （每区块0.03813）
+- 结束区块高度 9746500
