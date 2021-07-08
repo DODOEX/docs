@@ -11,6 +11,7 @@ sidebar_label: Deployment Information (BSC)
 | DODO Bsc Token            | [0x67ee3Cb086F8a16f34beE3ca72FAD36F7Db929e2](https://bscscan.com/address/0x67ee3Cb086F8a16f34beE3ca72FAD36F7Db929e2) |
 | vdodo Mapping Token (BSC) | [0x4D6A41C682874E5dd1BBD58184eE8FF145C89202](https://bscscan.com/address/0x4D6A41C682874E5dd1BBD58184eE8FF145C89202) |
 | DODO Mining V1            | [0x01f9BfAC04E6184e90bD7eaFD51999CE430Cc750](https://bscscan.com/address/0x01f9BfAC04E6184e90bD7eaFD51999CE430Cc750) |
+| DODO Treasury Address      | [0x2cB5eA673F22EF5fB3D0f5638e7FB69745073fC8](https://bscscan.com/address/0x2cB5eA673F22EF5fB3D0f5638e7FB69745073fC8) |
 
 
 ## DODO V2

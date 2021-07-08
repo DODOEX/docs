@@ -9,6 +9,7 @@ sidebar_label: Deployment Information(Polygon)
 | Contract Name               | Address                                                                                                              |
 | -------------------------   | -------------------------------------------------------------------------------------------------------------------- |
 | DODO Matic Token            | [0x6B208E08dcF6BD51F50C5Da09d15B2D8E5C46Cf2](https://polygonscan.com/address/0x6B208E08dcF6BD51F50C5Da09d15B2D8E5C46Cf2) |
+| DODO Treasury Address       | [0x65C5e6F299656CB2458DC18f46b3DF7E1e7e2776](https://polygonscan.com/address/0x65C5e6F299656CB2458DC18f46b3DF7E1e7e2776) |
 
 ## DODO V2
 

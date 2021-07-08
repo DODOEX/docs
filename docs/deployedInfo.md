@@ -18,6 +18,7 @@ sidebar_label: Deployment Information
 | Locked Token Vault 2            | [0xde25cebdd50ff2af17bbc8b3cbf2e31c48b769b4](https://etherscan.io/address/0xde25cebdd50ff2af17bbc8b3cbf2e31c48b769b4) |
 | Undistributed Token Vault       | [0x3e19d726ed435AfD3A42967551426b3A47c0F5b7](https://etherscan.io/address/0x3e19d726ed435AfD3A42967551426b3A47c0F5b7) |
 | Locked Token (Migrate to BSC)   | [0x02fCB21dc1cf221939C1d4277fB54016b5d32bC7](https://etherscan.io/address/0x02fCB21dc1cf221939C1d4277fB54016b5d32bC7) |
+| DODO Treasury Address           | [0xAB21016BD4127638b8c555e36636449b33dF1C38](https://etherscan.io/address/0xAB21016BD4127638b8c555e36636449b33dF1C38) | 
 
 
 ## DODO V2 

@@ -10,6 +10,7 @@ sidebar_label: 合约信息（HECO）
 | -------------------------  | -------------------------------------------------------------------------------------------------------------------- |
 | DODO Heco Token            | [0x7d5DF05F987f9B9dD2a13deF1793f943Ad2A5e93](https://hecoinfo.com/address/0x7d5DF05F987f9B9dD2a13deF1793f943Ad2A5e93) |
 | vdodo Mapping Token (Heco) | [0xeA2550A4922f56D277b3190Cb1f81739eC3902FC](https://hecoinfo.com/address/0xeA2550A4922f56D277b3190Cb1f81739eC3902FC) |
+| DODO Treasury Address      | [0x6ed2B1aFB1483b150fF428178F1aE5b8e7367A26](https://hecoinfo.com/address/0x6ed2B1aFB1483b150fF428178F1aE5b8e7367A26) |
 
 
 ## DODO V2
