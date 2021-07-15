@@ -4,56 +4,56 @@ title: DODO NFT Tech Spec
 sidebar_label: DODO NFT Tech Spec
 ---
 
-## DODONFT 相关合约
+## DODONFT Relevant Contracts
 
-| 合约名称                | 目录                                | 
+| Contract Name          | Catalog                            | 
 | ---------------------- | ---------------------------------- |
 | DODONFTProxy           | contracts/SmartRoute/proxies/      |
 | NFTCollateralVault     | contracts/CollateralVault/         |
 | Fragment               | contracts/GeneralizedFragment/     |
 | DODONFTRegistry        | contracts/Factory/Registries/      |
 
-## DODONFT 合约概览图
+## DODONFT Contract Overview
 
 ![](https://dodoex.github.io/docs/img/dodonft_framework.png)
 
 
-## 主要流程
+## Process
 
-### 创建Vault
+### Create Vault
 
-首先用户通过调用`DODONFTProxy`合约中的`createNFTCollateralVault`函数，创建新的Vault合约，Vault合约用来存放NFT，兼容ERC721，ERC1155。并且可以为Vault设置全局的名称以及baseURI，baseURI可以指向资源文件，作为Vault的介绍信息
+First, users can create a new Vault contract by calling the createNFTCollateralVault function in the `DODONFTProxy` contract, which is used to store NFT compatible with ERC721, ERC1155. Also, users can set the name and baseURI for Vault, which can point to the resource file as the Vault's introductory information.
 
 ```
 function createNFTCollateralVault(string memory name, string memory baseURI) external returns (address newVault);
 ```
 
-### 导入NFT
+### Deposit NFT
 
-创建的Vault合约用来存放NFT，用户可以存入ERC721，ERC1155，且没有任何数量限制，可以是一个NFT，也可以是多个。存入的NFT被Vault合约的owner所拥有，owner有权利以Vault为单位，进行整体的碎片化操作
+The Vault that has been just created can be used to deposit NFT compatible with ERC721 or ERC1155, and there is no limit on the number of NFT users can deposit. The deposited NFTs are owned by the owner of the Vault contract, and the owner has the right to fragment the whole NFT by the unit of Vault.
 
-若用户向Vault存入ERC721，需要将ERC721授权给Vault合约，第二步调用`NFTCollateralVault`的`depositERC721`函数, 传入的参数包括ERC721合约地址，以及存入的tokenId数组
+If users deposit ERC721 to the Vault, the ERC721 needs to be authorized to the Vault contract. The second step is to call the depositERC721 function of the `NFTCollateralVault`, and include the following in the deposited parameter package: deposited contract address of the ERC721 and deposited tokenId array. 
 
 ```
 function depositERC721(address nftContract, uint256[] memory tokenIds) external;
 ```
 
-若用户向Vault存入ERC1155，需要将ERC1155授权给Vault合约，第二步调用`NFTCollateralVault`的`depositERC1155`函数，传入的参数包括ERC1155合约地址，以及存入的tokenId数组和对应的数量
+If users deposit ERC1155 to the Vault, the ERC1155 needs to be authorized to the Vault contract. The second step is to call the depositERC1155 function of the `NFTCollateralVault`, and include the following in the deposited parameter package: deposited contract address of the ERC1155, deposited tokenId array and its amount. 
 
 ```
 function depoistERC1155(address nftContract, uint256[] memory tokenIds, uint256[] memory amounts) external;
 ```
 
-### 碎片化
+### Fragmentation
 
-碎片化是针对Vault中导入的NFT进行统一的碎片化操作，背后的流程包括生成ERC20，并创建[DODO Vending Machine公开池](./publicPool)，同时向池子添加流动性，向二级市场提供了流通，被DODO DEX聚合后，可以实现任意币与碎片化ERC20代币互换。同时碎片化也涉及到Vault合约owner转移给碎片化合约的过程，即经过碎片化后，Vault中的NFT没有任何人可以提取，确保碎片化的ERC20代表着Vault中的全部NFT。
+Fragmentation refers to the process in which the deposited NFT is being fragmented. The whole process involves the creation of ERC20, the creation of [DODO Vending Machine public pool](./publicPool), liquidity provision to the pool, and circulation in the secondary market. Then users can trade against these ERC20 tokens using any tokens. The process also involves transferring the ownership of the Vault contract to the Fragment contract. After the fragmentation, no one can withdraw these NFTs, ensuring that the fragmented ERC20 tokens represent all the NFTs in the Vault.
 
-碎片化需要由Vault的owner触发，通过调用`NFTCollateralVault`中的`createFragment`函数实现
+Fragmentation needs to be triggered by the owner of the Vault, which is achieved by calling the createFragment function in `NFTCollateralVault`.
 
 
-### 买断
+### Buyout
 
-经过碎片化的NFT，将会在二级市场流通，拥有碎片代币的人，代表了拥有背后NFT的一部分。若投资人希望完全拥有NFT，则可以触发买断的功能，调用`DODONFTProxy`的`buyout`函数
+The fragmented NFT will be circulated in the secondary market, and those who own the fragmented tokens also own a portion of the NFT. If the buyer is looking to own the whole NFT, the buyout can be triggered by calling the buyout function of `DODONFTProxy`.
 
 ```
 function buyout(
@@ -64,19 +64,19 @@ function buyout(
 ) external;
 ```
 
-投资人需要按照当前碎片NFT的单价，乘上总量，提供对应总估值的代币，才可以进行买断。买断涉及到操作包括
+In order to make a buyout, buyers need to provide tokens corresponding to the total valuation at the current unit price of the fragmented NFT multiplied by the total amount. The following is what the buyout process looks like. 
 
-- 投资人充入当前碎片NFT对应的总估值代币
+- Buyers must deposit tokens, with the token's total valuation corresponding to that of the fragmented NFT.
 
-- 撤掉当前碎片代币的流动性池，销毁流动性池中的碎片化代币
+- Remove the current liquidity pool of fragmented tokens and destroy the fragmented tokens in the liquidity pool.
 
-- 分配投入的代币，包括向原NFT作者支付未流通部分的代币市值，剩下的投入代币预留在`Fragment`合约内，供二级市场持有碎片NFT代币的用户来按照买断价格等值赎回
+- Allocate the deposited token. Including paying the original NFT creator the market value of the uncirculated portion of the tokens and leaving the rest of the deposited token in the `Fragment` contract. This will allow the holder of the fragmented token to redeem at the equivalent price of buyout.
 
-- 转移Vault owner为买断者，买断者可以后续将Vault中的NFT转出，当然可以再次碎片化，再次碎片化将会创建新的ERC20以及新的流动性池
+- Transfer the ownership of the Vault to themselves. Buyers can subsequently transfer the NFT out of the Vault. This NFT can be fragmented again, which will create a new ERC20 and a new liquidity pool.
 
-### 赎回
+### Redeem
 
-若经过买断后，原二级市场流通的碎片NFT拥有者，可以按照买断时的单价，等值进行代币赎回，调用`Fragment`合约内的`redeem`函数，将自己手中的碎片NFT销毁，换取等值的代币
+After the buyout, the holder of the fragmented NFT in circulation, in the secondary market, can redeem the token at the same value as the unit price at the time of the buyout, and call the redeem function within the Fragment contract to destroy their fragmented NFT in exchange for the equivalent value of the tokens.
 
 ```
 function redeem(address to, bytes calldata data) external;
