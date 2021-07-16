@@ -29,6 +29,7 @@ module.exports = {
             "DODO-Economics-102",
             "DODO-On-Chain-Liquidity",
             "DODO-User-Friendly-Decentralization",
+            "DODO-Multi-Chain-Capabilities",
         ],
         FAQ: ["commonQuestions"],
         Media: ["media"]

@@ -1,5 +1,5 @@
 ---
-id: DODO-Multi-Chain-Capabilities.md
+id: DODO-Multi-Chain-Capabilities
 title: 'DODO: Multi-Chain Capabilities'
 sidebar_label: "DODO: Multi-Chain Capabilities"
 ---
