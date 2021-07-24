@@ -38,6 +38,11 @@ DODO V2 同样会提供以上两个函数的结果预览，预览函数可以在
  ) external view  returns (uint256 receiveBaseAmount,uint256 mtFee);
 ```
 
+### 相关的代码样例
+
+- [DODOProxyIntegrate.sol](https://github.com/DODOEX/dodo-example/blob/main/contracts/DODOProxyIntegrate.sol)
+
+
 下面一部分我们会着重介绍[闪电交换](./flashSwap).
 
 ## 对于做市商

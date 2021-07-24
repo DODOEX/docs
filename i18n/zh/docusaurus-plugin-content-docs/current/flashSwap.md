@@ -55,6 +55,10 @@ interface IDODOCallee {
 }
 ```
 
+## 如何使用
+
+代码样例：[DODOFlashloan.sol](https://github.com/DODOEX/dodo-example/blob/main/contracts/DODOFlashloan.sol)
+
 ## 一些想法
 
 一旦你深入了解了闪电交换，你就会明白 DeFi 世界相比于中心化世界的优势。通过组合智能合约，我们可以将 DeFi 的资金利用率提高到前所未有的水平。DeFi 世界中的信任成本极低。一旦这个金融系统应用落地，它将极大地提升社会生产力。DODO 团队希望可以让 DeFi 从业者的通过了解闪电交换来入门 DeFi 世界。

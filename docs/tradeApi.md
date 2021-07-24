@@ -82,3 +82,8 @@ GET
 | targetApproveAddr              | User need give sell Token's authority to this contract (DODOApprove) before swaping. if sell Token equals to ETH (BNB or HT). the param will be empty.  |
 | to                             | DODOProxy's address |
 | data                           | ABI Data，Use directly  |
+
+
+## Integrate with Smart Contract
+
+The data obtained from DODO-API can be sent directly to DODOProxy contract. But if you want to use your own contract to encapsulate and send the data, you can refer to the following code sample: [DODOApiEncapsulation.sol](https://github.com/DODOEX/dodo-example/blob/main/contracts/DODOApiEncapsulation.sol)

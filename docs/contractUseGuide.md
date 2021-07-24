@@ -40,6 +40,10 @@ DODO V2 also provides a view version of these two functions. View functions can 
 
 In the next section, we will go into more details about [flash swap](./flashSwap).
 
+### Related code samples
+
+- [DODOProxyIntegrate.sol](https://github.com/DODOEX/dodo-example/blob/main/contracts/DODOProxyIntegrate.sol)
+
 ## For Liquidity Providers (LPs)
 
 DODO V2 designs two types of pools, including DODO vending machine and DODO private pools. `DODOV2Proxy` encapsulates the liquidity management functions. And also people can directly interact with the underly pools.

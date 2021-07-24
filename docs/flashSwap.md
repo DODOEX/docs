@@ -1,14 +1,14 @@
 ---
 id: flashSwap
-title: Flash Swap
-sidebar_label: Flash Swap
+title: Flash Loan
+sidebar_label: Flash Loan
 ---
 
-## What is Flash Swap
+## What is Flash Loan
 
 Simply put, you are allowed to pay on credit on DODO! When you buy tokens DODO, you can first get the tokens you want to buy, do anything you want with the tokens, and pay for them later.
 
-## How Does Flash Swap Work
+## How Does Flash Loan Work
 
 ![](https://dodoex.github.io/docs/img/dodo_flash_swap_v2.png)
 
@@ -51,8 +51,11 @@ interface IDODOCallee {
 }
 ```
 
+## How to use DODO Flash Loan
 
-## Some Thoughts on Flash Swap
+Code sample: [DODOFlashloan.sol](https://github.com/DODOEX/dodo-example/blob/main/contracts/DODOFlashloan.sol)
+
+## Some Thoughts on Flash Loan
 
 Once you have a deep understanding of flash swap, you will realize the superiority of the DeFi world over the centralized world. The composability of smart contracts has elevated the fund utilization of DeFi to an unprecedented level. Thanks to trustlessness, the cost of credit in DeFi is incredibly low. Once this financial system is integrated into the real world, its potential for improving our society and productivity will be truly boundless. The DODO team hopes that flash swap serves as a primer for DeFi builders and beginners alike to gain an appreciation for the power of DeFi.
 
