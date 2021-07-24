@@ -43,8 +43,6 @@ DODO V2 同样会提供以上两个函数的结果预览，预览函数可以在
 - [DODOProxyIntegrate.sol](https://github.com/DODOEX/dodo-example/blob/main/contracts/DODOProxyIntegrate.sol)
 
 
-下面一部分我们会着重介绍[闪电交换](./flashSwap).
-
 ## 对于做市商
 
 DODO V2 设计了两种类型的池子，包括公开池以及私有池，同样的 DODO V2 提供了统一的`DODOV2Proxy`，封装了不同类型池子流动性管理功能。以下是直接与池子底层交互的做市商管理方法。

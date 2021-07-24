@@ -38,8 +38,6 @@ DODO V2 also provides a view version of these two functions. View functions can 
  ) external view  returns (uint256 receiveBaseAmount,uint256 mtFee);
 ```
 
-In the next section, we will go into more details about [flash swap](./flashSwap).
-
 ### Related code samples
 
 - [DODOProxyIntegrate.sol](https://github.com/DODOEX/dodo-example/blob/main/contracts/DODOProxyIntegrate.sol)
