@@ -40,7 +40,9 @@ DODO V2 同样会提供以上两个函数的结果预览，预览函数可以在
 
 ### 相关的代码样例
 
-- [DODOProxyIntegrate.sol](https://github.com/DODOEX/dodo-example/blob/main/contracts/DODOProxyIntegrate.sol)
+- 如何通过集成`DODOProxy`来使用外部合约与DODOV1 以及 DODOV2 池子进行买卖交互 [DODOProxyIntegrate.sol](https://github.com/DODOEX/dodo-example/blob/main/contracts/DODOProxyIntegrate.sol)
+
+- 如何链外使用PMM算法来计算DODOV1 或者 DODOV2池子的买卖结果 [pmmOffchainCalc.ts](https://github.com/DODOEX/dodo-example/blob/main/scripts/pmmOffchainCalc.ts)
 
 
 ## 对于做市商
