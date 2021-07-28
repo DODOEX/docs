@@ -20,7 +20,7 @@ $$= \int^{B_2}_{B_1}(1-k)i+i(B_0/B)^2kdB$$
 
 $$= i(B_2-B_1)*(1-k+k\frac{B_0^2}{B_1B_2})$$
 
-This tells the trader how much they should pay if they buy $B_2-B_1$ amount of base tokens.
+This tells the trader how much they should pay if they buy $B_2-B_1$ base tokens.
 
 Rearranging the equation above, the average transaction price is thus:
 $$P=\frac{\Delta Q}{B_2-B_1}=i*(1-k+k\frac{B_0^2}{B_1B_2})$$
@@ -29,7 +29,7 @@ We found that the average transaction price is only dependent on the state of th
 
 ## Solving the quadratic equation for trading
 
-Without the loss of generality, the integral becomes the following when there is a shorage of quote tokens:
+Without the loss of generality, the integral becomes the following when there is a shortage of quote tokens:
 
 $$\Delta B = \frac{1}{i}(Q_2-Q_1)*(1-k+k\frac{Q_0^2}{Q_1Q_2})$$
 
@@ -47,15 +47,15 @@ $$Q_2=\frac{-b+\sqrt{b^2-4ac}}{2a}$$
 
 It can be proven that:
 
-- When $\Delta B>0$, $Q_2>Q_1$; trader buy base token, and should pay $Q_2-Q_1$
-- When $\Delta B<0$, $Q_2<Q_1$; trader sell base token, and will receive $Q_1-Q_2$
+- When $\Delta B>0$, $Q_2>Q_1$; trader buy base tokens, and should pay $Q_2-Q_1$
+- When $\Delta B<0$, $Q_2<Q_1$; trader sell base tokens, and will receive $Q_1-Q_2$
 - When $\Delta B=0$, $Q_2=Q_1$.
 
-At the same time, DODO V2 focus on verifying the special case of k=0, and k=1 to support the constant price of selling and the bonding curve of the standard AMM.
+DODO V2 focuses on verifying the special case of k=0, and k=1 to support a constant selling price and the bonding curve of the standard AMM.
 
 ## Solving the quadratic equation for regression targets
 
-When the system is not in the equilibrium state, changes to the oracle price will bring profit or loss. For example, assume that shortage of base tokens is the current state, and the oracle price goes up. It is clear that the excess quote tokens cannot buy enough base tokens to return the base token balance to the base token regression target. Thus, LPs who deposited base tokens will suffer a loss. Conversely, if the oracle price drops, the excess quote tokens can buy more base tokens, causing the base token balance to exceed the base token regression target, and LPs who deposited base tokens will make a profit.
+When the system is not in the equilibrium state, changes to the oracle price can bring profit or loss. For example, assume that shortage of base tokens is the current state, and then the oracle price goes up. It is clear that the excess quote tokens cannot buy enough base tokens to return the base token balance to the base token regression target. Thus, LPs who deposited base tokens will suffer a loss. Conversely, if the oracle price drops, the excess quote tokens can buy more base tokens, causing the base token balance to exceed the base token regression target, and LPs who deposited base tokens will make a profit.
 
 In summary, the regression target is influenced by the oracle price. To calculate the regression target at a certain oracle price, we make the following derivation:
 
@@ -83,7 +83,7 @@ This section will deal with the math pertaining to the peripheral functioning of
 
 ## Trades
 
-As mentioned above, the regression target depends on the oracle price, and the price curve in turn depend on the regression target. So in every trade, we should calculate the regression target well in advance to make the price curve fixed.
+As mentioned above, the regression target depends on the oracle price, and the price curve in turn depends on the regression target. We should therefore calculate the regression target for each trade well in advance to fix the price curve.
 
 In addition, since the price curve given by PMM is segmented, if a transaction involves different states (for example, when a trader sells an astronomical amount of base tokens during a base token shortage and forces the state into a quote token shortage), the price needs to be calculated in segments as well.
 
@@ -91,16 +91,17 @@ Please be advised that this calculation requires a high degree of accuracy. The 
 
 ## Deposit
 
-Depositing and withdrawing base token when there is a shortage of base tokens, or quote tokens when there is a shortage of quote token, will change the price curve. This requires us to process the deposit and withdrawal with caution and care in order to keep the capital pool sustainable and fair.
+Depositing and withdrawing base tokens when there is a shortage of base tokens, or quote tokens when there is a shortage of quote tokens, will change the price curve. This requires us to process the deposit and withdrawal with caution and care in order to keep the capital pool sustainable and fair.
 
-We will analyze what happens when an LP makes a deposit when there is a shortage of base tokens.
+Let's analyze what happens when an LP makes a deposit when there is a shortage of base tokens.
 
-According to the calculation formula of $B_0$ derived above
+According to the calculation formula of $B_0$ derived above,
+
 $$B_0=B_1+B_1*\frac{\sqrt{1+\frac{4k\Delta Q}{B_1 i}}-1}{2k}$$
 
-After an LP deposit $b$ base tokens, $B_1$ increases by $b$, and $B_0$ increases more than than $b$'s magnitude. It means that this deposit helps all LPs who provided base token make a profit. The reason why is that the deposit makes the price curve smoother, and the same amount of $\Delta Q$ can now buy more base tokens.
+After an LP deposit $b$ base tokens, $B_1$ increases by $b$, and $B_0$ increases more than than $b$'s magnitude. This means that this deposit helps make a profit for all LPs who provided base tokens. The reason is that the deposit makes the price curve smoother, and the same amount of $\Delta Q$ can now buy more base tokens.
 
-In this case, as soon as the LP makes a deposit, the LP makes a profit. This is referred to as the deposit reward. The essential source of this reward is the slippage paid by the trader who made the system deviate from equilibrium state.
+In this case, as soon as the LP makes a deposit, the LP makes a profit. This is referred to as the deposit reward. The essential source of this reward is the slippage paid by the trader who made the system deviate from the equilibrium state.
 
 :::note
 It is important to note that deposit rewards are not risk-free arbitrage trading opportunities. 
@@ -108,10 +109,10 @@ It is important to note that deposit rewards are not risk-free arbitrage trading
 
 ## Withdrawal
 
-Similarly, after an LP withdraws $b$ base tokens, $B_1$ decreases by $b$, and $B_0$ decreases by more than $b$'s magnitude. This withdrawal causes all LPs who owes Base Tokens to suffer losses. This is because this withdrawal makes the price curve more steep, and the excess quote tokens have less purchasing power in terms of base tokens.
+Similarly, after an LP withdraws $b$ base tokens, $B_1$ decreases by $b$, and $B_0$ decreases by more than $b$'s magnitude. This withdrawal causes all LPs who owe base tokens to suffer losses. This is because this withdrawal makes the price curve more steep, and the excess quote tokens have less purchasing power in terms of base tokens.
 
 The PMM algorithm stipulates that a withdrawal fee is required to withdraw tokens in this case. The magnitude of the fee is equal to the aggregate loss of all LPs caused by the withdrawal. This fee will be directly distributed to all LPs that have not yet withdrawn.
 
 Factoring in the deposit reward from the previous section, if an LP makes a withdrawal immediately after depositing, the withdrawal fee will be greater than the deposit reward, thus eliminating any possibility of risk-free arbitrage trading.
 
-It is worth noting that both deposit reward and withdrawal fee are only significant when the system deviates very far from the equilibrium state and the deposit/withdrawal amount is large. Traders thus often overlook the existence of this gain/loss. Of course, traders are also welcome to extract value from the system by exploiting this if they so wish. In order to do that, they can first deposit to earn deposit rewards when the system deviates from the equilibrium, and then withdraw once the system returns to the equilibrium to avoid the withdrawal fee.
+It is worth noting that both the deposit reward and withdrawal fee are only significant when the system deviates very far from the equilibrium state and the deposit/withdrawal amount is large. Traders thus often overlook the existence of this gain or loss. Of course, traders are also welcome to extract value from the system by exploiting this if they so wish. In order to do that, they can first deposit to earn deposit rewards when the system deviates from the equilibrium, and then withdraw once the system returns to the equilibrium to avoid the withdrawal fee.
