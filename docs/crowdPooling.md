@@ -46,14 +46,14 @@ There is also a liquidity protection period to prevent the project teams from ru
 3. Anyone is able to provide liquidity to these pools AMM-style, with the added benefit of higher capital efficiency thanks to PMM.
 4. This resulting spot market follows the bonding curve method: when a trader buys tokens, the token price goes up; when a trade sells tokens, the token price goes down.
 
-### Fee
+### Quota
 
-We have a fee configuration function for crowdpooling, and any pools can set fees for different users. some use cases:
+We have a quota configuration function for crowdpooling, and any pools can set quotas for different users. some use cases:
 
-1. The crowdpooling sets a fee of 0% for privileged users and 100% for common users. To implement whitelist function.
-2. According to users' vDODO balances. Crowdpooling can be set different tiered rates of discounts for platform vDODO holders.
-3. The fee collected can be used to repurchase DODO in the secondary market to empower token value.
+1. The crowdpooling sets quota for privileged users and 0 for common users. To implement whitelist function.
+2. According to users' vDODO balances. Crowdpooling can be set different tiered rates of quotas for platform vDODO holders.
 
+more info [DODO Crowdpooling Whitelist Configuration](./cpwl)
 
 ## Why Crowdpooling
 
