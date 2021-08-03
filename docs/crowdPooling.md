@@ -24,19 +24,19 @@ Inspired by the call auction mechanism commonplace in securities markets, Crowdp
 
 2. Once the Crowdpooling campaign ends, participants can claim the tokens based on their stakes at the pre-defined initial offering price. If the Crowdpooling progress is over your soft cap target (i.e. there is more capital in the pool than your soft cap), then all participants claim the tokens proportional to their shares of the pool, at the initial offering price. Any difference between the amount participants staked and the actual cost of the tokens (i.e. initial offering price * the number of tokens actually received) is then refunded back to participants.
 
-3. After the Crowdpooling phase ends, new public liquidity pools will be automatically set up with the capital raised and the tokens reserved for ask-side liquidity from step 1 and trading becomes available. The starting market price is the initial offering price from step 1. At this point, we also add a pre-deposit settlement mechanism, liquidity protection mechanism and support for flexible fee configuration.
+3. After the Crowdpooling phase ends, new public liquidity pools will be automatically set up with the capital raised and the tokens reserved for ask-side liquidity from step 1 and trading becomes available. The starting market price is the initial offering price from step 1. At this point, we also add a pre-deposit settlement mechanism, liquidity protection mechanism, and support for flexible fee configuration.
 
 ### Pre-deposit Settlement
 
 We know that smart contracts are passively triggered, and a gas cost is required. Likewise, an on-chain transaction is required to conclude a Crowdpooling campaign and create its corresponding [DODO vending machine](./publicPool). Therefore, we have introduced pre-deposited settlement fees to cover the cost of this transaction.
 
-1. When a project team launches a Crowdpooling campaign, they need to pre-deposit the settlement fee into the smart contract (currently 0.2ETH).
+1. When a project team launches a Crowdpooling campaign, they need to pre-deposit the settlement fee into the smart contract (currently 0.2 ETH).
 
 2. At the end of the Crowdpooling campaign, anyone (including the project team) can send a transaction to end the process and create a DODO Vending Machine. The person who executes the transaction will receive the pre-deposited settlement fee.
 
 ### Liquidity Protection
 
-There is also a liquidity protection period to prevent the project team from "rug-pulling" immediately.
+There is also a liquidity protection period to prevent the project team from "rug-pulling", i.e. draining pool liquidity, immediately.
 
 1. The bid-side liquidity is established by proceeds from Crowdpooling participants, and the ask-side liquidity is established by tokens reserved for the pool when the campaign was first set up.
 2. This initial liquidity belongs to creator of this Crowdpooling campaign, but the creator cannot remove this liquidity during the liquidity protection period.
