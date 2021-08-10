@@ -115,21 +115,23 @@ function getPendingRewardByToken(address user, address rewardToken) external vie
 - Deposit DAI-USDT DLP (0x3058ef90929cb8180174d74c507176cca6835d73)
 - Liquidity Mining Contract Address: 0x1A4F8705E1C0428D020e1558A371b7E6134455A2
 - Token Reward: DODO (1 DODO Per Block)
-- Ending Block Height: 13042500
+- Ending Block Height: 13550000
 ---
 - Deposit sUSD-USDT DLP (0xd84820f0e66187c4f3245e1fe5ccc40655dbacc9)
 - Liquidity Mining Contract Address: 0xd08e5cF0551aaEc0dA2f4FC595193F9E6b0295e0
 - Token Reward: DODO (0.5 DODO Per Block)
 - Ending Block Height: 13042500
 
+---
+- Deposit WAR-WETH DLP (0x6fd7c843cd747d7d29923d68473957921f60cd4c)
+- Liquidity Mining Contract Address: 0x3552fac00722aD60437ac173CdA332ACf4136810
+- Token Reward: WAR (0.01066 WAR Per Block)
+- Token Reward: DODO (0.11105 DODO Per Block)
+- Ending Block Height: 13094967
+
 #### BSC
 
 - Deposit DODO-BNB DLP (0xd534fae679f7f02364d177e9d44f1d15963c0dd7)
 - Liquidity Mining Contract Address 0x322B43e406D1B4Df9Bc36d058317Dd1cd3b0385F
 - Token Reward DODO (0.3 DODO Per Block)
-- Ending Block Height: 9857935
----
-- Deposit HUSD-BUSD DLP (0xfcafcfb6a5db0aa758eed30457cd1bc5268a8ede)
-- Liquidity Mining Contract Address 0x849b7bc00280B8cC3221640Da2bC1c13F0dFBef3
-- Token Reward: DODO (0.03813 DODO Per Block)
-- Ending Block Height: 9746500
+- Ending Block Height: 12500000

@@ -118,21 +118,22 @@ function getPendingRewardByToken(address user, address rewardToken) external vie
 - 质押代币 DAI-USDT DLP (0x3058ef90929cb8180174d74c507176cca6835d73)
 - 挖矿合约 0x1A4F8705E1C0428D020e1558A371b7E6134455A2
 - 奖励代币 DODO （每区块1）
-- 结束区块高度 13042500
+- 结束区块高度 13550000
 ---
 - 质押代币 sUSD-USDT DLP (0xd84820f0e66187c4f3245e1fe5ccc40655dbacc9)
 - 挖矿合约 0xd08e5cF0551aaEc0dA2f4FC595193F9E6b0295e0
 - 奖励代币 DODO （每区块0.5）
 - 结束区块高度 13042500
+---
+- 质押代币 WAR-WETH DLP (0x6fd7c843cd747d7d29923d68473957921f60cd4c)
+- 挖矿合约 0x3552fac00722aD60437ac173CdA332ACf4136810
+- 奖励代币 WAR (每区块0.01066)
+- 奖励代币 DODO (每区块0.11105)
+- 结束区块高度 13094967
 
 #### BSC
 
 - 质押代币 DODO-BNB DLP (0xd534fae679f7f02364d177e9d44f1d15963c0dd7)
 - 挖矿合约 0x322B43e406D1B4Df9Bc36d058317Dd1cd3b0385F
 - 奖励代币 DODO （每区块0.3)
-- 结束区块高度 9857935
----
-- 质押代币 HUSD-BUSD DLP (0xfcafcfb6a5db0aa758eed30457cd1bc5268a8ede)
-- 挖矿合约 0x849b7bc00280B8cC3221640Da2bC1c13F0dFBef3
-- 奖励代币 DODO （每区块0.03813）
-- 结束区块高度 9746500
+- 结束区块高度 12500000
