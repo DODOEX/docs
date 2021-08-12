@@ -38,6 +38,6 @@ For Bonding Curve Crowdpooling, the token price often increases significantly ov
 
 ### In Case of Oversubscription
 
-If the total staked amount by participants is over the Crowdpooling hard cap, then all participants will receive tokens proportional to their shares of the pool, at the initial price.
+If the total staked amount by participants is over the Crowdpooling hard cap, then all participants will receive tokens proportional to their shares of the pool, at the final price. The excess part of the hardcap will be returned proportionally to participants.
 
 
