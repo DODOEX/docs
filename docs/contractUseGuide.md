@@ -76,7 +76,7 @@ Use `buyShares` to inject liquidity into the pool. User needs to construct a tra
  ) external returns (uint256 baseAmount, uint256 quoteAmount)
 ```
 
-Use `sellShares` to remove liquidity from the pool. User can directly call the corresponding function of the pool to execute the transaction. The reqeust parameters include the amount of shares removed, the receiving address, baseMinAmount used for slippage protection (the minimum received base amount), quoteMinAmount (the minimum received quote amount), data is generally set to empty, if it's not, the external contract call will be executed at the end to achieve additional functions such as the conversion from WETH to ETH, and deadline is the effective time after the transaction is sent, it will automatically fail when overtime aiming to protect the safe execution of the transaction.
+Use `sellShares` to remove liquidity from the pool. User can directly call the corresponding function of the pool to execute the transaction. The request parameters include the amount of shares removed, the receiving address, baseMinAmount used for slippage protection (the minimum received base amount), quoteMinAmount (the minimum received quote amount), data is generally set to empty, if it's not, the external contract call will be executed at the end to achieve additional functions such as the conversion from WETH to ETH, and deadline is the effective time after the transaction is sent, it will automatically fail when overtime aiming to protect the safe execution of the transaction.
 
 ### DODO Private Pool
 
