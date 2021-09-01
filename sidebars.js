@@ -12,6 +12,7 @@ module.exports = {
             "deployedInfoBsc",
             "deployedInfoHeco",
             "deployedInfoPolygon",
+            "deployedInfoArbitrum",
             "subgraph",
             "bugBounty",
             "audit",

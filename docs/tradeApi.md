@@ -6,7 +6,7 @@ sidebar_label: DODO Trade API
 
 ## Introduction
 
-The DODO Trade API currently provides real-time price quotes for swaps between arbitrary tokens on Ethereum Mainnet, Binance Smart Chain (BSC), Polygon, and Huobi ECO Chain (HECO Chain), as well as Application Binary Interface (ABI) data that can be used to interact with smart contracts on these networks. 
+The DODO Trade API currently provides real-time price quotes for swaps between arbitrary tokens on Ethereum Mainnet, Binance Smart Chain (BSC), Polygon, Arbitrum One and Huobi ECO Chain (HECO Chain), as well as Application Binary Interface (ABI) data that can be used to interact with smart contracts on these networks. 
 
 Smart contract developers can easily incorporate the DODO Trade API into their platforms to implement their own trading features, thanks to the API’s plug-and-play integration process. The DODO Trade API finds and compares prices for any pair of token assets from a variety of liquidity sources, including DODO v1, DODO v2, 1inch API, 0xAPI, ParaSwapAPI, professional market makers, and via DODO’s custom aggregation algorithm.
 
@@ -19,6 +19,8 @@ The full list of liquidity sources that the DODO Trade API currently uses from a
 - HECO: DODO v1, DODO v2, and DODO‘s custom aggregation algorithm 
 
 - Polygon: DODO v1, DODO v2, [1inch API](https://docs.1inch.io/api/), [0x API](https://0x.org/), [ParaSwap API](https://developers.paraswap.network/), and DODO‘s custom aggregation algorithm 
+
+- Arbitrum One: DODO v1, DODO v2 and DODO‘s custom aggregation algorithm 
 
 ## URL
 
@@ -34,14 +36,14 @@ GET
 
 | Param                       | type         | Description                                                      |
 | ----------------------------| ------------ | -----------------------------------------------------------------|
-| fromTokenAddress            | string       | (required)  contract address of a token to sell *ETH(BNB or HT)  0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE*  |
+| fromTokenAddress            | string       | (required)  contract address of a token to sell *ETH(BNB or Matic)  0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE*  |
 | fromTokenDecimals           | integer      | (required)  Decimals of a token to sell |
-| toTokenAddress              | string       | (required)  contract address of a token to buy *ETH(BNB or HT)  0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE*   |
+| toTokenAddress              | string       | (required)  contract address of a token to buy *ETH(BNB or Matic)  0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE*   |
 | toTokenDecimals             | integer      | (required)  Decimals of a token to buy  |
 | fromAmount                  | string       | (required)  amount of a token to sell  NOTE：calculated with decimals，For example 1ETH =  10**18 |
 | slippage                    | integer      | (required)  0 - 100   *unit:%* |
 | userAddr                    | string       | (required)  user address |
-| chainId                     | integer      | (required)  1 represents ethereum, 56 represents BSC, 128 represents HECO, 137 represents Polygon |
+| chainId                     | integer      | (required)  1 represents ethereum, 56 represents BSC, 128 represents HECO, 137 represents Polygon, 42161 represents Arbitrum one |
 | rpc                         | string       | (required)  your own rpc node, you can set this parameter to point to it.  |
 | deadLine                    | integer      | (optional)  the timestamp of the block where the trade deadline is set to, unit: second |
 | source                      | string       | (optional)  If left blank, the API automatically quotes prices from all liquidity sources. If source is set to "dodo", then the API quotes prices from DODO v1 and DODO v2 only. |
@@ -80,10 +82,10 @@ GET
 | resPricePerFromToken           | ratio of buy Token Amount / sell Token Amount |
 | priceImpact                    | Price deviation; convert to percentage by multiplying by 100. High price deviation is caused by low liquidity in the pools where the prices are quoted from. |
 | targetApproveAddr              | User need give sell Token's authority to this contract (DODOApprove) before swaping. if sell Token equals to ETH (BNB or HT). the param will be empty.  |
-| to                             | DODOProxy's address |
+| to                             | DODOV2Proxy or DODORouteProxy's address |
 | data                           | ABI Data，Use directly  |
 
 
 ## Integrate with Smart Contract
 
-The data obtained from DODO-API can be sent directly to DODOProxy contract. But if you want to use your own contract to encapsulate and send the data, you can refer to the following code sample: [DODOApiEncapsulation.sol](https://github.com/DODOEX/dodo-example/blob/main/contracts/DODOApiEncapsulation.sol)
+The data obtained from DODO-API can be sent directly to contract. But if you want to use your own contract to encapsulate and send the data, you can refer to the following code sample: [DODOApiEncapsulation.sol](https://github.com/DODOEX/dodo-example/blob/main/contracts/DODOApiEncapsulation.sol)
