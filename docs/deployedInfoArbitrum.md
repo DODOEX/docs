@@ -8,7 +8,7 @@ sidebar_label: Deployment Information (Arbitrum)
 
 | Contract Name             | Address                                                                                                              |
 | ------------------------- | ---------------------------------------------------------------------------------------------------------------------|
-| DODO Token (Arb)          | [0x69Eb4FA4a2fbd498C257C57Ea8b7655a2559A581](https://arbiscan.io/address/0x67ee3Cb086F8a16f34beE3ca72FAD36F7Db929e2) |
+| DODO Token (Arb)          | [0x69Eb4FA4a2fbd498C257C57Ea8b7655a2559A581](https://arbiscan.io/address/0x69Eb4FA4a2fbd498C257C57Ea8b7655a2559A581) |
 
 
 ## DODO V2
