@@ -42,5 +42,6 @@ sidebar_label: 合约信息（Arbitrum One）
 | DODO Pair: WBTC-USDC           | [0xb42a054D950daFD872808B3c839Fbb7AFb86E14C](https://arbiscan.io/address/0xb42a054D950daFD872808B3c839Fbb7AFb86E14C) |
 | DODO Pair: USDT-USDC           | [0xe4B2Dfc82977dd2DCE7E8d37895a6A8F50CbB4fB](https://arbiscan.io/address/0xe4B2Dfc82977dd2DCE7E8d37895a6A8F50CbB4fB) |
 | DODO Zoo                       | [0xBcC3401E16C25EaF4d3FeD632ce3288503883B1f](https://arbiscan.io/address/0xBcC3401E16C25EaF4d3FeD632ce3288503883B1f) |
+| DODO SellHelper                | [0xA5F36E822540eFD11FcD77ec46626b916B217c3e](https://arbiscan.io/address/0xA5F36E822540eFD11FcD77ec46626b916B217c3e) |
 | Multisig Wallet                | [0x01d3E7271c278Aa3AA56EeBa6a109b2C200679fA](https://arbiscan.io/address/0x01d3E7271c278Aa3AA56EeBa6a109b2C200679fA) |
 
