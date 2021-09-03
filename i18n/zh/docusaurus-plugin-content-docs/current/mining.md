@@ -137,7 +137,7 @@ function getPendingRewardByToken(address user, address rewardToken) external vie
 - 奖励代币 DODO （每区块0.3)
 - 结束区块高度 12500000
 
-### Arbitrum One
+#### Arbitrum One
 
 - 质押代币 DODO-USDC DLP (0x6a58c68ff5c4e4d90eb6561449cc74a64f818da5)
 - 挖矿合约 0x38Dbb42C4972116c88E27edFacD2451cf1b14255
