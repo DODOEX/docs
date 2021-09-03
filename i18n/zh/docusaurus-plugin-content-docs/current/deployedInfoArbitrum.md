@@ -9,6 +9,7 @@ sidebar_label: 合约信息（Arbitrum One）
 | 合约                      | 地址                                                                                                                  |
 | ------------------------- | ---------------------------------------------------------------------------------------------------------------------|
 | DODO Token (Arb)          | [0x69Eb4FA4a2fbd498C257C57Ea8b7655a2559A581](https://arbiscan.io/address/0x69Eb4FA4a2fbd498C257C57Ea8b7655a2559A581) |
+| DODO Mining V1            | [0xE3C10989dDc5Df5B1b9c0E6229c2E4e0862fDe3e](https://arbiscan.io/address/0xE3C10989dDc5Df5B1b9c0E6229c2E4e0862fDe3e) |
 
 
 ## DODO V2
@@ -32,7 +33,7 @@ sidebar_label: 合约信息（Arbitrum One）
 
 | 质押代币                        | 挖矿合约地址                                                                                                           |
 | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------|
-
+| DODO - USDC DLP                | [0x38Dbb42C4972116c88E27edFacD2451cf1b14255](https://arbiscan.io/address/0x38Dbb42C4972116c88E27edFacD2451cf1b14255) |
 
 ## DODO V1
 

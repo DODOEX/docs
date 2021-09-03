@@ -71,7 +71,17 @@ function getAllPendingReward(address _user) external view returns (uint256);
     
     - Deposit USDC DLP (0xc9e1d10442296c4729270b9c1de15f742ae1c981)、Liquidity Pool  USDC-BUSD(0x6064DBD0fF10BFeD5a797807042e9f63F18Cfe10)、Weight 0.05
     - Deposit BUSD DLP (0xddee2e5f98bbe93e77f16bfa6b5669c688396f93)、Liquidity Pool  USDC-BUSD(0x6064DBD0fF10BFeD5a797807042e9f63F18Cfe10)、Weight 0.05
+
+- Arbitrum One(Liquidity Mining Contract Address：[0xE3C10989dDc5Df5B1b9c0E6229c2E4e0862fDe3e](https://arbiscan.io/address/0xE3C10989dDc5Df5B1b9c0E6229c2E4e0862fDe3e)) (Currently Releasing 1.5 DODO Rewards Per Block)
+
+    - Deposit WETH DLP (0x73Ad4e910eB472229b557b52E37BC136f983A955)、Liquidity Pool  WETH-USDC(0xfe176a2b1e1f67250d2903b8d25f56c0dabcd6b2)、Weight 200
+    - Deposit USDC DLP (0x48422A133501F0a3A542905F31167c198129A828)、Liquidity Pool  WETH-USDC(0xfe176a2b1e1f67250d2903b8d25f56c0dabcd6b2)、Weight 200
     
+    - Deposit WBTC DLP (0xb94904Bbe8A625709162DC172875FBC51c477aBB)、Liquidity Pool  WBTC-USDC(0xb42a054D950daFD872808B3c839Fbb7AFb86E14C)、Weight 200
+    - Deposit USDC DLP (0x1e90B696e07D0b8c79840BAF61e07Ee0D894dBBF)、Liquidity Pool  WBTC-USDC(0xb42a054D950daFD872808B3c839Fbb7AFb86E14C)、Weight 200
+    
+    - Deposit USDT DLP (0x82B423848CDd98740fB57f961Fa692739F991633)、Liquidity Pool  USDT-USDC(0xe4B2Dfc82977dd2DCE7E8d37895a6A8F50CbB4fB)、Weight 200
+    - Deposit USDC DLP (0x7eBd8a1803cE082d4dE609C0aA0813DD842BD4DB)、Liquidity Pool  USDT-USDC(0xe4B2Dfc82977dd2DCE7E8d37895a6A8F50CbB4fB)、Weight 200
 
 ## DODOMineV2
 
@@ -116,18 +126,7 @@ function getPendingRewardByToken(address user, address rewardToken) external vie
 - Liquidity Mining Contract Address: 0x1A4F8705E1C0428D020e1558A371b7E6134455A2
 - Token Reward: DODO (1 DODO Per Block)
 - Ending Block Height: 13550000
----
-- Deposit sUSD-USDT DLP (0xd84820f0e66187c4f3245e1fe5ccc40655dbacc9)
-- Liquidity Mining Contract Address: 0xd08e5cF0551aaEc0dA2f4FC595193F9E6b0295e0
-- Token Reward: DODO (0.5 DODO Per Block)
-- Ending Block Height: 13042500
 
----
-- Deposit WAR-WETH DLP (0x6fd7c843cd747d7d29923d68473957921f60cd4c)
-- Liquidity Mining Contract Address: 0x3552fac00722aD60437ac173CdA332ACf4136810
-- Token Reward: WAR (0.01066 WAR Per Block)
-- Token Reward: DODO (0.11105 DODO Per Block)
-- Ending Block Height: 13094967
 
 #### BSC
 
@@ -135,3 +134,11 @@ function getPendingRewardByToken(address user, address rewardToken) external vie
 - Liquidity Mining Contract Address 0x322B43e406D1B4Df9Bc36d058317Dd1cd3b0385F
 - Token Reward DODO (0.3 DODO Per Block)
 - Ending Block Height: 12500000
+
+
+### Arbitrum One
+
+- Deposit DODO-USDC DLP (0x6a58c68ff5c4e4d90eb6561449cc74a64f818da5)
+- Liquidity Mining Contract Address 0x38Dbb42C4972116c88E27edFacD2451cf1b14255
+- Token Reward DODO (0.5 DODO Per Block)
+- Ending Block Height: 13400000
