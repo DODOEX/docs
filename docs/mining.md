@@ -135,6 +135,13 @@ function getPendingRewardByToken(address user, address rewardToken) external vie
 - Token Reward DODO (0.3 DODO Per Block)
 - Ending Block Height: 12500000
 
+- Deposit KUN-BUSD DLP (0x3679e0e472a41f7ba9ccadbc18901b48cb23d3ad)
+- Liquidity Mining Contract Address 0x1F3Aba039B40B0f6805c397bb9aC28E363B78730
+- Token Reward DODO (0.0248 DODO Per Block)
+- Token Reward KUN (0.13332 KUN Per Block)
+- Ending Block Height: 11624200
+
+
 
 #### Arbitrum One
 

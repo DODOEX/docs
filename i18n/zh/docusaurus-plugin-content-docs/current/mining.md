@@ -137,6 +137,12 @@ function getPendingRewardByToken(address user, address rewardToken) external vie
 - 奖励代币 DODO （每区块0.3)
 - 结束区块高度 12500000
 
+- 质押代币 KUN-BUSD DLP (0x3679e0e472a41f7ba9ccadbc18901b48cb23d3ad)
+- 挖矿合约 0x1F3Aba039B40B0f6805c397bb9aC28E363B78730
+- 奖励代币 DODO (每区块0.0248)
+- 奖励代币 KUN (每区块0.13332)
+- 结束区块高度 11624200
+
 #### Arbitrum One
 
 - 质押代币 DODO-USDC DLP (0x6a58c68ff5c4e4d90eb6561449cc74a64f818da5)

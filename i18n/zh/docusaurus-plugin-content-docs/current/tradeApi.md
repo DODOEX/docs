@@ -6,7 +6,7 @@ sidebar_label: DODO Trade API
 
 ## 介绍
 
-DODO Trade API 当前可提供 Ethereum、BSC、HECO、Polygon、Arbitrum One 五个网络下任意币互换的实时报价以及可直接使用的与合约交互ABI数据。开发者仅需按照接口规范，集成我们的API，即可快速实现DEX最重要的交易功能。DODO Trade API 背后集成了DODOV1、DODOV2、专业做市商、1inch API、0x API、ParaSwap API 以及DODO自建的聚合算法 等多源实时的报价信息，并返回当前多源中最优报价，以确保 DODO Trade API 始终具有较强的竞争力。
+DODO Trade API 当前可提供 Ethereum、BSC、HECO、OEC、Polygon、Arbitrum One 五个网络下任意币互换的实时报价以及可直接使用的与合约交互ABI数据。开发者仅需按照接口规范，集成我们的API，即可快速实现DEX最重要的交易功能。DODO Trade API 背后集成了DODOV1、DODOV2、专业做市商、1inch API、0x API、ParaSwap API 以及DODO自建的聚合算法 等多源实时的报价信息，并返回当前多源中最优报价，以确保 DODO Trade API 始终具有较强的竞争力。
 
 以下列举当前API使用的询价源：
 
@@ -19,6 +19,8 @@ DODO Trade API 当前可提供 Ethereum、BSC、HECO、Polygon、Arbitrum One �
 - **Polygon：** DODOV1、DODOV2、0x API、ParaSwap API、DODO自建路由
 
 - **Arbitrum One:** DODOV1, DODOV2, DODO自建路由
+
+- **OEC：** DODOV1，DODOV2，DODO自建路由
 
 ## URL
 
@@ -41,7 +43,7 @@ GET
 | fromAmount                  | string       | (必须)  出售的代币数量  注意：需要乘上代币的精度，举例 1ETH =  10**18 |
 | slippage                    | integer      | (必须)  0 - 100   *单位为：%* |
 | userAddr                    | string       | (必须)  发起交易的用户地址 |
-| chainId                     | integer      | (必须)  1 代表以太主网, 56 代表 BSC, 128 代表 Heco, 137 代表 Polygon, 42161 代表 Arbitrum One |
+| chainId                     | integer      | (必须)  1 代表以太主网, 56 代表 BSC, 66 代表 OEC, 128 代表 Heco, 137 代表 Polygon, 42161 代表 Arbitrum One |
 | rpc                         | string       | (必须)  自有节点的rpc地址，以保障实时的节点询价速度与稳定性   |
 | deadLine                    | integer      | (可选)  交易过期的区块时间 *单位为：秒* |
 | source                      | string       | (可选)  若不设置，则从全部源中询价， 若设置 source = "dodo"，代表仅获取DODOV1、DODOV2 报价 |
