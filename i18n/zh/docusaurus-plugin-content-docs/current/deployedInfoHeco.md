@@ -4,14 +4,6 @@ title: 合约信息（HECO）
 sidebar_label: 合约信息（HECO）
 ---
 
-## DODO 代币相关
-
-| 合约                        | 地址                                                                                                                 |
-| -------------------------  | -------------------------------------------------------------------------------------------------------------------- |
-| DODO Heco Token            | [0x7d5DF05F987f9B9dD2a13deF1793f943Ad2A5e93](https://hecoinfo.com/address/0x7d5DF05F987f9B9dD2a13deF1793f943Ad2A5e93) |
-| vdodo Mapping Token (Heco) | [0xeA2550A4922f56D277b3190Cb1f81739eC3902FC](https://hecoinfo.com/address/0xeA2550A4922f56D277b3190Cb1f81739eC3902FC) |
-| DODO Treasury Address      | [0x6ed2B1aFB1483b150fF428178F1aE5b8e7367A26](https://hecoinfo.com/address/0x6ed2B1aFB1483b150fF428178F1aE5b8e7367A26) |
-
 
 ## DODO V2
 
@@ -29,12 +21,6 @@ sidebar_label: 合约信息（HECO）
 | DODO Vending Machine Factory   | [0xd8c77CF0F01222b07B8343A681C46eFA3faEa985](https://hecoinfo.com/address/0xd8c77CF0F01222b07B8343A681C46eFA3faEa985) |
 | DODO Stable Pool Factory       | [0xaEc55245AB0cDcc03Bc5f104dAdCd0a33Ef50714](https://hecoinfo.com/address/0xaEc55245AB0cDcc03Bc5f104dAdCd0a33Ef50714) |
 | DODO ERC20V2 Factory           | [0x1297264617bd34270B77c2fFD3aA110D3fd2f7aF](https://hecoinfo.com/address/0x1297264617bd34270B77c2fFD3aA110D3fd2f7aF) |
-
-## DODO Mining V2
-
-| 质押代币                        | 挖矿合约地址                                                                                                           |
-| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------|
-| VDODO Mining                   | [0x11f774ef7996f11A267C94aa1161Fe851a87e848](https://hecoinfo.com/address/0x11f774ef7996f11A267C94aa1161Fe851a87e848) |
 
 
 ## DODO V1
