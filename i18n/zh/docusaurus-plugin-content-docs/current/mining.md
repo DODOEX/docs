@@ -130,6 +130,8 @@ function getPendingRewardByToken(address user, address rewardToken) external vie
 - 奖励代币 DODO （每区块1）
 - 结束区块高度 13550000
 
+---
+
 - 质押代币 THALES-ETH DLP (0x031816fD297228e4FD537c1789D51509247D0B43)
 - 挖矿合约 0x136829c258E31B3AB1975Fe7D03d3870C3311651
 - 奖励代币 DODO (每区块 0.3374 DODO )
@@ -143,6 +145,8 @@ function getPendingRewardByToken(address user, address rewardToken) external vie
 - 奖励代币 DODO （每区块0.3)
 - 结束区块高度 12500000
 
+---
+
 - 质押代币 KUN-BUSD DLP (0x3679e0e472a41f7ba9ccadbc18901b48cb23d3ad)
 - 挖矿合约 0x1F3Aba039B40B0f6805c397bb9aC28E363B78730
 - 奖励代币 DODO (每区块0.0248)
@@ -155,6 +159,8 @@ function getPendingRewardByToken(address user, address rewardToken) external vie
 - 挖矿合约 0x38Dbb42C4972116c88E27edFacD2451cf1b14255
 - 奖励代币 DODO （每区块0.5)
 - 结束区块高度 13400000
+
+---
 
 - 质押代币 MCB-USDC DLP (0x34851ea13bde818b1efe26d31377906b47c9bbe2)
 - 挖矿合约 0x98CEb851aF3d8627287885D56AEA863B848CeB6F
