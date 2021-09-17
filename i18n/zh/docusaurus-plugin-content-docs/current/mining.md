@@ -130,6 +130,12 @@ function getPendingRewardByToken(address user, address rewardToken) external vie
 - 奖励代币 DODO （每区块1）
 - 结束区块高度 13550000
 
+- 质押代币 THALES-ETH DLP (0x031816fD297228e4FD537c1789D51509247D0B43)
+- 挖矿合约 0x136829c258E31B3AB1975Fe7D03d3870C3311651
+- 奖励代币 DODO (每区块 0.3374 DODO )
+- 奖励代币 THALES (每区块 1.1248 THALES)
+- 结束区块高度 14123150
+
 #### BSC
 
 - 质押代币 DODO-BNB DLP (0xd534fae679f7f02364d177e9d44f1d15963c0dd7)
@@ -149,3 +155,9 @@ function getPendingRewardByToken(address user, address rewardToken) external vie
 - 挖矿合约 0x38Dbb42C4972116c88E27edFacD2451cf1b14255
 - 奖励代币 DODO （每区块0.5)
 - 结束区块高度 13400000
+
+- 质押代币 MCB-USDC DLP (0x34851ea13bde818b1efe26d31377906b47c9bbe2)
+- 挖矿合约 0x98CEb851aF3d8627287885D56AEA863B848CeB6F
+- 奖励代币 DODO (每区块 0.67164 DODO)
+- 奖励代币 MCB (每区块 0.026865 MCB)
+- 结束区块高度 13417880

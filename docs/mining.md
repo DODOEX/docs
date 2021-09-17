@@ -127,6 +127,12 @@ function getPendingRewardByToken(address user, address rewardToken) external vie
 - Token Reward: DODO (1 DODO Per Block)
 - Ending Block Height: 13550000
 
+- Deposit THALES-ETH DLP (0x031816fD297228e4FD537c1789D51509247D0B43)
+- Liquidity Mining Contract Address: 0x136829c258E31B3AB1975Fe7D03d3870C3311651
+- Token Reward: DODO (0.3374 DODO Per Block)
+- Token Reward: THALES (1.1248 THALES Per Block)
+- Ending Block Height: 14123150
+
 
 #### BSC
 
@@ -149,3 +155,9 @@ function getPendingRewardByToken(address user, address rewardToken) external vie
 - Liquidity Mining Contract Address 0x38Dbb42C4972116c88E27edFacD2451cf1b14255
 - Token Reward DODO (0.5 DODO Per Block)
 - Ending Block Height: 13400000
+
+- Deposit MCB-USDC DLP (0x34851ea13bde818b1efe26d31377906b47c9bbe2)
+- Liquidity Mining Contract Address 0x98CEb851aF3d8627287885D56AEA863B848CeB6F
+- Token Reward DODO (0.67164 DODO Per Block)
+- Token Reward MCB (0.026865 MCB Per Block)
+- Ending Block Height: 13417880
