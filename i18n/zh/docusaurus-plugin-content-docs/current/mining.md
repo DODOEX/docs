@@ -167,3 +167,19 @@ function getPendingRewardByToken(address user, address rewardToken) external vie
 - 奖励代币 DODO (每区块 0.67164 DODO)
 - 奖励代币 MCB (每区块 0.026865 MCB)
 - 结束区块高度 13417880
+
+---
+
+- 质押代币 KUN-USDC DLP (0xA24aED4CDc46f0B7d28138863FE4F2567768a2Cc)
+- 挖矿合约 0xc3E8C72B49b6F8e75D7422021C652D5d27325E9F
+- 奖励代币 DODO (每区块 0.1065 DODO)
+- 奖励代币 KUN (每区块 0.51582 KUN)
+- 结束区块高度 13449550
+
+---
+
+- 质押代币 QSD-USDC DLP (0x50580d53766C299628169C0452eE57b5F72534aE)
+- 挖矿合约 0x6b7161DDe9B27d81f7fcF85a5Dbde3176Bf0e073
+- 奖励代币 DODO (每区块 0.1065 DODO)
+- 奖励代币 KUN (每区块 0.8597 KUN)
+- 结束区块高度 13449550

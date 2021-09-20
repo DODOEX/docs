@@ -167,3 +167,19 @@ function getPendingRewardByToken(address user, address rewardToken) external vie
 - Token Reward DODO (0.67164 DODO Per Block)
 - Token Reward MCB (0.026865 MCB Per Block)
 - Ending Block Height: 13417880
+
+---
+
+- Deposit KUN-USDC DLP (0xA24aED4CDc46f0B7d28138863FE4F2567768a2Cc)
+- Liquidity Mining Contract Address 0xc3E8C72B49b6F8e75D7422021C652D5d27325E9F
+- Token Reward DODO (0.1065 DODO Per Block)
+- Token Reward KUN (0.51582 KUN Per Block)
+- Ending Block Height: 13449550
+
+---
+
+- Deposit QSD-USDC DLP (0x50580d53766C299628169C0452eE57b5F72534aE)
+- Liquidity Mining Contract Address 0x6b7161DDe9B27d81f7fcF85a5Dbde3176Bf0e073
+- Token Reward DODO (0.1065 DODO Per Block)
+- Token Reward KUN (0.8597 KUN Per Block)
+- Ending Block Height: 13449550
