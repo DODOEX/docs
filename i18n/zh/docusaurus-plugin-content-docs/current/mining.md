@@ -174,7 +174,7 @@ function getPendingRewardByToken(address user, address rewardToken) external vie
 - 挖矿合约 0x98CEb851aF3d8627287885D56AEA863B848CeB6F
 - 奖励代币 DODO (每区块 0.67164 DODO)
 - 奖励代币 MCB (每区块 0.026865 MCB)
-- 结束区块高度 13417880
+- 结束区块高度 13511680
 
 ---
 

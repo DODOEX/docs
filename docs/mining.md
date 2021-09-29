@@ -173,7 +173,7 @@ function getPendingRewardByToken(address user, address rewardToken) external vie
 - Liquidity Mining Contract Address 0x98CEb851aF3d8627287885D56AEA863B848CeB6F
 - Token Reward DODO (0.67164 DODO Per Block)
 - Token Reward MCB (0.026865 MCB Per Block)
-- Ending Block Height: 13417880
+- Ending Block Height: 13511680
 
 ---
 
