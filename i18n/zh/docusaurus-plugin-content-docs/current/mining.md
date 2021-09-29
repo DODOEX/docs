@@ -153,6 +153,14 @@ function getPendingRewardByToken(address user, address rewardToken) external vie
 - 奖励代币 KUN (每区块0.13332)
 - 结束区块高度 11624200
 
+---
+
+- 质押代币 KMON-BNB DLP (0x9bb6c68Ae502193d396B2B93F007D54595D88D1D)
+- 挖矿合约 0x8F33bFFBAa0D62aa97152120EA9c53e22D8cbCac
+- 奖励代币 DODO (每区块0.0315)
+- 奖励代币 KMON (每区块1.116)
+- 结束区块高度 12141400
+
 #### Arbitrum One
 
 - 质押代币 DODO-USDC DLP (0x6a58c68ff5c4e4d90eb6561449cc74a64f818da5)
@@ -183,3 +191,35 @@ function getPendingRewardByToken(address user, address rewardToken) external vie
 - 奖励代币 DODO (每区块 0.1065 DODO)
 - 奖励代币 KUN (每区块 0.8597 KUN)
 - 结束区块高度 13449550
+
+---
+
+- 质押代币 WETH-HND DLP (0x65E17c52128396443d4A9A61EaCf0970F05F8a20)
+- 挖矿合约 0x06633cd8E46C3048621A517D6bb5f0A84b4919c6
+- 奖励代币 DODO (每区块 0.2665 DODO)
+- 奖励代币 HND (每区块 1.599 HND)
+- 结束区块高度 13503700
+
+---
+
+- 质押代币 DF-USX DLP (0x19e5910f61882ff6605b576922507f1e1a0302fe)
+- 挖矿合约 0x20191f1Bd3f20f21519084ec07570bBa3533d098
+- 奖励代币 DODO (每区块 0.2488 DODO)
+- 奖励代币 DF (每区块 3.7313 DF)
+- 结束区块高度 13506000
+
+---
+
+- 质押代币 USX-USDC DLP (0x9340e3296121507318874ce9c04afb4492af0284)
+- 挖矿合约 0x05EA5955a51225Cd228C911220f4c6f027aa28dB
+- 奖励代币 DODO (每区块 0.0497 DODO)
+- 奖励代币 DF (每区块 0.82089 DF)
+- 结束区块高度 13506000
+
+---
+
+- 质押代币 USX-EUX DLP (0xd7efe569bc7081a3bee3b27232eea7545e36a16e)
+- 挖矿合约 0x80aBc15aa0A33A245faBd4af13Bd5A1689AE87fE
+- 奖励代币 DODO (每区块 0.0247 DODO)
+- 奖励代币 DF (每区块 0.3731 DF)
+- 结束区块高度 13506000

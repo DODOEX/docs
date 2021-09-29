@@ -151,6 +151,13 @@ function getPendingRewardByToken(address user, address rewardToken) external vie
 - Token Reward KUN (0.13332 KUN Per Block)
 - Ending Block Height: 11624200
 
+---
+
+- Deposit KMON-BNB DLP (0x9bb6c68Ae502193d396B2B93F007D54595D88D1D)
+- Liquidity Mining Contract Address 0x8F33bFFBAa0D62aa97152120EA9c53e22D8cbCac
+- Token Reward DODO (0.0315 DODO Per Block)
+- Token Reward KMON (1.116 KMON Per Block)
+- Ending Block Height: 12141400
 
 
 #### Arbitrum One
@@ -183,3 +190,35 @@ function getPendingRewardByToken(address user, address rewardToken) external vie
 - Token Reward DODO (0.1065 DODO Per Block)
 - Token Reward KUN (0.8597 KUN Per Block)
 - Ending Block Height: 13449550
+
+---
+
+- Deposit WETH-HND DLP (0x65E17c52128396443d4A9A61EaCf0970F05F8a20)
+- Liquidity Mining Contract Address 0x06633cd8E46C3048621A517D6bb5f0A84b4919c6
+- Token Reward DODO (0.2665 DODO Per Block)
+- Token Reward HND (1.599 HND Per Block)
+- Ending Block Height: 13503700
+
+---
+
+- Deposit DF-USX DLP (0x19e5910f61882ff6605b576922507f1e1a0302fe)
+- Liquidity Mining Contract Address 0x20191f1Bd3f20f21519084ec07570bBa3533d098
+- Token Reward DODO (0.2488 DODO Per Block)
+- Token Reward DF (3.7313 DF Per Block)
+- Ending Block Height: 13506000
+
+---
+
+- Deposit USX-USDC DLP (0x9340e3296121507318874ce9c04afb4492af0284)
+- Liquidity Mining Contract Address 0x05EA5955a51225Cd228C911220f4c6f027aa28dB
+- Token Reward DODO (0.0497 DODO Per Block)
+- Token Reward DF (0.82089 DF Per Block)
+- Ending Block Height: 13506000
+
+---
+
+- Deposit USX-EUX DLP (0xd7efe569bc7081a3bee3b27232eea7545e36a16e)
+- Liquidity Mining Contract Address 0x80aBc15aa0A33A245faBd4af13Bd5A1689AE87fE
+- Token Reward DODO (0.0247 DODO Per Block)
+- Token Reward DF (0.3731 DF Per Block)
+- Ending Block Height: 13506000
