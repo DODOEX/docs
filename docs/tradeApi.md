@@ -26,7 +26,7 @@ The full list of liquidity sources that the DODO Trade API currently uses from a
 
 ## URL
 
-https://dodo-route.dodoex.io/dodoapi/getdodoroute
+https://route-api.dodoex.io/dodoapi/getdodoroute
 
 ## Request
 

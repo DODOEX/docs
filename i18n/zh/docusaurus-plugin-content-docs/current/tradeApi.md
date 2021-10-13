@@ -24,7 +24,7 @@ DODO Trade API 当前可提供 Ethereum、BSC、HECO、OEC、Polygon、Arbitrum 
 
 ## URL
 
-https://dodo-route.dodoex.io/dodoapi/getdodoroute
+https://route-api.dodoex.io/dodoapi/getdodoroute
 
 ## 请求
 
