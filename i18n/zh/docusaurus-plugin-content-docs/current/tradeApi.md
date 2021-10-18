@@ -4,7 +4,7 @@ title: DODO 交易 API
 sidebar_label: DODO Trade API
 ---
 
-*注：DODO-API 计划于2021年10月31日前，迁移至新域名https://route-api.dodoex.io，提供服务。请使用旧域名的用户进行域名替换工作*
+*注：DODO-API 计划于2021年10月31日前，迁移至新域名 "https://route-api.dodoex.io"，提供服务。请使用旧域名的用户进行域名替换工作*
 
 
 ## 介绍
