@@ -4,6 +4,9 @@ title: DODO 交易 API
 sidebar_label: DODO Trade API
 ---
 
+*注：DODO-API 计划于2021年10月31日前，迁移至新域名https://route-api.dodoex.io，提供服务。请使用旧域名的用户进行域名替换工作*
+
+
 ## 介绍
 
 DODO Trade API 当前可提供 Ethereum、BSC、HECO、OEC、Polygon、Arbitrum One 五个网络下任意币互换的实时报价以及可直接使用的与合约交互ABI数据。开发者仅需按照接口规范，集成我们的API，即可快速实现DEX最重要的交易功能。DODO Trade API 背后集成了DODOV1、DODOV2、专业做市商、1inch API、0x API、ParaSwap API 以及DODO自建的聚合算法 等多源实时的报价信息，并返回当前多源中最优报价，以确保 DODO Trade API 始终具有较强的竞争力。
@@ -16,9 +19,9 @@ DODO Trade API 当前可提供 Ethereum、BSC、HECO、OEC、Polygon、Arbitrum 
 
 - **HECO：** DODOV1、DODOV2、DODO自建路由
 
-- **Polygon：** DODOV1、DODOV2、0x API、ParaSwap API、DODO自建路由
+- **Polygon：** DODOV1、DODOV2、0x API、ParaSwap API、Wootrade做市商、DODO自建路由
 
-- **Arbitrum One:** DODOV1, DODOV2, DODO自建路由
+- **Arbitrum One:** DODOV1, DODOV2, 1inch API、DODO自建路由
 
 - **OEC：** DODOV1，DODOV2，DODO自建路由
 
@@ -89,3 +92,60 @@ GET
 ## 与合约集成
 
 从DODO-API返回的data，可以直接用于发送到合约执行代币交易。但是如果你希望使用自己的合约，封装以及发送data执行代币交易，可以参考如下的代码样例：[DODOApiEncapsulation.sol](https://github.com/DODOEX/dodo-example/blob/main/contracts/DODOApiEncapsulation.sol)
+
+
+## DODO 自建路由集成协议列表
+
+### ETH
+
+- DODO V1
+- DODO V2
+- Uniswap V2
+- Uniswap V3
+- Curve V1 (3Pool)
+- SushiSwap
+- ShibaSwap
+
+### BSC
+
+- DODO V1
+- DODO V2
+- Pancake V1
+- Pancake V2
+- MDEX
+- BakerySwap
+- Gambit
+- Biswap
+- ApeSwap
+
+
+### Arbitrum
+
+- DODO V1
+- DODO V2
+- Uniswap V3
+- SushiSwap
+- Gambit
+- Curve V1
+
+
+### Polygon
+
+- DODO V2
+- QuickSwap
+- SushiSwap
+- Curve V1
+
+### Heco
+
+- DODO V2
+- MDEX
+- BXH
+- Pippi
+- Mdis
+
+### OEC
+
+- DODO V2
+- CherrySwap
+- KSwap

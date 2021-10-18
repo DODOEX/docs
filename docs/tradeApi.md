@@ -4,6 +4,8 @@ title: DODO Trade API
 sidebar_label: DODO Trade API
 ---
 
+*Notice: Service will be migrated to the new domain "https://route-api.dodoex.io" at October 31, 2021. Users who still use the old domain need do the replacement work*
+
 ## Introduction
 
 The DODO Trade API currently provides real-time price quotes for swaps between arbitrary tokens on Ethereum Mainnet, Binance Smart Chain (BSC), Polygon, Arbitrum One, Huobi ECO Chain (HECO Chain) and OKExChain(OEC), as well as Application Binary Interface (ABI) data that can be used to interact with smart contracts on these networks. 
@@ -18,9 +20,9 @@ The full list of liquidity sources that the DODO Trade API currently uses from a
 
 - HECO: DODO v1, DODO v2, and DODO‘s custom aggregation algorithm 
 
-- Polygon: DODO v1, DODO v2, [1inch API](https://docs.1inch.io/api/), [0x API](https://0x.org/), [ParaSwap API](https://developers.paraswap.network/), and DODO‘s custom aggregation algorithm 
+- Polygon: DODO v1, DODO v2, [1inch API](https://docs.1inch.io/api/), [0x API](https://0x.org/), [ParaSwap API](https://developers.paraswap.network/), [Wootrade](https://woo.network/), and DODO‘s custom aggregation algorithm 
 
-- Arbitrum One: DODO v1, DODO v2 and DODO‘s custom aggregation algorithm 
+- Arbitrum One: DODO v1, DODO v2 [1inch API](https://docs.1inch.io/api/) and DODO‘s custom aggregation algorithm 
 
 - OEC: DODO v1, DODO v2 and DODO's custom aggregation algorithm
 
@@ -91,3 +93,59 @@ GET
 ## Integrate with Smart Contract
 
 The data obtained from DODO-API can be sent directly to contract. But if you want to use your own contract to encapsulate and send the data, you can refer to the following code sample: [DODOApiEncapsulation.sol](https://github.com/DODOEX/dodo-example/blob/main/contracts/DODOApiEncapsulation.sol)
+
+## DODO's custom aggregation list
+
+### ETH
+
+- DODO V1
+- DODO V2
+- Uniswap V2
+- Uniswap V3
+- Curve V1 (3Pool)
+- SushiSwap
+- ShibaSwap
+
+### BSC
+
+- DODO V1
+- DODO V2
+- Pancake V1
+- Pancake V2
+- MDEX
+- BakerySwap
+- Gambit
+- Biswap
+- ApeSwap
+
+
+### Arbitrum
+
+- DODO V1
+- DODO V2
+- Uniswap V3
+- SushiSwap
+- Gambit
+- Curve V1
+
+
+### Polygon
+
+- DODO V2
+- QuickSwap
+- SushiSwap
+- Curve V1
+
+### Heco
+
+- DODO V2
+- MDEX
+- BXH
+- Pippi
+- Mdis
+
+### OEC
+
+- DODO V2
+- CherrySwap
+- KSwap
