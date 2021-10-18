@@ -22,9 +22,10 @@ sidebar_label: 合约信息（Arbitrum One）
 | DODO RouteProxy                | [0x3B6067D4CAa8A14c63fdBE6318F27A0bBc9F9237](https://arbiscan.io/address/0x3B6067D4CAa8A14c63fdBE6318F27A0bBc9F9237) |
 | DODO DSPProxy                  | [0x36E5238B4479d1ba0bFE47550B0B8e4f4f500EAA](https://arbiscan.io/address/0x36E5238B4479d1ba0bFE47550B0B8e4f4f500EAA) |
 | DODO CpProxy                   | [0x074890524059905096caA0D1A7B5715C6203c155](https://arbiscan.io/address/0x074890524059905096caA0D1A7B5715C6203c155) |
+| DODO DPPProxy                  | [0xE8C9A78725D0451FA19878D5f8A3dC0D55FECF25](https://arbiscan.io/address/0xE8C9A78725D0451FA19878D5f8A3dC0D55FECF25) |
 | DODO CrowdPooling Factory      | [0x6E5f239f729c83E976a7A280F81Dd1685dd89218](https://arbiscan.io/address/0x6E5f239f729c83E976a7A280F81Dd1685dd89218) |
 | DODO UpCrowdPooling Factory    | [0xE92787F457F541a9D5Ae17C1dbdBffA8D3BA3C25](https://arbiscan.io/address/0xE92787F457F541a9D5Ae17C1dbdBffA8D3BA3C25) |
-| DODO Private Pool Factory      | [0xDdB13e6dd168E1a68DC2285Cb212078ae10394A9](https://arbiscan.io/address/0xDdB13e6dd168E1a68DC2285Cb212078ae10394A9) |
+| DODO Private Pool Factory      | [0xa6Cf3d163358aF376ec5e8B7Cc5e102a05FdE63D](https://arbiscan.io/address/0xa6Cf3d163358aF376ec5e8B7Cc5e102a05FdE63D) |
 | DODO Vending Machine Factory   | [0xDa4c4411c55B0785e501332354A036c04833B72b](https://arbiscan.io/address/0xDa4c4411c55B0785e501332354A036c04833B72b) |
 | DODO Stable Pool Factory       | [0xC8fE2440744dcd733246a4dB14093664DEFD5A53](https://arbiscan.io/address/0xC8fE2440744dcd733246a4dB14093664DEFD5A53) |
 | DODO ERC20V2 Factory           | [0x750B153E6a69DCA16eb12D5aEdDFD80ca3f10d1C](https://arbiscan.io/address/0x750B153E6a69DCA16eb12D5aEdDFD80ca3f10d1C) |

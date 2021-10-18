@@ -13,10 +13,11 @@ sidebar_label: Deployment Information(OEC)
 | DODO V2Proxy02                 | [0x6B4Fa0bc61Eddc928e0Df9c7f01e407BfcD3e5EF](https://www.oklink.com/okexchain/address/0x6B4Fa0bc61Eddc928e0Df9c7f01e407BfcD3e5EF) |
 | DODO RouteProxy                | [0xd9deC7c3C06e62a4c1BeEB07CadF568f496b14c2](https://www.oklink.com/okexchain/address/0xd9deC7c3C06e62a4c1BeEB07CadF568f496b14c2) |
 | DODO DSPProxy                  | [0x5515363c0412AdD5c72d3E302fE1bD7dCBCF93Fe](https://www.oklink.com/okexchain/address/0x5515363c0412AdD5c72d3E302fE1bD7dCBCF93Fe) |
+| DODO DPPProxy                  | [0xa222e6a71D1A1Dd5F279805fbe38d5329C1d0e70](https://www.oklink.com/okexchain/address/0xa222e6a71D1A1Dd5F279805fbe38d5329C1d0e70) |
 | DODO CpProxy                   | [0x335aC99bb3E51BDbF22025f092Ebc1Cf2c5cC619](https://www.oklink.com/okexchain/address/0x335aC99bb3E51BDbF22025f092Ebc1Cf2c5cC619) |
 | DODO CrowdPooling Factory      | [0x85351262f7474Ebe23FfAcD633cf20A491F1325D](https://www.oklink.com/okexchain/address/0x85351262f7474Ebe23FfAcD633cf20A491F1325D) |
 | DODO UpCrowdPooling Factory    | [0xE55154D09265b18aC7CDAC6E646672A5460389a1](https://www.oklink.com/okexchain/address/0xE55154D09265b18aC7CDAC6E646672A5460389a1) |
-| DODO Private Pool Factory      | [0xbAb9F4ff4A19a0e8EEBC56b06750253228ffAc6E](https://www.oklink.com/okexchain/address/0xbAb9F4ff4A19a0e8EEBC56b06750253228ffAc6E) |
+| DODO Private Pool Factory      | [0xfdD51aAba2f949195a460121aA3f2D392d2524A9](https://www.oklink.com/okexchain/address/0xfdD51aAba2f949195a460121aA3f2D392d2524A9) |
 | DODO Vending Machine Factory   | [0x9aE501385Bc7996A2A4a1FBb00c8d3820611BCB5](https://www.oklink.com/okexchain/address/0x9aE501385Bc7996A2A4a1FBb00c8d3820611BCB5) |
 | DODO Stable Pool Factory       | [0x44D5dF24d5Ef52A791D6436Fa45A8D426f6de34e](https://www.oklink.com/okexchain/address/0x44D5dF24d5Ef52A791D6436Fa45A8D426f6de34e) |
 | DODO ERC20V2 Factory           | [0xfDDCA6ffCE24dF5bE3e8AaD32081822f86178048](https://www.oklink.com/okexchain/address/0xfDDCA6ffCE24dF5bE3e8AaD32081822f86178048) |

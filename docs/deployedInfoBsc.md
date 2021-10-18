@@ -23,10 +23,11 @@ sidebar_label: Deployment Information (BSC)
 | DODO V2Proxy02                 | [0x8F8Dd7DB1bDA5eD3da8C9daf3bfa471c12d58486](https://bscscan.com/address/0x8F8Dd7DB1bDA5eD3da8C9daf3bfa471c12d58486) |
 | DODO RouteProxy                | [0x6B3D817814eABc984d51896b1015C0b89E9737Ca](https://bscscan.com/address/0x6B3D817814eABc984d51896b1015C0b89E9737Ca) |
 | DODO DSPProxy                  | [0x2442A8B5cdf1E659F3F949A7E454Caa554D4E65a](https://bscscan.com/address/0x2442A8B5cdf1E659F3F949A7E454Caa554D4E65a) |
+| DODO DPPProxy                  | [0x624FC8368fE11BE00D8B2F3fE0B9D0053BEc21b9](https://bscscan.com/address/0x624FC8368fE11BE00D8B2F3fE0B9D0053BEc21b9) |
 | DODO CpProxy                   | [0xA867241cDC8d3b0C07C85cC06F25a0cD3b5474d8](https://bscscan.com/address/0xA867241cDC8d3b0C07C85cC06F25a0cD3b5474d8) |
 | DODO CrowdPooling Factory      | [0x778DF5B12170e8af8dF94356BfC864E57CE185DC](https://bscscan.com/address/0x778DF5B12170e8af8dF94356BfC864E57CE185DC) |
 | DODO UpCrowdPooling Factory    | [0x4F57F6929E58AE564F6AB090fE0AEEcb39B0f270](https://bscscan.com/address/0x4F57F6929E58AE564F6AB090fE0AEEcb39B0f270) |
-| DODO Private Pool Factory      | [0xAfe0A75DFFb395eaaBd0a7E1BBbd0b11f8609eeF](https://bscscan.com/address/0xAfe0A75DFFb395eaaBd0a7E1BBbd0b11f8609eeF) |
+| DODO Private Pool Factory      | [0xd9CAc3D964327e47399aebd8e1e6dCC4c251DaAE](https://bscscan.com/address/0xd9CAc3D964327e47399aebd8e1e6dCC4c251DaAE) |
 | DODO Vending Machine Factory   | [0x790B4A80Fb1094589A3c0eFC8740aA9b0C1733fB](https://bscscan.com/address/0x790B4A80Fb1094589A3c0eFC8740aA9b0C1733fB) |
 | DODO Stable Pool Factory       | [0x0fb9815938Ad069Bf90E14FE6C596c514BEDe767](https://bscscan.com/address/0x0fb9815938Ad069Bf90E14FE6C596c514BEDe767) |
 | DODO ERC20V2 Factory           | [0x652C09785c15db4adAce871eD8874b8968A19A4D](https://bscscan.com/address/0x652C09785c15db4adAce871eD8874b8968A19A4D) |
@@ -36,18 +37,6 @@ sidebar_label: Deployment Information (BSC)
 | Staked Token                   | Mining Contract                                                                                                      |
 | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------|
 | VDODO Mining                   | [0x505A0f0F4956f7ca5839C5eFd8ebDaf3D3aE945f](https://bscscan.com/address/0x505A0f0F4956f7ca5839C5eFd8ebDaf3D3aE945f) |
-| wMASS - DODO DLP               | [0xc1ba6bD60c6790B751ec2D90288B6cbF87D4F032](https://bscscan.com/address/0xc1ba6bD60c6790B751ec2D90288B6cbF87D4F032) |
-| Helmet - WBNB DLP              | [0x38E02C8AB552DEE3a79E32eB4665ceae538fD145](https://bscscan.com/address/0x38E02C8AB552DEE3a79E32eB4665ceae538fD145) |
-| MTV - DODO DLP                 | [0xf6585FE94f2147682723FCdFFb973757BCdB608F](https://bscscan.com/address/0xf6585FE94f2147682723FCdFFb973757BCdB608F) |
-| DODO - BNB DLP                 | [0x322B43e406D1B4Df9Bc36d058317Dd1cd3b0385F](https://bscscan.com/address/0x322B43e406D1B4Df9Bc36d058317Dd1cd3b0385F) |
-| Black - BNB DLP                | [0x69658C27DabEaC461750c919440CbD0Fc9cdAc13](https://bscscan.com/address/0x69658C27DabEaC461750c919440CbD0Fc9cdAc13) |
-| Best - BUSD DLP                | [0x2C29cb46449335181Ec055a1184d4201A6aa4C47](https://bscscan.com/address/0x2C29cb46449335181Ec055a1184d4201A6aa4C47) |
-| Alpaca - DODO DLP              | [0x2B40bC6c9C12c18787436aa1E2B761f684F42999](https://bscscan.com/address/0x2B40bC6c9C12c18787436aa1E2B761f684F42999) |
-| DEK - DODO DLP                 | [0x9A74B169798bE874EF1C23b4092e5689969eF45E](https://bscscan.com/address/0x9A74B169798bE874EF1C23b4092e5689969eF45E) |
-| DEK - BUSD DLP                 | [0xF7aC92ab504390B577D6bb3352313D76D09f8E18](https://bscscan.com/address/0xF7aC92ab504390B577D6bb3352313D76D09f8E18) |
-| BORING - BNB DLP               | [0x71a04cebb92BE729B283Bf3D06Ca4f45C3BAA596](https://bscscan.com/address/0x71a04cebb92BE729B283Bf3D06Ca4f45C3BAA596) |
-| CLAIM - DAI DLP                | [0xfA80C50D9314b98fD68fA297B632f65E03300551](https://bscscan.com/address/0xfA80C50D9314b98fD68fA297B632f65E03300551) |
-| NVT - BUSD DLP                 | [0x0cF35405C60d8a6BEa71C88461D0dE7B4fD7d552](https://bscscan.com/address/0x0cF35405C60d8a6BEa71C88461D0dE7B4fD7d552) |
 
 
 ## DODO V1

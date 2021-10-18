@@ -19,6 +19,7 @@ sidebar_label: 合约信息 (Rinkeby)
 | DODO V2Proxy02                 | [0xba001E96AF87bF9d8D0BDA667067A9921FE6d294](https://rinkeby.etherscan.io/address/0xba001E96AF87bF9d8D0BDA667067A9921FE6d294) |
 | DODO RouteProxy                | [0xe2b538a781eB5a115a1359B8f363B9703Fd19dE6](https://rinkeby.etherscan.io/address/0xe2b538a781eB5a115a1359B8f363B9703Fd19dE6) |
 | DODO DSPProxy                  | [0x0f6345D1d07C134BB0973AD102F38eA9195F6f78](https://rinkeby.etherscan.io/address/0x0f6345D1d07C134BB0973AD102F38eA9195F6f78) |
+| DODO DPPProxy                  | [0x45136c2455Dd2631E31ab884cf167eC618CCf39a](https://rinkeby.etherscan.io/address/0x45136c2455Dd2631E31ab884cf167eC618CCf39a) |
 | DODO CpProxy                   | [0x2E483CBb9e76fE6543168DEd698d9244EE1ED8Dd](https://rinkeby.etherscan.io/address/0x2E483CBb9e76fE6543168DEd698d9244EE1ED8Dd) |
 | DODO CrowdPooling Factory      | [0xDD43520779dDCfbDe373174Ee36aEaD39771cD4f](https://rinkeby.etherscan.io/address/0xDD43520779dDCfbDe373174Ee36aEaD39771cD4f) |
 | DODO UpCrowdPooling Factory    | [0xb09E91505347234Cb722D67042290f50F1C13749](https://rinkeby.etherscan.io/address/0xb09E91505347234Cb722D67042290f50F1C13749) |
