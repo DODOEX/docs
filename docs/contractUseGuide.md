@@ -24,7 +24,7 @@ Use `sellBase` to sell base token and get quote token. This function requires th
 
 Use `sellQuote` to sell quote token and get base token. This function also requires the trader to construct a transaction that contains two actions. The first action is to transfer the quote token to the pool contract, and the second action is to use a receiving address as a parameter to trigger sellQuote. Before the end, traders are advised to check the value of `receiveBaseAmount` to ensure the safe execution of the transaction.
 
-DODO V2 also provides a view version of these two functions. View functions can be executed without sending transactions and they help users estimate prices bore spending gas. ps: the incoming parameters is the address of the trader
+DODO V2 also provides a view version of these two functions. View functions can be executed without sending transactions and they help users estimate prices before spending gas. ps: the incoming parameters is the address of the trader
 
 ```javascript
  function querySellBase(
