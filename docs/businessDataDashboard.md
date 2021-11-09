@@ -18,5 +18,3 @@ sidebar_label: Dashboard statistical rule description
 
 ### Trading pair data
  - The trade pair data provides information about the trade pairs that have been traded at Dodo. Since Dodo intelligent routing helps users find the best price, the volume in the external pool is user-initiated transactions that do not enter the Dodo flow pool.
-
-### Multi Chains
