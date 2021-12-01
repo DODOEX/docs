@@ -53,7 +53,7 @@ interface IDODOCallee {
 
 ## How to use DODO Flash Loan
 
-Code sample: [DODOFlashloan.sol](https://github.com/DODOEX/dodo-example/blob/main/contracts/DODOFlashloan.sol)
+Code sample: [DODOFlashloan.sol](https://github.com/DODOEX/dodo-example/blob/main/solidity/contracts/DODOFlashloan.sol)
 
 ## Some Thoughts on Flash Loan
 

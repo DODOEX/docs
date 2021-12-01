@@ -57,7 +57,7 @@ interface IDODOCallee {
 
 ## 如何使用
 
-代码样例：[DODOFlashloan.sol](https://github.com/DODOEX/dodo-example/blob/main/contracts/DODOFlashloan.sol)
+代码样例：[DODOFlashloan.sol](https://github.com/DODOEX/dodo-example/blob/main/solidity/contracts/DODOFlashloan.sol)
 
 ## 一些想法
 
