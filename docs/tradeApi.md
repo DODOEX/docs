@@ -92,7 +92,7 @@ GET
 
 ## Integrate with Smart Contract
 
-The data obtained from DODO-API can be sent directly to contract. But if you want to use your own contract to encapsulate and send the data, you can refer to the following code sample: [DODOApiEncapsulation.sol](https://github.com/DODOEX/dodo-example/blob/main/contracts/DODOApiEncapsulation.sol)
+The data obtained from DODO-API can be sent directly to contract. But if you want to use your own contract to encapsulate and send the data, you can refer to the following code sample: [DODOApiEncapsulation.sol](https://github.com/DODOEX/dodo-example/blob/main/solidity/contracts/DODOApiEncapsulation.sol)
 
 ## DODO's custom aggregation list
 

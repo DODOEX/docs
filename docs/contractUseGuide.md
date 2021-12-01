@@ -40,9 +40,9 @@ DODO V2 also provides a view version of these two functions. View functions can 
 
 ### Related code samples
 
-- How to integrate DODOProxy and use your own contract to trade with DODOV1 and DODOV2 pool: [DODOProxyIntegrate.sol](https://github.com/DODOEX/dodo-example/blob/main/contracts/DODOProxyIntegrate.sol)
+- How to integrate DODOProxy and use your own contract to trade with DODOV1 and DODOV2 pool: [DODOProxyIntegrate.sol](https://github.com/DODOEX/dodo-example/blob/main/solidity/contracts/DODOProxyIntegrate.sol)
 
-- How to off-chain calculate the trading results of DODOV1 or DODOV2 pool using PMM algorithm: [pmmOffchainCalc.ts](https://github.com/DODOEX/dodo-example/blob/main/scripts/pmmOffchainCalc.ts)
+- How to off-chain calculate the trading results of DODOV1 or DODOV2 pool using PMM algorithm: [pmmOffchainCalc.ts](https://github.com/DODOEX/dodo-example/blob/main/solidity/scripts/pmmOffchainCalc.ts)
 
 ## For Liquidity Providers (LPs)
 

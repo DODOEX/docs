@@ -91,7 +91,7 @@ GET
 
 ## 与合约集成
 
-从DODO-API返回的data，可以直接用于发送到合约执行代币交易。但是如果你希望使用自己的合约，封装以及发送data执行代币交易，可以参考如下的代码样例：[DODOApiEncapsulation.sol](https://github.com/DODOEX/dodo-example/blob/main/contracts/DODOApiEncapsulation.sol)
+从DODO-API返回的data，可以直接用于发送到合约执行代币交易。但是如果你希望使用自己的合约，封装以及发送data执行代币交易，可以参考如下的代码样例：[DODOApiEncapsulation.sol](https://github.com/DODOEX/dodo-example/blob/main/solidity/contracts/DODOApiEncapsulation.sol)
 
 
 ## DODO 自建路由集成协议列表
