@@ -22,7 +22,7 @@ Multi-chain deployment has been a top priority for the DODO team since the proje
  
 The DODO team understands this industry-wide need - and is working to deliver access to our full suite of products to users on as many chains as possible. DODO offers high capital efficiency, which allows it to quickly bring liquidity onto new blockchains without relying on large amounts of external liquidity migration. DODO’s low-slippage trading and minimized impermanent loss are features that further facilitate quick and easy integration with multiple blockchains. 
 
-A particular objective of DODO’s cross-chain integrations is to make our unique Private Market Maker (PMM) model available across the full spectrum of DeFi networks and scaling solutions. Our multi-chain integration strategy is also intended to expand DODO’s role as a dynamic gateway to liquidity across the DeFi landscape. 
+A particular objective of DODO’s cross-chain integrations is to make our unique Proactive Market Maker (PMM) model available across the full spectrum of DeFi networks and scaling solutions. Our multi-chain integration strategy is also intended to expand DODO’s role as a dynamic gateway to liquidity across the DeFi landscape. 
 
 ### Bringing Institutional Market Makers Into DODO’s Community
 
