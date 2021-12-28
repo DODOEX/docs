@@ -16,7 +16,6 @@ sidebar_label: 合约信息（OEC）
 | DODO DPPProxy                  | [0xa222e6a71D1A1Dd5F279805fbe38d5329C1d0e70](https://www.oklink.com/okexchain/address/0xa222e6a71D1A1Dd5F279805fbe38d5329C1d0e70) |
 | DODO CpProxy                   | [0x335aC99bb3E51BDbF22025f092Ebc1Cf2c5cC619](https://www.oklink.com/okexchain/address/0x335aC99bb3E51BDbF22025f092Ebc1Cf2c5cC619) |
 | DODO CrowdPooling Factory      | [0x85351262f7474Ebe23FfAcD633cf20A491F1325D](https://www.oklink.com/okexchain/address/0x85351262f7474Ebe23FfAcD633cf20A491F1325D) |
-| DODO UpCrowdPooling Factory    | [0xE55154D09265b18aC7CDAC6E646672A5460389a1](https://www.oklink.com/okexchain/address/0xE55154D09265b18aC7CDAC6E646672A5460389a1) |
 | DODO Private Pool Factory      | [0xfdD51aAba2f949195a460121aA3f2D392d2524A9](https://www.oklink.com/okexchain/address/0xfdD51aAba2f949195a460121aA3f2D392d2524A9) |
 | DODO Vending Machine Factory   | [0x9aE501385Bc7996A2A4a1FBb00c8d3820611BCB5](https://www.oklink.com/okexchain/address/0x9aE501385Bc7996A2A4a1FBb00c8d3820611BCB5) |
 | DODO Stable Pool Factory       | [0x44D5dF24d5Ef52A791D6436Fa45A8D426f6de34e](https://www.oklink.com/okexchain/address/0x44D5dF24d5Ef52A791D6436Fa45A8D426f6de34e) |

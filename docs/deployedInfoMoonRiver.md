@@ -16,7 +16,6 @@ sidebar_label: Deployment Information(MoonRiver)
 | DODO DPPProxy                  | [0xB8605027F9a29D6a68eC489561c9a7ec9180aECC](https://moonriver.moonscan.io/address/0xB8605027F9a29D6a68eC489561c9a7ec9180aECC) |
 | DODO CpProxy                   | [0x357c5E9cfA8B834EDcef7C7aAbD8F9Db09119d11](https://moonriver.moonscan.io/address/0x357c5E9cfA8B834EDcef7C7aAbD8F9Db09119d11) |
 | DODO CrowdPooling Factory      | [0x0596908263Ef2724fBfBcAfA1c983FCD7a629038](https://moonriver.moonscan.io/address/0x0596908263Ef2724fBfBcAfA1c983FCD7a629038) |
-| DODO UpCrowdPooling Factory    | [0x043957f7554275b90c5178872faE851dcfC1089D](https://moonriver.moonscan.io/address/0x043957f7554275b90c5178872faE851dcfC1089D) |
 | DODO Private Pool Factory      | [0xd0e1aA51dF0896c126Ce6F8A064E551e0DD3D39b](https://moonriver.moonscan.io/address/0xd0e1aA51dF0896c126Ce6F8A064E551e0DD3D39b) |
 | DODO Vending Machine Factory   | [0x738Ebf387A0CE0eb46b0eF8Fa5DEa2EaE6B1Df51](https://moonriver.moonscan.io/address/0x738Ebf387A0CE0eb46b0eF8Fa5DEa2EaE6B1Df51) |
 | DODO Stable Pool Factory       | [0xB76de21f04F677f07D9881174a1D8E624276314C](https://moonriver.moonscan.io/address/0xB76de21f04F677f07D9881174a1D8E624276314C) |

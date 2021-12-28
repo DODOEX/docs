@@ -54,7 +54,7 @@ function getAllPendingReward(address _user) external view returns (uint256);
 
 ### 当前第一版合约进行的挖矿项目
 
-- ETH (挖矿合约地址：[0xaed7384f03844af886b830862ff0a7afce0a632c](https://etherscan.io/address/0xaed7384f03844af886b830862ff0a7afce0a632c)) (当前每区块释放4个DODO奖励)：
+- ETH (挖矿合约地址：[0xaed7384f03844af886b830862ff0a7afce0a632c](https://etherscan.io/address/0xaed7384f03844af886b830862ff0a7afce0a632c)) (当前每区块释放4.2个DODO奖励)：
 
     - 质押WETH DLP (0xc11eCCDee225d644f873776A68A02eCD8c015697)、流动性池 WETH-USDC(0x75c23271661d9d143DCb617222BC4BEc783eff34)、权重为200
     - 质押USDC DLP (0x6a5Eb3555cBbD29016Ba6F6fFbCcEE28D57b2932)、流动性池 WETH-USDC(0x75c23271661d9d143DCb617222BC4BEc783eff34)、权重为200
@@ -65,10 +65,10 @@ function getAllPendingReward(address _user) external view returns (uint256);
     - 质押USDC DLP (0x05a54b466F01510E92c02d3a180BaE83A64BAab8)、流动性池 USDC-USDT(0xC9f93163c99695c6526b799EbcA2207Fdf7D61aD)、权重为400
     - 质押USDT DLP (0x50b11247bF14eE5116C855CDe9963fa376FceC86)、流动性池 USDC-USDT(0xC9f93163c99695c6526b799EbcA2207Fdf7D61aD)、权重为400
 
-- BSC (挖矿合约地址：[0x01f9BfAC04E6184e90bD7eaFD51999CE430Cc750](https://bscscan.com/address/0x01f9BfAC04E6184e90bD7eaFD51999CE430Cc750)) (当前每区块释放0.5DODO奖励)
+- BSC (挖矿合约地址：[0x01f9BfAC04E6184e90bD7eaFD51999CE430Cc750](https://bscscan.com/address/0x01f9BfAC04E6184e90bD7eaFD51999CE430Cc750)) (当前每区块释放0.54 DODO奖励)
 
-    - 质押BUSD DLP (0xBEb34A9d23E0fe41d7b08AE3A4cbAD9A63ce0aea)、流动性池 BUSD-USDT(0xBe60d4c4250438344bEC816Ec2deC99925dEb4c7)、权重为0.1
-    - 质押USDT DLP (0x56ce908EeBafea026ab047CEe99a3afF039B4a33)、流动性池 BUSD-USDT(0xBe60d4c4250438344bEC816Ec2deC99925dEb4c7)、权重为0.1
+    - 质押BUSD DLP (0xBEb34A9d23E0fe41d7b08AE3A4cbAD9A63ce0aea)、流动性池 BUSD-USDT(0xBe60d4c4250438344bEC816Ec2deC99925dEb4c7)、权重为0.22
+    - 质押USDT DLP (0x56ce908EeBafea026ab047CEe99a3afF039B4a33)、流动性池 BUSD-USDT(0xBe60d4c4250438344bEC816Ec2deC99925dEb4c7)、权重为0.22
     
     - 质押USDC DLP (0xc9e1d10442296c4729270b9c1de15f742ae1c981)、流动性池 USDC-BUSD(0x6064DBD0fF10BFeD5a797807042e9f63F18Cfe10)、权重为0.05
     - 质押BUSD DLP (0xddee2e5f98bbe93e77f16bfa6b5669c688396f93)、流动性池 USDC-BUSD(0x6064DBD0fF10BFeD5a797807042e9f63F18Cfe10)、权重为0.05
@@ -83,6 +83,11 @@ function getAllPendingReward(address _user) external view returns (uint256);
     
     - 质押USDT DLP (0x82B423848CDd98740fB57f961Fa692739F991633)、流动性池 USDT-USDC(0xe4B2Dfc82977dd2DCE7E8d37895a6A8F50CbB4fB)、权重为200
     - 质押USDC DLP (0x7eBd8a1803cE082d4dE609C0aA0813DD842BD4DB)、流动性池 USDT-USDC(0xe4B2Dfc82977dd2DCE7E8d37895a6A8F50CbB4fB)、权重为200
+
+- Aurora (挖矿合约地址：[0xDBFaF391C37339c903503495395Ad7D6B096E192](https://explorer.mainnet.aurora.dev/address/0xDBFaF391C37339c903503495395Ad7D6B096E192)) (当前每区块释放 0.1 DODO奖励)
+
+    - 质押USDT DLP (0xB279E0740a022F5678565d699fa8Ff0bb6D7f95b)、Liquidity Pool  USDT-USDC(0x6790424249CAd1bCe244B55afBb240703f5265F6)、权重为200
+    - 质押USDC DLP (0xb96947abFb0001Aa0860787086daBc97fC8ac468)、Liquidity Pool  USDT-USDC(0x6790424249CAd1bCe244B55afBb240703f5265F6)、权重为200
 
 ## DODOMineV2
 
@@ -127,8 +132,8 @@ function getPendingRewardByToken(address user, address rewardToken) external vie
 
 - 质押代币 DAI-USDT DLP (0x3058ef90929cb8180174d74c507176cca6835d73)
 - 挖矿合约 0x1A4F8705E1C0428D020e1558A371b7E6134455A2
-- 奖励代币 DODO （每区块1）
-- 结束区块高度 13550000
+- 奖励代币 DODO （每区块1.25）
+- 结束区块高度 14153000
 
 ---
 
@@ -136,90 +141,50 @@ function getPendingRewardByToken(address user, address rewardToken) external vie
 - 挖矿合约 0x136829c258E31B3AB1975Fe7D03d3870C3311651
 - 奖励代币 DODO (每区块 0.3374 DODO )
 - 奖励代币 THALES (每区块 1.1248 THALES)
-- 结束区块高度 14123150
+- 结束区块高度 14092340
+
+---
+
+- 质押代币 oneDODO-USDC DLP (0xaa89cab926dcd65b3779aa98d9342fd9a21e5d1c)
+- 挖矿合约 0xf9B8500b5012c059f30daA734d3A7131d668b1cd
+- 奖励代币 ICHI (每区块 0.1242 ICHI )
+- 结束区块高度 13933160
 
 #### BSC
 
 - 质押代币 DODO-BNB DLP (0xd534fae679f7f02364d177e9d44f1d15963c0dd7)
 - 挖矿合约 0x322B43e406D1B4Df9Bc36d058317Dd1cd3b0385F
 - 奖励代币 DODO （每区块0.3)
-- 结束区块高度 12500000
+- 结束区块高度 15092000
 
----
-
-- 质押代币 KUN-BUSD DLP (0x3679e0e472a41f7ba9ccadbc18901b48cb23d3ad)
-- 挖矿合约 0x1F3Aba039B40B0f6805c397bb9aC28E363B78730
-- 奖励代币 DODO (每区块0.0248)
-- 奖励代币 KUN (每区块0.13332)
-- 结束区块高度 11624200
-
----
-
-- 质押代币 KMON-BNB DLP (0x9bb6c68Ae502193d396B2B93F007D54595D88D1D)
-- 挖矿合约 0x8F33bFFBAa0D62aa97152120EA9c53e22D8cbCac
-- 奖励代币 DODO (每区块0.0315)
-- 奖励代币 KMON (每区块1.116)
-- 结束区块高度 12141400
 
 #### Arbitrum One
 
 - 质押代币 DODO-USDC DLP (0x6a58c68ff5c4e4d90eb6561449cc74a64f818da5)
 - 挖矿合约 0x38Dbb42C4972116c88E27edFacD2451cf1b14255
 - 奖励代币 DODO （每区块0.5)
-- 结束区块高度 13400000
-
----
-
-- 质押代币 MCB-USDC DLP (0x34851ea13bde818b1efe26d31377906b47c9bbe2)
-- 挖矿合约 0x98CEb851aF3d8627287885D56AEA863B848CeB6F
-- 奖励代币 DODO (每区块 0.67164 DODO)
-- 奖励代币 MCB (每区块 0.026865 MCB)
-- 结束区块高度 13511680
-
----
-
-- 质押代币 KUN-USDC DLP (0xA24aED4CDc46f0B7d28138863FE4F2567768a2Cc)
-- 挖矿合约 0xc3E8C72B49b6F8e75D7422021C652D5d27325E9F
-- 奖励代币 DODO (每区块 0.1065 DODO)
-- 奖励代币 KUN (每区块 0.51582 KUN)
-- 结束区块高度 13449550
-
----
-
-- 质押代币 QSD-USDC DLP (0x50580d53766C299628169C0452eE57b5F72534aE)
-- 挖矿合约 0x6b7161DDe9B27d81f7fcF85a5Dbde3176Bf0e073
-- 奖励代币 DODO (每区块 0.1065 DODO)
-- 奖励代币 KUN (每区块 0.8597 KUN)
-- 结束区块高度 13449550
-
----
-
-- 质押代币 WETH-HND DLP (0x65E17c52128396443d4A9A61EaCf0970F05F8a20)
-- 挖矿合约 0x06633cd8E46C3048621A517D6bb5f0A84b4919c6
-- 奖励代币 DODO (每区块 0.2665 DODO)
-- 奖励代币 HND (每区块 1.599 HND)
-- 结束区块高度 13503700
+- 结束区块高度 14200000
 
 ---
 
 - 质押代币 DF-USX DLP (0x19e5910f61882ff6605b576922507f1e1a0302fe)
 - 挖矿合约 0x20191f1Bd3f20f21519084ec07570bBa3533d098
-- 奖励代币 DODO (每区块 0.2488 DODO)
-- 奖励代币 DF (每区块 3.7313 DF)
-- 结束区块高度 13506000
+- 奖励代币 DODO (每区块 0.0223 DODO)
+- 奖励代币 DF (每区块 1.194 DF)
+- 结束区块高度 14093335
 
 ---
 
 - 质押代币 USX-USDC DLP (0x9340e3296121507318874ce9c04afb4492af0284)
 - 挖矿合约 0x05EA5955a51225Cd228C911220f4c6f027aa28dB
-- 奖励代币 DODO (每区块 0.0497 DODO)
-- 奖励代币 DF (每区块 0.82089 DF)
-- 结束区块高度 13506000
+- 奖励代币 DODO (每区块 0.0223 DODO)
+- 奖励代币 DF (每区块 1.194 DF)
+- 结束区块高度 14093335
 
----
+#### Aurora
 
-- 质押代币 USX-EUX DLP (0xd7efe569bc7081a3bee3b27232eea7545e36a16e)
-- 挖矿合约 0x80aBc15aa0A33A245faBd4af13Bd5A1689AE87fE
-- 奖励代币 DODO (每区块 0.0247 DODO)
-- 奖励代币 DF (每区块 0.3731 DF)
-- 结束区块高度 13506000
+- 质押代币 DODO-USDC DLP (0xc7689e5315a8b237ac7ab62119df299dd8c4b6d5)
+- 挖矿合约 0x10353A2e2EeAE8369c685526FC724137002BBDF9
+- 奖励代币 DODO (0.1 DODO Per Block)
+- 奖励代币 NEAR (0.007 DF Per Block)
+- 结束区块高度 58687000
