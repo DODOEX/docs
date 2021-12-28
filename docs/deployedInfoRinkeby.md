@@ -22,7 +22,6 @@ sidebar_label: Deployment Information(Rinkeby)
 | DODO DPPProxy                  | [0x45136c2455Dd2631E31ab884cf167eC618CCf39a](https://rinkeby.etherscan.io/address/0x45136c2455Dd2631E31ab884cf167eC618CCf39a) |
 | DODO CpProxy                   | [0x2E483CBb9e76fE6543168DEd698d9244EE1ED8Dd](https://rinkeby.etherscan.io/address/0x2E483CBb9e76fE6543168DEd698d9244EE1ED8Dd) |
 | DODO CrowdPooling Factory      | [0xDD43520779dDCfbDe373174Ee36aEaD39771cD4f](https://rinkeby.etherscan.io/address/0xDD43520779dDCfbDe373174Ee36aEaD39771cD4f) |
-| DODO UpCrowdPooling Factory    | [0xb09E91505347234Cb722D67042290f50F1C13749](https://rinkeby.etherscan.io/address/0xb09E91505347234Cb722D67042290f50F1C13749) |
 | DODO Private Pool Factory      | [0x510b49803E356C750f3a93bA5508C0FFD9f71bDD](https://rinkeby.etherscan.io/address/0x510b49803E356C750f3a93bA5508C0FFD9f71bDD) |
 | DODO Vending Machine Factory   | [0x17DddEFA0c82E0c850a4Adac2aFE3F1fe977A242](https://rinkeby.etherscan.io/address/0x17DddEFA0c82E0c850a4Adac2aFE3F1fe977A242) |
 | DODO Stable Pool Factory       | [0xa1ab675cB49BA0DC3F39fA4C20E216572A8dD3c8](https://rinkeby.etherscan.io/address/0xa1ab675cB49BA0DC3F39fA4C20E216572A8dD3c8) |

@@ -33,7 +33,6 @@ sidebar_label: Deployment Information
 | DODO CpProxy                   | [0x048B8926bb0eE9c52e05D61fDffbCCffbeE06Fc2](https://etherscan.io/address/0x048B8926bb0eE9c52e05D61fDffbCCffbeE06Fc2) |
 | DODO DPPProxy                  | [0xfF7C8F518e6f1435957ed3d3E0692C94676dAE7a](https://etherscan.io/address/0xfF7C8F518e6f1435957ed3d3E0692C94676dAE7a) |
 | DODO CrowdPooling Factory      | [0xE8C9A78725D0451FA19878D5f8A3dC0D55FECF25](https://etherscan.io/address/0xE8C9A78725D0451FA19878D5f8A3dC0D55FECF25) |
-| DODO UpCrowdPooling Factory    | [0x78D338F9d54E9e41872E68cB1c01d9499d87eE52](https://etherscan.io/address/0x78D338F9d54E9e41872E68cB1c01d9499d87eE52) |
 | DODO Private Pool Factory      | [0x5336edE8F971339F6c0e304c66ba16F1296A2Fbe](https://etherscan.io/address/0x5336edE8F971339F6c0e304c66ba16F1296A2Fbe) |
 | DODO Vending Machine Factory   | [0x72d220cE168C4f361dD4deE5D826a01AD8598f6C](https://etherscan.io/address/0x72d220cE168C4f361dD4deE5D826a01AD8598f6C) |
 | DODO Stable Pool Factory       | [0x6fdDB76c93299D985f4d3FC7ac468F9A168577A4](https://etherscan.io/address/0x6fdDB76c93299D985f4d3FC7ac468F9A168577A4) |

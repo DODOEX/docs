@@ -24,7 +24,6 @@ sidebar_label: 合约信息（Arbitrum One）
 | DODO CpProxy                   | [0x074890524059905096caA0D1A7B5715C6203c155](https://arbiscan.io/address/0x074890524059905096caA0D1A7B5715C6203c155) |
 | DODO DPPProxy                  | [0xE8C9A78725D0451FA19878D5f8A3dC0D55FECF25](https://arbiscan.io/address/0xE8C9A78725D0451FA19878D5f8A3dC0D55FECF25) |
 | DODO CrowdPooling Factory      | [0x6E5f239f729c83E976a7A280F81Dd1685dd89218](https://arbiscan.io/address/0x6E5f239f729c83E976a7A280F81Dd1685dd89218) |
-| DODO UpCrowdPooling Factory    | [0xE92787F457F541a9D5Ae17C1dbdBffA8D3BA3C25](https://arbiscan.io/address/0xE92787F457F541a9D5Ae17C1dbdBffA8D3BA3C25) |
 | DODO Private Pool Factory      | [0xa6Cf3d163358aF376ec5e8B7Cc5e102a05FdE63D](https://arbiscan.io/address/0xa6Cf3d163358aF376ec5e8B7Cc5e102a05FdE63D) |
 | DODO Vending Machine Factory   | [0xDa4c4411c55B0785e501332354A036c04833B72b](https://arbiscan.io/address/0xDa4c4411c55B0785e501332354A036c04833B72b) |
 | DODO Stable Pool Factory       | [0xC8fE2440744dcd733246a4dB14093664DEFD5A53](https://arbiscan.io/address/0xC8fE2440744dcd733246a4dB14093664DEFD5A53) |
