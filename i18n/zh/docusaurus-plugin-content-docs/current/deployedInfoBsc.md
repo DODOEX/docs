@@ -26,7 +26,6 @@ sidebar_label: 合约信息（BSC）
 | DODO DPPProxy                  | [0x624FC8368fE11BE00D8B2F3fE0B9D0053BEc21b9](https://bscscan.com/address/0x624FC8368fE11BE00D8B2F3fE0B9D0053BEc21b9) |
 | DODO CpProxy                   | [0xA867241cDC8d3b0C07C85cC06F25a0cD3b5474d8](https://bscscan.com/address/0xA867241cDC8d3b0C07C85cC06F25a0cD3b5474d8) |
 | DODO CrowdPooling Factory      | [0x778DF5B12170e8af8dF94356BfC864E57CE185DC](https://bscscan.com/address/0x778DF5B12170e8af8dF94356BfC864E57CE185DC) |
-| DODO UpCrowdPooling Factory    | [0x4F57F6929E58AE564F6AB090fE0AEEcb39B0f270](https://bscscan.com/address/0x4F57F6929E58AE564F6AB090fE0AEEcb39B0f270) |
 | DODO Private Pool Factory      | [0xd9CAc3D964327e47399aebd8e1e6dCC4c251DaAE](https://bscscan.com/address/0xd9CAc3D964327e47399aebd8e1e6dCC4c251DaAE) |
 | DODO Vending Machine Factory   | [0x790B4A80Fb1094589A3c0eFC8740aA9b0C1733fB](https://bscscan.com/address/0x790B4A80Fb1094589A3c0eFC8740aA9b0C1733fB) |
 | DODO Stable Pool Factory       | [0x0fb9815938Ad069Bf90E14FE6C596c514BEDe767](https://bscscan.com/address/0x0fb9815938Ad069Bf90E14FE6C596c514BEDe767) |

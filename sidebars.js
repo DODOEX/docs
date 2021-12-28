@@ -15,6 +15,7 @@ module.exports = {
             "deployedInfoMoonRiver",
             "deployedInfoHeco",
             "deployedInfoOEC",
+            "deployedInfoAurora",
             "deployedInfoRinkeby",
             "subgraph",
             "bugBounty",
