@@ -8,7 +8,7 @@ sidebar_label: DODO Trade API
 
 ## Introduction
 
-The DODO Trade API currently provides real-time price quotes for swaps between arbitrary tokens on Ethereum Mainnet, Binance Smart Chain (BSC), Polygon, Arbitrum One, Huobi ECO Chain (HECO Chain), OKExChain(OEC), Aurora, MoonRiver as well as Application Binary Interface (ABI) data that can be used to interact with smart contracts on these networks. 
+The DODO Trade API currently provides real-time price quotes for swaps between arbitrary tokens on Ethereum Mainnet, Binance Smart Chain (BSC), Polygon, Arbitrum One, Huobi ECO Chain (HECO Chain), OKExChain(OEC), Aurora, Boba, Avalance, MoonRiver as well as Application Binary Interface (ABI) data that can be used to interact with smart contracts on these networks. 
 
 Smart contract developers can easily incorporate the DODO Trade API into their platforms to implement their own trading features, thanks to the API’s plug-and-play integration process. The DODO Trade API finds and compares prices for any pair of token assets from a variety of liquidity sources, including DODO v1, DODO v2, 1inch API, 0xAPI, ParaSwapAPI, professional market makers, and via DODO’s custom aggregation algorithm.
 
@@ -18,7 +18,7 @@ The full list of liquidity sources that the DODO Trade API currently uses from a
 
 - BSC: DODO v1, DODO v2, [1inch API](https://docs.1inch.io/api/), [0x API](https://0x.org/), [ParaSwap API](https://developers.paraswap.network/), [Wootrade](https://woo.network/), and DODO‘s custom aggregation algorithm
 
-- Polygon: DODO v2, [1inch API](https://docs.1inch.io/api/), [0x API](https://0x.org/), [ParaSwap API](https://developers.paraswap.network/), [Wootrade](https://woo.network/), and DODO‘s custom aggregation algorithm 
+- Polygon: DODO v1, DODO v2, [1inch API](https://docs.1inch.io/api/), [0x API](https://0x.org/), [ParaSwap API](https://developers.paraswap.network/), [Wootrade](https://woo.network/), and DODO‘s custom aggregation algorithm 
 
 - Arbitrum One: DODO v1, DODO v2 [1inch API](https://docs.1inch.io/api/) and DODO‘s custom aggregation algorithm 
 
@@ -28,7 +28,11 @@ The full list of liquidity sources that the DODO Trade API currently uses from a
 
 - Aurora: DODO v1, DODO v2 and DODO's custom aggregation algorithm
 
-- MoonRiver: DODO v2 and DODO's custom aggregation algorithm
+- MoonRiver: DODO v1, DODO v2 and DODO's custom aggregation algorithm
+
+- Boba: DODO v1, DODO v2 and DODO's custom aggregation algorithm
+
+- Avalance: DODO v2, [0x API](https://0x.org/), [ParaSwap API](https://developers.paraswap.network/), and DODO‘s custom aggregation algorithm
 
 ## URL
 
@@ -51,7 +55,7 @@ GET
 | fromAmount                  | string       | (required)  amount of a token to sell  NOTE：calculated with decimals，For example 1ETH =  10**18 |
 | slippage                    | integer      | (required)  0 - 100   *unit:%* |
 | userAddr                    | string       | (required)  user address |
-| chainId                     | integer      | (required)  1 represents ethereum, 56 represents BSC, 66 represents OEC, 128 represents HECO, 137 represents Polygon, 42161 represents Arbitrum one, 1285 represents MoonRiver, 1313161554 represents Aurora |
+| chainId                     | integer      | (required)  1 represents ethereum, 56 represents BSC, 66 represents OEC, 128 represents HECO, 137 represents Polygon, 42161 represents Arbitrum one, 1285 represents MoonRiver, 1313161554 represents Aurora, 288 represents Boba, 43114 represents Avalance |
 | rpc                         | string       | (required)  your own rpc node, you can set this parameter to point to it.  |
 | deadLine                    | integer      | (optional)  the timestamp of the block where the trade deadline is set to, unit: second |
 | source                      | string       | (optional)  If left blank, the API automatically quotes prices from all liquidity sources. If source is set to "dodo", then the API quotes prices from DODO v1 and DODO v2 only. |
