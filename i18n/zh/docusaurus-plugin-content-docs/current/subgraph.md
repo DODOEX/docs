@@ -27,7 +27,8 @@ DODO 使用了 Subgraph，供系统方便的查询链上合约相关的事件与
  - 由 *Pair* 实时追踪池子状态
 
 **Endpoints**
-[Get endpoints](https://github.com/DODOEX/dodoex_v2_subgraph)
+
+[Get Endpoints](https://github.com/DODOEX/dodoex_v2_subgraph)
 
 ### 2、 Graphql 使用举例 
  - 查询用户信息

@@ -27,6 +27,7 @@ The Graph exposes a GraphQL endpoint to query the events and entities within the
  - In *Pair* schema we track pool status.
 
 **Endpoints**
+
 [Get endpoints](https://github.com/DODOEX/dodoex_v2_subgraph)
 ### 2、 Graphql Examples
  - to get user info
