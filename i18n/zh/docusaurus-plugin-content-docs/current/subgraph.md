@@ -26,22 +26,9 @@ DODO 使用了 Subgraph，供系统方便的查询链上合约相关的事件与
 **池子信息**
  - 由 *Pair* 实时追踪池子状态
 
-**接口请求Endpoints**
-- dodoex
-  - ethereum : https://api.thegraph.com/subgraphs/name/dodoex/dodoex-v2
-  - bsc : https://pq.hg.network/subgraphs/name/dodoex-v2-bsc/bsc
-  - heco : https://q.hg.network/subgraphs/name/dodoex/heco
-  - polygon : https://api.thegraph.com/subgraphs/name/dodoex/dodoex-v2-polygon
-  - kovan : https://api.thegraph.com/subgraphs/name/autarkxu/dodoex-v2
-- token
-  - ethereum : https://api.thegraph.com/subgraphs/name/dodoex/dodoex-token
-  - bsc : https://pq.hg.network/subgraphs/name/dodoex-token/bsc
-  - heco : https://q.hg.network/subgraphs/name/dodoextoken/heco
-  - polygon : https://api.thegraph.com/subgraphs/name/dodoex/dodoex-token-polygon
-  - kovan : https://thegraph.com/explorer/subgraph/autarkxu/dodoex-token
-- vdodo
-  - ethereum : https://api.thegraph.com/subgraphs/name/dodoex/dodoex-vdodo
-  - kovan : https://api.thegraph.com/subgraphs/name/autarkxu/dodoex-vdodo
+**Endpoints**
+
+[Get Endpoints](https://github.com/DODOEX/dodoex_v2_subgraph)
 
 ### 2、 Graphql 使用举例 
  - 查询用户信息
