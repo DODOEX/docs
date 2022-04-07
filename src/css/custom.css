@@ -23,3 +23,7 @@
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
+div[class^=announcementBar_] {
+  /* background: repeating-linear-gradient(35deg, #bff3e7, #bff3e7 20px, #eafbf7 10px, #eafbf7 40px); */
+  font-weight: 700;
+}
