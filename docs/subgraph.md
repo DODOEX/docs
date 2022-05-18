@@ -33,7 +33,7 @@ The Graph exposes a GraphQL endpoint to query the events and entities within the
  - to get user info
 ```
 {
-  user(id:"0x8982a82a77eaf1cd6f490b67ad982304ecc590af"){
+  user(id:"0x722B08Ed9316411cd79EA1EDdADFedDfCEdDB94C"){
     id
     txCount
     tradingRewardRecieved
